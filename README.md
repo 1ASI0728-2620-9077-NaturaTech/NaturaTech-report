@@ -85,7 +85,7 @@ Integrantes
 | 0.1 | 12/09/2026 | Carlos Coca Lavado | Analisis de Competidores y Diseño de las entrevistas |
 | 0.2 | 13/09/2026 | - | Desarrollo del Solution Profile y planteamiento del problema |
 | 0.3 | 14/09/2026 | - | Desarrollo de needfinding, user personas y user task matrix |
-| 0.4 | 15/09/2026 | - | Desarrollo de entrevistas y análisis del problema |
+| 0.4 | 15/09/2026 |Rodrigo Alaya Cabrera| Desarrollo de entrevistas y análisis del problema |
 | 0.5 | 16/09/2026 | - | Desarrollo de Impact Mapping y análisis de competidores |
 | 0.6 | 16/09/2026 | - | Desarrollo de Profile and Preferences Management Context y definición de épicas iniciales |
 | 0.7 | 16/09/2026 | - | Desarrollo del Event Storming colaborativo y definición de bounded contexts |
@@ -94,14 +94,17 @@ Integrantes
 | 0.10 | 16/09/2026 | - | Desarrollo de Lean UX Hypothesis y Technical Stories |
 | 0.11 | 16/09/2026 | - | Redacción y mejora de épicas y User Stories |
 | 0.12 | 17/09/2026 | Rodrigo Alaya Cabrera | Desarrollo de antecedentes, problemática y entrevistas a empresas mineras |
-
+| 0.13 | 26/04/2026 |- | Integración final del informe, ajustes de historias de usuario y validación de entregables |
+| 0.14 | 02/05/2026 | - | Desarrollo de Style Guidelines, Information Architecture y sistemas de navegación y búsqueda |
+| 0.15 | 03/05/2026 | Rodrigo Alaya Cabrera | Diseño de wireframes, mockups y user flows para Landing Page, Web App, Mobile App e IoT |
+| 0.16 | 04/05/2026 | - | Desarrollo de prototipos de aplicaciones e integración del diseño UI/UX de la solución |
 <div style="break-after: page;"></div>
 
 ## Project Report Collaboration Insights
 
 Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTech-report.git
 
-+ AV1:
++ TP1:
 
   Este insight muestra la distribución de los commits realizados por cada integrante del equipo durante el sprint. La evidencia permite visualizar el nivel de participación de los colaboradores y demuestra el uso de control de versiones, así como el trabajo colaborativo y continuo en el desarrollo del proyecto.
 
@@ -117,7 +120,7 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
 
 # Tabla de Contenidos
 
-- [Capítulo I: Introducción](#capítulo-1-introducción)
+- [Capítulo I: Introducción](#capítulo-i-introducción)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
     - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
@@ -141,15 +144,15 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
-    - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
-    - [2.3.4. Empathy Mapping](#234-empathy-mapping)
-  - [2.4. Big Picture EventStorming](#24-big-picture-eventstorming)
-  - [2.5. Ubiquitous Language](#25-ubiquitous-language)
+    - [2.3.3. Empathy Mapping](#233-empathy-mapping)
+    - [2.3.4. As-is Scenario Mapping](#234-as-is-scenario-mapping)
+  - [2.4. Ubiquitous Language](#24-ubiquitous-language)
 
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-  - [3.1. User Stories](#31-user-stories)
-  - [3.2. Impact Mapping](#32-impact-mapping)
-  - [3.3. Product Backlog](#33-product-backlog)
+  - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
+  - [3.2. User Stories](#32-user-stories)
+  - [3.3. Impact Mapping](#33-impact-mapping)
+  - [3.4. Product Backlog](#34-product-backlog)
 
 - [Capítulo IV: Strategic-Level Software Design](#capítulo-iv-strategic-level-software-design)
   - [4.1. Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
@@ -173,79 +176,101 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
     - [4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
     - [4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
 
-- [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
-  - [5.1. Style Guidelines](#51-style-guidelines)
-    - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
-    - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
-  - [5.2. Information Architecture](#52-information-architecture)
-    - [5.2.1. Organization Systems](#521-organization-systems)
-    - [5.2.2. Labeling Systems](#522-labeling-systems)
-    - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
-    - [5.2.4. Searching Systems](#524-searching-systems)
-    - [5.2.5. Navigation Systems](#525-navigation-systems)
-  - [5.3. Landing Page UI Design](#53-landing-page-ui-design)
-    - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
-    - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
-  - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
-    - [5.4.1. Applications Wireframes](#541-applications-wireframes)
-    - [5.4.2. Applications Wireflow Diagrams](#542-applications-wireflow-diagrams)
-    - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
-    - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
-  - [5.5. Applications Prototyping](#55-applications-prototyping)
-  - [5.6. IoT Device Design](#56-iot-device-design)
+- [Capítulo V: Tactical-Level Domain-Driven Design](#capítulo-v-tactical-level-domain-driven-design)
+  - [5.1. Bounded Context: <IAM>](#51-bounded-context-iam)
+    - [5.1.1. Domain Layer](#511-domain-layer)
+    - [5.1.2. Interface Layer](#512-interface-layer)
+    - [5.1.3. Application Layer](#513-application-layer)
+    - [5.1.4. Infrastructure Layer](#514-infrastructure-layer)
+    - [5.1.5. Bounded Context Software Architecture Component Level Diagrams](#515-bounded-context-software-architecture-component-level-diagrams)
+    - [5.1.6. Bounded Context Software Architecture Code Level Diagrams](#516-bounded-context-software-architecture-code-level-diagrams)
+      - [5.1.6.1. Bounded Context Domain Layer Class Diagrams](#5161-bounded-context-domain-layer-class-diagrams)
+      - [5.1.6.2. Bounded Context Database Design Diagram](#5162-bounded-context-database-design-diagram)
+  - [5.2. Bounded Context: Profiles](#52-bounded-context-profiles)
+    - [5.2.1. Domain Layer](#521-domain-layer)
+    - [5.2.2. Interface Layer](#522-interface-layer)
+    - [5.2.3. Application Layer](#523-application-layer)
+    - [5.2.4. Infrastructure Layer](#524-infrastructure-layer)
+    - [5.2.5. Bounded Context Software Architecture Component Level Diagrams](#525-bounded-context-software-architecture-component-level-diagrams)
+    - [5.2.6. Bounded Context Software Architecture Code Level Diagrams](#526-bounded-context-software-architecture-code-level-diagrams)
+      - [5.2.6.1. Bounded Context Domain Layer Class Diagrams](#5261-bounded-context-domain-layer-class-diagrams)
+      - [5.2.6.2. Bounded Context Database Design Diagram](#5262-bounded-context-database-design-diagram)
+  - [5.3. Bounded Context: PlantProfiles](#53-bounded-context-plantprofiles)
+    - [5.3.1. Domain Layer](#531-domain-layer)
+    - [5.3.2. Interface Layer](#532-interface-layer)
+    - [5.3.3. Application Layer](#533-application-layer)
+    - [5.3.4. Infrastructure Layer](#534-infrastructure-layer)
+    - [5.3.5. Bounded Context Software Architecture Component Level Diagrams](#535-bounded-context-software-architecture-component-level-diagrams)
+    - [5.3.6. Bounded Context Software Architecture Code Level Diagrams](#536-bounded-context-software-architecture-code-level-diagrams)
+      - [5.3.6.1. Bounded Context Domain Layer Class Diagrams](#5361-bounded-context-domain-layer-class-diagrams)
+      - [5.3.6.2. Bounded Context Database Design Diagram](#5362-bounded-context-database-design-diagram)
+  - [5.4. Bounded Context: IoT Management](#54-bounded-context-iot-management)
+    - [5.4.1. Domain Layer](#541-domain-layer)
+    - [5.4.2. Interface Layer](#542-interface-layer)
+    - [5.4.3. Application Layer](#543-application-layer)
+    - [5.4.4. Infrastructure Layer](#544-infrastructure-layer)
+    - [5.4.5. Bounded Context Software Architecture Component Level Diagrams](#545-bounded-context-software-architecture-component-level-diagrams)
+    - [5.4.6. Bounded Context Software Architecture Code Level Diagrams](#546-bounded-context-software-architecture-code-level-diagrams)
+      - [5.4.6.1. Bounded Context Domain Layer Class Diagrams](#5461-bounded-context-domain-layer-class-diagrams)
+      - [5.4.6.2. Bounded Context Database Design Diagram](#5462-bounded-context-database-design-diagram)
+  - [5.5. Bounded Context: CareScheduling](#55-bounded-context-carescheduling)
+    - [5.5.1. Domain Layer](#551-domain-layer)
+    - [5.5.2. Interface Layer](#552-interface-layer)
+    - [5.5.3. Application Layer](#553-application-layer)
+    - [5.5.4. Infrastructure Layer](#554-infrastructure-layer)
+    - [5.5.5. Bounded Context Software Architecture Component Level Diagrams](#555-bounded-context-software-architecture-component-level-diagrams)
+    - [5.5.6. Bounded Context Software Architecture Code Level Diagrams](#556-bounded-context-software-architecture-code-level-diagrams)
+      - [5.5.6.1. Bounded Context Domain Layer Class Diagrams](#5561-bounded-context-domain-layer-class-diagrams)
+      - [5.5.6.2. Bounded Context Database Design Diagram](#5562-bounded-context-database-design-diagram)
+  - [5.6. Bounded Context: Inteligencia Botánica y Análisis Externo](#56-bounded-context-inteligencia-botánica-y-análisis-externo)
+    - [5.6.1. Domain Layer](#561-domain-layer)
+    - [5.6.2. Interface Layer](#4462-interface-layer)
+    - [5.6.3. Application Layer](#563-application-layer)
+    - [5.6.4. Infrastructure Layer](#564-infrastructure-layer)
+    - [5.6.5. Bounded Context Software Architecture Component Level Diagrams](#565-bounded-context-software-architecture-component-level-diagrams)
+    - [5.6.6. Bounded Context Software Architecture Code Level Diagrams](#566-bounded-context-software-architecture-code-level-diagrams)
+      - [5.6.6.1. Bounded Context Domain Layer Class Diagrams](#5661-bounded-context-domain-layer-class-diagrams)
+      - [5.6.6.2. Bounded Context Database Design Diagram](#5662-bounded-context-database-design-diagram)
+  - [5.7. Bounded Context: <PlantGuidance>](#57-bounded-context-plantguidance)
+    - [5.7.1. Domain Layer](#571-domain-layer)
+    - [5.7.2. Interface Layer](#572-interface-layer)
+    - [5.7.3. Application Layer](#573-application-layer)
+    - [5.7.4. Infrastructure Layer](#574-infrastructure-layer)
+    - [5.7.5. Bounded Context Software Architecture Component Level Diagrams](#575-bounded-context-software-architecture-component-level-diagrams)
+    - [5.7.6. Bounded Context Software Architecture Code Level Diagrams](#576-bounded-context-software-architecture-code-level-diagrams)
+      - [5.7.6.1. Bounded Context Domain Layer Class Diagrams](#5761-bounded-context-domain-layer-class-diagrams)
+      - [5.7.6.2. Bounded Context Database Design Diagram](#5762-bounded-context-database-design-diagram)
 
-- [Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)
-  - [6.1. Software Configuration Management](#61-software-configuration-management)
-    - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
-    - [6.1.2. Source Code Management](#612-source-code-management)
-    - [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide--conventions)
-    - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
-  - [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
-    - [6.2.1. Sprint 1](#621-sprint-1)
-      - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-1)
-      - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
-      - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-1)
-      - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
-      - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
-      - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
-      - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
-      - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
-      - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
-    - [6.2.2. Sprint 2](#622-sprint-2)
-      - [6.2.2.1. Sprint Planning 3](#6221-sprint-planning-2)
-      - [6.2.2.2. Aspect Leaders and Collaborators](#6222-aspect-leaders-and-collaborators)
-      - [6.2.2.3. Sprint Backlog 3](#6223-sprint-backlog-2)
-      - [6.2.2.4. Development Evidence for Sprint Review](#6224-development-evidence-for-sprint-review)
-      - [6.2.2.5. Testing Suite Evidence for Sprint Review](#6225-testing-suite-evidence-for-sprint-review)
-      - [6.2.2.6. Execution Evidence for Sprint Review](#6226-execution-evidence-for-sprint-review)
-      - [6.2.2.7. Services Documentation Evidence for Sprint Review](#6227-services-documentation-evidence-for-sprint-review)
-      - [6.2.2.8. Software Deployment Evidence for Sprint Review](#6228-software-deployment-evidence-for-sprint-review)
-      - [6.2.2.9. Team Collaboration Insights during Sprint](#6229-team-collaboration-insights-during-sprint)
-    - [6.2.3. Sprint 3](#623-sprint-3)
-      - [6.2.3.1. Sprint Planning 3](#6231-sprint-planning-3)
-      - [6.2.3.2. Aspect Leaders and Collaborators](#6232-aspect-leaders-and-collaborators)
-      - [6.2.3.3. Sprint Backlog 3](#6233-sprint-backlog-3)
-      - [6.2.3.4. Development Evidence for Sprint Review](#6234-development-evidence-for-sprint-review)
-      - [6.2.3.5. Testing Suite Evidence for Sprint Review](#6235-testing-suite-evidence-for-sprint-review)
-      - [6.2.3.6. Execution Evidence for Sprint Review](#6236-execution-evidence-for-sprint-review)
-      - [6.2.3.7. Services Documentation Evidence for Sprint Review](#6237-services-documentation-evidence-for-sprint-review)
-      - [6.2.3.8. Software Deployment Evidence for Sprint Review](#6238-software-deployment-evidence-for-sprint-review)
-      - [6.2.3.9. Team Collaboration Insights during Sprint](#6239-team-collaboration-insights-during-sprint)
-
-  - [6.3. Validation Interviews](#63-validation-interviews)
-    - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
-    - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
-    - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
-
-  - [6.4. Video About-the-Product](#64-video-about-the-product)
+- [Capítulo VI: Solution UI/UX Design](#capítulo-vi-solution-uiux-design)
+  - [6.1. Style Guidelines](#61-style-guidelines)
+    - [6.1.1. General Style Guidelines](#611-general-style-guidelines)
+    - [6.1.2. Web, Mobile and IoT Style Guidelines](#612-web-mobile-and-iot-style-guidelines)
+  - [6.2. Information Architecture](#62-information-architecture)
+    - [6.2.1. Organization Systems](#621-organization-systems)
+    - [6.2.2. Labeling Systems](#622-labeling-systems)
+    - [6.2.3. SEO Tags and Meta Tags](#623-seo-tags-and-meta-tags)
+    - [6.2.4. Searching Systems](#624-searching-systems)
+    - [6.2.5. Navigation Systems](#625-navigation-systems)
+  - [6.3. Landing Page UI Design](#63-landing-page-ui-design)
+    - [6.3.1. Landing Page Wireframe](#631-landing-page-wireframe)
+    - [6.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
+  - [6.4. Applications UX/UI Design](#64-applications-uxui-design)
+    - [6.4.1. Web Applications Wireframes](#641-web-applications-wireframes)
+    - [6.4.2. Mobile Applications Wireframes](#642-mobile-applications-wireframes)
+    - [6.4.3. Web Applications Wireflow Diagrams](#web-applications-wireflow-diagrams)
+    - [6.4.4. Mobile Applications Wireflow Diagrams](#mobile-applications-wireflow-diagrams)
+    - [6.4.5. Applications Mock-ups](#542-applications-mock-ups)
+    - [6.4.6. Applications User Flow Diagrams](#643-applications-user-flow-diagrams)
+  - [6.5. Applications Prototyping](#65-applications-prototyping)
+  - [6.6. IoT Device Design](#66-iot-device-design)
+    - [6.6.1. Criterios de Diseño Físico e Introducción](#661-criterios-de-diseño-físico-e-introducción)
+    - [6.6.2. Relación con la Arquitectura de Información y Guía de Estilos](#662-relación-con-la-arquitectura-de-información-y-guía-de-estilos)
+    - [6.6.3. Diseño de Circuito (Hardware Architecture)](#663-diseño-de-circuito-hardware-architecture)
+    - [6.6.4. Flujos de Interacción del Prototipo](#664-flujos-de-interacción-del-prototipo)
 
 - [Conclusiones](#conclusiones)
-  - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
-
 - [Video About-the-Team](#video-about-the-team)
-
 - [Bibliografía](#bibliografía)
-
 - [Anexos](#anexos)
 <div style="break-after: page;"></div>
 
@@ -261,7 +286,7 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 **ABET – EAC - Student Outcome 5**
 
 Criterio: : Capacidad de comunicarse efectivamente con un rango de audiencias.
-En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 5.
 
 
 <div align="center">
@@ -279,17 +304,17 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
             <td>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</td>
             <td>
                 <b>AV1:</b><br><br>
-                <b>Rodrigo Alaya Cabrera:</b><br><br>
+                <b>Rodrigo Alaya Cabrera:</b> Conduje entrevistas con usuarios potenciales durante la fase de Needfinding, adaptando mi lenguaje para evitar tecnicismos y lograr extraer información objetiva sobre sus necesidades reales en el cuidado de plantas. Además, expuse mis ideas en las reuniones de equipo para definir el Startup Profile y el Lean UX.<br><br>
                 <b>TB1:</b><br><br>
-                <b>- :</b><br><br>
+                <b>Rodrigo Alaya Cabrera:</b> Sustenté oralmente las decisiones de diseño a nivel estratégico (Domain-Driven Design) y la arquitectura de software del sistema IoT. Expliqué la interacción entre los sensores, la IA y la aplicación de manera clara, adaptando el nivel de profundidad técnica para asegurar la comprensión tanto de desarrolladores como de evaluadores.<br><br>
                 <b>AV2:</b><br><br>
                 <b>- :</b><br><br>
                 <b>TB2:</b><br><br>
                 <b>- :</b><br><br>
             </td>
             <td>
-                <b>AV1:</b><br><br>
-                <b>TB1:</b><br><br>
+                <b>AV1:</b> La comunicación oral adaptativa durante las entrevistas tempranas fue fundamental para identificar con precisión los "pain points" de los usuarios, lo que permitió validar nuestras hipótesis iniciales de negocio sin sesgar las respuestas.<br><br>
+                <b>TB1:</b> Exponer de manera estructurada los diagramas arquitectónicos y modelos de dominio garantizó que los lineamientos técnicos del proyecto PlantSync fueran comprendidos por todas las partes interesadas, demostrando dominio del tema y claridad expositiva.<br><br>
                 <b>AV2:</b><br><br>
                 <b>TB2:</b><br><br>
             </td>
@@ -298,17 +323,17 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
             <td>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería de Software </td>
             <td>
                 <b>AV1:</b><br><br>
-                <b>Rodrigo Alaya Cabrera:</b><br><br>
+                <b>Rodrigo Alaya Cabrera:</b> Redacté de forma estructurada los artefactos del Lean UX Process, perfiles de usuario (User Personas) y el registro analítico de entrevistas, asegurando que la información plasmada sea objetiva y fácilmente digerible para cualquier stakeholder del negocio o miembro del equipo.<br><br>
                 <b>TB1:</b><br><br>
-                <b>- :</b><br><br>
+                <b>Rodrigo Alaya Cabrera:</b> Elaboré y documenté la especificación de diseño táctico (Bounded Contexts), así como los diagramas a nivel de código y base de datos en el reporte oficial. Utilicé un lenguaje técnico estandarizado, formatos de tablas y notación UML/C4 para asegurar una lectura fluida y profesional.<br><br>
                 <b>AV2:</b><br><br>
                 <b>- :</b><br><br>
                 <b>TB2:</b><br><br>
                 <b>- :</b><br><br>
             </td>
             <td>
-                <b>AV1:</b><br><br>
-                <b>TB1:</b><br><br>
+                <b>AV1:</b> Plasmar por escrito los hallazgos del análisis de requerimientos de manera ordenada facilitó la alineación de todo el equipo respecto a los objetivos del producto y características de los segmentos objetivo.<br><br>
+                <b>TB1:</b> La correcta y exhaustiva documentación de la arquitectura de software proporcionó una guía técnica sólida y sin ambigüedades, lo cual es esencial para que desarrolladores y diseñadores puedan implementar el sistema de manera coordinada.<br><br>
                 <b>AV2:</b><br><br>
                 <b>TB2:</b><br><br>
             </td>
@@ -785,7 +810,8 @@ Se diseñaron dos sets de preguntas orientados a recolectar datos demográficos,
 12.- ¿Consideras que delegar el cuidado a la tecnología disruptiva es la solución definitiva para perder el miedo a tener plantas en casa por falta de tiempo o conocimiento?
 
 ### 2.2.2. Registro de entrevistas
-Se han realizado las entrevistas de acuerdo al diseño de preguntas. Se puede visualizar el video de las entrevistas en el siguiente link:https://upcedupe-my.sharepoint.com/:v:/g/personal/u202219481_upc_edu_pe/IQB9oQbZhBX7RoBPiVA2usHiAaafYcwj3awpWjlGIKXH0w0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=UsbHgV 
+Se han realizado las entrevistas de acuerdo al diseño de preguntas. Se puede visualizar el video de las entrevistas en el siguiente link: 
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202219481_upc_edu_pe/IQB9oQbZhBX7RoBPiVA2usHiAaafYcwj3awpWjlGIKXH0w0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=UsbHgV 
 
 <h4>Principiantes cuidadores de plantas:</h4>
 
@@ -2510,11 +2536,11 @@ Este diagrama ilustra la infraestructura y el entorno de ejecución de la soluci
 
 <div style="page-break-before: always;"></div>
 
-## 4.4. Supplementary Tactical-Level Domain-Driven Design
+# Capítulo V: Tactical-Level Domain-Driven Design
 
-### 4.4.1. Bounded Context: \<IAM\>
+### 5.1. Bounded Context: \<IAM\>
 
-#### 4.4.1.1. Domain Layer
+#### 5.1.1. Domain Layer
 
 En esta capa se define el núcleo de la seguridad y gestión de identidades, encapsulando las reglas de negocio para la autenticación y autorización de usuarios.
 
@@ -2574,7 +2600,7 @@ El agregado User es la raíz que gestiona la identidad de los usuarios en el sis
 | handle(SignInCommand)     | Procesa el inicio de sesión y genera el token de acceso correspondiente. |
 | handle(UpdateUserCommand)    | Actualiza los datos de identidad de un usuario existente.                          |
 
-#### 4.4.1.2. Interface Layer
+#### 5.1.2. Interface Layer
 
 La capa de interfaz del contexto IAM expone controladores REST para la seguridad y gestión de perfiles. Utiliza assemblers especializados para transformar las solicitudes HTTP en comandos y queries, asegurando que el dominio no se vea afectado por cambios en la API externa.
 
@@ -2611,7 +2637,7 @@ Gestiona la administración y consulta de los usuarios dentro de la plataforma.
 | SignInCommandFromResourceAssembler | Mapea las credenciales a un comando SignIn.      |
 | UserResourceFromEntityAssembler | Convierte la entidad User en un recurso para la respuesta API.         |
 
-#### 4.4.1.3. Application Layer
+#### 5.1.3. Application Layer
 
 Los servicios internos implementan la lógica de orquestación de la seguridad. Se encargan de validar la existencia de usuarios, interactuar con servicios de hashing y gestionar la generación de tokens, coordinando el flujo de datos entre el dominio y la infraestructura.
 
@@ -2642,7 +2668,7 @@ Los servicios internos implementan la lógica de orquestación de la seguridad. 
 |-------------------------|-----------------------------------------------|
 | UserRepository       | Repositorio para el acceso a la base de datos de usuarios. |
 
-#### 4.4.1.4. Infrastructure Layer
+#### 5.1.4. Infrastructure Layer
 
 Esta capa implementa los mecanismos de persistencia mediante JPA y la integración con Spring Security para la protección de recursos.
 
@@ -2666,7 +2692,7 @@ Esta capa implementa los mecanismos de persistencia mediante JPA y la integraci�
 |-------------|------------------|
 | Descripción | Implementación del servicio de hashing utilizando el algoritmo BCrypt para proteger las contraseñas. |
 
-#### 4.4.1.5. Bounded Context Software Architecture Component Level Diagrams
+#### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
 
 Este diagrama representa cómo el Bounded Context de IAM gestiona la seguridad. 
 
@@ -2682,11 +2708,11 @@ La persistencia se realiza en una base de datos relacional MySQL a través de `U
   Elaboración propia
 </p>
 
-#### 4.4.1.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de IAM.
 
-##### 4.4.1.6.1. Bounded Context Domain Layer Class Diagrams
+##### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
 
 <br>
 
@@ -2698,7 +2724,7 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
     Bounded Context Class Diagram - Elaboración propia
 </p>
 
-##### 4.4.1.6.2. Bounded Context Database Design Diagram
+##### 5.1.6.2. Bounded Context Database Design Diagram
 
 <p align="center">
   <img src="Images/cap4/BoundedContext/Profiles/profilesdbdiagram.png" alt = "database diagram" width="80%">
@@ -2712,9 +2738,9 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 
 
-### 4.4.2. Bounded Context: Profiles
+### 5.2. Bounded Context: Profiles
 
-#### 4.4.2.1. Domain Layer
+#### 5.2.1. Domain Layer
 
 En esta capa se define el núcleo de la gestión de perfiles de usuario, encapsulando las reglas de negocio para la información personal, suscripción y estado de pago.
 
@@ -2783,7 +2809,7 @@ El agregado Profile es la raíz que gestiona los perfiles de usuario en el siste
 | handle(CreateProfileCommand) | Crea un nuevo perfil a partir del comando. |
 | handle(UpdateProfileCommand) | Actualiza la información de un perfil existente. |
 
-#### 4.4.2.2. Interface Layer
+#### 5.2.2. Interface Layer
 
 La capa de interfaz del contexto Profiles expone controladores REST para la gestión de perfiles. Utiliza assemblers especializados para transformar las solicitudes HTTP en comandos y queries, asegurando que el dominio no se vea afectado por cambios en la API externa.
 
@@ -2835,7 +2861,7 @@ Gestiona la administración y consulta de los perfiles dentro de la plataforma.
 | ProfilesContextFacade | Interfaz de fachada para que otros contextos interactúen con Profiles. |
 | ProfilesContextFacadeImpl | Implementación que permite crear un perfil desde otro contexto. |
 
-#### 4.4.2.3. Application Layer
+#### 5.2.3. Application Layer
 
 Los servicios internos implementan la lógica de orquestación de los perfiles. Se encargan de validar la existencia de perfiles, ejecutar comandos y gestionar la persistencia.
 
@@ -2863,7 +2889,7 @@ Los servicios internos implementan la lógica de orquestación de los perfiles. 
 |---|---|
 | ProfileRepository | Repositorio para el acceso a la base de datos de perfiles. |
 
-#### 4.4.2.4. Infrastructure Layer
+#### 5.2.4. Infrastructure Layer
 
 Esta capa implementa los mecanismos de persistencia mediante JPA y Spring Data JPA.
 
@@ -2883,7 +2909,7 @@ Esta capa implementa los mecanismos de persistencia mediante JPA y Spring Data J
 | findAll() | Recupera todos los perfiles. |
 
 
-#### 4.4.2.5. Bounded Context Software Architecture Component Level Diagrams
+#### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
 
 Este diagrama representa cómo el Bounded Context de Profiles gestiona los perfiles de usuario.
 El ProfilesCommandController es el punto de entrada principal para el flujo de creación y actualización de perfiles, mientras que el ProfilesQueryController maneja las consultas de lectura. Ambos controladores delegan respectivamente en ProfileCommandService y ProfileQueryService.
@@ -2895,11 +2921,11 @@ La persistencia se realiza en una base de datos relacional MySQL a través de Pr
   Elaboración propia
 </p>
 
-#### 4.4.2.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.2.6. Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de Profiles.
 
-##### 4.4.2.6.1. Bounded Context Domain Layer Class Diagrams
+##### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
 
 <br>
 <p __align__="center">
@@ -2910,7 +2936,7 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 </p>
 
 
-##### 4.4.2.6.2. Bounded Context Database Design Diagram
+##### 5.2.6.2. Bounded Context Database Design Diagram
 
 <p align="center">
   <img src="Images/cap4/BoundedContext/Profiles/profilesdbdiagram.png" alt = "database diagram" width="80%">
@@ -2923,9 +2949,9 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 <div style="page-break-before: always;"></div>
 
 
-### 4.4.3. Bounded Context: PlantProfiles
+### 5.3. Bounded Context: PlantProfiles
 
-#### 4.4.3.1. Domain Layer
+#### 5.3.1. Domain Layer
 
 En esta capa se define el núcleo de la gestión de plantas, encapsulando las reglas de negocio para la información botánica, cuidados y seguimiento histórico de cada planta asociada a un perfil de usuario.
 
@@ -3054,7 +3080,7 @@ El agregado PlantHistory representa un registro histórico de cuidado o datos de
 |---|---|
 | handle(CreatePlantHistoryCommand) | Crea un nuevo registro histórico a partir del comando y retorna su ID. |
 
-#### 4.4.3.2. Interface Layer
+#### 5.3.2. Interface Layer
 
 La capa de interfaz del contexto PlantProfiles expone controladores REST para la gestión de plantas y sus historiales. Utiliza assemblers especializados para transformar las solicitudes HTTP en comandos y consultas, asegurando que el dominio no se vea afectado por cambios en la API externa.
 
@@ -3131,7 +3157,7 @@ Controlador proxy para consultas meteorológicas externas.
 | CreatePlantHistoryCommandFromResourceAssembler | Convierte un CreatePlantHistoryResource en un CreatePlantHistoryCommand. |
 | PlantHistoryResourceFromEntityAssembler | Convierte la entidad PlantHistory en un PlantHistoryResource. |
 
-#### 4.4.3.3. Application Layer
+#### 5.3.3. Application Layer
 
 Los servicios internos implementan la lógica de orquestación para la gestión de plantas y sus historiales. Se encargan de validar la existencia de entidades, ejecutar comandos, coordinar la persistencia y manejar excepciones específicas del dominio.
 
@@ -3183,7 +3209,7 @@ Los servicios internos implementan la lógica de orquestación para la gestión 
 |---|---|
 | PlantHistoryRepository | Repositorio para el acceso a la base de datos de historiales de planta. |
 
-#### 4.4.3.4. Infrastructure Layer
+#### 5.3.4. Infrastructure Layer
 
 Esta capa implementa los mecanismos de persistencia mediante JPA y Spring Data JPA.
 
@@ -3219,7 +3245,7 @@ Esta capa implementa los mecanismos de persistencia mediante JPA y Spring Data J
 | save(PlantHistory) | Persiste o actualiza el historial de planta. |
 | existsById(Long) | Verifica si un historial existe por su ID. |
 
-#### 4.4.3.5. Bounded Context Software Architecture Component Level Diagrams
+#### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
 
 Este diagrama representa cómo el Bounded Context de PlantProfiles gestiona las plantas y sus historiales.
 El PlantCommandController es el punto de entrada principal para el flujo de creación, actualización y eliminación de plantas, mientras que el PlantQueryController maneja las consultas de lectura. Adicionalmente, el PlantHistoryCommandController y PlantHistoryQueryController gestionan los registros históricos de cuidado de las plantas. Todos los controladores delegan respectivamente en PlantCommandService, PlantQueryService, PlantHistoryCommandService y PlantHistoryQueryService.
@@ -3231,11 +3257,11 @@ La persistencia se realiza en una base de datos relacional MySQL a través de Pl
   Elaboración propia
 </p>
 
-#### 4.4.3.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de PlantProfiles.
 
-##### 4.4.3.6.1. Bounded Context Domain Layer Class Diagrams
+##### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
 
 <br>
 <p __align__="center">
@@ -3245,7 +3271,7 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
     Bounded Context Class Diagram - Elaboración propia
 </p>
 
-##### 4.4.3.6.2. Bounded Context Database Design Diagram
+##### 5.3.6.2. Bounded Context Database Design Diagram
 
 <p align="center">
   <img src="Images/cap4/BoundedContext/PlantProfiles/databasedbplantprofile.png" alt = "database diagram" width="80%">
@@ -3257,9 +3283,9 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 <div style="page-break-before: always;"></div>
 
-### 4.4.4. Bounded Context: IoT Management
+### 5.4. Bounded Context: IoT Management
 
-#### 4.4.4.1. Domain Layer
+#### 5.4.1. Domain Layer
 
 En esta capa se define la gestión de dispositivos IoT, lecturas de sensores y comandos de actuadores.
 
@@ -3399,7 +3425,7 @@ Representa un comando enviado a un actuador (luz UV o rociador de agua).
 | handle(IssueCommandCommand) | Emite comando al actuador. |
 | handle(AcknowledgeCommandCommand) | Registra acuse de recibo. |
 
-#### 4.4.4.2. Interface Layer
+#### 5.4.2. Interface Layer
 
 **Controlador: `SensorReadingController`**
 
@@ -3455,7 +3481,7 @@ Gestiona las operaciones de registro, consulta y actualización de los nodos IoT
 | SensorReadingRepository | Repositorio de lecturas. |
 | ActuatorCommandRepository | Repositorio de comandos. |
 
-#### 4.4.4.3. Application Layer
+#### 5.4.3. Application Layer
 
 **Clase: `IoTNodeCommandServiceImpl`**
 
@@ -3510,7 +3536,7 @@ Gestiona las operaciones de registro, consulta y actualización de los nodos IoT
 | ActuatorCommandRepository | Repositorio de comandos. |
 | MqttPublisherService | Publicador MQTT para hardware. |
 
-#### 4.4.4.4. Infrastructure Layer
+#### 5.4.4. Infrastructure Layer
 
 **Clase: `IoTNodeRepository`**
 
@@ -3560,7 +3586,7 @@ Gestiona las operaciones de registro, consulta y actualización de los nodos IoT
 |---|---|
 | publish(String topic, String payload) | Publica mensaje en MQTT. |
 
-#### 4.4.4.5. Bounded Context Software Architecture Component Level Diagrams
+#### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
 
 Este diagrama C4 (nivel componente) muestra la estructura interna del Bounded Context IoT Management en el backend Spring Boot. El sistema gestiona la comunicación bidireccional con Arduino mediante REST y MQTT: los controladores (IoTNodeController, SensorReadingController, ActuatorCommandController) reciben solicitudes y las derivan a servicios de aplicación, que ejecutan la lógica de negocio, evalúan anomalías y disparan actuadores cuando corresponde. La información se persiste en MySQL a través de sus repositorios, y MqttPublisherService publica comandos en el broker MQTT para su ejecución en Arduino.
 
@@ -3570,9 +3596,9 @@ Este diagrama C4 (nivel componente) muestra la estructura interna del Bounded Co
 
 
 
-#### 4.4.4.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.4.6. Bounded Context Software Architecture Code Level Diagrams
 
-##### 4.4.4.6.1. Bounded Context Domain Layer Class Diagrams
+##### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
 
 Este diagrama UML muestra la capa de dominio de IoT Management con tres agregados principales (IoTNode, SensorReading y ActuatorCommand), modelados como entidades independientes del negocio, junto con los value objects/enumeraciones (NodeStatus, ActuatorType, ActuatorAction, CommandStatus) que aseguran consistencia de datos; además, presenta los servicios de comando y consulta que orquestan la lógica, destacando que SensorReadingCommandService activa ActuatorCommandService cuando detecta anomalías en la telemetría.
 
@@ -3582,7 +3608,7 @@ Este diagrama UML muestra la capa de dominio de IoT Management con tres agregado
 
 
 
-##### 4.4.4.6.2. Bounded Context Database Design Diagram
+##### 5.4.6.2. Bounded Context Database Design Diagram
 
 El diseño de base de datos del bounded context IoT Management se compone de tres tablas principales: iot_nodes, que registra cada nodo Arduino con su nodeCode único, estado, referencias de planta/perfil y fecha de creación; sensor_readings, que almacena la telemetría (humedad de suelo, temperatura y humedad de aire, timestamp) vinculada al nodo por nodeId y optimizada para consultas temporales con índices por nodo y fecha; y actuator_commands, que guarda el historial de comandos enviados a actuadores (tipo, acción, estado y fecha) también relacionado por nodeId e indexado para localizar rápidamente comandos pendientes; en conjunto, las relaciones garantizan consistencia e integridad referencial al depender ambas tablas transaccionales de iot_nodes.
 
@@ -3590,9 +3616,9 @@ El diseño de base de datos del bounded context IoT Management se compone de tre
   <img src="Images/cap4/BoundedContext/IotManagement/desingDiagram.png">
 </p>
 
-### 4.4.5. Bounded Context: CareScheduling
+### 5.5. Bounded Context: CareScheduling
 
-#### 4.4.5.1. Domain Layer
+#### 5.5.1. Domain Layer
 
 En esta capa se define el núcleo de la programación de cuidados de plantas, encapsulando las reglas de negocio para la gestión de tareas de mantenimiento como riego, fertilización y otras acciones programadas.
 
@@ -3660,7 +3686,7 @@ El agregado Task es la raíz que gestiona las tareas de cuidado de plantas en el
 | handle(CreateTaskCommand) | Crea una nueva tarea a partir del comando y retorna su ID. |
 | handle(DeleteTaskCommand) | Elimina una tarea del sistema. |
 
-#### 4.4.5.2. Interface Layer
+#### 5.5.2. Interface Layer
 
 La capa de interfaz del contexto CareScheduling expone controladores REST para la gestión de tareas de cuidado. Utiliza assemblers especializados para transformar las solicitudes HTTP en comandos y consultas, asegurando que el dominio no se vea afectado por cambios en la API externa.
 
@@ -3699,7 +3725,7 @@ Gestiona las operaciones de consulta y lectura de tareas en la plataforma.
 | CreateTaskCommandFromResourceAssembler | Convierte un CreateTaskResource en un CreateTaskCommand. |
 | TaskResourceFromEntityAssembler | Convierte la entidad Task en un TaskResource. |
 
-#### 4.4.5.3. Application Layer
+#### 5.5.3. Application Layer
 
 Los servicios internos implementan la lógica de orquestación para la gestión de tareas. Se encargan de ejecutar comandos y coordinar la persistencia.
 
@@ -3727,7 +3753,7 @@ Los servicios internos implementan la lógica de orquestación para la gestión 
 |---|---|
 | TaskRepository | Repositorio para el acceso a la base de datos de tareas. |
 
-#### 4.4.5.4. Infrastructure Layer
+#### 5.5.4. Infrastructure Layer
 
 Esta capa implementa los mecanismos de persistencia mediante JPA y Spring Data JPA.
 
@@ -3746,7 +3772,7 @@ Esta capa implementa los mecanismos de persistencia mediante JPA y Spring Data J
 | save(Task) | Persiste o actualiza la información de la tarea. |
 | deleteById(Long) | Elimina una tarea por su ID. |
 
-#### 4.4.5.5. Bounded Context Software Architecture Component Level Diagrams
+#### 5.5.5. Bounded Context Software Architecture Component Level Diagrams
 
 Este diagrama representa cómo el Bounded Context de CareScheduling gestiona las tareas de cuidado de plantas.
 El TaskCommandController es el punto de entrada principal para el flujo de creación y eliminación de tareas, mientras que el TaskQueryController maneja las consultas de lectura. Ambos controladores delegan respectivamente en TaskCommandService y TaskQueryService.
@@ -3758,11 +3784,11 @@ La persistencia se realiza en una base de datos relacional MySQL a través de Ta
   Elaboración propia
 </p>
 
-#### 4.4.5.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.5.6. Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de CareScheduling.
 
-##### 4.4.5.6.1. Bounded Context Domain Layer Class Diagrams
+##### 5.5.6.1. Bounded Context Domain Layer Class Diagrams
 
 <br>
 <p __align__="center">
@@ -3772,7 +3798,7 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
     Bounded Context Class Diagram - Elaboración propia
 </p>
 
-##### 4.4.5.6.2. Bounded Context Database Design Diagram
+##### 5.5.6.2. Bounded Context Database Design Diagram
 
 <p align="center">
   <img src="Images/cap4/BoundedContext/CareScheduling/taskdbtable.png" alt = "database diagram" width="80%">
@@ -3784,9 +3810,9 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 <div style="page-break-before: always;"></div>
 
-### 4.4.6. Bounded Context: Inteligencia Botánica y Análisis Externo
+### 5.6. Bounded Context: Inteligencia Botánica y Análisis Externo
 
-#### 4.4.6.1. Domain Layer
+#### 5.6.1. Domain Layer
 
 En esta capa se define el núcleo de la generación de recomendaciones personalizadas de cuidado por especie, encapsulando las reglas de negocio para analizar telemetría de sensores, consultar datos botánicos externos y producir consejos accionables para el usuario.
 
@@ -3922,7 +3948,7 @@ Escucha eventos de nueva telemetría publicados por el bounded context IoT Manag
 |---|---|
 | RecommendationAssembler | Convierte el aggregate Recommendation en un RecommendationResource para exposición vía API REST. |
 
-#### 4.4.6.3. Application Layer
+#### 5.6.3. Application Layer
 
 Los servicios internos implementan la lógica de orquestación para la generación y consulta de recomendaciones. Se encargan de coordinar la interacción entre telemetría, perfiles de planta, datos externos y persistencia.
 
@@ -3966,7 +3992,7 @@ Los servicios internos implementan la lógica de orquestación para la generaci�
 |---|---|
 | IRecommendationRepository | Repositorio para acceso paginado al historial. |
 
-#### 4.4.6.4. Infrastructure Layer
+#### 5.6.4. Infrastructure Layer
 
 Esta capa implementa los mecanismos de persistencia, integración con servicios externos y publicación de eventos.
 
@@ -4015,7 +4041,7 @@ Esta capa implementa los mecanismos de persistencia, integración con servicios 
 |---|---|
 | SpeciesDataCache | Caché basada en Redis con TTL configurable para reducir llamadas a API externa. Almacena ExternalSpeciesData indexado por speciesName. |
 
-#### 4.4.6.5. Bounded Context Software Architecture Component Level Diagrams
+#### 5.6.5. Bounded Context Software Architecture Component Level Diagrams
 
 Este diagrama representa cómo el Bounded Context de Inteligencia Botánica y Análisis Externo gestiona la generación de recomendaciones personalizadas de cuidado por especie.
 
@@ -4028,11 +4054,11 @@ El RecommendationController es el punto de entrada principal para las consultas 
   Elaboración propia
 </p>
 
-#### 4.4.6.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.6.6. Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección, se explican los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de Inteligencia Botánica y Análisis Externo.
 
-##### 4.4.6.6.1. Bounded Context Domain Layer Class Diagrams
+##### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
 
 <br>
 <p align="center">
@@ -4042,7 +4068,7 @@ En esta sección, se explican los diagramas que presentan un mayor detalle sobre
     Bounded Context Class Diagram - Elaboración propia
 </p>
 
-##### 4.4.6.6.2. Bounded Context Database Design Diagram
+##### 5.6.6.2. Bounded Context Database Design Diagram
 
 <p align="center">
   <img src="https://i.imgur.com/dmbd8Iz.png" alt="Database Design Diagram" width="80%">
@@ -4054,9 +4080,9 @@ En esta sección, se explican los diagramas que presentan un mayor detalle sobre
 
 <div style="page-break-before: always;"></div>
 
-### 4.4.7. Bounded Context: \<PlantGuidance\>
+### 5.7. Bounded Context: \<PlantGuidance\>
 
-#### 4.4.7.1. Domain Layer
+#### 5.7.1. Domain Layer
 
 En esta capa se define el núcleo de la seguridad y gestión de identidades, encapsulando las reglas de negocio para la autenticación y autorización de usuarios.
 
@@ -4117,7 +4143,7 @@ Representa una sesión de consulta temporal donde un usuario interactúa con la 
 | handle(ClearPlantConsultationsCommand)     | Elimina el historial de consultas de una planta. |
 
 
-#### 4.4.7.2. Interface Layer
+#### 5.7.2. Interface Layer
 
 La capa de interfaz del contexto PlantGuidance expone los endpoints necesarios para que la aplicación móvil o web envíe las preguntas del usuario. Utiliza transformadores para convertir las solicitudes en comandos que incluyen el contexto de la planta seleccionada.
 
@@ -4142,7 +4168,7 @@ Controlador REST que maneja el flujo de comunicación entre el usuario y el agen
 | ConsultationResourceFromEntityAssembler | Convierte la entidad Consultation a un recurso JSON.           |
 | ProcessConsultationCommandFromResourceAssembler | Mapea el request del usuario a un comando de dominio.      |
 
-#### 4.4.7.3. Application Layer
+#### 5.7.3. Application Layer
 
 LEl servicio ChatbotCommandServiceImpl actúa como el orquestador principal. No solo llama a la IA, sino que primero utiliza un ProfilesContextFacade (ACL) para obtener la temperatura y humedad actual del Bounded Context de Plant Profiles antes de enviar la solicitud al agente de IA
 
@@ -4172,7 +4198,7 @@ LEl servicio ChatbotCommandServiceImpl actúa como el orquestador principal. No 
 |-------------------------|-----------------------------------------------|
 | ConsultationRepository      | Acceso a la persistencia de consultas. |
 
-#### 4.4.7.4. Infrastructure Layer
+#### 5.7.4. Infrastructure Layer
 
 Esta capa maneja la integración técnica con la API de la IA y la base de datos de auditoría. El AiServiceAdapter transforma el contexto del dominio en un prompt optimizado para el modelo de lenguaje.
 
@@ -4197,7 +4223,7 @@ Esta capa maneja la integración técnica con la API de la IA y la base de datos
 | ConsultationEntity      | Representación JPA de la consulta en la base de datos. |
 | AiClient      | Cliente externo para la comunicación con los servidores de la IA |
 
-#### 4.4.7.5. Bounded Context Software Architecture Component Level Diagrams
+#### 5.7.5. Bounded Context Software Architecture Component Level Diagrams
 
 Este diagrama de componentes representa cómo el sistema consume datos de plantas para alimentar la IA. 
 
@@ -4211,11 +4237,11 @@ El `ChatbotController` recibe la consulta del usuario. El `ChatbotCommandService
   Elaboración propia
 </p>
 
-#### 4.4.7.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.7.6. Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de IAM.
 
-##### 4.4.7.6.1. Bounded Context Domain Layer Class Diagrams
+##### 5.7.6.1. Bounded Context Domain Layer Class Diagrams
 
 <br>
 
@@ -4230,7 +4256,7 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
     Bounded Context Class Diagram - Elaboración propia
 </p>
 
-##### 4.4.7.6.2. Bounded Context Database Design Diagram
+##### 5.7.6.2. Bounded Context Database Design Diagram
 
 <p align="center">
   <img src="Images/cap4/BoundedContext/PlantGuidance/PlantGuidance Database.png" alt = "database diagram" width="80%">
@@ -4241,6 +4267,1149 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 </p>
 
 <div style="page-break-before: always;"></div>
+
+
+# Capítulo VI: Solution UI/UX Design
+
+## 6.1. Style Guidelines
+
+Las guías de estilo de la solución definen los criterios visuales, comunicacionales e interactivos que orientan el diseño de la experiencia digital de **BioDemeter** y de su producto **PlantSync**. Su finalidad es asegurar consistencia entre la identidad de marca, la interfaz de usuario y las funcionalidades ofrecidas en la landing page, la aplicación web, la aplicación móvil y los componentes vinculados al ecosistema IoT.
+
+<h3>6.1.1. General Style Guidelines</h3>
+
+<h4>Branding</h4>
+
+**Brand Overview**
+
+**BioDemeter** es una startup orientada al desarrollo de soluciones tecnológicas para el cuidado de plantas en el hogar, combinando monitoreo, automatización y asistencia digital con un enfoque de sostenibilidad y bienestar ambiental. Su primer producto es **PlantSync**, una solución digital disponible en entorno web y móvil que permite registrar plantas, monitorear su estado, gestionar tareas de cuidado, consultar información útil y acceder a recomendaciones personalizadas basadas en datos y contexto de uso.
+
+**Brand Name**
+
+El nombre **PlantSync** proviene de la idea de sincronizar el cuidado vegetal con la tecnología y con la rutina diaria del usuario. Esta denominación representa una plataforma que integra organización, monitoreo y acompañamiento digital para hacer más simple, accesible y constante el cuidado de las plantas en casa.
+
+**Colores**
+
+La propuesta cromática se basa principalmente en tonalidades de verde, debido a su fuerte asociación con naturaleza, crecimiento, equilibrio y bienestar. Este color principal se complementa con verdes oscuros para encabezados y elementos de contraste, verdes claros para resaltar áreas positivas, y tonos neutros como beige, blanco y gris para fondos y superficies limpias que favorezcan la lectura y reduzcan la fatiga visual.
+
+Asimismo, se incorporan colores funcionales para representar estados dentro del sistema, como rojo para alertas o problemas, amarillo para advertencias y verde para condiciones normales, especialmente en pantallas relacionadas con monitoreo, tareas y seguimiento del estado de las plantas.
+
+<p align="center">
+  <img src="https://i.imgur.com/eRBfgiy.png" alt="Paleta de colores de PlantSync con tonos verdes, neutros y colores funcionales para alertas, advertencias y estados normales" width="90%">
+</p>
+
+<h4>Tipografía</h4>
+
+La tipografía seleccionada para la solución está orientada a garantizar jerarquía visual, legibilidad y consistencia en dispositivos digitales. Para ello, se utilizarán las familias tipográficas **Poppins** y **Nunito**.
+
+**Poppins** será empleada principalmente en títulos, encabezados y botones de acción debido a su apariencia moderna, limpia y estructurada. **Nunito**, por su parte, será utilizada en textos descriptivos, mensajes auxiliares y cuerpos de contenido, ya que ofrece una lectura clara y amigable tanto en pantallas web como móviles.
+
+<p align="center">
+  <img src="https://i.imgur.com/SH4EL6p.png" alt="muestra de tipografías Poppins y Nunito" width="90%">
+</p>
+
+<h4>Lenguaje aplicado</h4>
+
+El lenguaje utilizado en la solución será claro, cercano y fácil de comprender para usuarios con distintos niveles de experiencia en jardinería y tecnología. El tono de comunicación será amigable y motivador, evitando tecnicismos innecesarios y priorizando mensajes breves, optimistas y orientados a la acción.
+
+Este estilo comunicacional busca acompañar al usuario durante toda su experiencia, reforzando hábitos positivos de cuidado y promoviendo una interacción intuitiva con mensajes consistentes, comprensibles y alineados con el contexto vegetal de la plataforma.
+
+
+<h3>6.1.2. Web, Mobile and IoT Style Guidelines</h3>
+
+La solución ha sido diseñada bajo un enfoque visual minimalista, ordenado y adaptable, con el objetivo de facilitar la interacción del usuario en diferentes contextos de uso. Este enfoque abarca la landing page, la aplicación web, la aplicación móvil y los componentes visuales asociados a la integración con dispositivos IoT, manteniendo coherencia estética y funcional en todo el ecosistema digital.
+
+<h4>Estilo visual de la landing page</h4>
+
+La landing page presenta una estructura clara y persuasiva, orientada a comunicar rápidamente la propuesta de valor del producto y facilitar la conversión. Su diseño prioriza una lectura fluida, bloques visuales bien definidos y secciones que resaltan beneficios, funcionamiento, planes y datos institucionales de la startup.
+
+La composición se apoya en jerarquías visuales simples, contrastes bien controlados y botones de llamado a la acción visibles, favoreciendo una experiencia confiable y comprensible desde el primer contacto con la marca.
+
+<h4>Estilo visual de la aplicación web y móvil</h4>
+
+La aplicación web y móvil comparte una misma línea gráfica para garantizar continuidad de uso entre plataformas. La interfaz prioriza claridad visual, uso moderado de color, tarjetas informativas, iconografía reconocible y componentes reutilizables que permitan al usuario identificar fácilmente acciones, estados y módulos principales.
+
+En la versión web, se aprovechan áreas más amplias para paneles, dashboards y vistas comparativas, mientras que en la versión móvil la información se reorganiza para priorizar accesos rápidos, navegación táctil y lectura vertical, manteniendo la misma identidad visual y semántica.
+
+<h4>Estilo visual de componentes IoT</h4>
+
+Los componentes relacionados con monitoreo e integración IoT deben transmitir precisión, confiabilidad y respuesta en tiempo real. Para ello, las métricas ambientales, estados de conexión y controles de actuadores se representarán mediante indicadores claros, tarjetas de datos, etiquetas de estado y colores funcionales que faciliten la interpretación rápida del usuario.
+
+El diseño de estos módulos debe mantener consistencia con la interfaz principal, evitando que la sección IoT parezca un sistema independiente. De esta manera, la visualización de humedad, temperatura, iluminación o acciones remotas se integra de forma natural al flujo general de cuidado de plantas.
+
+<h4>Botones</h4>
+
+Los botones constituyen elementos centrales de interacción dentro de la solución. Se utilizarán para ejecutar acciones como registrarse, iniciar sesión, agregar plantas, guardar cambios, programar tareas, activar funciones específicas y navegar entre módulos.
+
+Se establecerá una jerarquía visual entre botones primarios, secundarios y de advertencia, utilizando color, contraste y tamaño para diferenciar su relevancia dentro de cada contexto. Los botones principales emplearán el color verde predominante de la marca, mientras que los de confirmación o alerta utilizarán variantes funcionales según el tipo de acción.
+
+<h4>Imágenes</h4>
+
+Las imágenes estarán presentes tanto en la landing page como en la aplicación. En la landing, servirán para representar el uso del sistema, comunicar cercanía y reforzar visualmente la propuesta de valor. En la aplicación, podrán emplearse en perfiles de plantas, registros visuales de crecimiento e identificación mediante fotografías.
+
+Además, en los componentes asociados al monitoreo inteligente será conveniente incluir recursos gráficos o iconos que ayuden a representar sensores, conectividad y variables ambientales sin complejizar la interfaz.
+
+<h4>Pantallas emergentes</h4>
+
+Las pantallas emergentes se utilizarán para confirmar acciones importantes, notificar resultados, advertir sobre errores o presentar mensajes contextuales relevantes para el usuario. Estas ventanas deberán ser visualmente llamativas pero consistentes con la paleta de color general, utilizando una jerarquía clara entre mensaje, acción principal y acción secundaria.
+
+Su diseño debe favorecer decisiones seguras, especialmente en acciones sensibles como eliminación de registros, cambios importantes en la configuración o activación de funciones remotas.
+
+<h4>Encabezado</h4>
+
+En la landing page, el encabezado incluirá el logotipo, accesos a secciones principales y botones para ingresar o registrarse en la plataforma. Su diseño será fijo o persistentemente visible para facilitar el acceso rápido a los contenidos más relevantes.
+
+En la aplicación web y móvil, el encabezado podrá complementarse con elementos de contexto como el nombre del módulo actual, indicadores de perfil, accesos rápidos o notificaciones, manteniendo siempre simplicidad visual y claridad funcional.
+
+<h4>Pie de página</h4>
+
+El pie de página contendrá enlaces institucionales, medios de contacto, redes sociales, políticas y accesos complementarios a otras secciones del sitio. En la landing page, este componente servirá también como refuerzo de confianza y continuidad informativa, permitiendo al usuario acceder fácilmente a recursos de soporte y comunicación.
+
+
+## 6.2. Information Architecture
+
+La arquitectura de información de la solución establece la manera en que el contenido y las funcionalidades se estructuran, organizan, etiquetan y presentan dentro del ecosistema digital de BioDemeter y PlantSync. Su propósito es garantizar una experiencia fluida, comprensible y consistente en la landing page, la aplicación web, la aplicación móvil y los módulos asociados al monitoreo inteligente.
+
+<h3>6.2.1. Organization Systems</h3>
+
+La organización del contenido responde a un modelo combinado que integra estructuras jerárquicas, secuenciales y matriciales, permitiendo ordenar adecuadamente la información según la naturaleza de cada vista y según las tareas que el usuario necesita realizar dentro del sistema.
+
+<h4>Organización jerárquica</h4>
+
+La organización jerárquica se aplica principalmente en la landing page, el panel principal de la aplicación y las vistas de detalle. En estas pantallas, los elementos más importantes se ubican en zonas de mayor visibilidad y con mayor peso visual, como acciones principales, información resumida del estado de las plantas, métricas destacadas o accesos directos a funcionalidades clave.
+
+Este enfoque permite que el usuario identifique rápidamente qué información requiere atención prioritaria y qué acciones puede ejecutar primero, reduciendo la carga cognitiva y facilitando la toma de decisiones.
+
+<h4>Organización secuencial</h4>
+
+La organización secuencial se utiliza en procesos que requieren una progresión ordenada, como el registro de usuarios, la incorporación de una nueva planta, la configuración de tareas o la vinculación de dispositivos. En estos casos, la interfaz guía al usuario paso a paso, mostrando únicamente la información necesaria en cada momento para favorecer la comprensión del flujo.
+
+Este tipo de organización es especialmente útil en interacciones iniciales o en configuraciones técnicas, ya que reduce errores y mejora la percepción de control durante el proceso.
+
+<h4>Organización matricial</h4>
+
+La organización matricial se aplica en módulos donde el usuario necesita explorar información de manera flexible, comparar elementos o revisar múltiples registros. Esto ocurre, por ejemplo, en el inventario de plantas, en el historial de acciones, en el listado de tareas o en la visualización de métricas ambientales.
+
+En estos casos, el contenido puede presentarse mediante tarjetas, listas o cuadrículas que permitan navegar libremente entre elementos, ordenar resultados y detectar patrones o diferencias entre registros.
+
+<h4>Esquemas de categorización</h4>
+
+La solución emplea distintos esquemas de categorización según el tipo de información presentada:
+
+- **Por tópicos**, para organizar guías, recomendaciones y contenidos de ayuda según temas como riego, luz, temperatura, plagas o mantenimiento.
+- **Alfabético**, para ordenar listados de plantas o búsquedas por nombre.
+- **Cronológico**, para historiales de cuidado, tareas registradas, eventos recientes y datos de monitoreo.
+- **Por estado**, para clasificar condiciones normales, alertas, advertencias o situaciones pendientes de atención.
+
+<h3>6.2.2. Labeling Systems</h3>
+
+El sistema de etiquetado ha sido definido para ser claro, directo y consistente en todos los puntos de interacción. El objetivo es que el usuario comprenda con rapidez el significado de cada sección, botón, estado o módulo, sin necesidad de interpretaciones complejas ni conocimientos técnicos previos.
+
+<h4>Menú principal de la landing page</h4>
+
+- Inicio
+- ¿Cómo funciona?
+- Planes
+- ¿Quiénes somos?
+- Acceder
+
+<h4>Menú de navegación de la solución</h4>
+
+- Mis plantas
+- Tareas
+- Chatbot
+- Perfil
+- Cerrar sesión
+
+<h4>Tipos de etiquetas en la interfaz</h4>
+
+<p align="center">
+  <img src="https://i.imgur.com/hziWznJ.jpeg" alt="Ejemplo de navegación" width="90%">
+</p>
+
+| Tipo de etiqueta | Ejemplo                  | Aparición                                        |
+|------------------|--------------------------|--------------------------------------------------|
+| Encabezado       | “Mis plantas”           | Parte superior de la pantalla principal          |
+| Panel            | “Historial de cuidados” | Dentro de módulos informativos o tarjetas        |
+| Botón            | “Agregar planta”        | Acción principal en formularios o vistas de gestión |
+| Navegación       |  “Tareas”, “Chatbot” | Menú principal, barra lateral o navegación inferior |
+| Estado           | “Último riego hace 3 días” | Dentro de tarjetas o secciones de seguimiento |
+
+Las etiquetas se mantendrán uniformes entre web, móvil y componentes vinculados al monitoreo inteligente, lo que permite conservar continuidad semántica y facilitar el aprendizaje del sistema.
+
+<h3>6.2.3. SEO Tags and Meta Tags</h3>
+
+Las metaetiquetas permiten describir estructuralmente el contenido de la solución y mejorar su visibilidad en motores de búsqueda. Aunque no son visibles para el usuario final, cumplen un papel importante en la indexación de la landing page y en el posicionamiento digital de la marca BioDemeter y del producto PlantSync.
+
+<h4>Landing Page</h4>
+
+**Título**
+```html
+<title>BioDemeter | Tecnología inteligente para el cuidado de plantas</title>
+```
+
+**Codificación de caracteres**
+```html
+<meta charset="utf-8" />
+```
+
+**Meta Description**
+```html
+<meta
+  name="description"
+  content="BioDemeter es una startup que desarrolla soluciones digitales para el monitoreo, registro y cuidado inteligente de plantas mediante su app PlantSync en web y móvil."
+/>
+```
+
+**Keywords**
+```html
+<meta
+  name="keywords"
+  content="BioDemeter, PlantSync, cuidado de plantas, monitoreo de plantas, app para plantas, jardinería digital, recomendaciones para plantas, web y móvil"
+/>
+```
+
+**Author y Derechos de Autor**
+```html
+<meta name="author" content="Equipo BioDemeter" />
+<meta name="copyright" content="Copyright BioDemeter team" />
+```
+
+<h4>Web and Mobile Application</h4>
+
+**Título**
+```html
+<title>PlantSync | Gestiona y cuida tus plantas desde web y móvil</title>
+```
+
+**Codificación de caracteres**
+```html
+<meta charset="utf-8" />
+```
+
+**Meta Description**
+```html
+<meta
+  name="description"
+  content="PlantSync permite registrar plantas, consultar guías, gestionar tareas, recibir recordatorios y obtener recomendaciones personalizadas desde una experiencia web y móvil."
+/>
+```
+
+**Keywords**
+```html
+<meta
+  name="keywords"
+  content="PlantSync, BioDemeter, historial de riego, guías para plantas, monitoreo manual, recomendaciones por clima, app móvil de plantas, plataforma web de plantas"
+/>
+```
+
+**Author y Derechos de Autor**
+```html
+<meta name="author" content="Equipo BioDemeter" />
+<meta name="copyright" content="Copyright BioDemeter team" />
+```
+
+### 6.2.4. Searching Systems
+
+Dado que la solución manejará una cantidad considerable de información, incluyendo guías, registros de plantas, historiales, tareas y datos de monitoreo, resulta fundamental implementar un sistema de búsqueda y filtrado eficiente. Este sistema debe permitir al usuario encontrar rápidamente el contenido que necesita, reduciendo el esfuerzo cognitivo y mejorando la fluidez de navegación.
+
+Las principales opciones de búsqueda incluirán:
+
+- Búsqueda de guías y contenidos informativos.
+- Búsqueda de plantas registradas.
+- Búsqueda de tareas y actividades programadas.
+- Búsqueda de registros asociados a cada planta.
+- Búsqueda de información contextual relacionada con recomendaciones y monitoreo.
+
+Asimismo, se incorporarán filtros que permitan refinar los resultados según distintos criterios:
+
+- Tipo de planta.
+- Tipo de tarea.
+- Estado de la planta.
+- Tipo de guía.
+- Periodo de tiempo.
+- Estado de conectividad o condición monitoreada, cuando corresponda.
+
+Este sistema de búsqueda y filtrado resulta especialmente útil para usuarios con múltiples plantas registradas o con un uso más frecuente del monitoreo y del historial de cuidados, ya que permite identificar patrones, revisar eventos y acceder con rapidez a información relevante.
+
+<h3>6.2.5. Navigation Systems</h3>
+
+La navegación de la solución ha sido diseñada con un enfoque intuitivo, flexible y adaptable a diferentes dispositivos. Su objetivo es ofrecer una experiencia ordenada, evitando la saturación visual y facilitando el acceso a contenidos, acciones y módulos relevantes dentro del ecosistema digital.
+
+<h4>Landing Page</h4>
+
+La landing page utiliza un diseño de tipo **one-page scroll**, que permite recorrer el contenido mediante desplazamiento vertical continuo. Este modelo facilita una lectura lineal de la propuesta de valor, los beneficios, los planes, la información institucional y los llamados a la acción, todo dentro de una experiencia de navegación simple y predecible.
+
+Para reforzar la orientación, se incorpora un encabezado fijo con enlaces directos a las secciones principales, permitiendo al usuario desplazarse rápidamente sin necesidad de recorrer manualmente toda la página.
+
+<h4>Web Application</h4>
+
+La aplicación web adopta una navegación híbrida que combina accesos directos entre módulos con flujos guiados para tareas específicas. El usuario puede desplazarse libremente entre secciones como plantas, tareas, historial, sensores, Chatbot, perfil y configuración, mientras que ciertos procesos más estructurados mantienen una secuencia paso a paso.
+
+Este modelo permite equilibrar libertad de exploración con orden funcional, favoreciendo una experiencia de uso flexible, eficiente y orientada a objetivos.
+
+<h4>Mobile Application</h4>
+
+La aplicación móvil mantiene la lógica de navegación de la versión web, pero adaptada a pantallas más pequeñas y a patrones táctiles de uso. La distribución prioriza acciones rápidas, lectura vertical, accesibilidad con una sola mano y accesos compactos a los módulos principales, asegurando continuidad funcional sin perder claridad visual.
+
+De este modo, la experiencia entre plataformas se mantiene coherente, permitiendo al usuario interactuar con la solución desde distintos dispositivos sin necesidad de reaprender la estructura general del sistema.
+## 6.3. Landing Page UI Design
+
+Enlace del Figma para visualización de el Landing Page UI Design: [Enlace del figma](https://www.figma.com/design/5cSEKvg4XXUzsXTpOPJySb/PlantSync?node-id=0-1&t=y4kxXaWBUrJgtPEo-1)
+
+### 6.3.1. Landing Page Wireframe
+
+En esta sección se presenta una versión básica de nuestra landing page para navegador de escritorio. En ella se incluyen los elementos clave para generar una buena primera impresión en el usuario: una breve introducción sobre el proyecto, una explicación simplificada de su funcionamiento, el uso de herramientas IoT en el monitoreo de la planta, el uso de IA botánica para resolver dudas, la visualización de los distintos planes disponibles, el FAQ y, finalmente, una pequeña presentación de nuestra startup y nuestro grupo de trabajo.
+
+
+<a href="https://ibb.co/xSL39dWw"><img src="https://i.ibb.co/Fb3nZC2c/wire1.png" alt="wire1" border="0"></a>
+
+<a href="https://ibb.co/HpY5K1kP"><img src="https://i.ibb.co/vvm0cgKd/wire2.png" alt="wire2" border="0"></a>
+
+<a href="https://ibb.co/gb6myw0r"><img src="https://i.ibb.co/xK3XhGn2/wire3.png" alt="wire3" border="0"></a>
+
+### 5.3.2. Landing Page Mock-up
+
+A partir de nuestro wireframe, que representa una versión básica de la landing page, se desarrolló la versión final. Esta mantiene los mismos apartados definidos previamente, incorporando además los colores seleccionados y un lenguaje pensado para ser claro y amigable para el usuario.
+
+<a href="https://ibb.co/WpHHM6HX"><img src="https://i.ibb.co/3YTTj7Tb/mock1.png" alt="mock1" border="0"></a>
+
+<a href="https://ibb.co/Zz7XBj7V"><img src="https://i.ibb.co/23Hhv9Hy/mock2.png" alt="mock2" border="0"></a>
+
+<a href="https://ibb.co/rW2g8cL"><img src="https://i.ibb.co/MXkbwGj/mock3.png" alt="mock3" border="0"></a>
+
+<a href="https://ibb.co/TMK9RXrF"><img src="https://i.ibb.co/s958QStM/mock4.png" alt="mock4" border="0"></a>
+
+<a href="https://ibb.co/20FdTVRP"><img src="https://i.ibb.co/zWmZz9Cb/mock5.png" alt="mock5" border="0"></a>
+
+## 6.4. Applications UX/UI Design
+
+#### 6.4.1. Web Applications Wireframes<br><br>
+
+Los wireframes desarrollados para la aplicación web de BioPafi reflejan una planificación enfocada en el usuario, incorporando principios de diseño como la claridad visual, la jerarquía de la información, la consistencia y la inclusividad. Cada pantalla presenta una estructura ordenada y limpia, con encabezados visibles, elementos organizados según su nivel de importancia y una navegación lateral constante que facilita la orientación.
+
+Se prioriza el uso de etiquetas claras y botones con alto contraste para mejorar la accesibilidad. Asimismo, el diseño contempla usuarios con distintos niveles de experiencia, ofreciendo formularios guiados para principiantes y paneles informativos más detallados para usuarios avanzados. Por otro lado, se evidencia una adecuada arquitectura de la información mediante la organización en módulos como Plantas, Guías, Tareas, ChatBot y Configuración, lo que permite encontrar fácilmente cada funcionalidad. En conjunto, cada vista demuestra un equilibrio entre lo funcional y lo estético, respondiendo a las necesidades del público objetivo.
+
+[Enlace del figma](https://www.figma.com/design/5cSEKvg4XXUzsXTpOPJySb/PlantSync?node-id=42-2&t=y4kxXaWBUrJgtPEo-1)
+
+- Mis Planta:
+
+Pantalla principal del usuario donde se muestra el listado de todas sus plantas registradas. Desde esta vista, puede consultar el estado general de cada planta, acceder a su información detallada, editar sus datos o agregar una nueva.
+
+<a href="https://ibb.co/svgK5zrV"><img src="https://i.ibb.co/tMHqZF5J/Mis-Plantas.png" alt="Mis-Plantas" border="0"></a>
+
+
+- Tareas:
+
+Sección con formato de calendario que presenta los recordatorios programados para cada planta, como riegos, fertilización y otras tareas. Facilita la organización de la rutina de cuidado del usuario.
+
+<a href="https://ibb.co/v47YTWP0"><img src="https://i.ibb.co/DfxpvFC0/tareas.png" alt="tareas" border="0"></a>
+
+- Chatbot:
+
+Pantalla principal del asistente virtual (RootBot), desde la cual el usuario puede iniciar una conversación para resolver dudas rápidas relacionadas con el cuidado de plantas.
+
+<a href="https://ibb.co/v6prJzqz"><img src="https://i.ibb.co/DHh67KWK/chatbot.png" alt="chatbot" border="0"></a>
+
+- Configuración personal
+
+Panel en el que el usuario puede actualizar su información personal, configurar las notificaciones y administrar su tipo de suscripción (básico, PRO o premium).
+
+<a href="https://ibb.co/KchvWvv1"><img src="https://i.ibb.co/DPW2Q22q/Configuracion-Personal.png" alt="Configuracion-Personal" border="0"></a>
+
+- Añadir Planta:
+
+Interfaz de registro asistido para añadir una nueva planta. Contempla campos como nombre asignado, especie, fecha de adquisición y la opción de habilitar notificaciones.
+
+<a href="https://ibb.co/ch4r4X1G"><img src="https://i.ibb.co/7ts1sNXw/A-adir-Planta.png" alt="A-adir-Planta" border="0"></a>
+
+- Ver Guía:
+
+Pantalla que presenta el contenido completo de una guía específica, con indicaciones paso a paso, recursos visuales ilustrativos y consejos prácticos para el usuario.
+
+<a href="https://ibb.co/qYpdJ3nQ"><img src="https://i.ibb.co/wh4RcFLm/Ver-Planta.png" alt="Ver-Planta" border="0"></a>
+
+- Chateando con ChatBot:
+
+Vista de la conversación en curso con el bot, donde el usuario puede realizar consultas sobre el cuidado o la adquisición de plantas y recibir respuestas adaptadas al contexto.
+
+<a href="https://ibb.co/4RHdr3RN"><img src="https://i.ibb.co/chjLnVhT/Chat-Chatbot.png" alt="Chat-Chatbot" border="0"></a>
+
+- Ver Planta:
+
+Pantalla que muestra la información completa de una planta específica, incluyendo su imagen, especie, historial de cuidados y recomendaciones según el clima.
+
+<a href="https://ibb.co/qYpdJ3nQ"><img src="https://i.ibb.co/wh4RcFLm/Ver-Planta.png" alt="Ver-Planta" border="0"></a>
+
+- Ver historial de planta:
+
+Historial organizado de las acciones realizadas sobre una planta, como riego, fertilización o cambios de estado, complementado con gráficas sencillas que muestran la humedad y su evolución.
+
+<a href="https://ibb.co/0VpKDycs"><img src="https://i.ibb.co/2Y0Sn3yZ/Historial-Planta.png" alt="Historial-Planta" border="0"></a>
+
+- Mis dispositivos IoT:  
+Vista general que agrupa a las plantas que cuentan con dispositivos IoT conectados para su control, mostrando los resultados actualizados de la humedad del suelo, la temperatura y la humedad del aire. Puede hacerse clic en cada uno, para poder abrir el control personalizado por cada planta.
+
+<a href="https://ibb.co/yJQxBy4"><img src="https://i.ibb.co/qwr2FsJ/iotdevice-drawio.png" alt="iotdevice-drawio" border="0"></a>
+
+- Sensores y métricas de planta:  
+Pantalla de seguimiento que presenta las mediciones obtenidas por los sensores por la planta seleccionada, como humedad del suelo, temperatura y humedad ambiental, permitiendo interpretar de forma clara el estado actual de la planta. Además, se cuenta con un análisis general de los resultados obtenidos durante un periodo de tiempo (dashboard para análitica)
+
+<a href="https://ibb.co/LD0QBVtK"><img src="https://i.ibb.co/spg5c8w7/sensors-drawio.png" alt="sensors-drawio" border="0"></a>
+
+- Actuadores de planta:  
+Interfaz destinada al control de actuadores como bomba para riego y las luces, donde el usuario puede activar o desactivar cada componente y revisar su estado para automatizar acciones de cuidado.
+
+<a href="https://ibb.co/zV1FjB6J"><img src="https://i.ibb.co/WvQ0qMVt/actuators-drawio.png" alt="actuators-drawio" border="0"></a>
+
+#### 6.4.2. Mobile Applications Wireframes
+
+- Login:  
+Pantalla de inicio de sesión que permite al usuario ingresar con correo (usuario) y contraseña; incluye logo, campos para credenciales, botón "Ingresar" y enlace para registrarse.
+
+<a href="https://ibb.co/99SpTT6x"><img src="https://i.ibb.co/TBdw886Q/1.png" alt="1" border="0"></a>
+
+- Registro:  
+Pantalla de creación de cuenta con campos para nombre, apellido, email y contraseña, junto a un botón "Registrarse" para completar el alta.
+
+<a href="https://ibb.co/4ZK2fzHL"><img src="https://i.ibb.co/xSXYsWNb/2.png" alt="2" border="0"></a>
+
+- Navegación principal:  
+Interfaz con barra de navegación inferior que muestra las pestañas principales (Plantas, IoT, Tareas, Perfil) y un área de contenido central que cambia según la pestaña activa.
+
+<a href="https://ibb.co/qMTGy3bs"><img src="https://i.ibb.co/VWfyjcXS/3.png" alt="3" border="0"></a>
+
+- Mis Plantas (Dashboard):  
+Vista en cuadrícula de tarjetas de plantas que muestran imagen, nombre y especie; incluye un botón flotante para añadir una nueva planta.
+
+<a href="https://ibb.co/d4j5Ykp9"><img src="https://i.ibb.co/hFLmz2d5/4.png" alt="4" border="0"></a>
+
+- Detalle de Planta:  
+Pantalla de ficha individual con imagen, especie y un historial de cuidados (p. ej. regada, abonada) presentado como lista de acciones recientes.
+
+<a href="https://ibb.co/GQ8Fvzxf"><img src="https://i.ibb.co/9H1G9Q8m/5.png" alt="5" border="0"></a>
+
+- Añadir Planta:  
+Formulario sencillo para registrar una nueva planta con campos como nombre y especie y un botón "Guardar Planta" para confirmar el registro.
+
+<a href="https://ibb.co/WWq6wJvf"><img src="https://i.ibb.co/0j8cSbyr/6.png" alt="6" border="0"></a>
+
+- Panel IoT:  
+Panel de telemetría con lecturas en vivo (por ejemplo humedad y temperatura) y controles manuales para actuadores (como bomba o lámpara) con toggles.
+
+<a href="https://ibb.co/N6rVQ974"><img src="https://i.ibb.co/nsBgZ7RW/7.png" alt="7" border="0"></a>
+
+- Tareas / Cuidados:  
+Lista de tareas de cuidado con casillas de verificación, título de la tarea y fecha programada, que permite marcar tareas como completadas.
+
+<a href="https://ibb.co/b57tJRNH"><img src="https://i.ibb.co/3mkKzYSf/8.png" alt="8" border="0"></a>
+
+- Perfil:  
+Resumen del usuario con avatar, nombre y plan de suscripción, más accesos a opciones como configuración de notificaciones y gestión de suscripción.
+
+<a href="https://ibb.co/fYPfJm9g"><img src="https://i.ibb.co/hRtb0pc6/9.png" alt="9" border="0"></a>
+
+- Editar Perfil:  
+Formulario para actualizar datos del usuario (nombre, plan de suscripción) y un botón para guardar los cambios.
+
+<a href="https://ibb.co/PG98rmD9"><img src="https://i.ibb.co/whw1d0cw/10.png" alt="10" border="0"></a>
+
+<br><br>
+
+
+
+<h4>Web Applications Wireflow Diagrams</h4>
+
+<br><br>
+
+[Enlace del Lucid parte 1](https://lucid.app/lucidchart/84007aa3-229d-41c7-95be-36ba79ede3d5/edit?viewport_loc=-4889%2C-386%2C12110%2C5687%2C0_0&invitationId=inv_454cb49d-3128-4c42-8ea7-98ae9f14da50)
+[Enlace del Lucid parte 2](https://lucid.app/lucidchart/705f0f0f-e376-4335-b188-bb234cde86a2/edit?viewport_loc=-7424%2C-5702%2C25532%2C11991%2C0_0&invitationId=inv_bc7d108f-b673-49da-9fd9-06710a5600a1)
+
+<br><br>
+
+- **Wireflow 1: Registrar una nueva planta**
+
+**User Goal:** Como usuario principiante, quiero registrar mi nueva planta para empezar a cuidarla con ayuda de la aplicación.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** Este flujo comienza cuando el usuario ingresa a la sección "Mis Plantas" y hace clic en el botón “Agregar Planta”. Se abre un formulario donde debe completar campos como nombre personalizado, especie, fecha de adquisición, subir una foto opcional, y seleccionar si desea recibir recordatorios. Además, puede indicar su nivel de experiencia y activar el monitoreo manual asistido. Una vez completado, pulsa “Añadir” y es redirigido al dashboard con la planta registrada y visible. Este flujo está pensado especialmente para usuarios principiantes que requieren orientación paso a paso.
+
+<p align="center">
+  <img src="Images/wireframes/Wireframes1.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 2: Consultar guía de cuidado**
+
+**User Goal:** Como usuario experto, quiero consultar una guía específica para verificar recomendaciones de cuidado avanzado.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** El flujo inicia desde la sección “Guías”, donde el usuario visualiza un catálogo de recomendaciones. Filtra por categoría o especie y selecciona una guía específica. Al hacer clic en “Ver guía”, accede a una vista con información detallada, pasos visuales, imágenes y consejos según el tipo de planta. Desde ahí, el usuario puede regresar al catálogo o asociar la guía a una planta registrada. Este flujo está enfocado tanto en principiantes como en expertos que buscan información puntual.
+
+<p align="center">
+  <img src="Images/wireframes/Wireframes2.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 3: Ver historial de cuidado**
+
+**User Goal:** Como usuario frecuente, quiero revisar el historial de mi planta para entender cómo ha evolucionado su estado.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** Desde “Mis Plantas”, el usuario selecciona una planta específica y accede a su vista detallada. Allí, hace clic en “Ver Historial”, lo que lo dirige a una pantalla donde puede visualizar los registros de cuidado (riego, fertilización, observaciones) ordenados cronológicamente. También accede a un gráfico de humedad que le permite analizar el estado de la planta a lo largo del tiempo. Este flujo está pensado para usuarios que buscan tomar decisiones basadas en datos.
+
+<p align="center">
+  <img src="Images/wireframes/Wireframes3.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 4: Consultar recomendaciones por clima**
+
+**User Goal:** Como usuario con poco tiempo, quiero saber si hoy debo regar o proteger mis plantas, según el clima actual.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** En el apartado de "Mis Plantas", cuando el usuario desea consultar recomendaciones basadas en el clima, debe hacer clic sobre una de sus plantas previamente registradas. Luego, en la parte inferior izquierda de la pantalla, se mostrará la temperatura actual junto con sugerencias específicas según las condiciones climáticas del día.
+
+<p align="center">
+  <img src="Images/wireframes/Wireframes4.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 5: Configurar mis preferencias y cuenta**
+
+**User Goal:** Como usuario PRO, quiero actualizar mis datos y gestionar mi suscripción.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** Desde el ícono de perfil o el menú lateral, el usuario accede a “Configuración personal”. Aquí puede modificar sus datos (nombre, email), activar o desactivar notificaciones, y gestionar su plan de suscripción. Si decide cambiar de plan, selecciona uno nuevo y confirma. Al guardar los cambios, recibe una notificación y es redirigido a su perfil actualizado. Este flujo aplica tanto a usuarios nuevos como recurrentes.
+
+<p align="center">
+  <img src="Images/wireframes/Wireframes5.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 6: Chatear con el bot**
+
+
+**User Goal:** Como usuario de PlantSync, quiero hacer preguntas rápidas sobre el cuidado o adquisición de mis plantas para obtener respuestas inmediatas sin tener que navegar por todo el sitio.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+
+
+**Flujo:** Este flujo comienza cuando el usuario accede a la opción “Chatbot” desde el menú lateral o directamente desde una tarjeta destacada en el dashboard. Al ingresar, se presenta una interfaz de mensajería con un campo de texto inferior y mensajes de bienvenida del bot. El usuario escribe su consulta, por ejemplo: “¿Cada cuánto debo regar una lavanda?” o “¿Dónde puedo conseguir plantas para interior?”. El bot procesa la pregunta y responde con un mensaje textual y, si corresponde, con enlaces a guías, recomendaciones o catálogos. El usuario puede continuar haciendo más preguntas o cerrar el chat. En caso de ser un usuario PRO o Premium, también podrá acceder a respuestas más detalladas o enlaces externos. Este flujo está pensado para ofrecer una experiencia conversacional ágil que complemente la navegación tradicional, ideal para usuarios que prefieren resolver dudas en tiempo real.
+
+<p align="center">
+  <img src="Images/wireframes/Wireframes6.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+<h4>Movil Applications Wireflow Diagrams</h4>
+
+<br><br>
+[Enlace del Miro](https://miro.com/app/board/uXjVHVl1p8U=/?share_link_id=982143810898)
+<br><br>
+
+- **Wireflow 1: Conectar o desconectar dispositivo IoT**
+
+**User Goal:** Como usuario de la plataforma, quiero vincular o desvincular mi hardware de monitoreo para habilitar el control automatizado y la lectura de sensores de mi planta.
+
+**User Persona:** Usuarios con interés en la automatización y control de hardware para el cuidado de plantas.
+
+**Flujo:** Este flujo inicia en el panel de la planta seleccionada, donde el usuario accede a la sección de configuración de hardware. Al hacer clic en "Conectar Dispositivo", el sistema vincula el equipo y la interfaz transiciona para mostrar el tablero de telemetría. Esto habilita el acceso en tiempo real a las lecturas de los sensores (humedad, temperatura) y a los controles de los actuadores (sistemas de riego). Si el usuario selecciona "Desconectar", el flujo muestra una confirmación y posteriormente inactiva estos controles manuales y automáticos en la interfaz.
+
+<p align="center">
+  <img src="Images/wireframes/Wireframes7.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 2: Ver los cuidados específicos que requiere cada planta**
+
+**User Goal:** Como usuario, quiero consultar los requerimientos técnicos y recomendaciones específicas de mi planta guardada para brindarle el mantenimiento adecuado.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas.
+
+**Flujo:** El recorrido comienza en el catálogo principal "Mis Plantas". El usuario hace clic sobre la tarjeta de una especie particular y es redirigido a la vista de detalle. El sistema extrae de la base de datos y despliega en pantalla la información estructurada sobre la planta, mostrando indicadores visuales y de texto sobre la frecuencia ideal de riego, exposición solar necesaria, tipo de sustrato y humedad recomendada.
+
+<p align="center">
+  <img src="Images/wireframes/Wireframes8.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 3: Ver mi perfil y editar mi información personal**
+
+**User Goal:** Como usuario, quiero acceder a la configuración de mi cuenta para actualizar mis datos personales y credenciales dentro de la plataforma.
+
+**User Persona:** Todo tipo de usuario registrado en la aplicación.
+
+**Flujo:** La secuencia parte desde el menú principal o barra de navegación lateral, donde el usuario selecciona la opción "Mi Perfil". La interfaz muestra primero los datos en modo de solo lectura. Al pulsar el botón "Editar", se habilita un formulario que permite modificar el nombre, correo electrónico y preferencias. El recorrido finaliza cuando el usuario presiona "Guardar Cambios", momento en el que el sistema valida la información, muestra una alerta de éxito y retorna a la vista actualizada del perfil.
+
+<p align="center">
+  <img src="Images/wireframes/Wireframes9.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 4: Registrarse en la plataforma**
+
+**User Goal:** Como nuevo usuario, quiero crear una cuenta en BioPafi para acceder a las herramientas de monitoreo y gestión del cuidado de plantas.
+
+**User Persona:** Personas interesadas en comenzar a utilizar la plataforma por primera vez.
+
+**Flujo:** El proceso abarca desde la landing page o pantalla de inicio de sesión. El usuario selecciona "Registrarse" y es dirigido a un formulario en blanco. Aquí ingresa sus credenciales básicas (nombre, correo electrónico, contraseña y confirmación de contraseña). Tras completar los campos y pulsar "Crear Cuenta", el sistema ejecuta las validaciones de seguridad. Una vez aprobado, el flujo redirige automáticamente al usuario a su nuevo Dashboard principal, completando el onboarding.
+
+<p align="center">
+  <img src="Images/wireframes/Wireframes10.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 5: Registrar una nueva planta**
+
+**User Goal:** Como usuario principiante, quiero registrar mi nueva planta para empezar a cuidarla con ayuda de la aplicación.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas.
+
+**Flujo:** Este flujo comienza cuando el usuario ingresa a la sección "Mis Plantas" y hace clic en el botón “Agregar Planta”. Se abre un formulario donde debe completar campos como nombre personalizado, especie, fecha de adquisición, subir una foto opcional, y seleccionar si desea recibir recordatorios. Además, puede indicar su nivel de experiencia y activar el monitoreo manual asistido. Una vez completado, pulsa “Añadir” y es redirigido al dashboard con la planta registrada y visible. Este flujo está pensado especialmente para usuarios principiantes que requieren orientación paso a paso.
+
+<p align="center">
+  <img src="Images/wireframes/Wireframes11.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 6: Ver los datos y acceso al historial de cuidados**
+
+**User Goal:** Como usuario, quiero revisar la bitácora de eventos y datos pasados de mi planta para realizar un seguimiento continuo de su salud y mantenimiento.
+
+**User Persona:** Usuarios metódicos o aquellos que utilizan hardware IoT para auditoría de cuidados.
+
+**Flujo:** Partiendo de la vista detallada de una planta, el usuario hace clic en la pestaña "Historial". El flujo ilustra cómo la interfaz cambia para desplegar una línea de tiempo cronológica. En esta pantalla, el usuario puede visualizar y filtrar eventos pasados, tales como registros de riego activados por los actuadores, alertas automáticas emitidas por los sensores ambientales y notas o cuidados manuales que el usuario haya registrado previamente.
+
+<p align="center">
+  <img src="Images/wireframes/Wireframes12.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+
+
+### 5.4.2. Applications Mock-ups
+
+Los siguientes prototipos visuales se han desarrollado a partir de los wireframes documentados anteriormente, reflejando con precisión las interfaces y funcionalidades que los usuarios experimentarán al interactuar con la plataforma. Ambas versiones (web y móvil) se encuentran consolidadas en un único proyecto de Figma para facilitar la coherencia visual y la gestión unificada del diseño.
+
+[Enlace del Figma](https://www.figma.com/design/5cSEKvg4XXUzsXTpOPJySb/PlantSync?node-id=44-4&t=txBRNOk6AKu7kNCJ-1)
+
+<br><br>
+
+<h4> Web Platform <h4>
+
+- Mis Plantas
+
+Vista principal del usuario con el listado de todas sus plantas registradas. Desde aquí puede visualizar el estado general de cada planta, acceder a sus detalles, editarla o añadir una nueva.
+
+<p align="center">
+  <img src="Images/mockups/DashBoard_Plantas.png" alt="MisPlantas" width="1000">
+</p>
+
+- Guías:
+
+Catálogo de recomendaciones organizadas por tema (riego, luz, fertilizante, plagas). Permite a los usuarios consultar guías según sus necesidades o tipo de planta.
+
+<p align="center">
+  <img src="Images/mockups/Guias Dashboard MockUp.png" alt="Guías" width="1000">
+</p>
+
+- Tareas:
+
+Sección tipo calendario que muestra los recordatorios programados para cada planta, incluyendo riegos, fertilización u otras tareas. Ayuda al usuario a organizar su rutina de cuidado permitiendole informar que planta ya cuidó o no.
+
+<p align="center">
+  <img src="Images/mockups/Tareas.png" alt="Tareas" width="1000">
+</p>
+
+<p align="center">
+  <img src="Images/mockups/Tareas Recordatorio.png" alt="TareasRecordatorio" width="1000">
+</p>
+
+- Chatbot:
+
+Vista principal del asistente virtual (RootBot), que permite al usuario iniciar una conversación para resolver dudas rápidas sobre el cuidado de plantas.
+
+<p align="center">
+  <img src="Images/mockups/chatbot1.png" alt="ChatBot" width="1000">
+</p>
+
+- Configuración personal
+
+Panel donde el usuario puede actualizar su información personal, configurar notificaciones y gestionar su tipo de suscripción (básico, PRO o premium).
+
+<p align="center">
+  <img src="Images/mockups/profile config.png" alt="Configuraciones" width="1000">
+</p>
+
+<p align="center">
+  <img src="Images/mockups/Eleccion de plan.png" alt="ConfiguracionPLan" width="1000">
+</p>
+
+- Añadir Planta:
+
+Formulario guiado para registrar una nueva planta. Incluye campos como nombre personalizado, especie, fecha de adquisición y opción para activar notificaciones.
+
+<p align="center">
+  <img src="Images/mockups/añadirplanta.png" alt="AddPlanta" width="1000">
+</p>
+
+- Ver Guía:
+
+Pantalla con el contenido detallado de una guía específica, incluyendo instrucciones paso a paso, imágenes ilustrativas y recomendaciones prácticas.
+
+<p align="center">
+  <img src="Images/mockups/guia.png" alt="ViewGuide" width="1000">
+</p>
+
+- Chateando con ChatBot:
+
+Vista activa de la conversación con el bot. El usuario realiza preguntas relacionadas al cuidado o adquisición de plantas y recibe respuestas contextualizadas.
+
+<p align="center">
+  <img src="Images/mockups/chatbot2.png" alt="ChatBotConversation" width="1000">
+</p>
++ Ver Planta:
+
+Pantalla detallada con toda la información de una planta específica, incluyendo foto, especie, historial de cuidado y recomendaciones por clima.
+
+<p align="center">
+  <img src="Images/mockups/perfilplanta.png" alt="VerPlanta" width="1000">
+</p>
+
+- Ver historial de planta:
+
+Registro cronológico de las acciones realizadas sobre una planta (riego, fertilización, cambios de estado), acompañado de gráficas simples de humedad y evolución.
+
+<p align="center">
+  <img src="Images/mockups/historialPlanta.png" alt="Historial" width="1000">
+</p>
+
+<br><br>
+
+<h4> Mobile Application <h4>
+
+A continuación, se presentan los mock-ups diseñados para la aplicación móvil de PlantSync, detallando las interfaces clave con las que interactuará el usuario.
+
+
+- **Iniciar Sesión:**
+Interfaz para que los usuarios ya registrados ingresen a su cuenta utilizando su correo electrónico y contraseña.
+
+<p align="center">
+  <img src="Images/mockups/mobile_login.png" alt="Iniciar Sesión" width="1000">
+</p>
+
+- **Registro de Usuario:**
+Formulario de creación de cuenta donde los nuevos usuarios pueden registrarse ingresando sus datos personales básicos y credenciales.
+
+<p align="center">
+  <img src="Images/mockups/mobile_registro.png" alt="Registro de Usuario" width="1000">
+</p>
+
+- **Mis Plantas (Inicio):**
+Pantalla principal (Dashboard) donde el usuario visualiza su colección de plantas registradas, su estado actual y accesos rápidos a las acciones de cuidado.
+
+<p align="center">
+  <img src="Images/mockups/mobile_mis_plantas.png" alt="Mis Plantas" width="1000">
+</p>
+
+- **Detalles y Cuidados de la Planta:**
+Vista específica de una planta (ej. Monstera Deliciosa) que muestra indicadores vitales detallados como temperatura, humedad, luz requerida y consejos específicos de cuidado.
+
+<p align="center">
+  <img src="Images/mockups/mobile_detalles_planta.png" alt="Detalles de la Planta" width="1000">
+</p>
+
+
+- **Calendario de Tareas y Recordatorios:**
+Vista en formato de agenda donde el usuario puede realizar el seguimiento diario de las actividades pendientes (riego, abono, limpieza) programadas para sus plantas y marcarlas como completadas.
+
+<p align="center">
+  <img src="Images/mockups/mobile_calendario.png" alt="Calendario de Tareas" width="1000">
+</p>
+
+- **Búsqueda y Agregar Planta:**
+Sección que permite al usuario buscar nuevas plantas en la base de datos mediante una barra de búsqueda para añadirlas a su colección personal.
+
+<p align="center">
+  <img src="Images/mockups/mobile_agregar_planta.png" alt="Buscar Planta" width="1000">
+</p>
+
+
+- **Perfil y Ajustes:**
+Pantalla de gestión de la cuenta de usuario donde se pueden modificar datos personales, preferencias de notificaciones, seguridad y soporte de la aplicación.
+
+<p align="center">
+  <img src="Images/mockups/mobile_perfil.png" alt="Perfil y Ajustes" width="1000">
+</p>
+
+
+<br><br>
+
+### 6.4.3. Applications User Flow Diagrams
+
+<h4>Web Platform</h4>
+
+[Enlace para acceder al Overflow](https://overflow.io/s/YN9XV7BV)
+
+- **User Flow Diagram 1: Registrar una nueva planta**
+
+**User Goal:** Como usuario principiante, quiero registrar mi nueva planta para empezar a cuidarla con ayuda de la aplicación.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** Este flujo comienza cuando el usuario ingresa a la sección "Mis Plantas" y hace clic en el botón “Agregar Planta”. Se abre un formulario donde debe completar campos como nombre personalizado, especie, fecha de adquisición, subir una foto opcional, y seleccionar si desea recibir recordatorios. Además, puede indicar su nivel de experiencia y activar el monitoreo manual asistido. Una vez completado, pulsa “Añadir” y es redirigido al dashboard con la planta registrada y visible. Este flujo está pensado especialmente para usuarios principiantes que requieren orientación paso a paso.
+
+<p align="center">
+  <img src="Images/mockups/addplant.png" alt="User Flow Diagram 1" width="1000">
+</p>
+
+<br><br>
+
+- **User Flow Diagram 2: Consultar guía de cuidado**
+
+**User Goal:** Como usuario experto, quiero consultar una guía específica para verificar recomendaciones de cuidado avanzado.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** El flujo inicia desde la sección “Guías”, donde el usuario visualiza un catálogo de recomendaciones. Filtra por categoría o especie y selecciona una guía específica. Al hacer clic en “Ver guía”, accede a una vista con información detallada, pasos visuales, imágenes y consejos según el tipo de planta. Desde ahí, el usuario puede regresar al catálogo o asociar la guía a una planta registrada. Este flujo está enfocado tanto en principiantes como en expertos que buscan información puntual.
+
+<p align="center">
+  <img src="Images/mockups/consultarguias.png" alt="User Flow Diagram 2" width="1000">
+</p>
+
+<br><br>
+
+- **User Flow Diagram 3: Ver historial de cuidado**
+
+**User Goal:** Como usuario frecuente, quiero revisar el historial de mi planta para entender cómo ha evolucionado su estado.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** Desde “Mis Plantas”, el usuario selecciona una planta específica y accede a su vista detallada. Allí, hace clic en “Ver Historial”, lo que lo dirige a una pantalla donde puede visualizar los registros de cuidado (riego, fertilización, observaciones) ordenados cronológicamente. También accede a un gráfico de humedad que le permite analizar el estado de la planta a lo largo del tiempo. Este flujo está pensado para usuarios que buscan tomar decisiones basadas en datos.
+
+<p align="center">
+  <img src="Images/mockups/verhistorial.png" alt="User Flow Diagram 3" width="1000">
+</p>
+
+<br><br>
+
+- **User Flow Diagram 4: Consultar recomendaciones por clima**
+
+**User Goal:** Como usuario con poco tiempo, quiero saber si hoy debo regar o proteger mis plantas, según el clima actual.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** En el apartado de "Mis Plantas", cuando el usuario desea consultar recomendaciones basadas en el clima, debe hacer clic sobre una de sus plantas previamente registradas. Luego, en la parte inferior izquierda de la pantalla, se mostrará la temperatura actual junto con sugerencias específicas según las condiciones climáticas del día.
+
+<p align="center">
+  <img src="Images/mockups/consultarclima.png" alt="User Flow Diagram 4" width="1000">
+</p>
+
+<br><br>
+
+- **User Flow Diagram 5: Configurar mis preferencias y cuenta**
+
+**User Goal:** Como usuario PRO, quiero actualizar mis datos y gestionar mi suscripción.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** Desde el ícono de perfil o el menú lateral, el usuario accede a “Configuración personal”. Aquí puede modificar sus datos (nombre, email), activar o desactivar notificaciones, y gestionar su plan de suscripción. Si decide cambiar de plan, selecciona uno nuevo y confirma. Al guardar los cambios, recibe una notificación y es redirigido a su perfil actualizado. Este flujo aplica tanto a usuarios nuevos como recurrentes.
+
+<p align="center">
+  <img src="Images/mockups/cambiarconfig.png" alt="User Flow Diagram 5" width="1000">
+</p>
+
+<br><br>
+
+- **User Flow Diagram 6: Chatear con el bot**
+
+**User Goal:** Como usuario de PlantSync, quiero hacer preguntas rápidas sobre el cuidado o adquisición de mis plantas para obtener respuestas inmediatas sin tener que navegar por todo el sitio.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** Este flujo comienza cuando el usuario accede a la opción “Chatbot” desde el menú lateral o directamente desde una tarjeta destacada en el dashboard. Al ingresar, se presenta una interfaz de mensajería con un campo de texto inferior y mensajes de bienvenida del bot. El usuario escribe su consulta, por ejemplo: “¿Cada cuánto debo regar una lavanda?” o “¿Dónde puedo conseguir plantas para interior?”. El bot procesa la pregunta y responde con un mensaje textual y, si corresponde, con enlaces a guías, recomendaciones o catálogos. El usuario puede continuar haciendo más preguntas o cerrar el chat. En caso de ser un usuario PRO o Premium, también podrá acceder a respuestas más detalladas o enlaces externos. Este flujo está pensado para ofrecer una experiencia conversacional ágil que complemente la navegación tradicional, ideal para usuarios que prefieren resolver dudas en tiempo real.
+
+<p align="center">
+  <img src="Images/mockups/consultarchatbot.png" alt="User Flow Diagram 6" width="1000">
+</p>
+
+
+<br><br>
+
+<h4>Mobile Application</h4>
+
+[Enlace para acceder al Miro](https://miro.com/welcomeonboard/SjZhVmJpdE1MS09ocG83UnRZaUZCTFB5SHVDY2R3K0pjNjBHNUwzdGZFRUluZDFYV3hMcnRZODBNYkp5YVNMcTFPenNBdEk2M0lqMnZMYkpQTnVENlM2b2hLVHdjMUxrN0VLN3lVWFpacjNON2dMdGNYbFJ2MC8vMkRWejd5M0pzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=787034318997)
+
+---
+
+- **User Flow Diagram 1: Registrar una Nueva Planta**
+
+**User Goal:** Como usuario principiante, quiero registrar mi nueva planta para empezar a cuidarla con ayuda de la aplicación.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** Este flujo comienza cuando el usuario toca el botón flotante "+" en la esquina inferior derecha de la sección "Mis Plantas". Se abre un formulario secuencial optimizado para mobile donde ingresa el nombre personalizado de la planta, selecciona la especie de un dropdown, ingresa la fecha de adquisición en formato dd/mm/yyyy, activa o desactiva notificaciones con un toggle, y completa un campo URL para la foto de la planta. El usuario revisa los datos con un deslizamiento vertical y toca el botón verde "Añadir" para confirmar. Inmediatamente es redirigido a la pantalla "Mis Plantas" donde la nueva planta aparece en el grid de tarjetas con su imagen y nombre. Este flujo está optimizado para entrada rápida de datos en pantalla táctil.
+
+<p align="center">
+  <img src="Images/mockups/mobile/addplant.png" alt="User Flow Diagram 1 - Mobile" width="600">
+</p>
+
+---
+
+- **User Flow Diagram 2: Ver Detalle de Planta**
+
+**User Goal:** Como usuario, quiero ver la información completa de mi planta incluyendo especie, cuidados y opciones de notificaciones.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** Desde la pantalla "Mis Plantas", el usuario toca una tarjeta de planta específica. Se abre la vista detallada de esa planta mostrando una imagen grande en la parte superior, el nombre de la planta (ej: "Mi Monstera"), la especie científica (ej: "Monstera Deliciosa"), y un ícono de notificaciones activas. Debajo aparece la sección "Sobre esta planta" con descripción general y características. En la sección "Cuidados" se muestran requisitos específicos como luz indirecta, riego cada 1-2 semanas, temperatura de 18-25°C, y humedad alta. Al final hay dos botones: "Notificaciones" (verde) para configurar alertas y "Conectar IoT" (naranja) para vincular un sensor. El usuario puede deslizar hacia atrás para regresar al listado de plantas. Este flujo proporciona información contextual rápida sobre cada planta.
+
+<p align="center">
+  <img src="Images/mockups/mobile/plant_detail.png" alt="User Flow Diagram 2 - Mobile" width="600">
+</p>
+
+---
+
+- **User Flow Diagram 3: Consultar Tareas y Notificaciones**
+
+**User Goal:** Como usuario, quiero ver todas mis tareas pendientes de cuidado organizadas por prioridad.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** El usuario toca la pestaña "Tareas" en el menú inferior de la app. Se abre una lista vertical de tarjetas de tareas pendientes, cada una mostrando un icono descriptivo (gota para riego, sol para luz, hoja para fertilización), el tipo de tarea, la planta afectada, cuándo debe realizarse, y un checkbox a la derecha. Las tarjetas tienen fondo oscuro (gris oscuro) con texto claro. En la parte superior derecha aparece un ícono con el número "17" indicando el total de tareas pendientes. El usuario puede deslizar el listado verticalmente para ver todas las tareas, o tocar una tarjeta para ver detalles y confirmar la tarea. Este flujo centraliza todas las acciones de cuidado que el usuario debe realizar en sus plantas.
+
+<p align="center">
+  <img src="Images/mockups/mobile/tasks_list.png" alt="User Flow Diagram 3 - Mobile" width="600">
+</p>
+
+---
+
+- **User Flow Diagram 4: Conectar Dispositivo IoT**
+
+**User Goal:** Como usuario avanzado, quiero conectar un sensor IoT a mi planta para monitoreo automático.
+
+**User Persona:** Personas con experiencia en el cuidado de plantas y tecnología
+
+**Flujo:** Desde la vista detallada de una planta, el usuario toca el botón naranja "Conectar IoT". Se abre un modal que pregunta "¿Deseas conectar este dispositivo?" mostrando el tipo de dispositivo disponible: "Arduino Sensor Node". El usuario toca el toggle azul para confirmar la conexión. Una vez activado, el botón cambia de estado (toggle en posición ON) indicando que el dispositivo está siendo vinculado. El sistema comunica la conexión exitosa y el usuario cierra el modal regresando a la vista de detalle de la planta. Este flujo habilita funcionalidades avanzadas de monitoreo con IoT para usuarios tecnológicos.
+
+<p align="center">
+  <img src="Images/mockups/mobile/iot_connection.png" alt="User Flow Diagram 4 - Mobile" width="600">
+</p>
+
+---
+
+- **User Flow Diagram 5: Ver Panel IoT y Telemetría en Vivo**
+
+**User Goal:** Como usuario con sensor IoT, quiero ver datos en tiempo real de humedad, temperatura y luz de mi planta.
+
+**User Persona:** Personas con experiencia en tecnología e interesadas en datos precisos
+
+**Flujo:** Después de conectar un dispositivo IoT, el usuario toca el botón "Manejo IoT" (azul) en la vista de la planta. Se abre la pantalla "Panel IoT" con el título "Telemetría en Vivo" mostrando un listado de medidas en tiempo real: Humedad del Suelo (65.5%), Temperatura del Aire (24.3°C), Intensidad de Luz (450 lux), Radiación UVB (3.50 mW/cm²). Debajo aparece una sección "Nutrientes NPK" con valores de Nitrógeno (N), Fósforo (P) y Potasio (K). Al final hay una sección "Control Manual (Actuadores)" con toggles para activar/desactivar Bomba de Agua y Lámpara UV. El usuario puede deslizar verticalmente para ver todos los datos, o deslizar hacia atrás para regresar a la vista anterior. Este flujo proporciona monitoreo detallado para usuarios avanzados.
+
+<p align="center">
+  <img src="Images/mockups/mobile/iot_telemetry.png" alt="User Flow Diagram 5 - Mobile" width="600">
+</p>
+
+---
+
+- **User Flow Diagram 6: Gestionar Tareas de Cuidado**
+
+**User Goal:** Como usuario responsable, quiero visualizar y gestionar todas mis tareas de cuidado pendientes de forma centralizada.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** El usuario accede a la pestaña "Tareas" donde visualiza un listado completo de tarjetas de tareas agrupadas cronológicamente. Cada tarjeta muestra un icono de tarea (gota azul para riego, sol naranja para luz, hoja verde para fertilización), una descripción clara (ej: "Regada exitosamente - Hace 2 días-Mi Monstera"), el tiempo transcurrido desde que se generó la tarea, y un checkbox circular a la derecha sin marcar. Las tarjetas tienen fondo gris oscuro con texto blanco. El encabezado muestra "Cuidados" con un ícono de número "17" indicando la cantidad total de tareas. El usuario puede deslizar hacia abajo para ver más tareas, o tocar una tarjeta para abrirla y realizar la acción. Este flujo proporciona una vista unificada de todas las responsabilidades de cuidado.
+
+<p align="center">
+  <img src="Images/mockups/mobile/tasks_management.png" alt="User Flow Diagram 6 - Mobile" width="600">
+</p>
+
+---
+
+- **User Flow Diagram 7: Completar y Confirmar Tareas**
+
+**User Goal:** Como usuario, quiero marcar mis tareas como completadas para registrar que realicé el cuidado.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** Desde el listado de tareas, el usuario toca una tarjeta de tarea (ej: "Regada exitosamente"). Se abre un modal de confirmación preguntando "¿Completaste exitosamente regada en Mi Monstera?" con dos opciones: "Cancelar" y "Aceptar" (con toggle azul activado). El usuario toca "Aceptar" para confirmar que completó la acción. El sistema registra la tarea como completada, el modal se cierra, y el checkbox en la tarjeta se marca (pasa de vacío a marcado). Opcionalmente, la tarjeta puede cambiar a un estado visual diferente (atenuado o con check verde) indicando finalización. El usuario es automáticamente devuelto al listado de tareas donde puede confirmar otras acciones pendientes. Este flujo asegura un registro preciso de acciones completadas.
+
+<p align="center">
+  <img src="Images/mockups/mobile/task_confirmation.png" alt="User Flow Diagram 7 - Mobile" width="600">
+</p>
+
+---
+
+- **User Flow Diagram 8: Editar Perfil y Preferencias**
+
+**User Goal:** Como usuario PRO, quiero actualizar mis datos personales y gestionar mi suscripción.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** El usuario toca el ícono de perfil (usuario) en la pestaña "Perfil" del menú inferior. Se abre la pantalla "Mi Perfil" mostrando un avatar circular en la parte superior, una sección "Información de Perfil" con Nombre Completo (ej: "David Perez Garcia") y Email (ej: "david.perez@example.com"), un botón morado "Editar Perfil" y una sección "Plan de Suscripción" mostrando el plan actual (ej: "Plan Actual: BASIC") con un icono de carrito. Al tocar "Editar Perfil", se abre una pantalla con campos editables para Nombres, Apellidos y Correo. El usuario modifica los datos, toca el botón "Guardar Cambios" (verde) y regresa a la pantalla de perfil con los datos actualizados. Este flujo permite personalización y gestión de cuenta en mobile.
+
+<p align="center">
+  <img src="Images/mockups/mobile/edit_profile.png" alt="User Flow Diagram 8 - Mobile" width="600">
+</p>
+
+---
+
+<br><br>
+
+## 6.5. Applications Prototyping
+
+Esta sección presenta el prototipo de la aplicación web orientada al cuidado de plantas mediante el uso de tecnología IoT, permitiendo al usuario monitorear y gestionar sus dispositivos desde un entorno más amplio y detallado. Las decisiones de interacción se basan en una arquitectura de información estructurada con un menú lateral persistente que facilita el acceso a módulos como plantas, guías, tareas, chatbot y configuración, así como al control IoT básico (el control total se tiene en la aplicación móvil). La navegación sigue un enfoque jerárquico y consistente con los User Flow Diagrams, permitiendo al usuario desplazarse entre vistas como el registro de plantas, visualización de detalles, historial de datos y control de dispositivos IoT. Asimismo, se integran interacciones como formularios, modales de confirmación y paneles de información que optimizan la gestión de acciones. Los flujos principales contemplan la consulta de información, la automatización de cuidados, la exploración de guías y la asistencia mediante el chatbot, garantizando una experiencia fluida, organizada y alineada con las necesidades del usuario en un entorno de escritorio. Todo esto está conectado con la landing page, a través del botón "Call to Action" que se tiene en el landing.
+
+link del prototipo de la aplicación web: [prototipo web](https://www.figma.com/proto/5cSEKvg4XXUzsXTpOPJySb/PlantSync?node-id=185-4&p=f&t=YaSL2qy6CTbiqSX6-1&scaling=scale-down&content-scaling=fixed&page-id=44%3A4&starting-point-node-id=185%3A4&show-proto-sidebar=1)
+
+<a href="https://ibb.co/G3Gp6k6G"><img src="https://i.ibb.co/prNw7Z7N/prototype-web.png" alt="prototype-web" border="0"></a>
+
+
+
+
+Esta sección presenta el prototipo de la aplicación móvil orientada al cuidado de plantas mediante el uso de tecnología IoT, integrando sensores y actuadores para optimizar su mantenimiento. Las decisiones de interacción se basan en una arquitectura de información clara, donde la navegación principal se organiza mediante una barra inferior que permite acceder rápidamente a las vistas de plantas, tareas y perfil. A partir de la pantalla principal, el usuario puede visualizar sus plantas registradas y acceder al detalle de cada una, donde se muestran datos relevantes y opciones para monitoreo y control. Los flujos de interacción contemplan acciones como agregar nuevas plantas, vincular dispositivos IoT, revisar condiciones ambientales y ejecutar tareas automatizadas o manuales. La navegación sigue un enfoque intuitivo y jerárquico, alineado con los User Flow Diagrams, permitiendo transiciones fluidas entre pantallas y asegurando que el usuario pueda gestionar el cuidado de sus plantas de manera eficiente y centralizada.
+
+link del prototipo de la aplicación móvil: [prototipo móvil](https://www.figma.com/proto/5cSEKvg4XXUzsXTpOPJySb/PlantSync?node-id=2088-401&p=f&t=abAPWSt2DZDGdUK0-1&scaling=scale-down&content-scaling=fixed&page-id=44%3A4&starting-point-node-id=2088%3A401&show-proto-sidebar=1)
+
+<a href="https://ibb.co/ddVhZnw"><img src="https://i.ibb.co/8WfhkFL/prototype.png" alt="prototype" border="0"></a>
+
+
+## 6.6. IoT Device Design
+
+Esta sección detalla la propuesta de diseño físico y el modelado de los circuitos electrónicos de los dispositivos IoT que conforman la solución de monitoreo botánico. El ecosistema físico actúa como el puente principal (Edge) entre el entorno biológico de la planta y la plataforma digital.
+
+### 6.6.1. Criterios de Diseño Físico e Introducción
+
+El diseño físico del dispositivo IoT se rige bajo los principios de diseño no intrusivo, resistencia ambiental y modularidad. Al tratarse de un hardware que convivirá en entornos húmedos (macetas, jardines de interior), los principales criterios de decisión para el diseño de la carcasa (enclosure) y la disposición de componentes son:
+
+1. **Aislamiento y Protección (IP Rating):** El microcontrolador, los módulos de relé y los componentes electrónicos deben estar protegidos frente a humedad, polvo y posibles salpicaduras. Esto permite reducir riesgos de cortocircuito y garantizar una mayor durabilidad del dispositivo físico.
+2. **Disposición Estratégica de Sensores:** En el prototipo Wokwi se emplean sensores ambientales como DHT22, LDR y sensor de gas, los cuales permiten representar variables clave del entorno de la planta, como temperatura, humedad, iluminación y calidad del aire. Para una futura implementación física, estos sensores deberán ubicarse en zonas expuestas al ambiente, evitando obstrucciones que alteren las lecturas.
+3. **Mantenibilidad:** El diseño modular debe permitir al usuario final reemplazar fácilmente componentes específicos, como sensores, actuadores o módulos de visualización, sin necesidad de desarmar completamente el núcleo del dispositivo.
+4. **Escalabilidad hacia hardware físico real:** El prototipo simulado permite validar la lógica de monitoreo y actuación. En futuras iteraciones, esta base podrá complementarse con sensores físicos especializados, como humedad de suelo o sensores de luz de mayor precisión, manteniendo la arquitectura funcional validada en Wokwi.
+
+### 6.6.2. Relación con la Arquitectura de Información y Guía de Estilos
+El diseño físico refleja estrictamente las decisiones tomadas en la Arquitectura de Información (IA) y la Guía de Estilos para IoT Device Physical Interfaces.
+
++ **Feedback Visual (Physical UI):** La arquitectura de información de la aplicación móvil clasifica las alertas y acciones según variables como humedad, temperatura, iluminación y estado de actuadores. En el prototipo Wokwi, esta retroalimentación se representa mediante dos pantallas LCD 16x2: una dedicada a mostrar métricas ambientales y otra orientada a mostrar el estado de los actuadores.
++ **Interacción Física Complementaria:** Además de la interacción desde la plataforma digital, el prototipo incorpora botones físicos que permiten modificar manualmente el comportamiento de los actuadores. Esta decisión representa una extensión física de los controles digitales propuestos en la aplicación móvil.
++ **Estética Biofílica:** Para una implementación física final, la carcasa del dispositivo deberá adoptar tonos tierra, acabados mate y una estructura compacta que permita integrarse visualmente con el entorno de la maceta, minimizando el impacto visual tecnológico y manteniendo coherencia con la interfaz limpia y natural de las aplicaciones web y móvil.
+
+### 6.6.3. Diseño de Circuito (Hardware Architecture)
+
+El prototipo funcional desarrollado en Wokwi está centralizado en un **ESP32 DevKit V1**, el cual actúa como unidad de procesamiento en el Edge. Esta placa permite integrar conectividad WiFi, lectura de sensores, control de actuadores y comunicación básica con el backend mediante peticiones HTTP.
+
+1. **Unidad de Control Central:**
+   + **ESP32 DevKit V1:** Placa base encargada de la lectura cíclica de sensores, ejecución de reglas lógicas locales, control de actuadores, conexión WiFi y comunicación inicial con el backend de PlantSync.
+
+2. **Integración de Sensores (Inputs):**
+   + **Sensor DHT22:** Conectado al pin D4. Permite medir temperatura y humedad ambiental, variables utilizadas para evaluar el estado general del entorno de la planta.
+   + **Sensor LDR / Fotoresistor:** Conectado al pin D32. Permite estimar el nivel de iluminación del ambiente en un rango porcentual, funcionando como base para el control de la luz artificial simulada.
+   + **Sensor de Gas Analógico:** Conectado al pin D34. Permite representar una medición aproximada de calidad del aire o concentración de gases en el entorno. Esta variable se utiliza para activar alertas cuando supera un umbral definido.
+
+3. **Integración de Actuadores (Outputs):**
+   + **Relé con LED indicador:** Conectado al pin D5. El relé controla un LED rojo que representa la activación de una lámpara o fuente de iluminación artificial. En una implementación física, este componente puede ser reemplazado por una lámpara real controlada mediante relé.
+   + **Servo motor:** Conectado al pin D18. Representa el mecanismo de apertura o cierre de una válvula de riego. En el prototipo Wokwi se emplea como simulación del actuador de riego, sin utilizar una bomba de agua real.
+   + **Buzzer:** Conectado al pin D19. Funciona como alarma sonora ante condiciones ambientales críticas, como baja temperatura o mala calidad del aire.
+
+4. **Componentes de Visualización e Interacción:**
+   + **LCD 16x2 de sensores:** Conectado mediante I2C con dirección 0x27. Muestra temperatura, humedad, luz y calidad del aire.
+   + **LCD 16x2 de actuadores:** Conectado mediante I2C con dirección 0x28. Muestra el estado del buzzer, servo y luz.
+   + **Botones físicos:** Conectados a los pines D25, D26 y D27. Permiten cambiar manualmente el estado o modo de funcionamiento del buzzer, servo y luz.
+
+5. **Conectividad:**
+   + El prototipo se conecta a la red WiFi virtual de Wokwi y realiza una autenticación HTTP contra el backend de PlantSync. Esta comunicación permite validar la integración inicial entre el dispositivo IoT y la plataforma digital. En esta versión, las métricas se visualizan localmente mediante LCD y monitor serial; el envío persistente de telemetría al backend queda como mejora para futuras iteraciones.
+
+### 6.6.4. Flujos de Interacción del Prototipo
+
+A nivel físico y sistémico, el dispositivo ejecuta flujos de interacción automatizados y manuales basados en eventos generados por sensores, botones y reglas locales.
+
++ **Flujo 1: Inicialización y conexión del dispositivo**
+
+  **1.** El ESP32 inicia el sistema y establece comunicación serial.
+
+  **2.** El dispositivo se conecta a la red WiFi virtual de Wokwi.
+
+  **3.** Se realiza una petición HTTP de autenticación hacia el backend de PlantSync.
+
+  **4.** Si la autenticación es exitosa, el dispositivo obtiene un token de acceso y consulta el perfil asociado al usuario.
+
+  **5.** Finalmente, se inicializa el sistema local de monitoreo y se activan las pantallas LCD.
+
++ **Flujo 2: Monitoreo ambiental local**
+
+  **1.** El sensor DHT22 captura la temperatura y humedad ambiental.
+
+  **2.** El sensor LDR mide el nivel de iluminación del entorno.
+
+  **3.** El sensor de gas registra una lectura analógica relacionada con la calidad del aire.
+
+  **4.** El ESP32 procesa los valores obtenidos y los transforma en métricas comprensibles para el usuario.
+
+  **5.** Las métricas se muestran en la pantalla LCD de sensores y también se imprimen en el monitor serial para fines de depuración.
+
++ **Flujo 3: Control automático del riego simulado**
+
+  **1.** El sistema evalúa la humedad ambiental obtenida por el sensor DHT22.
+
+  **2.** Si el modo del servo se encuentra en automático y la humedad cae por debajo del umbral configurado, el servo se mueve hacia su posición de activación.
+
+  **3.** Esta acción representa la apertura de una válvula o mecanismo de riego.
+
+  **4.** Cuando la humedad vuelve a un rango adecuado, el servo retorna a su posición inicial.
+
+  **5.** El usuario también puede modificar manualmente el modo del servo mediante el botón físico correspondiente.
+
++ **Flujo 4: Regulación de luz simulada**
+
+  **1.** El sensor LDR mide el nivel de iluminación del entorno.
+
+  **2.** El ESP32 compara la lectura obtenida con el umbral definido en la lógica local.
+
+  **3.** Según el modo configurado, el relé activa o desactiva el LED que representa la lámpara de apoyo lumínico.
+
+  **4.** El usuario puede modificar manualmente el modo de funcionamiento de la luz mediante el botón físico correspondiente.
+
+  **5.** El estado de la luz se muestra en la pantalla LCD de actuadores.
+
++ **Flujo 5: Alerta por temperatura o calidad de aire**
+
+  **1.** El sistema evalúa la temperatura ambiental y el porcentaje de gas detectado.
+
+  **2.** Si la temperatura es demasiado baja o la calidad del aire supera el umbral establecido, el buzzer se activa.
+
+  **3.** Cuando las condiciones vuelven a un estado aceptable, el buzzer se apaga automáticamente.
+
+  **4.** El usuario puede habilitar o deshabilitar el buzzer mediante el botón físico asignado.
+
++ **Flujo 6: Control manual mediante botones**
+
+  **1.** El primer botón permite alternar el estado del buzzer.
+
+  **2.** El segundo botón cambia el modo del servo entre encendido, apagado y automático.
+
+  **3.** El tercer botón cambia el modo de la luz entre encendido, apagado y automático.
+
+  **4.** Cada cambio actualiza inmediatamente el comportamiento del sistema y se refleja en las pantallas LCD.
+
+
 
 # Conclusiones
 A lo largo del desarrollo del documento, se evidenció que el proyecto plantea una solución con un propósito claro y con potencial de impacto real en el cuidado de plantas y la sostenibilidad ambiental. La propuesta no se limita a una herramienta de seguimiento básico, sino que integra diferentes dimensiones del problema, como la gestión de información de las plantas, la interpretación de condiciones ambientales y la generación de apoyo inteligente para la toma de decisiones. Este enfoque permite visualizar un sistema con valor académico y práctico, orientado a mejorar la experiencia del usuario y optimizar el cuidado de las especies.
