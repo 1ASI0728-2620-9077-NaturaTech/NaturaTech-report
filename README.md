@@ -1019,8 +1019,7 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202219481_upc_edu_pe/IQB9oQbZ
   <tbody>
     <tr>
       <td>Entrevista 6</td>
-      <td><img src="Images/interviews/entrevista_6.png
-      " alt="interview 6" width="400"/></td>
+      <td><img src="Images/interviews/entrevista_6.png" alt="interview 6" width="400"/></td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
