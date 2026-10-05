@@ -240,12 +240,6 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
     - [5.7.6. Bounded Context Software Architecture Code Level Diagrams](#576-bounded-context-software-architecture-code-level-diagrams)
       - [5.7.6.1. Bounded Context Domain Layer Class Diagrams](#5761-bounded-context-domain-layer-class-diagrams)
       - [5.7.6.2. Bounded Context Database Design Diagram](#5762-bounded-context-database-design-diagram)
-  - [5.8. Bounded Context: EcoRewards y Web3](#58-bounded-context-ecorewards-y-web3)
-    - [5.8.1. Domain Layer](#581-domain-layer)
-    - [5.8.2. Interface Layer](#582-interface-layer)
-    - [5.8.3. Application Layer](#583-application-layer)
-    - [5.8.4. Infrastructure Layer](#584-infrastructure-layer)
-    - [5.8.5. Flujo de elegibilidad y emisión](#585-flujo-de-elegibilidad-y-emisión)
 
   - [5.8. Bounded Context: EcoRewards y Web3](#58-bounded-context-ecorewards-y-web3)
     - [5.8.1. Domain Layer](#581-domain-layer)
@@ -2587,7 +2581,7 @@ Este diagrama ilustra la infraestructura y el entorno de ejecución de la soluci
 
 # Capítulo V: Tactical-Level Domain-Driven Design
 
-Este capítulo presenta el diseño táctico objetivo de PlantSync para TP1. La base reutilizada incluye aplicaciones Vue y Flutter, Backend API Java/Spring Boot con MySQL, Edge Python/Flask con SQLite y firmware ESP32 en C++. Las extensiones de diagnóstico visual, agente de IA y recompensas Web3 son propuestas de integración; su presencia en este diseño no constituye evidencia de implementación, despliegue o validación.
+Este capítulo presenta el diseño táctico objetivo de PlantSync. La base reutilizada incluye aplicaciones Vue y Flutter, Backend API Java/Spring Boot con MySQL, Edge Python/Flask con SQLite y firmware ESP32 en C++. Las extensiones de diagnóstico visual, agente de IA y recompensas Web3 son propuestas de integración; su presencia en este diseño no constituye evidencia de implementación, despliegue o validación.
 
 Los ocho bounded contexts son módulos con propiedad lógica de sus modelos y tablas dentro del mismo Backend API. La separación de comandos y consultas es lógica y comparte persistencia; no se proponen ocho microservicios. Los clientes usan REST/JSON sobre HTTPS. Entre módulos se utilizan fachadas de aplicación y eventos internos publicados después de confirmar la persistencia; no se requiere RabbitMQ, Kafka ni Redis para este alcance. Edge sincroniza por HTTP/HTTPS y conserva las reglas locales necesarias para operar cuando la nube no está disponible.
 
@@ -4422,15 +4416,9 @@ Representa una acción que el agente propone ejecutar en un dispositivo asociado
 | Método                           | Descripción                                                        |
 |---------------------------------|--------------------------------------------------------------------|
 | handle(ProcessPlantConsultationCommand)     | Orquesta la obtención de datos de la planta, genera el prompt para la IA y registra la respuesta.            |
-<<<<<<< HEAD
 | handle(ClearPlantConsultationsCommand) | Elimina contenido conversacional del usuario; conserva auditoría de acciones según la retención definida. |
 | handle(ProcessPlantActionCommand) | Obtiene contexto autorizado, solicita una intención tipada y valida catálogo y parámetros. |
 | handle(ConfirmPlantActionCommand) | Revalida propiedad, dispositivo y límites antes de autorizar y delegar a IoT. |
-=======
-| handle(ClearPlantConsultationsCommand)     | Elimina el historial de consultas de una planta. |
-| handle(ProcessPlantActionCommand) | Obtiene contexto autorizado de planta y dispositivo, solicita al LLM una intención estructurada y permite únicamente acciones incluidas en el catálogo de comandos. |
-| handle(ConfirmPlantActionCommand) | Registra la confirmación del usuario cuando la política requiere aprobación y solicita el envío de la acción validada. |
->>>>>>> f9541d2337eecfefe13c9742eb3072b3ad02dcc8
 
 
 `PlantActionRequest` también conserva `consultationId: Long?`, `parameters: ActionParameters`, `commandId: UUID?`, `expiresAt: Instant`, `updatedAt: Instant` y `failureReason: String?`. Su UUID correlaciona la solicitud con el comando IoT y permite idempotencia. `ActionParameters` limita posición del servo y duración de luz/buzzer. Los métodos públicos `markSent(commandId)`, `fail(reason)` y `expire()` impiden transiciones inválidas; `PlantActionStatus` incluye EXPIRED. Se publican eventos `PlantActionAuthorized` y `PlantActionCompleted` después del commit.
@@ -4545,27 +4533,7 @@ Esta capa maneja la integración técnica con el modelo de lenguaje y la persist
 |---|---|
 | Descripción | Implementación de persistencia del historial de propuestas, confirmaciones y resultados de acciones para auditoría e idempotencia. |
 
-<<<<<<< HEAD
 `GeminiAiServiceAdapter` es la implementación seleccionada de `IAiService` y del rol descrito como `AiServiceAdapter`. Usa salida estructurada/llamadas a herramientas para obtener propuestas, sin ejecutar herramientas dentro del cliente del modelo. Timeouts, cuota agotada o salida inválida producen un fallo controlado sin emitir comandos. `ConsultationRepositoryImpl` y `PlantActionRepositoryImpl` persisten en MySQL; `PlantActionGatewayAdapter` implementa el puerto `IPlantActionGateway` mediante la fachada de IoT dentro del backend.
-=======
-**Clase: `AiServiceAdapter`**
-
-| Título | AiServiceAdapter |
-|---|---|
-| Descripción | Adaptador que integra un LLM externo (por ejemplo, Claude o GPT) y convierte sus respuestas de uso de herramientas/function calling en una intención tipada del dominio. La aplicación valida la intención y nunca ejecuta directamente una respuesta libre del modelo. |
-
-**Clase: `PlantActionGatewayAdapter`**
-
-| Título | PlantActionGatewayAdapter |
-|---|---|
-| Descripción | Adaptador ACL que comunica una acción ya autorizada al contexto IoT Management, que conserva la responsabilidad de emitir el comando MQTT y gestionar sus acuses de recibo. |
-
-**Clase: `PlantActionRepositoryImpl`**
-
-| Título | PlantActionRepositoryImpl |
-|---|---|
-| Descripción | Implementación de persistencia del historial de propuestas, confirmaciones y resultados de acciones para auditoría e idempotencia. |
->>>>>>> f9541d2337eecfefe13c9742eb3072b3ad02dcc8
 
 #### 5.7.5. Bounded Context Software Architecture Component Level Diagrams
 
