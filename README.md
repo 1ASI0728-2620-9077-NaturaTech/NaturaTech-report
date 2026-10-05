@@ -109,11 +109,11 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
   Este insight muestra la distribución de los commits realizados por cada integrante del equipo durante el sprint. La evidencia permite visualizar el nivel de participación de los colaboradores y demuestra el uso de control de versiones, así como el trabajo colaborativo y continuo en el desarrollo del proyecto.
 
 <p align="center">
-  <img src="Images/insigths/insight4.png" alt="insights1" width="500">
+  <img src="Images/insights/insight1.png" alt="insights1" width="500">
 </p>
 
 <p align="center">
-  <img src="Images/insigths/insight5.png" alt="insights1" width="600">
+  <img src="Images/insights/insight2.png" alt="insights1" width="600">
 </p>
 
 <div style="break-after: page;"></div>
@@ -386,9 +386,6 @@ Promovemos la ecología como prioridad, la innovación tecnológica como motor d
 | - |  -  | - | ![Foto segundo](../report/assets/foto-segundo.png)|
 | Rodrigo Alaya Cabrera |  U202219481  | Soy una persona responsable, comprometida con mis objetivos y con gran disposición para aprender continuamente. Me adapto con facilidad al trabajo en equipo, aportando ideas y soluciones. Valoro mucho la eficiencia, la ética profesional y la mejora constante. Me esfuerzo por entregar siempre resultados de calidad, gestionando mis tareas con orden y enfoque. |  ![Foto Alaya](Images/members/fotoAlaya.JPG)  |
 | Carlos Andrés Coca Lavado  | U202313172  | Mi Nombre es Carlos Andrés Coca, tengo 20 años, actualmente me encuentro cursando el octavo ciclo de la carrera de Ingeniería de Software. Cuento con conocimientos en C++, Python y HTML. y desde muy joven me ha interesado el desarrollo Web. Teniendo en cuenta el gran impacto que presentan a día de hoy las novedosas soluciones presentadas. | ![Foto cuarto](Images/members/foto-cr7.jpg)  |
-| - | -  | - | ![Foto quinto](../report/assets/foto-quinto.png)  |
-|-|-|-| ![Foto sexto](../report/assets/foto-sexto.jpeg)  |
-| - | - | - | ![Foto septimo](../report/assets/Foto-septimo.png)  |
 <div style="break-after: page;"></div>
 
 ## 1.2. Solution Profile
