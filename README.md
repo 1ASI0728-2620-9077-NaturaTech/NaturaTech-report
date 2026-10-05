@@ -87,9 +87,9 @@ Integrantes
 | 0.3 | 14/09/2026 | - | Desarrollo de needfinding, user personas y user task matrix |
 | 0.4 | 15/09/2026 |Rodrigo Alaya Cabrera| Desarrollo de entrevistas y análisis del problema |
 | 0.5 | 16/09/2026 | - | Desarrollo de Impact Mapping y análisis de competidores |
-| 0.6 | 16/09/2026 | - | Desarrollo de Profile and Preferences Management Context y definición de épicas iniciales |
+| 0.6 | 16/09/2026 | Carlos Coca Lavado | Desarrollo de Profile and Preferences Management Context y definición de épicas iniciales |
 | 0.7 | 16/09/2026 | - | Desarrollo del Event Storming colaborativo y definición de bounded contexts |
-| 0.8 | 16/09/2026 | - | Definición de segmentos objetivos y Startup Profile |
+| 0.8 | 16/09/2026 | Carlos Coca Lavado | Definición de segmentos objetivos y Startup Profile |
 | 0.9 | 16/09/2026 | - | Desarrollo de diagramas C4 y avance en diseño de base de datos |
 | 0.10 | 16/09/2026 | - | Desarrollo de Lean UX Hypothesis y Technical Stories |
 | 0.11 | 16/09/2026 | - | Redacción y mejora de épicas y User Stories |
@@ -147,7 +147,6 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
     - [2.3.3. Empathy Mapping](#233-empathy-mapping)
     - [2.3.4. As-is Scenario Mapping](#234-as-is-scenario-mapping)
   - [2.4. Ubiquitous Language](#24-ubiquitous-language)
-
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
   - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
   - [3.2. User Stories](#32-user-stories)
@@ -316,9 +315,11 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
                 <b>AV1:</b><br><br>
                 <b>Rodrigo Alaya Cabrera:</b> Conduje entrevistas con usuarios potenciales durante la fase de Needfinding, adaptando mi lenguaje para evitar tecnicismos y lograr extraer información objetiva sobre sus necesidades reales en el cuidado de plantas. Además, expuse mis ideas en las reuniones de equipo para definir el Startup Profile y el Lean UX.<br><br>
                 <b>Jocelyn Damaly Almerco Rojas:</b> Participé en las reuniones del equipo, realicé entrevistas y analicé sus resultados para identificar necesidades de los usuarios. También propuse la idea de incorporar una cámara que ayude a reconocer posibles enfermedades en las plantas.<br><br>
+                <b>Coca Lavado, Carlos Andrés:</b> Contribuí en la reunión para la definición de la linea evolutiva del proyecto y los segmentos objetivos que se evaluaran<br><br>
                 <b>TB1:</b><br><br>
                 <b>Rodrigo Alaya Cabrera:</b> Sustenté oralmente las decisiones de diseño a nivel estratégico (Domain-Driven Design) y la arquitectura de software del sistema IoT. Expliqué la interacción entre los sensores, la IA y la aplicación de manera clara, adaptando el nivel de profundidad técnica para asegurar la comprensión tanto de desarrolladores como de evaluadores.<br><br>
                 <b>Jocelyn Damaly Almerco Rojas:</b> Participé en las reuniones de revisión del proyecto y compartí la propuesta de usar la cámara del dispositivo móvil para analizar las plantas y detectar posibles enfermedades, explicando cómo esta capacidad podría apoyar a los usuarios.<br><br>
+                <b>Coca Lavado, Carlos Andrés:</b> Contribuí activamente en las reuniones de revisión del proyecto, Realize las el analisis de la arquitecutra de la solución. Definición de segmentos objetivos y Startup Profile<br><br>
                 <b>AV2:</b><br><br>
                 <b>- :</b><br><br>
                 <b>TB2:</b><br><br>
@@ -337,9 +338,11 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
                 <b>AV1:</b><br><br>
                 <b>Rodrigo Alaya Cabrera:</b> Redacté de forma estructurada los artefactos del Lean UX Process, perfiles de usuario (User Personas) y el registro analítico de entrevistas, asegurando que la información plasmada sea objetiva y fácilmente digerible para cualquier stakeholder del negocio o miembro del equipo.<br><br>
                  <b>Jocelyn Damaly Almerco Rojas:</b> Organicé y analicé la información obtenida en las entrevistas de AV1, identificando hallazgos sobre las necesidades de los usuarios y comunicándolos de forma clara para apoyar el análisis del proyecto.<br><br>
+                 <b>Coca Lavado, Carlos Andrés:</b> Desarrolle correctamente las entrevistas en las que participe para la recopilación de datos brindados por nuestros usuarios<br><br>
                 <b>TB1:</b><br><br>
                 <b>Rodrigo Alaya Cabrera:</b> Elaboré y documenté la especificación de diseño táctico (Bounded Contexts), así como los diagramas a nivel de código y base de datos en el reporte oficial. Utilicé un lenguaje técnico estandarizado, formatos de tablas y notación UML/C4 para asegurar una lectura fluida y profesional.<br><br>
                 <b>Jocelyn Damaly Almerco Rojas:</b> Contribuí con la propuesta de incorporar análisis de imágenes para identificar posibles enfermedades en las plantas, comunicando su propósito y valor para el usuario como parte de las ideas consideradas para la solución PlantSync.<br><br>
+                <b>Coca Lavado, Carlos Andrés:</b> Participé en el apartado de mejorar nuestra solución movil/web para integrarla a las nuevas tecnologias emergentes y a su vez entregarle una nueva experiencia optima al usuario<br><br>
                 <b>AV2:</b><br><br>
                 <b>- :</b><br><br>
                 <b>TB2:</b><br><br>
