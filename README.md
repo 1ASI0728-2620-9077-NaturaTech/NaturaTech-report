@@ -311,8 +311,10 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
             <td>
                 <b>AV1:</b><br><br>
                 <b>Rodrigo Alaya Cabrera:</b> Conduje entrevistas con usuarios potenciales durante la fase de Needfinding, adaptando mi lenguaje para evitar tecnicismos y lograr extraer información objetiva sobre sus necesidades reales en el cuidado de plantas. Además, expuse mis ideas en las reuniones de equipo para definir el Startup Profile y el Lean UX.<br><br>
+                <b>Jocelyn Damaly Almerco Rojas:</b> Participé en las reuniones del equipo, realicé entrevistas y analicé sus resultados para identificar necesidades de los usuarios. También propuse la idea de incorporar una cámara que ayude a reconocer posibles enfermedades en las plantas.<br><br>
                 <b>TB1:</b><br><br>
                 <b>Rodrigo Alaya Cabrera:</b> Sustenté oralmente las decisiones de diseño a nivel estratégico (Domain-Driven Design) y la arquitectura de software del sistema IoT. Expliqué la interacción entre los sensores, la IA y la aplicación de manera clara, adaptando el nivel de profundidad técnica para asegurar la comprensión tanto de desarrolladores como de evaluadores.<br><br>
+                <b>Jocelyn Damaly Almerco Rojas:</b> Participé en las reuniones de revisión del proyecto y compartí la propuesta de usar la cámara del dispositivo móvil para analizar las plantas y detectar posibles enfermedades, explicando cómo esta capacidad podría apoyar a los usuarios.<br><br>
                 <b>AV2:</b><br><br>
                 <b>- :</b><br><br>
                 <b>TB2:</b><br><br>
@@ -330,8 +332,10 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
             <td>
                 <b>AV1:</b><br><br>
                 <b>Rodrigo Alaya Cabrera:</b> Redacté de forma estructurada los artefactos del Lean UX Process, perfiles de usuario (User Personas) y el registro analítico de entrevistas, asegurando que la información plasmada sea objetiva y fácilmente digerible para cualquier stakeholder del negocio o miembro del equipo.<br><br>
+                <b>Jocelyn Damaly Almerco Rojas:</b> Organicé y analicé la información obtenida en las entrevistas de AV1, identificando hallazgos sobre las necesidades de los usuarios y comunicándolos de forma clara para apoyar el análisis del proyecto.<br><br>
                 <b>TB1:</b><br><br>
                 <b>Rodrigo Alaya Cabrera:</b> Elaboré y documenté la especificación de diseño táctico (Bounded Contexts), así como los diagramas a nivel de código y base de datos en el reporte oficial. Utilicé un lenguaje técnico estandarizado, formatos de tablas y notación UML/C4 para asegurar una lectura fluida y profesional.<br><br>
+                <b>Jocelyn Damaly Almerco Rojas:</b> Contribuí con la propuesta de incorporar análisis de imágenes para identificar posibles enfermedades en las plantas, comunicando su propósito y valor para el usuario como parte de las ideas consideradas para la solución PlantSync.<br><br>
                 <b>AV2:</b><br><br>
                 <b>- :</b><br><br>
                 <b>TB2:</b><br><br>
