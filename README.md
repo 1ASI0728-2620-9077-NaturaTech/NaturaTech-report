@@ -783,6 +783,8 @@ Se diseñaron dos sets de preguntas orientados a recolectar datos demográficos,
 
 12.- En general, ¿crees que la integración de diagnósticos por IA, control físico autónomo y recompensas Web3 resolvería los cuellos de botella actuales en el cuidado de tus plantas?
 
+<div style="break-after: page;"></div>
+
 **Entrevista para personas con poca experiencia en el cuidado de plantas:**
 
 1.- ¿Has tenido alguna vez una planta en casa? De ser así, ¿cómo fue esa experiencia y cuánto tiempo sobrevivió?
@@ -808,6 +810,8 @@ Se diseñaron dos sets de preguntas orientados a recolectar datos demográficos,
 11.- ¿Pagarías una suscripción por tener a este "agente virtual inteligente" cuidando tus plantas de forma autónoma?
 
 12.- ¿Consideras que delegar el cuidado a la tecnología disruptiva es la solución definitiva para perder el miedo a tener plantas en casa por falta de tiempo o conocimiento?
+
+<div style="break-after: page;"></div>
 
 ### 2.2.2. Registro de entrevistas
 Se han realizado las entrevistas de acuerdo al diseño de preguntas. Se puede visualizar el video de las entrevistas en el siguiente enlace: 
@@ -1056,6 +1060,8 @@ Se han realizado las entrevistas de acuerdo al diseño de preguntas. Se puede vi
 
 <br>
 
+<div style="break-after: page;"></div>
+
 ### 2.2.3. Análisis de entrevistas
 
 
@@ -1105,11 +1111,15 @@ Después de realizar las entrevistas y detectar los problemas, necesidades y exp
 
 Para desarrollar estos artefactos se consideraron factores como edad, ocupación, ubicación, intereses y frustraciones de los entrevistados. Estos perfiles reflejan usuarios reales que desean incorporar plantas en su rutina diaria, pero requieren orientación clara y soluciones acordes a su estilo de vida. A continuación, se presentan los User Persona definidos.
 
-- #### User Persona: Interesados en comenzar a cuidar plantas
-  <a href="https://ibb.co/zVvHPdpN"><img src="https://i.ibb.co/3mZYSK2k/Jose-Avendano.png" alt="Jose-Avendano" border="0" /></a>
+#### User Persona: Interesados en comenzar a cuidar plantas
+<p align="center">
+  <img src="Images/cap2/user-persona1.jpg" alt="user-persona1" width="100%" />
+</p>
 
-- #### User Persona: Personas con experiencia en el cuidado de plantas
-  <a href="https://ibb.co/Ps5YMsfV"><img src="https://i.ibb.co/Xfz4DfvG/Mariana-Mendoza.png" alt="Mariana-Mendoza" border="0" /></a>
+#### User Persona: Personas con experiencia en el cuidado de plantas
+<p align="center">
+  <img src="Images/cap2/user-persona2.jpg" alt="user-persona2" width="100%" />
+</p>
 
 ### 2.3.2. User Task Matrix
 
@@ -2388,80 +2398,98 @@ Finalmente, utilizando la herramienta Miro, se realizó la división de estos bo
 En esta sección se desarrollan los Domain Message Flow Models para representar cómo fluyen los mensajes entre usuarios, sistemas externos y bounded contexts en los escenarios principales del sistema. Estos diagramas permiten visualizar la secuencia de commands, events y queries que ocurren durante cada proceso, facilitando la comprensión de las interacciones del dominio y validando que las responsabilidades de cada contexto estén correctamente definidas.
 
 <h4>Scenario: User Registration</h4>
-
-<a href="https://ibb.co/qMhLcW9X"><img src="https://i.ibb.co/N6fgJmpQ/1.png" alt="user registration scenario" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/message_modeling/Scenario1.png" alt="user registration scenario" width="100%" />
+</p>
 
 <h4>Scenario: User Login</h4>
-
-<a href="https://ibb.co/5xzYdK29"><img src="https://i.ibb.co/sJD5hWtP/2.png" alt="user login scenario" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/message_modeling/Scenario2.png" alt="user login scenario" width="100%" />
+</p>
 
 <h4>Scenario: Registering a New Plant</h4>
-
-<a href="https://ibb.co/JjQkfBPb"><img src="https://i.ibb.co/Swrvhsp1/3.png" alt="registering a new plant scenario" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/message_modeling/Scenario3.png" alt="registering a new plant scenario" width="100%" />
+</p>
 
 <h4>Scenario: Linking an IoT Device to a Plant</h4>
-
-<a href="https://ibb.co/SXSLN5F3"><img src="https://i.ibb.co/5WZ7TGbR/4.png" alt="linking an iot device to a plant scenario" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/message_modeling/Scenario4.png" alt="linking an iot device to a plant scenario" width="100%" />
+</p>
 
 <h4>Scenario: Receiving Temperature and Humidity Sensor Data</h4>
-
-<a href="https://ibb.co/gF7nfyrq"><img src="https://i.ibb.co/vvBtT1cy/5.png" alt="receiving temperature and humidity sensor data scenario" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/message_modeling/Scenario5.png" alt="receiving temperature and humidity sensor data scenario" width="100%" />
+</p>
 
 <h4>Scenario: Generating Plant Alerts From Sensor Data</h4>
-
-<a href="https://ibb.co/qY9Xz0hm"><img src="https://i.ibb.co/Kx7RYNBV/6.png" alt="generating plant alerts from sensor data scenario" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/message_modeling/Scenario6.png" alt="generating plant alerts from sensor data scenario" width="100%" />
+</p>
 
 <h4>Scenario: Activating an IoT Actuator Automatically</h4>
-
-<a href="https://ibb.co/NnpsHjF0"><img src="https://i.ibb.co/prZx9z1H/7.png" alt="activating an iot actuator automatically scenario" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/message_modeling/Scenario7.png" alt="activating an iot actuator automatically scenario" width="100%" />
+</p>
 
 <h4>Scenario: Viewing Plant Health Status</h4>
-
-<a href="https://ibb.co/gZZnTS9r"><img src="https://i.ibb.co/chhmF63y/8.png" alt="viewwing plant health status scenario" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/message_modeling/Scenario8.png" alt="viewing plant health status scenario" width="100%" />
+</p>
 
 <h4>Scenario: Scheduling a Plant Care Task</h4>
-
-<a href="https://ibb.co/nqznW1mr"><img src="https://i.ibb.co/p6JRmKw2/9.png" alt="scheduling a plant care task scenario" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/message_modeling/Scenario9.png" alt="scheduling a plant care task scenario" width="100%" />
+</p>
 
 <h4>Scenario: Getting Plant Care Guidance From RootBot (bot temporal name)</h4>
-
-<a href="https://ibb.co/hF4cmh9w"><img src="https://i.ibb.co/CKY6HN8D/10.png" alt="getting plant care guidance from rootbot scenario" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/message_modeling/Scenario10.png" alt="getting plant care guidance from rootbot scenario" width="100%" />
+</p>
 
 <h4>Scenario: Viewing Plant Care History</h4>
-
-<a href="https://ibb.co/gF7R6cGb"><img src="https://i.ibb.co/84B7XQJn/11.png" alt="viewing plant care history scenario" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/message_modeling/Scenario11.png" alt="viewing plant care history scenario" width="100%" />
+</p>
 
 <h4>Scenario: Viewing Sensor History and Insights</h4>
-
-<a href="https://ibb.co/JR9NdkMq"><img src="https://i.ibb.co/Z603JTkS/12.png" alt="viewing sensor history and insights scenario" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/message_modeling/Scenario12.png" alt="viewing sensor history and insights scenario" width="100%" />
+</p>
 
 ### 4.2.4. Bounded Context Canvases
 
 En esta sección se desarrollan los Bounded Context Canvases correspondientes a los contextos identificados en la arquitectura del dominio. Cada canvas permite describir el propósito, responsabilidades, comunicaciones, lenguaje ubicuo, decisiones de negocio, supuestos, métricas y preguntas abiertas de un bounded context específico. De esta manera, se documenta con mayor detalle el rol que cumple cada contexto dentro del sistema y se facilita la validación de su diseño.
 
 <h4>IOT Management</h4>
-
-<a href="https://ibb.co/WvBW2x1B"><img src="https://i.ibb.co/VYMWqj8M/A.png" alt="iot management canvas" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/canvas-context/bounded-context-canva1.png" alt="iot management canvas" width="100%" />
+</p>
 
 <h4>Plant Profile</h4>
-
-<a href="https://ibb.co/HSRd1Fr"><img src="https://i.ibb.co/cBRLMgN/B.png" alt="plant profile canvas" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/canvas-context/bounded-context-canva2.png" alt="plant profile canvas" width="100%" />
+</p>
 
 <h4>Care Scheduling</h4>
-
-<a href="https://ibb.co/bRPJNV7f"><img src="https://i.ibb.co/rfms5hvW/C.png" alt="care scheduling canvas" border="0" /></a>
+<p align="center">
+  <img src="Images/cap4/canvas-context/bounded-context-canva3.png" alt="care scheduling canvas" width="100%" />
+</p>
 
 <h4>Analytics</h4>
-
-<a href="https://ibb.co/wZYWzfyj"><img src="https://i.ibb.co/WNsy2Lnj/D.png" alt="analytics canvas" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/canvas-context/bounded-context-canva4.png" alt="analytics canvas" width="100%" />
+</p>
 
 <h4>Plant Guidance</h4>
-
-<a href="https://ibb.co/Tqpqxdsr"><img src="https://i.ibb.co/h1h1JwSC/E.png" alt="plant guidancee canvas" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/canvas-context/bounded-context-canva5.png" alt="plant guidance canvas" width="100%" />
+</p>
 
 <h4>IAM</h4>
-
-<a href="https://ibb.co/n8gv6wfs"><img src="https://i.ibb.co/YTRMPN87/F.png" alt="iam canvas" border="0"></a>
+<p align="center">
+  <img src="Images/cap4/canvas-context/bounded-context-canva6.png" alt="iam canvas" width="100%" />
+</p>
 
 ### 4.2.5. Context Mapping
 
@@ -2472,7 +2500,7 @@ En esta sección elaboramos un conjunto de context maps para representar las rel
 En esta alternativa se mantienen los seis bounded contexts separados, con relaciones claramente definidas entre ellos. Esta opción permite una mejor separación de responsabilidades, ya que cada contexto se concentra en una funcionalidad específica del sistema, facilitando su comprensión y evolución. Como desventaja, implica una mayor cantidad de dependencias e interacciones entre contextos, lo que incrementa la complejidad de integración y sincronización.
 
 <p align="center">
-    <img src="https://i.ibb.co/VYrTchXf/Op1.png" alt="1st option context mapping" width="850px" height="450px"/>
+  <img src="Images/cap4/contex-mapping/context-mapping1.png" alt="1st option context mapping" width="100%" />
 </p>
 
 <h4> Opción 2: </h4>
@@ -2480,7 +2508,7 @@ En esta alternativa se mantienen los seis bounded contexts separados, con relaci
 En esta alternativa se agrupan los bounded contexts PlantProfile y Care Scheduling en un solo contexto denominado Plant Management, debido a que ambos trabajan directamente sobre la gestión de plantas y sus cuidados programados. Esta opción reduce la cantidad de relaciones entre contextos y simplifica la coordinación entre el perfil de la planta y sus tareas de mantenimiento. Sin embargo, como desventaja, el nuevo contexto concentra más responsabilidades, mezclando la administración de información de la planta con la planificación de tareas, lo que podría dificultar su evolución independiente si el sistema crece.
 
 <p align="center">
-    <img src="https://i.ibb.co/b5TMqjRk/Op2.png" alt="2nd option context mapping" width="850px" height="450px"/>
+  <img src="Images/cap4/contex-mapping/context-mapping2.png" alt="1st option context mapping" width="100%" />
 </p>
 
 <h4> Opción 3: </h4>
@@ -2488,7 +2516,7 @@ En esta alternativa se agrupan los bounded contexts PlantProfile y Care Scheduli
 En esta alternativa se agrupan los bounded contexts IoT Management y Analytics en un solo contexto denominado IoT Operations, debido a que ambos trabajan directamente con la captura, procesamiento e interpretación de datos provenientes de sensores. Esta opción simplifica la comunicación entre el hardware y el análisis de datos, reduciendo dependencias internas del flujo IoT. Sin embargo, como desventaja, mezcla la gestión técnica de dispositivos con la generación de insights y alertas, lo que podría dificultar la evolución independiente de ambas capacidades si el sistema crece.
 
 <p align="center">
-    <img src="https://i.ibb.co/Df7CL0nh/Op3.png" alt="3th option context mapping" width="850px" height="450px"/>
+  <img src="Images/cap4/contex-mapping/context-mapping3.png" alt="1st option context mapping" width="100%" />
 </p>
 
 Finalmente, se seleccionó la Opción 1, ya que permite mantener los seis bounded contexts separados y con responsabilidades claramente delimitadas. Esta alternativa resulta más adecuada porque evita mezclar capacidades distintas, como la gestión de plantas, la planificación de cuidados, la comunicación IoT, el análisis de datos y el soporte mediante chatbot. Aunque implica una mayor cantidad de relaciones entre contextos, ofrece una arquitectura más ordenada, escalable y fácil de mantener, permitiendo que cada contexto evolucione de forma independiente según las necesidades del sistema.
@@ -5411,6 +5439,7 @@ A nivel físico y sistémico, el dispositivo ejecuta flujos de interacción auto
   **4.** Cada cambio actualiza inmediatamente el comportamiento del sistema y se refleja en las pantallas LCD.
 
 
+<div style="break-after: page;"></div>
 
 # Conclusiones
 A lo largo del desarrollo del documento, se evidenció que el proyecto plantea una solución con un propósito claro y con potencial de impacto real en el cuidado de plantas y la sostenibilidad ambiental. La propuesta no se limita a una herramienta de seguimiento básico, sino que integra diferentes dimensiones del problema, como la gestión de información de las plantas, la interpretación de condiciones ambientales y la generación de apoyo inteligente para la toma de decisiones. Este enfoque permite visualizar un sistema con valor académico y práctico, orientado a mejorar la experiencia del usuario y optimizar el cuidado de las especies.
