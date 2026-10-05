@@ -1,4 +1,4 @@
-﻿<p align="center">
+<p align="center">
   <img src="Images/logotypes/upc-logo.png" alt="Logo de UPC" width="80">
 </p>
 
@@ -87,9 +87,9 @@ Integrantes
 | 0.3 | 14/09/2026 | - | Desarrollo de needfinding, user personas y user task matrix |
 | 0.4 | 15/09/2026 |Rodrigo Alaya Cabrera| Desarrollo de entrevistas y análisis del problema |
 | 0.5 | 16/09/2026 | - | Desarrollo de Impact Mapping y análisis de competidores |
-| 0.6 | 16/09/2026 | Carlos Coca Lavado | Desarrollo de Profile and Preferences Management Context y definición de épicas iniciales |
+| 0.6 | 16/09/2026 | - | Desarrollo de Profile and Preferences Management Context y definición de épicas iniciales |
 | 0.7 | 16/09/2026 | - | Desarrollo del Event Storming colaborativo y definición de bounded contexts |
-| 0.8 | 16/09/2026 | Carlos Coca Lavado | Definición de segmentos objetivos y Startup Profile |
+| 0.8 | 16/09/2026 | - | Definición de segmentos objetivos y Startup Profile |
 | 0.9 | 16/09/2026 | - | Desarrollo de diagramas C4 y avance en diseño de base de datos |
 | 0.10 | 16/09/2026 | - | Desarrollo de Lean UX Hypothesis y Technical Stories |
 | 0.11 | 16/09/2026 | - | Redacción y mejora de épicas y User Stories |
@@ -240,13 +240,17 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
     - [5.7.6. Bounded Context Software Architecture Code Level Diagrams](#576-bounded-context-software-architecture-code-level-diagrams)
       - [5.7.6.1. Bounded Context Domain Layer Class Diagrams](#5761-bounded-context-domain-layer-class-diagrams)
       - [5.7.6.2. Bounded Context Database Design Diagram](#5762-bounded-context-database-design-diagram)
+
   - [5.8. Bounded Context: EcoRewards y Web3](#58-bounded-context-ecorewards-y-web3)
     - [5.8.1. Domain Layer](#581-domain-layer)
     - [5.8.2. Interface Layer](#582-interface-layer)
     - [5.8.3. Application Layer](#583-application-layer)
     - [5.8.4. Infrastructure Layer](#584-infrastructure-layer)
-    - [5.8.5. Flujo de elegibilidad y emisión](#585-flujo-de-elegibilidad-y-emisión)
-
+    - [5.8.5. Bounded Context Software Architecture Component Level Diagrams](#585-bounded-context-software-architecture-component-level-diagrams)
+    - [5.8.6. Bounded Context Software Architecture Code Level Diagrams](#586-bounded-context-software-architecture-code-level-diagrams)
+      - [5.8.6.1. Bounded Context Domain Layer Class Diagrams](#5861-bounded-context-domain-layer-class-diagrams)
+      - [5.8.6.2. Bounded Context Database Design Diagram](#5862-bounded-context-database-design-diagram)
+    - [5.8.7. Flujo de elegibilidad y emisión](#587-flujo-de-elegibilidad-y-emisión)
 - [Capítulo VI: Solution UI/UX Design](#capítulo-vi-solution-uiux-design)
   - [6.1. Style Guidelines](#61-style-guidelines)
     - [6.1.1. General Style Guidelines](#611-general-style-guidelines)
@@ -312,11 +316,9 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
                 <b>AV1:</b><br><br>
                 <b>Rodrigo Alaya Cabrera:</b> Conduje entrevistas con usuarios potenciales durante la fase de Needfinding, adaptando mi lenguaje para evitar tecnicismos y lograr extraer información objetiva sobre sus necesidades reales en el cuidado de plantas. Además, expuse mis ideas en las reuniones de equipo para definir el Startup Profile y el Lean UX.<br><br>
                 <b>Jocelyn Damaly Almerco Rojas:</b> Participé en las reuniones del equipo, realicé entrevistas y analicé sus resultados para identificar necesidades de los usuarios. También propuse la idea de incorporar una cámara que ayude a reconocer posibles enfermedades en las plantas.<br><br>
-                <b>Coca Lavado, Carlos Andrés:</b> Contribuí en la reunión para la definición de la linea evolutiva del proyecto y los segmentos objetivos que se evaluaran<br><br>
                 <b>TB1:</b><br><br>
                 <b>Rodrigo Alaya Cabrera:</b> Sustenté oralmente las decisiones de diseño a nivel estratégico (Domain-Driven Design) y la arquitectura de software del sistema IoT. Expliqué la interacción entre los sensores, la IA y la aplicación de manera clara, adaptando el nivel de profundidad técnica para asegurar la comprensión tanto de desarrolladores como de evaluadores.<br><br>
                 <b>Jocelyn Damaly Almerco Rojas:</b> Participé en las reuniones de revisión del proyecto y compartí la propuesta de usar la cámara del dispositivo móvil para analizar las plantas y detectar posibles enfermedades, explicando cómo esta capacidad podría apoyar a los usuarios.<br><br>
-                <b>Coca Lavado, Carlos Andrés:</b> Contribuí activamente en las reuniones de revisión del proyecto, Realize las el analisis de la arquitecutra de la solución. Definición de segmentos objetivos y Startup Profile<br><br>
                 <b>AV2:</b><br><br>
                 <b>- :</b><br><br>
                 <b>TB2:</b><br><br>
@@ -334,12 +336,10 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
             <td>
                 <b>AV1:</b><br><br>
                 <b>Rodrigo Alaya Cabrera:</b> Redacté de forma estructurada los artefactos del Lean UX Process, perfiles de usuario (User Personas) y el registro analítico de entrevistas, asegurando que la información plasmada sea objetiva y fácilmente digerible para cualquier stakeholder del negocio o miembro del equipo.<br><br>
-                <b>Jocelyn Damaly Almerco Rojas:</b> Organicé y analicé la información obtenida en las entrevistas de AV1, identificando hallazgos sobre las necesidades de los usuarios y comunicándolos de forma clara para apoyar el análisis del proyecto.<br><br>
-                <b>Coca Lavado, Carlos Andrés:</b> Desarrolle correctamente las entrevistas en las que participe para la recopilación de datos brindados por nuestros usuarios<br><br>
+                 <b>Jocelyn Damaly Almerco Rojas:</b> Organicé y analicé la información obtenida en las entrevistas de AV1, identificando hallazgos sobre las necesidades de los usuarios y comunicándolos de forma clara para apoyar el análisis del proyecto.<br><br>
                 <b>TB1:</b><br><br>
                 <b>Rodrigo Alaya Cabrera:</b> Elaboré y documenté la especificación de diseño táctico (Bounded Contexts), así como los diagramas a nivel de código y base de datos en el reporte oficial. Utilicé un lenguaje técnico estandarizado, formatos de tablas y notación UML/C4 para asegurar una lectura fluida y profesional.<br><br>
                 <b>Jocelyn Damaly Almerco Rojas:</b> Contribuí con la propuesta de incorporar análisis de imágenes para identificar posibles enfermedades en las plantas, comunicando su propósito y valor para el usuario como parte de las ideas consideradas para la solución PlantSync.<br><br>
-                <b>Coca Lavado, Carlos Andrés:</b> Participé en el apartado de mejorar nuestra solución movil/web para integrarla a las nuevas tecnologias emergentes y a su vez entregarle una nueva experiencia optima al usuario<br><br>
                 <b>AV2:</b><br><br>
                 <b>- :</b><br><br>
                 <b>TB2:</b><br><br>
@@ -2581,7 +2581,26 @@ Este diagrama ilustra la infraestructura y el entorno de ejecución de la soluci
 
 # Capítulo V: Tactical-Level Domain-Driven Design
 
-### 5.1. Bounded Context: \<IAM\>
+Este capítulo presenta el diseño táctico objetivo de PlantSync. La base reutilizada incluye aplicaciones Vue y Flutter, Backend API Java/Spring Boot con MySQL, Edge Python/Flask con SQLite y firmware ESP32 en C++. Las extensiones de diagnóstico visual, agente de IA y recompensas Web3 son propuestas de integración; su presencia en este diseño no constituye evidencia de implementación, despliegue o validación.
+
+Los ocho bounded contexts son módulos con propiedad lógica de sus modelos y tablas dentro del mismo Backend API. La separación de comandos y consultas es lógica y comparte persistencia; no se proponen ocho microservicios. Los clientes usan REST/JSON sobre HTTPS. Entre módulos se utilizan fachadas de aplicación y eventos internos publicados después de confirmar la persistencia; no se requiere RabbitMQ, Kafka ni Redis para este alcance. Edge sincroniza por HTTP/HTTPS y conserva las reglas locales necesarias para operar cuando la nube no está disponible.
+
+| Bounded context | Responsabilidad y límites |
+|---|---|
+| IAM | Autenticación, roles y vinculación verificada de una wallet opcional; no acuña recompensas. |
+| Profiles | Datos personales y plan del usuario; no gestiona identidades criptográficas. |
+| PlantProfiles | Registro, especie y propiedad de plantas, además de historial de cuidado con referencias a otros contextos. |
+| IoT Management | Nodos, telemetría, configuración y seguimiento de estados deseados/reportados mediante Edge. |
+| CareScheduling | Tareas y recordatorios; completar una tarea manual no demuestra ejecución de un actuador. |
+| Inteligencia Botánica y Análisis Externo | Evaluación de condiciones y análisis visual orientativo mediante Google Gemini API; no autoriza actuadores. |
+| PlantGuidance | Asesoría conversacional y propuestas de acciones acotadas mediante Google Gemini API; verifica políticas antes de delegar a IoT. |
+| EcoRewards | Progreso verificable y emisión opcional de Eco-Badges ERC-721 en Ethereum Sepolia mediante Alchemy y Web3j. |
+
+Google Gemini API es el proveedor seleccionado para ambos usos de IA, con puertos y adaptadores separados. El modelo se configura en infraestructura para poder cambiarlo sin modificar el dominio. Los umbrales de cuidado y la política de recompensas son datos versionados definidos por el proyecto; una respuesta generativa no determina los rangos que conceden una recompensa. MetaMask firma el desafío de IAM desde la aplicación web; el usuario conserva sus claves. La aplicación Flutter consulta diagnósticos y recompensas por REST y deriva la vinculación de wallet a la web en el MVP.
+
+**Estado de los diagramas:** los C4 de contexto, contenedores y despliegue del capítulo IV son la referencia de arquitectura objetivo. Las imágenes tácticas heredadas que se señalan en este capítulo quedan pendientes de actualización. El landscape debe alinearse con los proveedores ya seleccionados. Los canvases y el context map deben reflejar los mismos ocho contextos y contratos aquí descritos.
+
+### 5.1. Bounded Context: IAM
 El bounded context **Identity and Access Management (IAM)** concentra las responsabilidades relacionadas con autenticación, autorización y vinculación segura de identidades externas del usuario.
 
 En la arquitectura objetivo de PlantSync, IAM forma parte del Backend API desarrollado en Java y Spring Boot. La separación entre comandos y consultas sigue un enfoque CQRS a nivel lógico; ambos tipos de operaciones comparten el mismo modelo de persistencia relacional y no representan microservicios desplegados independientemente.
@@ -2958,9 +2977,9 @@ Recibe el mensaje firmado, la firma y la dirección declarada y comprueba que la
 
 La implementación concreta de la librería Java utilizada para esta verificación queda encapsulada en infraestructura y puede sustituirse sin modificar el dominio.
 
-PlantSync no almacena, solicita ni procesa claves privadas.
+IAM no almacena, solicita ni procesa claves privadas del usuario. La cuenta emisora de EcoRewards utiliza una clave del proyecto protegida en infraestructura; esa clave no pertenece a IAM ni se comparte con los clientes.
 
-#### 5.1.5. Bounded Context Software Architecture Component Level Diagram
+#### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
 
 El diagrama de componentes del bounded context IAM representa la estructura interna del Backend API responsable de autenticación, autorización y vinculación de identidades Ethereum.
 
@@ -2978,7 +2997,7 @@ La aplicación Web, desarrollada en Vue 3 y TypeScript, también interactúa loc
 
 La persistencia del bounded context IAM se realiza mediante Spring Data JPA sobre MySQL.
 
-IAM no interactúa con Ethereum Sepolia ni con el contrato Eco-Badge. Esa responsabilidad pertenece al bounded context de Achievements.
+IAM no interactúa con Ethereum Sepolia ni con el contrato Eco-Badge. Esa responsabilidad pertenece al bounded context EcoRewards.
 
 <p align="center">
   <img src="Images/cap4/BoundedContext/IAM/Component_View_IAM_Wallet.png">
@@ -3104,6 +3123,8 @@ El bounded context IAM no es propietario de la tabla `profiles`. La información
 
 
 ### 5.2. Bounded Context: Profiles
+
+Profiles conserva la información personal y la suscripción asociadas a `userId`, proporcionado por IAM. Expone `ProfilesContextFacade` para resolver la relación `userId`–`profileId` y las capacidades del plan. Los planes no otorgan propiedad de dispositivos ni permiten eludir las políticas de acciones. La vinculación de wallets pertenece exclusivamente a IAM; las recompensas pertenecen a EcoRewards. El estado de pago no se deduce de transacciones de Sepolia: si se conserva una integración de cobros reales, debe documentarse por separado.
 
 #### 5.2.1. Domain Layer
 
@@ -3315,6 +3336,10 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 
 ### 5.3. Bounded Context: PlantProfiles
+
+PlantProfiles es la fuente de verdad del registro y la propiedad de la planta. `PlantProfilesContextFacade` expone `getOwnedPlant(plantId, userId)` y una captura de especie y configuración de cuidado, resolviendo `profileId` mediante Profiles. Los contextos consumidores deben validar esta propiedad antes de consultar imágenes, proponer acciones o emitir recompensas. Los tipos de identificadores de usuario y planta se mantienen como `Long` en los contratos Java y como números en REST.
+
+`PlantHistory` registra hechos de cuidado y referencias (`sourceContext`, `sourceRecordId`) a lecturas, análisis o acciones confirmadas; no duplica la propiedad de esos modelos. Una fotografía de registro no se considera automáticamente un diagnóstico. El historial solo presenta una acción física como ejecutada cuando IoT Management confirma el resultado. Los rangos y políticas de especie tienen versión y origen explícitos y no se sobrescriben automáticamente con respuestas del LLM.
 
 #### 5.3.1. Domain Layer
 
@@ -3650,340 +3675,108 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 ### 5.4. Bounded Context: IoT Management
 
+IoT Management administra nodos ESP32, telemetría, configuración de cuidado y comandos del Backend API. El firmware reporta a PlantSync Edge por HTTP y recibe instrucciones a través de ese servicio local. Edge utiliza Python/Flask y SQLite, aplica reglas locales y sincroniza con el backend por HTTP/HTTPS. El backend no publica comandos directamente al ESP32 ni requiere un broker MQTT en la arquitectura objetivo.
+
 #### 5.4.1. Domain Layer
 
-En esta capa se define la gestión de dispositivos IoT, lecturas de sensores y comandos de actuadores. El atributo de iluminación requiere incorporar y calibrar un sensor de luz en el nodo IoT; mientras el hardware no lo provea, EcoRewards no puede verificar las metas que dependen de ese dato.
+**Agregados y miembros del modelo**
 
-**Aggregate: `IoTNode`**
+Todos los atributos son privados; los métodos de dominio descritos son públicos. Los identificadores de nodos y plantas son `Long`; los comandos y claves de correlación usan `UUID`.
 
-El agregado IoTNode representa un dispositivo Arduino registrado en el sistema, vinculado a una planta.
+| Agregado | Atributos principales | Métodos y reglas |
+|---|---|---|
+| `IoTNode` | `id`, `nodeCode`, `plantId`, `profileId`, `status: NodeStatus`, `capabilities: Set<ActuatorType>`, `lastSeenAt: Instant`, `createdAt: Instant` | `register()`, `updateHeartbeat()`, `supports(type)` y `updateStatus()`. Un nodo se vincula a una planta del propietario; su código es único. El estado ONLINE exige un reporte reciente. |
+| `SensorReading` | `id`, `nodeId`, `readingId: UUID`, `soilHumidity: Float`, `airTemperature: Float`, `airHumidity: Float`, `lightLevel: Float?`, `capturedAt: Instant`, `receivedAt: Instant`, `source: ReadingSource` | `validate()` y getters. `readingId` evita duplicados en reenvíos. Una lectura simulada o sin luz medida no prueba una meta de luz. Captura y recepción se conservan por separado. |
+| `ActuatorCommand` | `id: UUID`, `actionRequestId: UUID?`, `idempotencyKey: String`, `nodeId`, `actuatorType`, `desiredState`, `status: CommandStatus`, `maxDurationSeconds: Integer?`, `issuedAt`, `expiresAt`, `reportedAt`, `failureReason` | `markDelivered()`, `markAcknowledged()`, `markExecuted()`, `fail(reason)` y `expire()`. Solo un reporte correlacionado de ejecución permite EXECUTED; recibir el comando no equivale a ejecutarlo. |
+| `CareConfiguration` | `nodeId`, `version: Long`, `soilHumidityMin`, `soilHumidityMax`, `maxActivationSeconds`, `minimumIntervalSeconds`, `updatedAt: Instant` | `updateWithinLimits()` y `nextVersion()`. Configuración autorizada que Edge conserva y aplica localmente; rechaza intervalos y duraciones inválidos. |
 
-| Atributos | Tipo de dato | Visibilidad | Descripción |
-|---|---|---|---|
-| id | Long | Private | Identificador único del nodo. |
-| nodeCode | String | Private | Código único del hardware (MAC). |
-| status | NodeStatus | Private | ONLINE, OFFLINE, ERROR. |
-| plantId | Long | Private | ID de la planta asociada. |
-| profileId | Long | Private | ID del propietario. |
-| createdAt | LocalDateTime | Private | Fecha de registro. |
-
-| Métodos | Tipo de retorno | Visibilidad | Descripción |
-|---|---|---|---|
-| getId() | Long | Public | Devuelve el ID. |
-| getNodeCode() | String | Public | Devuelve código. |
-| getStatus() | NodeStatus | Public | Devuelve estado. |
-| updateStatus(NodeStatus) | IoTNode | Public | Actualiza estado. |
-| IoTNode(CreateNodeCommand) | Constructor | Public | Crea nodo. |
-
-**Aggregate: `SensorReading`**
-
-Representa una lectura de sensores de temperatura, humedad de aire y suelo, y nivel de iluminación cuando el nodo tiene integrado un sensor de luz.
-
-| Atributos | Tipo de dato | Visibilidad | Descripción |
-|---|---|---|---|
-| id | Long | Private | Identificador único. |
-| nodeId | Long | Private | ID del nodo origen. |
-| soilHumidity | Float | Private | Humedad del suelo (%). |
-| airTemperature | Float | Private | Temperatura (°C). |
-| airHumidity | Float | Private | Humedad del aire (%). |
-| lightLevel | Float | Private | Nivel de iluminación capturado (lux), utilizado junto con la política de especie para evaluar condiciones de luz. |
-| timestamp | LocalDateTime | Private | Momento de captura. |
-
-| Métodos | Tipo de retorno | Visibilidad | Descripción |
-|---|---|---|---|
-| getId() | Long | Public | Devuelve ID. |
-| getNodeId() | Long | Public | Devuelve nodo origen. |
-| getSoilHumidity() | Float | Public | Devuelve humedad suelo. |
-| getAirTemperature() | Float | Public | Devuelve temperatura. |
-| getLightLevel() | Float | Public | Devuelve el nivel de iluminación en lux. |
-| getTimestamp() | LocalDateTime | Public | Devuelve timestamp. |
-| SensorReading(CreateReadingCommand) | Constructor | Public | Crea lectura. |
-
-**Aggregate: `ActuatorCommand`**
-
-Representa un comando enviado a un actuador (luz UV o rociador de agua).
-
-| Atributos | Tipo de dato | Visibilidad | Descripción |
-|---|---|---|---|
-| id | Long | Private | Identificador único. |
-| nodeId | Long | Private | ID del nodo destino. |
-| actuatorType | ActuatorType | Private | UV_LIGHT o WATER_SPRAYER. |
-| action | ActuatorAction | Private | ACTIVATE o DEACTIVATE. |
-| status | CommandStatus | Private | PENDING, SENT, ACKNOWLEDGED. |
-| issuedAt | LocalDateTime | Private | Momento de emisión. |
-
-| Métodos | Tipo de retorno | Visibilidad | Descripción |
-|---|---|---|---|
-| getId() | Long | Public | Devuelve ID. |
-| getNodeId() | Long | Public | Devuelve nodo. |
-| getActuatorType() | ActuatorType | Public | Devuelve tipo. |
-| getStatus() | CommandStatus | Public | Devuelve estado. |
-| acknowledge() | ActuatorCommand | Public | Marca ejecutado. |
-| ActuatorCommand(IssueCommandCommand) | Constructor | Public | Crea comando. |
-
-**Value Objects**
-
-| Value Object | Descripción |
+| Value object / enumeración | Valores y propósito |
 |---|---|
-| NodeStatus | ONLINE, OFFLINE, ERROR |
-| ActuatorType | UV_LIGHT, WATER_SPRAYER |
-| ActuatorAction | ACTIVATE, DEACTIVATE |
-| CommandStatus | PENDING, SENT, ACKNOWLEDGED |
+| `NodeStatus` | ONLINE, OFFLINE, ERROR. |
+| `ActuatorType` | SERVO, LIGHT, BUZZER; representan capacidades del prototipo. No se afirma que un servo demuestre suministro de agua ni que la luz sea UV. |
+| `DesiredActuatorState` | Estado permitido para el actuador: posición acotada del servo o ON/OFF para luz y buzzer. No acepta instrucciones libres. |
+| `CommandStatus` | PENDING, DELIVERED, ACKNOWLEDGED, EXECUTED, FAILED, EXPIRED. |
+| `ReadingSource` | PHYSICAL o SIMULATED. Incluye procedencia de la lectura y, cuando corresponde, referencia de calibración. |
+| `TelemetrySnapshot` | Proyección inmutable de valores, origen y fecha, expuesta a otros contextos mediante contrato; no comparte una entidad JPA. |
 
-**Excepciones de Dominio**
+`ActuatorCommandPolicy` valida capacidad, propiedad, estado reciente, caducidad, duración y separación mínima de activaciones. Aunque PlantGuidance ya haya autorizado una propuesta, IoT comprueba nuevamente las condiciones al crear y entregar el comando. Las reglas locales de Edge tienen prioridad para impedir una operación fuera de los límites; el backend coordina configuración y solicitudes sin duplicar el bucle de control local.
 
-| Excepción | Descripción |
-|---|---|
-| IoTNodeNotFoundException | Nodo no encontrado. |
-| IoTNodeAlreadyRegisteredException | NodeCode ya existe. |
-| ActuatorCommandFailedException | Comando no ejecutado. |
-
-**Clase: `IoTNodeQueryService`**
-
-| Título | IoTNodeQueryService |
-|---|---|
-| Descripción | Servicio de consultas para operaciones de lectura de nodos. |
-
-| Métodos | Descripción |
-|---|---|
-| handle(GetNodeByIdQuery) | Obtiene nodo por ID. |
-| handle(GetNodesByProfileIdQuery) | Lista nodos del perfil. |
-
-**Clase: `IoTNodeCommandService`**
-
-| Título | IoTNodeCommandService |
-|---|---|
-| Descripción | Servicio de comandos para gestión de nodos. |
-
-| Métodos | Descripción |
-|---|---|
-| handle(CreateNodeCommand) | Registra nodo. |
-| handle(UpdateNodeStatusCommand) | Actualiza estado. |
-
-**Clase: `SensorReadingQueryService`**
-
-| Título | SensorReadingQueryService |
-|---|---|
-| Descripción | Servicio de consultas para lecturas de sensores. |
-
-| Métodos | Descripción |
-|---|---|
-| handle(GetLatestReadingQuery) | Obtiene lectura más reciente. |
-| handle(GetReadingsByRangeQuery) | Obtiene lecturas en rango. |
-
-**Clase: `SensorReadingCommandService`**
-
-| Título | SensorReadingCommandService |
-|---|---|
-| Descripción | Servicio de comandos para ingesta de telemetría. Al recibir lectura, evalúa reglas y dispara actuadores. |
-
-| Métodos | Descripción |
-|---|---|
-| handle(CreateReadingCommand) | Ingesta lectura y evalúa reglas. |
-
-**Clase: `ActuatorCommandService`**
-
-| Título | ActuatorCommandService |
-|---|---|
-| Descripción | Servicio para gestión de comandos de actuadores. |
-
-| Métodos | Descripción |
-|---|---|
-| handle(IssueCommandCommand) | Emite comando al actuador. |
-| handle(AcknowledgeCommandCommand) | Registra acuse de recibo. |
+Las abstracciones `IoTNodeRepository`, `SensorReadingRepository`, `ActuatorCommandRepository` y `CareConfigurationRepository` pertenecen al dominio. Las excepciones incluyen `IoTNodeNotFoundException`, `UnsupportedActuatorException`, `InvalidReadingException` y `ActuatorCommandRejectedException`. Los eventos `TelemetrySaved`, `ActuatorCommandExecuted`, `ActuatorCommandFailed` y `ActuatorCommandExpired` incluyen identificadores y fechas para evitar procesamientos duplicados.
 
 #### 5.4.2. Interface Layer
 
-**Controlador: `SensorReadingController`**
+Los controladores distinguen clientes de usuario y sincronización de Edge. El backend obtiene la identidad del usuario del JWT y la identidad del nodo de una credencial de dispositivo; no confía en un `profileId` enviado libremente. Cada credencial Edge queda limitada a sus nodos. Los límites de payload, rangos y timestamps se validan antes de persistir.
 
-Gestiona ingesta de lecturas de sensores.
-
-| Método | Ruta | Descripción |
+| Controlador | Método / ruta objetivo | Contrato |
 |---|---|---|
-| createReading | POST /api/v1/iot/readings | Ingesta lectura. |
-| getLatestReading | GET /api/v1/iot/readings/latest/{nodeId} | Lectura más reciente. |
-| getReadingsByRange | GET /api/v1/iot/readings/{nodeId}/range | Lecturas en rango de fechas. |
+| `IoTNodeController` | POST /api/v1/iot/nodes | Registra un nodo y valida propiedad de la planta mediante `PlantProfilesContextFacade`. |
+| `IoTNodeController` | GET /api/v1/iot/nodes/{nodeId} | Consulta nodo del usuario autenticado. |
+| `SensorReadingController` | GET /api/v1/iot/readings/{nodeId}/range | Historial paginado autorizado con fechas. |
+| `EdgeSyncController` | POST /api/v1/iot/sync/status | Recibe lotes de telemetría, heartbeat y estado local; devuelve lecturas aceptadas y duplicadas. |
+| `EdgeSyncController` | GET /api/v1/iot/sync/config?nodeId={nodeId}&version={version} | Devuelve configuración versionada para Edge. |
+| `ActuatorStateController` | GET /api/v1/iot/actuators/desired?nodeId={nodeId} | Edge recupera comandos vigentes con `commandId`, estado deseado y límites. |
+| `ActuatorStateController` | POST /api/v1/iot/actuators/reported | Edge reporta `commandId`, estado, resultado y fecha de ejecución; procesamiento idempotente. |
+| `ActuatorCommandController` | POST /api/v1/iot/commands | Solicitud manual autorizada con `idempotencyKey`; aplica la misma política que una solicitud del agente. |
+| `ActuatorCommandController` | GET /api/v1/iot/commands/{commandId} | Consulta del estado; no presenta PENDING o ACKNOWLEDGED como ejecución. |
 
-**Controlador: `ActuatorCommandController`**
+Las rutas son el contrato objetivo del backend. La integración debe conservar o adaptar explícitamente las rutas `/sync/config`, `/sync/status`, `/actuators/desired` y `/actuators/reported` utilizadas por el Edge reutilizado, mediante configuración o compatibilidad de controladores; no se da por implementada la versión `/api/v1/iot`.
 
-Gestiona comandos de actuadores.
-
-| Método | Ruta | Descripción |
-|---|---|---|
-| issueCommand | POST /api/v1/iot/commands | Emite comando. |
-| acknowledgeCommand | PATCH /api/v1/iot/commands/{commandId} | Acuse de recibo. |
-
-**Controlador: `IoTNodeController`**
-
-Gestiona las operaciones de registro, consulta y actualización de los nodos IoT.
-
-| Método | Ruta | Descripción |
-| :--- | :--- | :--- |
-| createNode | POST /api/v1/iot/nodes | Registra un nuevo nodo IoT vinculándolo a una planta y perfil. |
-| getNodeById | GET /api/v1/iot/nodes/{nodeId} | Obtiene la información de un nodo por su ID. |
-| getNodesByProfileId | GET /api/v1/iot/nodes/profile/{profileId} | Lista todos los nodos asociados a un perfil específico. |
-| updateNodeStatus | PATCH /api/v1/iot/nodes/{nodeId}/status | Actualiza el estado operativo de un nodo (ONLINE, OFFLINE, ERROR). |
-
-**Recursos (DTOs)**
-
-| Recurso | Descripción |
-|---|---|
-| CreateNodeResource | nodeCode, plantId, profileId |
-| IoTNodeResource | id, nodeCode, status, plantId, profileId, createdAt |
-| CreateReadingResource | nodeId, soilHumidity, airTemperature, airHumidity, lightLevel |
-| SensorReadingResource | id, nodeId, soilHumidity, airTemperature, airHumidity, lightLevel, timestamp |
-| IssueCommandResource | nodeId, actuatorType, action |
-| ActuatorCommandResource | id, nodeId, actuatorType, action, status, issuedAt |
-
-**Dependencias**
-
-| Dependencia | Descripción |
-|---|---|
-| IoTNodeCommandService | Servicio de comandos de nodos. |
-| IoTNodeQueryService | Servicio de consultas de nodos. |
-| SensorReadingCommandService | Servicio de comandos de lecturas. |
-| SensorReadingQueryService | Servicio de consultas de lecturas. |
-| ActuatorCommandService | Servicio de comandos de actuadores. |
-| IoTNodeRepository | Repositorio de nodos. |
-| SensorReadingRepository | Repositorio de lecturas. |
-| ActuatorCommandRepository | Repositorio de comandos. |
+`SyncStatusResource` contiene `nodeId`, lecturas con identificador y origen, fecha de captura y estado operativo. `DesiredActuatorResource` contiene `commandId`, `actionRequestId`, estado deseado, caducidad y duración máxima. `ReportedActuatorResource` incluye la correlación y distingue aceptación, ejecución y fallo. Los assemblers no exponen secretos del dispositivo.
 
 #### 5.4.3. Application Layer
 
-**Clase: `IoTNodeCommandServiceImpl`**
-
-| Título | IoTNodeCommandServiceImpl |
+| Servicio / handler | Flujo y dependencias |
 |---|---|
-| Descripción | Implementación de servicio de comandos para gestión de nodos. |
-
-| Dependencias | Descripción |
-|---|---|
-| IoTNodeRepository | Repositorio de nodos. |
-
-**Clase: `IoTNodeQueryServiceImpl`**
-
-| Título | IoTNodeQueryServiceImpl |
-|---|---|
-| Descripción | Implementación de servicio de consultas para operaciones de lectura de nodos. |
-
-| Dependencias | Descripción |
-|---|---|
-| IoTNodeRepository | Repositorio de nodos. |
-
-**Clase: `SensorReadingCommandServiceImpl`**
-
-| Título | SensorReadingCommandServiceImpl |
-|---|---|
-| Descripción | Implementación de servicio de comandos para ingesta de telemetría. Evalúa reglas de cuidado automáticamente. |
-
-| Dependencias | Descripción |
-|---|---|
-| SensorReadingRepository | Repositorio de lecturas. |
-| ActuatorCommandService | Dispara comandos automáticos si hay anomalías. |
-
-**Clase: `SensorReadingQueryServiceImpl`**
-
-| Título | SensorReadingQueryServiceImpl |
-|---|---|
-| Descripción | Implementación de servicio de consultas para lecturas de sensores. |
-
-| Dependencias | Descripción |
-|---|---|
-| SensorReadingRepository | Repositorio de lecturas. |
-
-
-**Clase: `ActuatorCommandServiceImpl`**
-
-| Título | ActuatorCommandServiceImpl |
-|---|---|
-| Descripción | Implementación de servicio para gestión de comandos de actuadores. Persiste y publica en MQTT. |
-
-| Dependencias | Descripción |
-|---|---|
-| ActuatorCommandRepository | Repositorio de comandos. |
-| MqttPublisherService | Publicador MQTT para hardware. |
+| `IoTNodeCommandServiceImpl` | Registra/vincula nodos y capacidades; consulta propiedad mediante PlantProfiles y persiste con `IoTNodeRepository`. |
+| `SyncTelemetryCommandHandler` | Autentica nodo, valida y elimina duplicados mediante `SensorReadingRepository`, actualiza heartbeat y publica `TelemetrySaved` después del commit. No activa dispositivos automáticamente por cada lectura. |
+| `UpdateCareConfigurationHandler` | Valida propietario y límites, persiste una nueva versión y la ofrece a Edge. |
+| `ActuatorCommandServiceImpl` | Recibe `IssueActuatorCommand` desde REST o `IoTManagementContextFacade`, aplica `ActuatorCommandPolicy` y persiste el estado deseado. La misma clave idempotente devuelve el comando existente. |
+| `GetDesiredActuatorsQueryHandler` | Entrega comandos pendientes y vigentes al Edge autorizado; puede marcar entrega, nunca ejecución. |
+| `ReportActuatorStateHandler` | Correlaciona reporte con nodo y comando, valida transición, persiste resultado y publica evento confirmado. Reportes repetidos no repiten el efecto. |
+| `ExpireActuatorCommandsHandler` | Marca comandos vencidos y publica su caducidad sin emitir nuevos comandos. |
+| `IoTManagementContextFacade` | Contrato interno para contexto del nodo, captura reciente, creación de comando autorizado y consulta de su resultado. No expone repositorios ni credenciales. |
 
 #### 5.4.4. Infrastructure Layer
 
-**Clase: `IoTNodeRepository`**
+Las implementaciones JPA de los cuatro repositorios persisten en MySQL. `DeviceCredentialVerifier` valida la credencial Edge usando secretos protegidos y permite revocarla. `InternalDomainEventPublisher` entrega eventos internos después del commit; los consumidores guardan una clave procesada para tolerar repeticiones. No se incluye `MqttPublisherService` ni broker en este diseño.
 
-| Título | IoTNodeRepository |
-|---|---|
-| Descripción | Repositorio para operaciones CRUD de nodos IoT. |
-
-| Métodos | Descripción |
-|---|---|
-| findById(Long) | Por ID. |
-| findByProfileId(Long) | Por perfil. |
-| findByPlantId(Long) | Por planta. |
-| existsByNodeCode(String) | Verifica unicidad. |
-| save(IoTNode) | Persiste. |
-
-**Clase: `SensorReadingRepository`**
-
-| Título | SensorReadingRepository |
-|---|---|
-| Descripción | Repositorio para operaciones CRUD de lecturas. |
-
-| Métodos | Descripción |
-|---|---|
-| findTopByNodeIdOrderByTimestampDesc(Long) | Última lectura. |
-| findByNodeIdAndTimestampBetween(Long, LocalDateTime, LocalDateTime) | Rango de fechas. |
-| save(SensorReading) | Persiste. |
-
-**Clase: `ActuatorCommandRepository`**
-
-| Título | ActuatorCommandRepository |
-|---|---|
-| Descripción | Repositorio para operaciones CRUD de comandos. |
-
-| Métodos | Descripción |
-|---|---|
-| findById(Long) | Por ID. |
-| findByNodeId(Long) | Por nodo. |
-| save(ActuatorCommand) | Persiste. |
-
-**Clase: `MqttPublisherService`**
-
-| Título | MqttPublisherService |
-|---|---|
-| Descripción | Servicio de infraestructura para publicar comandos en MQTT hacia Arduino. |
-
-| Métodos | Descripción |
-|---|---|
-| publish(String topic, String payload) | Publica mensaje en MQTT. |
+En el sistema Edge, `BackendSyncClient` mantiene sincronización HTTP/HTTPS, reintentos acotados y cola SQLite de lecturas no confirmadas. `LocalCareRuleEngine` aplica configuración versionada y límites; `DeviceHttpController` recibe lecturas del ESP32 y devuelve instrucciones. Las instrucciones deseadas tienen correlación y caducidad; firmware y Edge deben impedir prolongar una activación fuera del límite incluso sin conexión. Estos cambios de correlación y credenciales forman parte de la adaptación pendiente del software.
 
 #### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-Este diagrama C4 (nivel componente) muestra la estructura interna del Bounded Context IoT Management en el backend Spring Boot. El sistema gestiona la comunicación bidireccional con Arduino mediante REST y MQTT: los controladores (IoTNodeController, SensorReadingController, ActuatorCommandController) reciben solicitudes y las derivan a servicios de aplicación, que ejecutan la lógica de negocio, evalúan anomalías y disparan actuadores cuando corresponde. La información se persiste en MySQL a través de sus repositorios, y MqttPublisherService publica comandos en el broker MQTT para su ejecución en Arduino.
+La vista objetivo descompone el Backend API en controladores de nodo, sincronización y estados, handlers de aplicación, política de comandos, repositorios JPA y publicador de eventos. Fuera del contenedor se muestran MySQL y PlantSync Edge. Una vista complementaria del sistema Edge muestra controlador HTTP de dispositivo, motor de reglas, cliente de sincronización y SQLite. Los ESP32 aparecen como dependencia del Edge, sin enlace de comandos directo desde la nube.
 
-<p __align__="center">
-  <img src="Images/cap4/BoundedContext/IotManagement/C4Component.png">
-</p>
+**Pendiente de actualización:** la siguiente imagen es heredada y contiene MQTT/Arduino; no representa el diseño objetivo descrito en esta sección.
 
-
+<p align="center"><img src="Images/cap4/BoundedContext/IotManagement/C4Component.png" alt="Diagrama IoT heredado; pendiente de actualización"></p>
 
 #### 5.4.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
 
-Este diagrama UML muestra la capa de dominio de IoT Management con tres agregados principales (IoTNode, SensorReading y ActuatorCommand), modelados como entidades independientes del negocio, junto con los value objects/enumeraciones (NodeStatus, ActuatorType, ActuatorAction, CommandStatus) que aseguran consistencia de datos; además, presenta los servicios de comando y consulta que orquestan la lógica, destacando que SensorReadingCommandService activa ActuatorCommandService cuando detecta anomalías en la telemetría.
+El UML debe incluir los cuatro agregados, políticas, enumeraciones y repositorios de 5.4.1, con miembros, visibilidad y multiplicidades. Cada nodo puede tener muchas lecturas y comandos; cada comando refiere a un nodo y, opcionalmente, a una solicitud del agente mediante su identificador. Las imágenes heredadas deben reemplazarse.
 
-<p __align__="center">
-  <img src="Images/cap4/BoundedContext/IotManagement/classDiagram.png">
-</p>
-
-
+<p align="center"><img src="Images/cap4/BoundedContext/IotManagement/classDiagram.png" alt="UML IoT heredado; pendiente de actualización"></p>
 
 ##### 5.4.6.2. Bounded Context Database Design Diagram
 
-El diseño de base de datos del bounded context IoT Management se compone de tres tablas principales: iot_nodes, que registra cada nodo Arduino con su nodeCode único, estado, referencias de planta/perfil y fecha de creación; sensor_readings, que almacena la telemetría (humedad de suelo, temperatura y humedad de aire, nivel de iluminación en lux y timestamp) vinculada al nodo por nodeId y optimizada para consultas temporales con índices por nodo y fecha; y actuator_commands, que guarda el historial de comandos enviados a actuadores (tipo, acción, estado y fecha) también relacionado por nodeId e indexado para localizar rápidamente comandos pendientes; en conjunto, las relaciones garantizan consistencia e integridad referencial al depender ambas tablas transaccionales de iot_nodes.
+| Tabla objetivo | Campos y restricciones principales |
+|---|---|
+| `iot_nodes` | PK `id`, UNIQUE `node_code`, `plant_id`, `profile_id`, `status`, `last_seen_at`, fechas. |
+| `iot_node_capabilities` | PK compuesta (`node_id`, `actuator_type`), FK local a `iot_nodes`. |
+| `sensor_readings` | PK `id`, FK `node_id`, UNIQUE (`node_id`, `reading_id`), valores, `light_level` nullable, `source`, `captured_at`, `received_at`; índice (`node_id`, `captured_at`). |
+| `actuator_commands` | PK UUID `id`, FK `node_id`, `action_request_id` nullable, UNIQUE (`node_id`, `idempotency_key`), tipo, estado deseado, duración, estado, caducidad, reporte y error. |
+| `care_configurations` | PK/FK `node_id`, versión, rangos y límites operativos, fecha de actualización. |
 
-<p __align__="center">
-  <img src="Images/cap4/BoundedContext/IotManagement/desingDiagram.png">
-</p>
+Las referencias a plantas y solicitudes externas son identificadores de contrato; IoT no accede a sus entidades JPA. La confirmación de lectura permite que Edge retire el registro de su cola local sin perder datos. Pendiente representar este esquema en el diagrama:
+
+<p align="center"><img src="Images/cap4/BoundedContext/IotManagement/desingDiagram.png" alt="Base de datos IoT heredada; pendiente de actualización"></p>
+
+<div style="page-break-before: always;"></div>
 
 ### 5.5. Bounded Context: CareScheduling
+
+CareScheduling conserva tareas y recordatorios del propietario. Comprueba propiedad mediante `PlantProfilesContextFacade`; `completed` representa una confirmación manual del usuario y no un acuse de ejecución física. Las propuestas del agente no completan tareas automáticamente. Si una tarea se relaciona con un comando, conserva su referencia y registra la evidencia solo después de `ActuatorCommandExecuted`. Marcar una tarea no incrementa por sí solo la elegibilidad de EcoRewards, que se calcula con telemetría válida.
 
 #### 5.5.1. Domain Layer
 
@@ -4179,6 +3972,8 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 ### 5.6. Bounded Context: Inteligencia Botánica y Análisis Externo
 
+Se conserva la separación entre evaluación determinista de condiciones y análisis visual generativo. `PlantImageAnalysisService` acepta solamente una respuesta conforme al esquema, admite resultado inconcluso y conserva proveedor, modelo y fecha. La certeza expresada por Gemini es orientativa y no habilita acciones ni concede recompensas. Las políticas de especie utilizadas por `RecommendationService` son versionadas y revisadas, independientes del LLM.
+
 #### 5.6.1. Domain Layer
 
 En esta capa se define el núcleo de la generación de recomendaciones personalizadas de cuidado por especie, encapsulando las reglas de negocio para analizar telemetría, imágenes de plantas y datos botánicos externos. El análisis visual identifica especies probables y señales visibles de estrés o enfermedad; sus resultados se consideran una evaluación de apoyo y no un diagnóstico médico o agronómico definitivo.
@@ -4190,8 +3985,8 @@ El agregado Recommendation es la raíz que gestiona las recomendaciones de cuida
 | Atributos | Tipo de dato | Visibilidad | Descripción |
 |---|---|---|---|
 | id | RecommendationId | Private | Identificador único de la recomendación. |
-| plantId | String | Private | Identificador de la planta evaluada. |
-| userId | String | Private | Identificador del usuario propietario. |
+| plantId | Long | Private | Identificador de la planta evaluada. |
+| userId | Long | Private | Identificador del usuario propietario. |
 | telemetrySnapshot | TelemetrySnapshot | Private | Captura inmutable de telemetría relevante. |
 | externalSpeciesData | ExternalSpeciesData | Private | Datos externos de especie consultados. |
 | plantCondition | PlantCondition | Private | Estado evaluado de la planta. |
@@ -4202,13 +3997,13 @@ El agregado Recommendation es la raíz que gestiona las recomendaciones de cuida
 | Métodos | Tipo de retorno | Visibilidad | Descripción |
 |---|---|---|---|
 | getId() | RecommendationId | Public | Devuelve el ID de la recomendación. |
-| getPlantId() | String | Public | Devuelve el ID de la planta asociada. |
+| getPlantId() | Long | Public | Devuelve el ID de la planta asociada. |
 | getUserId() | String | Public | Devuelve el ID del usuario propietario. |
 | getPlantCondition() | PlantCondition | Public | Devuelve la condición evaluada de la planta. |
 | getAdvicesOrderedByPriority() | List\<CareAdvice\> | Public | Devuelve consejos ordenados por prioridad. |
 | pullDomainEvents() | List\<DomainEvent\> | Public | Extrae eventos de dominio para publicación. |
 | evaluate(RecommendationService) | void | Public | Ejecuta evaluación con servicio de dominio. |
-| Recommendation(RecommendationId, String, String, TelemetrySnapshot, ExternalSpeciesData) | Constructor | Public | Crea una nueva recomendación. |
+| Recommendation(RecommendationId, Long, Long, TelemetrySnapshot, ExternalSpeciesData) | Constructor | Public | Crea una nueva recomendación. |
 
 **Aggregate: `PlantImageAnalysis`**
 
@@ -4217,10 +4012,10 @@ Representa el análisis de una fotografía enviada por el usuario. Conserva el r
 | Atributos | Tipo de dato | Visibilidad | Descripción |
 |---|---|---|---|
 | id | UUID | Private | Identificador único del análisis. |
-| plantId | String | Private | Identificador de la planta asociada, si ya está registrada. |
-| userId | String | Private | Propietario que solicitó el análisis. |
+| plantId | Long | Private | Identificador de la planta asociada, si ya está registrada. |
+| userId | Long | Private | Propietario que solicitó el análisis. |
 | imageReference | String | Private | Referencia protegida a la imagen almacenada. |
-| speciesCandidates | List\<SpeciesCandidate\> | Private | Especies probables ordenadas por nivel de confianza. |
+| speciesCandidates | List\<SpeciesCandidate\> | Private | Especies probables ordenadas por nivel de certeza orientativa. |
 | conditionFindings | List\<ConditionFinding\> | Private | Señales visuales detectadas, como amarillamiento, manchas compatibles con hongos o marchitez. |
 | provider | String | Private | Proveedor externo que procesó la imagen. |
 | analyzedAt | LocalDateTime | Private | Fecha y hora del análisis. |
@@ -4228,7 +4023,7 @@ Representa el análisis de una fotografía enviada por el usuario. Conserva el r
 | Métodos | Tipo de retorno | Visibilidad | Descripción |
 |---|---|---|---|
 | getId() | UUID | Public | Devuelve el identificador del análisis. |
-| getSpeciesCandidates() | List\<SpeciesCandidate\> | Public | Devuelve las especies probables y su confianza. |
+| getSpeciesCandidates() | List\<SpeciesCandidate\> | Public | Devuelve las especies probables y su certeza orientativa. |
 | getConditionFindings() | List\<ConditionFinding\> | Public | Devuelve los hallazgos visuales detectados. |
 | PlantImageAnalysis(...) | Constructor | Public | Crea el resultado validado de un análisis visual. |
 
@@ -4262,8 +4057,8 @@ Entidad que representa un consejo específico generado como parte de una recomen
 | ExternalSpeciesData | Información externa por especie: rangos óptimos de humedad, temperatura, iluminación mínima, frecuencia de riego sugerida y fuente de datos. |
 | PlantCondition | Enumeración que representa el estado evaluado de la planta: OPTIMAL, STRESS_HUMIDITY, STRESS_TEMPERATURE, STRESS_LIGHT, CRITICAL. |
 | CareAdviceType | Enumeración del tipo de consejo: WATERING, LIGHT_SUPPLEMENT, TEMPERATURE_ADJUSTMENT, FERTILIZER, GENERAL. |
-| SpeciesCandidate | Especie sugerida y nivel de confianza devuelto por el proveedor de visión computacional. |
-| ConditionFinding | Señal visual detectada, nivel de confianza y descripción; no representa por sí sola un diagnóstico definitivo. |
+| SpeciesCandidate | Especie sugerida y nivel de certeza orientativa devuelto por el proveedor de visión computacional. |
+| ConditionFinding | Señal visual detectada, nivel de certeza orientativa y descripción; no representa por sí sola un diagnóstico definitivo. |
 
 **Domain Events**
 
@@ -4276,8 +4071,8 @@ Entidad que representa un consejo específico generado como parte de una recomen
 
 | Service | Descripción |
 |---|---|
-| RecommendationService | Servicio de dominio que compara telemetría contra datos externos de especie, determina PlantCondition y construye la lista priorizada de CareAdvice. |
-| PlantImageAnalysisService | Valida y normaliza la respuesta de visión computacional, filtrando candidatos y hallazgos según sus niveles de confianza configurados. |
+| RecommendationService | Servicio de dominio que compara telemetría contra políticas revisadas de especie, determina PlantCondition y construye la lista priorizada de CareAdvice. |
+| PlantImageAnalysisService | Valida y normaliza la respuesta de visión computacional, validando estructura, catálogo y coherencia de candidatos/hallazgos; admite un resultado inconcluso y no trata la certeza del modelo como probabilidad calibrada. |
 
 **Clase: `RecommendationQueryService`**
 
@@ -4305,6 +4100,8 @@ Entidad que representa un consejo específico generado como parte de una recomen
 | handle(GenerateRecommendationCommand) | Orquesta la generación de una recomendación: consulta telemetría, especie y datos externos, evalúa, persiste y publica el evento. |
 | handle(AnalyzePlantImageCommand) | Valida la solicitud, obtiene la imagen desde almacenamiento seguro, invoca el puerto de análisis externo, valida el resultado, lo persiste y publica PlantImageAnalyzed. |
 
+Los puertos `IRecommendationRepository` e `IPlantImageAnalysisRepository` son abstracciones de dominio; sus implementaciones JPA pertenecen a infraestructura. `IPlantVisionProvider` e `IPlantImageStorage` son puertos de aplicación. `PlantImageAnalysis` incorpora `status: AnalysisStatus` (PENDING, COMPLETED, INCONCLUSIVE, FAILED), `model: String`, `failureReason: String?` y métodos públicos `complete()`, `markInconclusive()` y `fail(reason)`. Los atributos permanecen privados y los resultados no se guardan como COMPLETED si falló el proveedor.
+
 #### 5.6.2. Interface Layer
 
 La capa de interfaz del contexto Inteligencia Botánica y Análisis Externo expone controladores REST para consulta de recomendaciones y análisis de imágenes, además de consumidores de eventos para el procesamiento de telemetría. La aplicación móvil carga una fotografía mediante el Web Service REST; el backend gestiona la validación y el acceso al proveedor externo, evitando que las credenciales del proveedor se expongan al cliente.
@@ -4319,6 +4116,11 @@ Gestiona las operaciones de consulta de recomendaciones generadas para plantas e
 |---|---|---|
 | getLatestRecommendation | GET /api/v1/recommendations/{plantId}/latest | Devuelve la última recomendación generada para una planta. |
 | getRecommendationHistory | GET /api/v1/recommendations/{plantId}/history | Devuelve el historial paginado de recomendaciones de una planta. |
+
+**Controlador: `PlantImageAnalysisController`**
+
+| Método | Ruta | Descripción |
+|---|---|---|
 | analyzePlantImage | POST /api/v1/plant-analyses | Recibe una imagen o una referencia de carga y solicita la identificación probable de especie y señales visibles. Requiere autenticación y valida formato y tamaño. |
 | getPlantImageAnalysis | GET /api/v1/plant-analyses/{analysisId} | Devuelve el resultado de un análisis perteneciente al usuario autenticado. |
 
@@ -4338,7 +4140,7 @@ Escucha eventos de nueva telemetría publicados por el bounded context IoT Manag
 |---|---|
 | RecommendationResource | Representa la respuesta de una recomendación: plantCondition, lista de advices ordenados por prioridad, timestamp de generación y fuente de datos. |
 | AnalyzePlantImageResource | Solicitud con plantId opcional y referencia de imagen cargada mediante un mecanismo autenticado. |
-| PlantImageAnalysisResource | Resultado con candidatos de especie, hallazgos visuales, confianza, proveedor, fecha y una advertencia de que el resultado es orientativo. |
+| PlantImageAnalysisResource | Resultado con candidatos de especie, hallazgos visuales, certeza orientativa, proveedor, fecha y una advertencia de que el resultado es orientativo. |
 
 **Assemblers (Transformadores)**
 
@@ -4362,17 +4164,19 @@ Los servicios internos implementan la lógica de orquestación para la generaci�
 | Dependencia | Descripción |
 |---|---|
 | IRecommendationRepository | Repositorio para persistencia de recomendaciones. |
-| ISpeciesDataRepository | Repositorio para consulta de datos externos de especie. |
+| ISpeciesDataRepository | Puerto de consulta de políticas versionadas de especie. |
 | RecommendationService | Servicio de dominio para evaluación de condiciones. |
 | RecommendationEventPublisher | Publicador de eventos de dominio. |
-| PlantProfilesClient | Cliente HTTP para consulta de especie desde PlantProfiles BC. |
-| IPlantVisionProvider | Puerto de aplicación para solicitar identificación y evaluación visual de la imagen a un proveedor externo. |
+| PlantProfilesContextFacade | Contrato interno para validar propiedad y consultar especie y rangos versionados; no requiere HTTP entre módulos. |
+| IoTManagementContextFacade | Captura de telemetría reciente y su procedencia para evaluar condiciones sin acceder a repositorios ajenos. |
+
+El análisis visual se expone mediante `PlantImageAnalysisController`, separado de `RecommendationController`. Ambas aplicaciones pueden utilizarlo; el usuario se obtiene del JWT. Cuando existe `plantId`, `PlantProfilesContextFacade` valida propiedad. Se rechazan referencias de imagen ajenas y URLs externas arbitrarias. El agotamiento de cuota o timeout produce estado FAILED/INCONCLUSIVE y una respuesta controlada, sin inventar un diagnóstico.
 
 **Clase: `AnalyzePlantImageCommandHandler`**
 
 | Título | AnalyzePlantImageCommandHandler |
 |---|---|
-| Descripción | Orquesta la carga segura, el análisis externo, la validación de confianza y la persistencia del resultado de visión computacional. |
+| Descripción | Orquesta la carga segura, el análisis externo, la validación del esquema y coherencia del resultado y la persistencia del resultado de visión computacional. |
 
 **Dependencias**
 
@@ -4424,26 +4228,26 @@ Esta capa implementa los mecanismos de persistencia, integración con servicios 
 |---|---|
 | save(Recommendation) | Persiste o actualiza una recomendación. |
 | findById(RecommendationId) | Recupera una recomendación por su ID. |
-| findLatestByPlantId(String) | Recupera la recomendación más reciente de una planta. |
-| findByPlantIdPaginated(String, int, int) | Recupera historial paginado de recomendaciones. |
+| findLatestByPlantId(Long) | Recupera la recomendación más reciente de una planta. |
+| findByPlantIdPaginated(Long, int, int) | Recupera historial paginado de recomendaciones. |
 
 **Clase: `SpeciesDataRepositoryImpl`**
 
 | Título | SpeciesDataRepositoryImpl |
 |---|---|
-| Descripción | Implementación del repositorio que consume API externa de datos botánicos por especie (ej. Perenual API). |
+| Descripción | Implementación que consulta el catálogo de políticas de especie versionadas del proyecto en MySQL. Conserva fuente, unidades y rangos revisados; no requiere Perenual ni otra API botánica en el MVP. |
 
 **Métodos**
 
 | Método | Descripción |
 |---|---|
-| findBySpeciesName(String) | Consulta datos externos de especie y retorna ExternalSpeciesData. |
+| findBySpeciesName(String) | Consulta la política versionada de especie y retorna ExternalSpeciesData como captura de datos con fuente explícita. |
 
 **Clase: `PlantVisionProviderAdapter`**
 
 | Título | PlantVisionProviderAdapter |
 |---|---|
-| Descripción | Adaptador de infraestructura que traduce el contrato interno a un proveedor externo y normaliza su respuesta. Se prioriza un servicio especializado como Plant.id; un servicio general como Google Cloud Vision solo se usaría si las pruebas confirman que cubre las especies y señales visuales requeridas. |
+| Descripción | Adaptador de infraestructura que traduce el contrato interno a un proveedor externo y normaliza su respuesta. La implementación seleccionada es Google Gemini API mediante GeminiPlantVisionAdapter, con modelo configurable y salida estructurada validada. El resultado es orientativo: no se afirma precisión clínica/agronómica ni se interpreta un número generado por el modelo como probabilidad calibrada. |
 
 **Métodos**
 
@@ -4453,31 +4257,35 @@ Esta capa implementa los mecanismos de persistencia, integración con servicios 
 
 **Resiliencia y privacidad**
 
-Las llamadas externas se realizan desde el backend mediante secretos almacenados en un gestor seguro, con tiempos de espera, límites de reintento y manejo explícito de indisponibilidad. La imagen se limita al propósito solicitado, se almacena de forma protegida con retención definida y no se registra en logs. El proveedor se abstrae detrás de IPlantVisionProvider para permitir su reemplazo sin modificar el dominio.
+Las llamadas externas se realizan desde el backend mediante secretos almacenados en configuración de secretos protegida del entorno, con tiempos de espera, límites de reintento y manejo explícito de indisponibilidad. La imagen se limita al propósito solicitado, no se registra en logs y requiere consentimiento informado para enviarse a Google. En el MVP se procesa temporalmente con un límite de tamaño configurable, se elimina al finalizar y se persisten solo metadatos y resultados; imageReference es una referencia opaca de procesamiento, no una URL pública. Si se habilita almacenamiento duradero, su proveedor y retención deben incorporarse antes a los C4 y al contrato de privacidad. El proveedor se abstrae detrás de IPlantVisionProvider para permitir su reemplazo sin modificar el dominio.
 
 **Clase: `TelemetryEventConsumerImpl`**
 
 | Título | TelemetryEventConsumerImpl |
 |---|---|
-| Descripción | Implementación del consumidor de eventos que escucha TelemetrySaved desde el message broker y delega al command handler. |
+| Descripción | Implementación del consumidor de eventos que escucha TelemetrySaved mediante eventos internos después del commit y delega al command handler. |
 
 **Clase: `RecommendationEventPublisher`**
 
 | Título | RecommendationEventPublisher |
 |---|---|
-| Descripción | Adaptador que publica el evento RecommendationGenerated al message broker (RabbitMQ/Kafka) para notificaciones. |
+| Descripción | Adaptador que publica el evento RecommendationGenerated mediante el publicador interno después del commit para consumidores desacoplados; no requiere RabbitMQ ni Kafka. |
 
 **Infraestructura de Soporte**
 
 | Component | Descripción |
 |---|---|
-| SpeciesDataCache | Caché basada en Redis con TTL configurable para reducir llamadas a API externa. Almacena ExternalSpeciesData indexado por speciesName. |
+| SpeciesDataCache | Consulta de políticas de especie persistidas en MySQL. No se agrega Redis; la política aplicada se conserva por versión en el resultado. |
+
+`GeminiPlantVisionAdapter` implementa `IPlantVisionProvider`; `TemporaryPlantImageStorage` implementa `IPlantImageStorage` y elimina los bytes después del procesamiento. `PlantImageAnalysisRepositoryImpl` guarda resultados, candidatos y hallazgos mediante JPA. Todos los proveedores reciben datos mínimos y las credenciales permanecen en el backend.
 
 #### 5.6.5. Bounded Context Software Architecture Component Level Diagrams
 
+**Pendiente de actualización:** las imágenes heredadas siguientes deben reemplazarse por vistas que incluyan el controlador de imágenes, los dos handlers, las fachadas, GeminiPlantVisionAdapter, Google Gemini API y los repositorios. La ausencia de broker y caché Redis debe ser consistente con el diagrama de contenedores.
+
 Este diagrama representa cómo el Bounded Context de Inteligencia Botánica y Análisis Externo gestiona recomendaciones y consulta información botánica externa. Como extensión propuesta, el flujo de análisis de imágenes es: aplicación móvil → API REST → PlantVisionProviderAdapter → servicio externo de visión computacional; el backend persiste el resultado normalizado y devuelve las especies probables y señales visibles al cliente.
 
-El RecommendationController es el punto de entrada para las consultas de recomendaciones. El TelemetryEventConsumer escucha eventos de IoT Management y activa GenerateRecommendationCommandHandler, que consulta datos de especie, evalúa las condiciones y persiste el resultado. Para imágenes, PlantImageAnalysisController activa AnalyzePlantImageCommandHandler, que valida la solicitud, invoca el adaptador externo y persiste la respuesta a través del repositorio correspondiente. La API externa no es llamada directamente por la aplicación móvil.
+El RecommendationController es el punto de entrada para las consultas de recomendaciones. El TelemetryEventConsumer escucha eventos de IoT Management y activa GenerateRecommendationCommandHandler, que consulta datos de especie, evalúa las condiciones y persiste el resultado. Para imágenes, PlantImageAnalysisController activa AnalyzePlantImageCommandHandler, que valida la solicitud, invoca el adaptador de Google Gemini API y persiste la respuesta a través del repositorio correspondiente. La API externa no es llamada directamente por la aplicación móvil.
 
 <p align="center">
   <img src="https://i.imgur.com/z3WV0Na.png">
@@ -4492,6 +4300,8 @@ En esta sección, se explican los diagramas que presentan un mayor detalle sobre
 
 ##### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
 
+La vista objetivo incluye `Recommendation`, `CareAdvice`, `PlantImageAnalysis`, `SpeciesCandidate`, `ConditionFinding`, `AnalysisStatus`, servicios de dominio y repositorios. Un análisis tiene cero o muchos candidatos y hallazgos; puede referir a cero o una planta registrada. Debe representar métodos, visibilidad y multiplicidades según 5.6.1. Imagen heredada pendiente de actualización.
+
 <br>
 <p align="center">
   <img src="https://i.imgur.com/txZn7ir.png" alt="Bounded Context Class Diagram" width="100%">
@@ -4501,6 +4311,17 @@ En esta sección, se explican los diagramas que presentan un mayor detalle sobre
 </p>
 
 ##### 5.6.6.2. Bounded Context Database Design Diagram
+
+| Tabla objetivo | Persistencia y restricciones |
+|---|---|
+| `recommendations` | PK UUID, `plant_id`, `user_id`, captura de telemetría, condición, fecha, fuente y versión de política. |
+| `care_advices` | PK UUID, FK local a recomendación, tipo, prioridad, mensaje y acción sugerida. |
+| `species_care_policies` | PK (`species_key`, `version`), unidades, rangos, fuente y fecha de revisión. |
+| `plant_image_analyses` | PK UUID, `user_id`, `plant_id` nullable, referencia opaca, estado, proveedor, modelo, fechas y motivo de fallo. |
+| `analysis_species_candidates` | FK al análisis, posición, especie y certeza orientativa; PK (`analysis_id`, `position`). |
+| `analysis_condition_findings` | PK UUID, FK al análisis, señal, descripción y certeza orientativa. |
+
+No se persisten los bytes de la fotografía en MySQL. Los identificadores externos no transfieren la propiedad de plantas o usuarios a este contexto. Imagen heredada pendiente de actualización.
 
 <p align="center">
   <img src="https://i.imgur.com/dmbd8Iz.png" alt="Database Design Diagram" width="80%">
@@ -4512,11 +4333,11 @@ En esta sección, se explican los diagramas que presentan un mayor detalle sobre
 
 <div style="page-break-before: always;"></div>
 
-### 5.7. Bounded Context: \<PlantGuidance\>
+### 5.7. Bounded Context: PlantGuidance
 
 #### 5.7.1. Domain Layer
 
-En esta capa se gestiona la asesoría botánica conversacional y la interpretación de solicitudes de acción. El modelo de lenguaje puede proponer una intención estructurada (por ejemplo, activar riego o iluminación), pero no controla directamente los dispositivos: las reglas de autorización, seguridad y elegibilidad del dispositivo se validan en el backend antes de solicitar la ejecución al contexto IoT Management.
+En esta capa se gestiona la asesoría botánica conversacional y la interpretación de solicitudes de acción. El modelo de lenguaje puede proponer una intención estructurada (por ejemplo, mover el servo o activar iluminación), pero no controla directamente los dispositivos: las reglas de autorización, seguridad y elegibilidad del dispositivo se validan en el backend antes de solicitar la ejecución al contexto IoT Management.
 
 **Aggregate: `Consultation`**
 
@@ -4548,15 +4369,15 @@ Representa una acción que el agente propone ejecutar en un dispositivo asociado
 | actionRequestId | UUID | Private | Identificador idempotente de la solicitud. |
 | userId | Long | Private | Usuario que inició la solicitud. |
 | plantId | Long | Private | Planta para la que se solicita la acción. |
-| actionType | PlantActionType | Private | Acción permitida, como activar riego o iluminación de cultivo. |
-| status | PlantActionStatus | Private | PROPOSED, AWAITING_CONFIRMATION, AUTHORIZED, SENT, COMPLETED, REJECTED o FAILED. |
+| actionType | PlantActionType | Private | Acción permitida, como ajustar el servo o activar luz/buzzer de un nodo compatible. |
+| status | PlantActionStatus | Private | PROPOSED, AWAITING_CONFIRMATION, AUTHORIZED, SENT, COMPLETED, REJECTED, FAILED o EXPIRED. |
 | reason | String | Private | Motivo resumido asociado a la acción. |
 | createdAt | Timestamp | Private | Fecha y hora de creación de la solicitud. |
 
 | Métodos | Tipo de retorno | Visibilidad | Descripción |
 |---|---|---|---|
 | authorize() | void | Public | Autoriza una acción tras validar permisos y políticas; no la publica directamente. |
-| requireConfirmation() | void | Public | Solicita confirmación del usuario según la política del actuador. |
+| requireConfirmation() | void | Public | Solicita confirmación explícita para toda acción física del MVP. |
 | reject(String) | void | Public | Rechaza la solicitud e identifica el motivo. |
 | complete() | void | Public | Marca la acción como completada tras recibir el evento de confirmación de IoT Management. |
 
@@ -4565,8 +4386,8 @@ Representa una acción que el agente propone ejecutar en un dispositivo asociado
 | Value Object   | Descripción                                                                 |
 |----------------|-----------------------------------------------------------------------------|
 | ChatRole  | Define el rol del emisor del mensaje: `USER`, `ASSISTANT` y `SYSTEM`.      |
-| PlantSnapshot | Contiene los datos técnicos de la planta al momento de la duda: nombre, descripción, temperatura y humedad.|
-| PlantActionType | Catálogo cerrado alineado con IoT Management: WATER_SPRAYER_ACTIVATE/DEACTIVATE y UV_LIGHT_ACTIVATE/DEACTIVATE; no acepta comandos arbitrarios del LLM. |
+| PlantSnapshot | Contiene los datos técnicos de la planta al momento de la duda: nombre, especie, temperatura, humedad, iluminación disponible, procedencia y fecha de lectura.|
+| PlantActionType | Catálogo cerrado alineado con IoT Management: SERVO_SET_POSITION, LIGHT_ON/OFF y BUZZER_ON/OFF; no acepta comandos arbitrarios del LLM. |
 | PlantActionStatus | Estado de procesamiento de la acción y su confirmación. |
 | ActionPolicyDecision | Resultado de validar propiedad, permisos, estado del dispositivo, límites operativos y necesidad de confirmación. |
 
@@ -4575,8 +4396,7 @@ Representa una acción que el agente propone ejecutar en un dispositivo asociado
 | Título       | ChatbotQueryService |
 |--------------|----------------------|
 | Descripción  | Interfaz de servicio de consultas para recuperar el historial de interacciones de una planta específica. |
-| handle(ProcessPlantActionCommand) | Obtiene contexto autorizado de planta y dispositivo, solicita al LLM una intención estructurada y permite únicamente acciones incluidas en el catálogo de comandos. |
-| handle(ConfirmPlantActionCommand) | Registra la confirmación del usuario cuando la política requiere aprobación y solicita el envío de la acción validada. |
+
 
 **Métodos**
 
@@ -4596,10 +4416,14 @@ Representa una acción que el agente propone ejecutar en un dispositivo asociado
 | Método                           | Descripción                                                        |
 |---------------------------------|--------------------------------------------------------------------|
 | handle(ProcessPlantConsultationCommand)     | Orquesta la obtención de datos de la planta, genera el prompt para la IA y registra la respuesta.            |
-| handle(ClearPlantConsultationsCommand)     | Elimina el historial de consultas de una planta. |
-| handle(ProcessPlantActionCommand) | Obtiene contexto autorizado de planta y dispositivo, solicita al LLM una intención estructurada y permite únicamente acciones incluidas en el catálogo de comandos. |
-| handle(ConfirmPlantActionCommand) | Registra la confirmación del usuario cuando la política requiere aprobación y solicita el envío de la acción validada. |
+| handle(ClearPlantConsultationsCommand) | Elimina contenido conversacional del usuario; conserva auditoría de acciones según la retención definida. |
+| handle(ProcessPlantActionCommand) | Obtiene contexto autorizado, solicita una intención tipada y valida catálogo y parámetros. |
+| handle(ConfirmPlantActionCommand) | Revalida propiedad, dispositivo y límites antes de autorizar y delegar a IoT. |
 
+
+`PlantActionRequest` también conserva `consultationId: Long?`, `parameters: ActionParameters`, `commandId: UUID?`, `expiresAt: Instant`, `updatedAt: Instant` y `failureReason: String?`. Su UUID correlaciona la solicitud con el comando IoT y permite idempotencia. `ActionParameters` limita posición del servo y duración de luz/buzzer. Los métodos públicos `markSent(commandId)`, `fail(reason)` y `expire()` impiden transiciones inválidas; `PlantActionStatus` incluye EXPIRED. Se publican eventos `PlantActionAuthorized` y `PlantActionCompleted` después del commit.
+
+Para TP1 se exige confirmación explícita del usuario para toda acción física propuesta por IA. Una pregunta puede producir asesoría sin solicitar ejecución. Se rechazan propuestas fuera del catálogo, datos faltantes, contexto desactualizado y parámetros fuera de rango. Ninguna mención de “regar” se transforma en riego real si el nodo solo posee un servo de demostración. El modo autónomo sin confirmación queda fuera del MVP.
 
 #### 5.7.2. Interface Layer
 
@@ -4615,9 +4439,9 @@ Controlador REST que maneja el flujo de comunicación entre el usuario y el agen
 |-----------------|----------------------------------|-----------------------------------------------------------|
 | consultAi   | POST /api/v1/chatbot/consult        | Recibe la pregunta del usuario y el ID de la planta para generar asesoría. |
 | getPlantHistory | GET /api/v1/chatbot/history/{plantId} | Recupera la conversación actual para una planta. |
-| deleteHistory | DELETE /api/v1/chatbot/history/{plantId} | Borra la conversación al salir de la vista del chatbot. |
+| deleteHistory | DELETE /api/v1/chatbot/history/{plantId} | Borra contenido conversacional a petición del usuario sin eliminar registros de autorización y ejecución de acciones. |
 | requestPlantAction | POST /api/v1/chatbot/actions | Interpreta una solicitud conversacional y devuelve una propuesta o el estado de la acción, sin aceptar comandos libres para el hardware. |
-| confirmPlantAction | POST /api/v1/chatbot/actions/{actionRequestId}/confirm | Registra la aprobación explícita para una acción que la política clasifica como sujeta a confirmación. |
+| confirmPlantAction | POST /api/v1/chatbot/actions/{actionRequestId}/confirm | Registra aprobación explícita para una propuesta física vigente, después de revalidar propiedad y límites. |
 
 **Dependencias**
 
@@ -4628,9 +4452,11 @@ Controlador REST que maneja el flujo de comunicación entre el usuario y el agen
 | ConsultationResourceFromEntityAssembler | Convierte la entidad Consultation a un recurso JSON.           |
 | ProcessConsultationCommandFromResourceAssembler | Mapea el request del usuario a un comando de dominio.      |
 
+La confirmación verifica que el usuario autenticado sea el dueño de la solicitud, que esté en AWAITING_CONFIRMATION y que no haya vencido. El cliente no puede confirmar una intención modificando sus parámetros. `GET /api/v1/chatbot/actions/{actionRequestId}` devuelve el estado y la referencia del comando, validando propiedad.
+
 #### 5.7.3. Application Layer
 
-El servicio ChatbotCommandServiceImpl actúa como el orquestador principal. Además de llamar al modelo de IA, utiliza ProfilesContextFacade (ACL) para obtener el contexto de la planta y sus lecturas disponibles antes de procesar la solicitud.
+El servicio ChatbotCommandServiceImpl actúa como el orquestador principal. Además de llamar al modelo de IA, utiliza PlantProfilesContextFacade (ACL) para validar propiedad y obtener la planta, e IoTManagementContextFacade para obtener lecturas disponibles antes de procesar la solicitud.
 
 **Clase: `ChatbotCommandServiceImpl`**
 
@@ -4643,8 +4469,8 @@ El servicio ChatbotCommandServiceImpl actúa como el orquestador principal. Adem
 | Dependencia            | Descripción                                   |
 |-------------------------|-----------------------------------------------|
 | ConsultationRepository       | Repositorio para persistencia (audit log) de las consultas.  |
-| AiServiceAgent     | Adaptador de infraestructura para la API  |
-| ProfilesContextFacade     | Fachada para obtener datos de la planta desde otro Bounded Context.  |
+| IAiService | Puerto de aplicación para asesoría y propuestas tipadas; GeminiAiServiceAdapter lo implementa. |
+| PlantProfilesContextFacade     | Fachada para obtener datos de la planta desde otro Bounded Context.  |
 | IoTManagementContextFacade | Fachada para verificar el dispositivo vinculado y solicitar, mediante contrato interno, una acción autorizada al bounded context IoT Management. |
 | PlantActionPolicy | Servicio que comprueba propiedad, autorización, límites, estado del nodo y reglas de confirmación antes del envío. |
 | PlantActionRepository | Repositorio para persistir propuestas y estados de ejecución auditables. |
@@ -4661,9 +4487,13 @@ El servicio ChatbotCommandServiceImpl actúa como el orquestador principal. Adem
 |-------------------------|-----------------------------------------------|
 | ConsultationRepository      | Acceso a la persistencia de consultas. |
 
+`ProcessPlantActionHandler` obtiene la planta mediante `PlantProfilesContextFacade`, telemetría/capacidades mediante `IoTManagementContextFacade` y diagnóstico existente mediante `BotanicalIntelligenceContextFacade` cuando sea pertinente. `IAiService` devuelve una propuesta tipada; `PlantActionPolicy` decide aceptación o rechazo y el handler persiste la propuesta antes de pedir confirmación. `ConfirmPlantActionHandler` revalida el contexto actual y delega a IoT con el mismo `actionRequestId` como clave idempotente. La respuesta conserva `commandId` y marca SENT, nunca COMPLETED.
+
+`PlantActionResultEventHandler` consume `ActuatorCommandExecuted`, `ActuatorCommandFailed` o `ActuatorCommandExpired`, verifica correlación y actualiza la solicitud de manera idempotente. Solo el evento de ejecución permite COMPLETED. La telemetría, la propiedad y los rangos son datos del backend: las instrucciones libres del usuario o del LLM no pueden reemplazar esas políticas.
+
 #### 5.7.4. Infrastructure Layer
 
-Esta capa maneja la integración técnica con el modelo de lenguaje y la persistencia de auditoría. El AiServiceAdapter convierte el contexto autorizado en una solicitud al LLM y transforma su respuesta en una intención tipada; la aplicación valida esa intención mediante PlantActionPolicy y delega el envío al PlantActionGatewayAdapter. El modelo no recibe credenciales MQTT ni acceso directo al broker.
+Esta capa maneja la integración técnica con el modelo de lenguaje y la persistencia de auditoría. El AiServiceAdapter convierte el contexto autorizado en una solicitud al LLM y transforma su respuesta en una intención tipada; la aplicación valida esa intención mediante PlantActionPolicy y delega el envío al PlantActionGatewayAdapter. El modelo no recibe credenciales de dispositivos ni acceso a Edge. La infraestructura implementa puertos de aplicación; las interfaces de repositorio pertenecen al dominio y sus implementaciones JPA a infraestructura.
 
 **Clase: `ConsultationRepository`**
 
@@ -4689,13 +4519,13 @@ Esta capa maneja la integración técnica con el modelo de lenguaje y la persist
 
 | Título | AiServiceAdapter |
 |---|---|
-| Descripción | Adaptador que integra un LLM externo (por ejemplo, Claude o GPT) y convierte sus respuestas de uso de herramientas/function calling en una intención tipada del dominio. La aplicación valida la intención y nunca ejecuta directamente una respuesta libre del modelo. |
+| Descripción | Adaptador que integra Google Gemini API, con modelo configurable, y convierte sus respuestas de uso de herramientas/function calling en una intención tipada del dominio. La aplicación valida la intención y nunca ejecuta directamente una respuesta libre del modelo. |
 
 **Clase: `PlantActionGatewayAdapter`**
 
 | Título | PlantActionGatewayAdapter |
 |---|---|
-| Descripción | Adaptador ACL que comunica una acción ya autorizada al contexto IoT Management, que conserva la responsabilidad de emitir el comando MQTT y gestionar sus acuses de recibo. |
+| Descripción | Adaptador ACL que comunica una acción ya autorizada al contexto IoT Management, que conserva la responsabilidad de persistir el comando deseado, entregarlo mediante sincronización HTTP con Edge y gestionar aceptación, ejecución, fallo o caducidad. |
 
 **Clase: `PlantActionRepositoryImpl`**
 
@@ -4703,29 +4533,15 @@ Esta capa maneja la integración técnica con el modelo de lenguaje y la persist
 |---|---|
 | Descripción | Implementación de persistencia del historial de propuestas, confirmaciones y resultados de acciones para auditoría e idempotencia. |
 
-**Clase: `AiServiceAdapter`**
-
-| Título | AiServiceAdapter |
-|---|---|
-| Descripción | Adaptador que integra un LLM externo (por ejemplo, Claude o GPT) y convierte sus respuestas de uso de herramientas/function calling en una intención tipada del dominio. La aplicación valida la intención y nunca ejecuta directamente una respuesta libre del modelo. |
-
-**Clase: `PlantActionGatewayAdapter`**
-
-| Título | PlantActionGatewayAdapter |
-|---|---|
-| Descripción | Adaptador ACL que comunica una acción ya autorizada al contexto IoT Management, que conserva la responsabilidad de emitir el comando MQTT y gestionar sus acuses de recibo. |
-
-**Clase: `PlantActionRepositoryImpl`**
-
-| Título | PlantActionRepositoryImpl |
-|---|---|
-| Descripción | Implementación de persistencia del historial de propuestas, confirmaciones y resultados de acciones para auditoría e idempotencia. |
+`GeminiAiServiceAdapter` es la implementación seleccionada de `IAiService` y del rol descrito como `AiServiceAdapter`. Usa salida estructurada/llamadas a herramientas para obtener propuestas, sin ejecutar herramientas dentro del cliente del modelo. Timeouts, cuota agotada o salida inválida producen un fallo controlado sin emitir comandos. `ConsultationRepositoryImpl` y `PlantActionRepositoryImpl` persisten en MySQL; `PlantActionGatewayAdapter` implementa el puerto `IPlantActionGateway` mediante la fachada de IoT dentro del backend.
 
 #### 5.7.5. Bounded Context Software Architecture Component Level Diagrams
 
+**Pendiente de actualización:** la imagen heredada muestra Angular/Ionic y solo asesoría. La nueva vista debe mostrar Vue y Flutter como clientes, controladores de consulta/acción, handlers de propuesta/confirmación/resultados, PlantActionPolicy, fachadas, GeminiAiServiceAdapter, repositorios y Google Gemini API. La comunicación con IoT ocurre dentro del Backend API; Edge aparece en su vista IoT correspondiente.
+
 Este diagrama de componentes representa cómo el sistema consume datos de plantas para alimentar la asesoría conversacional y, cuando corresponde, tramitar acciones sobre dispositivos.
 
-El `ChatbotController` recibe la consulta o solicitud del usuario. El `ChatbotCommandService` obtiene el contexto autorizado mediante `ProfilesContextFacade`, solicita al `AiServiceAdapter` una respuesta o intención estructurada y registra la interacción. Si se propone una acción, `PlantActionPolicy` valida permisos, dispositivo y límites; las acciones sujetas a confirmación esperan la aprobación del usuario. Solo entonces se solicita la ejecución a IoT Management, que publica el comando MQTT y reporta su estado. Así, el LLM recomienda o propone, mientras que el backend y el bounded context IoT mantienen el control de autorización y ejecución.
+El `ChatbotController` recibe la consulta o solicitud del usuario. El `ChatbotCommandService` obtiene el contexto autorizado mediante `PlantProfilesContextFacade`, solicita al `AiServiceAdapter` una respuesta o intención estructurada y registra la interacción. Si se propone una acción, `PlantActionPolicy` valida permisos, dispositivo y límites; todas las acciones físicas propuestas esperan confirmación explícita del usuario para el MVP. Solo entonces se solicita la ejecución a IoT Management, que sincroniza el estado deseado con Edge y reporta el resultado correlacionado del actuador. Así, el LLM recomienda o propone, mientras que el backend y el bounded context IoT mantienen el control de autorización y ejecución.
 
 <p align="center">
   <img src="Images/cap4/BoundedContext/PlantGuidance/PlantGuidance.png">
@@ -4737,9 +4553,11 @@ El `ChatbotController` recibe la consulta o solicitud del usuario. El `ChatbotCo
 
 #### 5.7.6. Bounded Context Software Architecture Code Level Diagrams
 
-En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de IAM.
+En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context PlantGuidance.
 
 ##### 5.7.6.1. Bounded Context Domain Layer Class Diagrams
+
+El UML objetivo incorpora Consultation, PlantActionRequest, ActionParameters, PlantActionPolicy, ActionPolicyDecision, enumeraciones y repositorios. Una consulta puede originar cero o muchas propuestas; cada propuesta tiene cero o un comando IoT por identificador. Los diagramas heredados deben incluir el catálogo real y las transiciones de 5.7.1, con visibilidad y multiplicidades.
 
 <br>
 
@@ -4756,6 +4574,14 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 ##### 5.7.6.2. Bounded Context Database Design Diagram
 
+| Tabla objetivo | Persistencia y restricciones |
+|---|---|
+| `consultations` | PK BIGINT, `user_id`, `plant_id`, mensaje, respuesta, captura autorizada, proveedor/modelo y `created_at`. |
+| `plant_action_requests` | PK UUID, FK local opcional `consultation_id`, `user_id`, `plant_id`, tipo, parámetros, estado, motivo, `command_id` nullable UNIQUE, caducidad, creación y actualización. |
+| `plant_action_audit` | PK BIGINT, FK a solicitud, transición, actor, decisión de política y fecha; no almacena claves ni imagen original. |
+
+La PK de solicitud se usa como clave idempotente al delegar a IoT. `plant_id` refiere a PlantProfiles sin convertir PlantGuidance en propietario de la tabla de plantas. La siguiente imagen heredada solo representa consultas y debe ampliarse con acciones y auditoría.
+
 <p align="center">
   <img src="Images/cap4/BoundedContext/PlantGuidance/PlantGuidance Database.png" alt = "database diagram" width="80%">
 </p>
@@ -4768,121 +4594,105 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 ### 5.8. Bounded Context: EcoRewards y Web3
 
-Este bounded context gestiona la elegibilidad de recompensas vinculadas al cuidado verificable de las plantas y la emisión opcional de medallas digitales en una blockchain de pruebas. Se integra con la telemetría del contexto IoT Management y publica recompensas mediante un adaptador Web3. La emisión on-chain no reemplaza el historial de dominio ni se considera una funcionalidad desplegada hasta completar la integración y validarla en testnet.
+EcoRewards evalúa cuidado verificable y emite opcionalmente Eco-Badges en Ethereum Sepolia. La integración seleccionada utiliza Alchemy como acceso RPC, Web3j en el Backend API Java y un contrato propio ERC-721 basado en OpenZeppelin. MetaMask pertenece al flujo web de IAM y firma únicamente la prueba de titularidad de la dirección; el backend firma la acuñación con una cuenta emisora del proyecto. Las medallas de testnet no representan dinero, créditos de pago ni un mercado de activos.
 
 #### 5.8.1. Domain Layer
 
-**Aggregate: `EcoRewardProgress`**
+Los atributos siguientes son privados y los métodos públicos. La elegibilidad permanece disponible aunque el usuario no vincule una wallet o la red esté temporalmente indisponible.
 
-Representa el progreso de una planta hacia una recompensa. La regla inicial considera una meta de 30 días consecutivos dentro de los rangos óptimos de humedad y luz, evaluados a partir de telemetría válida y asociada a la planta.
+| Agregado | Atributos principales | Métodos y reglas |
+|---|---|---|
+| `EcoRewardProgress` | `id: UUID`, `userId: Long`, `plantId: Long`, `policyVersion: String`, `qualifyingSince: Instant?`, `lastQualifiedAt: Instant?`, `status: RewardProgressStatus`, `rewardId: UUID?` | `evaluate(snapshot, policy)`, `resetStreak(reason)`, `isEligible()`, `grantEligibility()`. La regla inicial exige 30 días verificables de humedad y luz dentro de rangos según especie. Una brecha superior a la permitida por la política rompe la racha. |
+| `EcoReward` | `id: UUID`, `progressId: UUID`, `userId: Long`, `plantId: Long`, `policyVersion`, `earnedAt: Instant`, `status: RewardStatus` | `award()` y `requestMint()`. La recompensa de dominio existe antes de la acuñación y no depende de disponibilidad de blockchain. Una planta obtiene una sola medalla para cada versión de política en el MVP. |
+| `RewardMintRequest` | `id: UUID`, `rewardId: UUID`, `walletAddress: WalletAddress`, `chainId: Long`, `contractAddress: String`, `tokenId: String?`, `transactionHash: String?`, `status: RewardMintStatus`, `consentedAt: Instant`, `submittedAt: Instant?`, `confirmedAt: Instant?`, `failureReason: String?` | `submit(hash)`, `confirm(tokenId)`, `fail(reason)` y `retry()`. Conserva dirección y red acordadas; repetir una solicitud no produce una segunda medalla. |
 
-| Atributos | Tipo de dato | Visibilidad | Descripción |
-|---|---|---|---|
-| id | UUID | Private | Identificador del progreso de recompensa. |
-| userId | Long | Private | Usuario propietario de la planta. |
-| plantId | Long | Private | Planta cuyo progreso se evalúa. |
-| qualifyingSince | LocalDateTime | Private | Inicio del período consecutivo que cumple los criterios. |
-| lastQualifiedAt | LocalDateTime | Private | Última telemetría válida considerada. |
-| status | RewardProgressStatus | Private | TRACKING, ELIGIBLE, MINT_REQUESTED, MINTED o INELIGIBLE. |
-| rewardId | UUID | Private | Recompensa generada al alcanzar la meta, si corresponde. |
-
-| Métodos | Tipo de retorno | Visibilidad | Descripción |
-|---|---|---|---|
-| evaluate(TelemetrySnapshot, RewardPolicy) | void | Public | Evalúa la lectura según umbrales y continuidad del período. |
-| isEligible() | boolean | Public | Indica si se cumplió el período requerido. |
-| markMintRequested() | void | Public | Registra el inicio de la emisión on-chain. |
-| markMinted(String, String) | void | Public | Registra la red y el identificador de transacción confirmada. |
-
-**Aggregate: `EcoReward`**
-
-Representa una recompensa otorgada por el cumplimiento de una meta de cuidado.
-
-| Atributos | Tipo de dato | Visibilidad | Descripción |
-|---|---|---|---|
-| id | UUID | Private | Identificador interno de la recompensa. |
-| progressId | UUID | Private | Progreso que originó la recompensa. |
-| walletAddress | String | Private | Billetera proporcionada y autorizada por el usuario. |
-| tokenId | String | Private | Identificador del token, disponible después de la acuñación. |
-| transactionHash | String | Private | Hash de la transacción confirmada, si existe. |
-| network | String | Private | Red blockchain usada, inicialmente una testnet. |
-| status | RewardMintStatus | Private | PENDING, SUBMITTED, CONFIRMED o FAILED. |
-
-**Value Objects y políticas**
-
-| Value Object | Descripción |
+| Value object / política | Definición |
 |---|---|
-| RewardPolicy | Criterios versionados de humedad y luz, duración objetivo de 30 días y frecuencia mínima de telemetría aceptada. |
-| RewardProgressStatus | Estados del seguimiento de elegibilidad. |
-| RewardMintStatus | Estados de la operación de acuñación y confirmación. |
-| WalletAddress | Dirección validada de una billetera cuya vinculación requiere consentimiento del usuario. |
+| `RewardPolicy` | Versión, especie, humedad/luz y unidades, duración objetivo de 30 días, intervalo máximo entre lecturas y origen PHYSICAL requerido. Rangos revisados del proyecto; no generados por IA. |
+| `RewardProgressStatus` | TRACKING, ELIGIBLE, INELIGIBLE. El estado de acuñación se mantiene separado. |
+| `RewardStatus` | EARNED, MINT_REQUESTED, MINTED. |
+| `RewardMintStatus` | PENDING, SUBMITTED, CONFIRMED, FAILED. |
+| `WalletAddress` | Dirección Ethereum normalizada recibida desde una asociación activa y verificada de IAM. |
+| `BlockchainReference` | Red Ethereum Sepolia, `chainId = 11155111`, contrato, hash y token; solo contiene identificadores públicos. |
 
-Una brecha de telemetría que impida verificar la continuidad rompe la racha: el siguiente período comienza con la primera lectura válida posterior. La política de especie define los umbrales óptimos y la frecuencia mínima de lecturas; la regla se mantiene en el dominio y no se delega al contrato inteligente.
+`RewardEligibilityService` utiliza ventanas de telemetría con fecha de captura, deduplicadas y válidas. Evalúa los valores disponibles a la frecuencia acordada; no afirma observar continuamente la planta entre muestras. Sin un sensor de luz medido/calibrado, las condiciones de luz no se pueden verificar y esta política no concede la recompensa. Una imagen, una respuesta del LLM, una luz activada o una tarea marcada no sustituyen esa medición.
 
-**Domain Events**
-
-| Event | Descripción |
-|---|---|
-| RewardEligibilityAchieved | Emitido al completar el período continuo establecido por RewardPolicy. |
-| RewardMintRequested | Emitido al solicitar la acuñación para una billetera validada. |
-| RewardMintConfirmed | Emitido al confirmar la transacción en la red configurada. |
+`EcoRewardProgressRepository`, `EcoRewardRepository` y `RewardMintRequestRepository` son interfaces del dominio. `IRewardTokenGateway` es un puerto de aplicación. Los eventos incluyen `RewardEligibilityAchieved`, `RewardMintRequested`, `RewardMintConfirmed` y `RewardMintFailed`, con identificadores y fecha. La política aplicada no cambia retrospectivamente durante una racha sin reiniciar explícitamente su evaluación.
 
 #### 5.8.2. Interface Layer
 
-La API REST ofrece consulta del progreso y vinculación voluntaria de una billetera. La vinculación comprueba la titularidad mediante una firma de desafío y no solicita ni almacena frases semilla o claves privadas.
+`EcoRewardController` obtiene `userId` del JWT y comprueba propiedad de la planta/recompensa. IAM es el único responsable de desafío, firma, vinculación y desvinculación de wallet; no existe un segundo endpoint de vinculación en EcoRewards.
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| getRewardProgress | GET /api/v1/rewards/progress/{plantId} | Devuelve progreso, criterios aplicados y estado de elegibilidad de una planta del usuario autenticado. |
-| linkWallet | POST /api/v1/rewards/wallet | Verifica mediante firma de desafío la titularidad de la dirección pública y la asocia con consentimiento del usuario. |
-| getRewardHistory | GET /api/v1/rewards/history | Devuelve las recompensas del usuario y sus estados de emisión. |
+| Método / ruta objetivo | Contrato |
+|---|---|
+| GET /api/v1/rewards/progress/{plantId} | Progreso, política aplicada, calidad/ausencia de telemetría y elegibilidad de una planta propia. |
+| GET /api/v1/rewards/history | Recompensas del usuario, con estados de dominio y acuñación separados. |
+| POST /api/v1/rewards/{rewardId}/mint | Solicita emisión con consentimiento explícito e `Idempotency-Key`; toma la wallet activa desde IAM, no desde una dirección libre enviada por el cliente. |
+| GET /api/v1/rewards/{rewardId}/mint | Estado, red y hash/token disponibles; PENDING/SUBMITTED no se presentan como emisión confirmada. |
+
+La emisión no es automática por el hecho de vincular una wallet. Flutter consulta progreso y medallas mediante REST; la vinculación opcional se completa en la web mediante MetaMask. El consentimiento confirma la red de pruebas y la dirección destino seleccionada.
 
 #### 5.8.3. Application Layer
 
-**Clase: `EvaluateRewardEligibilityHandler`**
-
-Consume telemetría guardada y eventos de análisis de condiciones, aplica la política vigente y actualiza `EcoRewardProgress`. Al alcanzar la meta, persiste la elegibilidad y publica `RewardEligibilityAchieved`.
-
-**Clase: `MintEcoRewardHandler`**
-
-Al recibir una elegibilidad, verifica que exista una billetera asociada y el consentimiento requerido, crea una solicitud idempotente y llama al puerto `IRewardTokenGateway`. La emisión fallida queda registrada para seguimiento y no se presenta como confirmada hasta recibir la verificación de la red.
-
-**Dependencias**
-
-| Dependencia | Descripción |
+| Handler / contrato | Responsabilidad y dependencias |
 |---|---|
-| IEcoRewardProgressRepository | Persistencia de progreso y estado de elegibilidad. |
-| IEcoRewardRepository | Persistencia de recompensas y referencias de transacción. |
-| RewardPolicy | Regla de negocio para evaluar la continuidad y condiciones óptimas. |
-| IRewardTokenGateway | Puerto de aplicación para solicitar acuñación y consultar confirmación de transacción. |
-| IoTManagementContextFacade | Acceso al historial de telemetría necesario para evaluar el período. |
+| `EvaluateRewardEligibilityHandler` | Consume `TelemetrySaved` de forma idempotente, consulta ventana mediante `IoTManagementContextFacade`, política revisada de especie y propiedad mediante `PlantProfilesContextFacade`; usa `RewardEligibilityService` y persiste progreso/recompensa antes de publicar elegibilidad. |
+| `RequestEcoRewardMintHandler` | Valida usuario, recompensa EARNED, wallet activa mediante `IAMWalletContextFacade` y consentimiento. Crea una única `RewardMintRequest` para la recompensa; repetir petición devuelve el estado existente. |
+| `SubmitEcoRewardMintHandler` | Tramita solicitudes persistidas PENDING mediante `IRewardTokenGateway`, guarda hash y estado SUBMITTED. Antes de firmar revalida asociación; no reemplaza silenciosamente la dirección tras un cambio de wallet. |
+| `ConfirmEcoRewardMintHandler` | Consulta recibo y estado on-chain, valida contrato, red, rewardId, destinatario y token. Aplica el número configurable de confirmaciones, registra CONFIRMED y publica evento después del commit. |
+| `GetRewardProgressQueryHandler` | Consulta progreso y explica requisitos faltantes sin invocar blockchain. |
+| `EcoRewardsContextFacade` | Consulta interna de recompensas; no expone repositorios, cuenta emisora ni credenciales RPC. |
+
+La solicitud persistida sirve como cola de trabajo recuperable. Un fallo RPC no revierte la elegibilidad ni bloquea telemetría. Ante un timeout con resultado desconocido, el handler consulta la transacción y el rewardId en el contrato antes de reenviar; un reintento no crea otra recompensa. El emisor serializa transacciones por cuenta y controla nonce para evitar colisiones. Los errores se conservan con reintentos limitados y estado visible.
 
 #### 5.8.4. Infrastructure Layer
 
-**Clase: `RewardTokenGatewayAdapter`**
-
-Implementa `IRewardTokenGateway` para comunicarse con el contrato de recompensas mediante un nodo RPC de testnet. Si el backend se implementa en JVM, puede utilizar Web3j; si la integración se despliega como un servicio Node.js, puede utilizar ethers.js o web3.js. El adaptador oculta los detalles de ABI, RPC y proveedor de red al dominio.
-
-**Responsabilidades técnicas**
-
-| Componente | Descripción |
+| Implementación | Responsabilidad |
 |---|---|
-| EcoRewardNFT | Contrato inteligente ERC-721 que acuña una medalla por recompensa elegible, restringe mint a una cuenta autorizada, evita duplicar el mismo rewardId y emite RewardMinted al acuñar. |
-| EcoRewardProgressRepositoryImpl | Persiste mediciones de progreso, períodos calificados y estado de elegibilidad. |
-| EcoRewardRepositoryImpl | Persiste dirección pública, tokenId, red y hash/estado de transacción. |
-| BlockchainTransactionMonitor | Consulta el estado de las transacciones y publica RewardMintConfirmed o un fallo explícito. |
-| WalletConsentService | Registra el consentimiento y la asociación de la dirección pública, sin custodiar claves privadas. |
+| `AlchemyWeb3jRewardTokenAdapter` | Implementa `IRewardTokenGateway` usando Web3j y RPC HTTPS de Alchemy para Ethereum Sepolia. Verifica `chainId` antes de firmar y nunca usa claves del usuario. |
+| `EcoRewardNFT` | Contrato ERC-721 del proyecto basado en OpenZeppelin. Acuñación restringida al rol emisor, registro único de `rewardId` y evento `RewardMinted` con destinatario/token. El MVP no incorpora marketplace ni promete intransferibilidad sin una regla explícita del contrato. |
+| Repositorios JPA | Implementan los tres repositorios en MySQL y restricciones de unicidad e idempotencia. |
+| `BlockchainTransactionMonitor` | Trabajo programado del mismo backend para solicitudes PENDING/SUBMITTED, comprobación de recibos y confirmaciones. No implica otro microservicio. |
+| `IssuerSigner` | Firma con clave de la cuenta emisora obtenida de secretos protegidos del entorno, fuera del código y logs. Contrato, RPC, chainId y confirmaciones son configuración. |
 
-Las claves de firma necesarias para desplegar o invocar el contrato se gestionan fuera del código fuente mediante secretos protegidos, con permisos mínimos. Para acuñar a usuarios, la billetera destino es una dirección pública; el backend no solicita la clave privada del usuario. La integración se limita inicialmente a una testnet para evitar operaciones con activos reales y validar costos, confirmaciones y errores de red.
+Ni el contrato ni los eventos públicos contienen fotografías, correo, nombre o telemetría. Se envían un identificador opaco de recompensa y metadatos mínimos de la medalla. La relación entre recompensa, usuario y planta permanece en MySQL. Una wallet desvinculada no modifica una medalla ya emitida; la solicitud pendiente requiere nueva validación/consentimiento antes de cambiar el destino.
 
-#### 5.8.5. Flujo de elegibilidad y emisión
+Los niveles gratuitos de proveedores y el gas de prueba dependen de cuotas y disponibilidad. El diseño maneja agotamiento de cuota y falta de saldo del emisor sin degradar el cuidado principal. La dirección del contrato, transacciones y enlaces de explorador solo se incorporarán al informe como evidencia después del despliegue real en Sepolia.
 
-1. IoT Management guarda telemetría y emite eventos de lecturas disponibles.
-2. `EvaluateRewardEligibilityHandler` valida humedad y luz contra `RewardPolicy`, verifica la continuidad de los 30 días y actualiza el progreso.
-3. Al alcanzar el criterio, se emite `RewardEligibilityAchieved`; la elegibilidad se conserva en la base de datos del servicio.
-4. Si el usuario vinculó una billetera pública y otorgó consentimiento, `MintEcoRewardHandler` solicita la acuñación a `RewardTokenGatewayAdapter`.
-5. El monitor espera la confirmación de testnet, registra el hash y actualiza el estado a `CONFIRMED`; ante un error conserva el estado fallido para revisión o reintento controlado.
+#### 5.8.5. Bounded Context Software Architecture Component Level Diagrams
 
-Este flujo separa la evaluación de negocio de la lógica del contrato, hace auditable el progreso y evita que la disponibilidad temporal de blockchain interrumpa la recepción de telemetría o la experiencia principal de PlantSync.
+**Pendiente de elaboración.** La vista C4 de componentes debe mostrar `EcoRewardController`, handlers de evaluación y acuñación, `RewardEligibilityService`, fachadas IAM/IoT/PlantProfiles, repositorios JPA, `BlockchainTransactionMonitor` y `AlchemyWeb3jRewardTokenAdapter` dentro del Backend API. MySQL y Ethereum Sepolia vía Alchemy son dependencias externas al contenedor. MetaMask se representa en la vista de IAM/web, sin conexión directa desde este módulo para firmar acuñaciones.
+
+#### 5.8.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 5.8.6.1. Bounded Context Domain Layer Class Diagrams
+
+**Pendiente de elaboración.** Incluir agregados, políticas, value objects, enumeraciones, interfaces de repositorio y métodos de 5.8.1 con visibilidad y multiplicidad. Cada progreso tiene cero o una recompensa; cada recompensa tiene cero o una solicitud de emisión cuyo historial puede registrar varios intentos técnicos sin originar nuevas medallas. El contrato inteligente es un elemento de infraestructura y no una entidad JPA del dominio.
+
+##### 5.8.6.2. Bounded Context Database Design Diagram
+
+**Pendiente de elaboración.** El esquema objetivo es:
+
+| Tabla | Campos y restricciones principales |
+|---|---|
+| `eco_reward_progress` | PK UUID, `user_id`, `plant_id`, `policy_version`, inicio/última lectura válida, estado; UNIQUE (`plant_id`, `policy_version`). |
+| `eco_rewards` | PK UUID, FK `progress_id` UNIQUE, `user_id`, `plant_id`, versión, fecha de obtención y estado. |
+| `reward_mint_requests` | PK UUID, FK `reward_id` UNIQUE, wallet, chainId, contrato, tokenId, hash, estado, consentimiento y fechas/error; UNIQUE (`chain_id`, `contract_address`, `token_id`) cuando tokenId existe. |
+| `reward_mint_attempts` | PK BIGINT, FK `mint_request_id`, intento, hash cuando exista, estado/error y fecha. |
+| `reward_processed_events` | PK `event_id`, fecha; deduplica evaluación de telemetría sin conceder dos veces la misma recompensa. |
+
+La asociación de wallet se consulta en IAM y no se duplica como una segunda identidad. `wallet_address` en la solicitud es una captura del destino consentido para esa emisión. Los repositorios solo acceden a las tablas de este contexto.
+
+#### 5.8.7. Flujo de elegibilidad y emisión
+
+1. IoT guarda telemetría y publica `TelemetrySaved` después del commit.
+2. EcoRewards comprueba origen, frecuencia, rangos versionados y continuidad verificable; una brecha o medición inválida reinicia la racha según la política.
+3. Al completar 30 días, persiste la recompensa EARNED y comunica la elegibilidad, sin exigir wallet.
+4. El usuario vincula opcionalmente su wallet mediante IAM y solicita la emisión con consentimiento explícito.
+5. El backend valida la asociación y firma con la cuenta emisora del proyecto; registra la solicitud y el hash sin declararla confirmada prematuramente.
+6. El monitor verifica el resultado en Sepolia y actualiza medalla/token; ante fallo conserva la recompensa ganada y permite reintento controlado.
+
+La demostración TP1 puede usar un conjunto de datos de prueba que represente las ventanas de 30 días para verificar la regla. Debe identificarse como simulación y no presentarse como evidencia de 30 días reales de cuidado ni de medición de luz física.
 
 <div style="page-break-before: always;"></div>
 
