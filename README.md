@@ -224,7 +224,7 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
       - [5.5.6.2. Bounded Context Database Design Diagram](#5562-bounded-context-database-design-diagram)
   - [5.6. Bounded Context: Inteligencia Botánica y Análisis Externo](#56-bounded-context-inteligencia-botánica-y-análisis-externo)
     - [5.6.1. Domain Layer](#561-domain-layer)
-    - [5.6.2. Interface Layer](#4462-interface-layer)
+    - [5.6.2. Interface Layer](#562-interface-layer)
     - [5.6.3. Application Layer](#563-application-layer)
     - [5.6.4. Infrastructure Layer](#564-infrastructure-layer)
     - [5.6.5. Bounded Context Software Architecture Component Level Diagrams](#565-bounded-context-software-architecture-component-level-diagrams)
@@ -240,6 +240,12 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
     - [5.7.6. Bounded Context Software Architecture Code Level Diagrams](#576-bounded-context-software-architecture-code-level-diagrams)
       - [5.7.6.1. Bounded Context Domain Layer Class Diagrams](#5761-bounded-context-domain-layer-class-diagrams)
       - [5.7.6.2. Bounded Context Database Design Diagram](#5762-bounded-context-database-design-diagram)
+  - [5.8. Bounded Context: EcoRewards y Web3](#58-bounded-context-ecorewards-y-web3)
+    - [5.8.1. Domain Layer](#581-domain-layer)
+    - [5.8.2. Interface Layer](#582-interface-layer)
+    - [5.8.3. Application Layer](#583-application-layer)
+    - [5.8.4. Infrastructure Layer](#584-infrastructure-layer)
+    - [5.8.5. Flujo de elegibilidad y emisión](#585-flujo-de-elegibilidad-y-emisión)
 
 - [Capítulo VI: Solution UI/UX Design](#capítulo-vi-solution-uiux-design)
   - [6.1. Style Guidelines](#61-style-guidelines)
@@ -4587,6 +4593,8 @@ Representa una acción que el agente propone ejecutar en un dispositivo asociado
 |---------------------------------|--------------------------------------------------------------------|
 | handle(ProcessPlantConsultationCommand)     | Orquesta la obtención de datos de la planta, genera el prompt para la IA y registra la respuesta.            |
 | handle(ClearPlantConsultationsCommand)     | Elimina el historial de consultas de una planta. |
+| handle(ProcessPlantActionCommand) | Obtiene contexto autorizado de planta y dispositivo, solicita al LLM una intención estructurada y permite únicamente acciones incluidas en el catálogo de comandos. |
+| handle(ConfirmPlantActionCommand) | Registra la confirmación del usuario cuando la política requiere aprobación y solicita el envío de la acción validada. |
 
 
 #### 5.7.2. Interface Layer
@@ -4673,6 +4681,24 @@ Esta capa maneja la integración técnica con el modelo de lenguaje y la persist
 |-------------------------|-----------------------------------------------|
 | ConsultationEntity      | Representación JPA de la consulta en la base de datos. |
 | AiClient      | Cliente externo para la comunicación con los servidores de la IA |
+**Clase: `AiServiceAdapter`**
+
+| Título | AiServiceAdapter |
+|---|---|
+| Descripción | Adaptador que integra un LLM externo (por ejemplo, Claude o GPT) y convierte sus respuestas de uso de herramientas/function calling en una intención tipada del dominio. La aplicación valida la intención y nunca ejecuta directamente una respuesta libre del modelo. |
+
+**Clase: `PlantActionGatewayAdapter`**
+
+| Título | PlantActionGatewayAdapter |
+|---|---|
+| Descripción | Adaptador ACL que comunica una acción ya autorizada al contexto IoT Management, que conserva la responsabilidad de emitir el comando MQTT y gestionar sus acuses de recibo. |
+
+**Clase: `PlantActionRepositoryImpl`**
+
+| Título | PlantActionRepositoryImpl |
+|---|---|
+| Descripción | Implementación de persistencia del historial de propuestas, confirmaciones y resultados de acciones para auditoría e idempotencia. |
+
 **Clase: `AiServiceAdapter`**
 
 | Título | AiServiceAdapter |
