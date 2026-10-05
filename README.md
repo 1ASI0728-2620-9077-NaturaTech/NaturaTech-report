@@ -810,8 +810,10 @@ Se diseñaron dos sets de preguntas orientados a recolectar datos demográficos,
 12.- ¿Consideras que delegar el cuidado a la tecnología disruptiva es la solución definitiva para perder el miedo a tener plantas en casa por falta de tiempo o conocimiento?
 
 ### 2.2.2. Registro de entrevistas
-Se han realizado las entrevistas de acuerdo al diseño de preguntas. Se puede visualizar el video de las entrevistas en el siguiente link: 
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202219481_upc_edu_pe/IQB9oQbZhBX7RoBPiVA2usHiAaafYcwj3awpWjlGIKXH0w0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=UsbHgV 
+Se han realizado las entrevistas de acuerdo al diseño de preguntas. Se puede visualizar el video de las entrevistas en el siguiente enlace: 
+
+**[Hacer clic aquí para ver el video de las entrevistas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202219481_upc_edu_pe/IQB9oQbZhBX7RoBPiVA2usHiAaafYcwj3awpWjlGIKXH0w0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=UsbHgV)**
+
 
 <h4>Principiantes cuidadores de plantas:</h4>
 
@@ -843,7 +845,7 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202219481_upc_edu_pe/IQB9oQbZ
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td></td>
+      <td>0:08</td>
     </tr>
         <tr>
       <td><strong>Resumen:</strong></td>
@@ -862,7 +864,7 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202219481_upc_edu_pe/IQB9oQbZ
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
-      <td>Marcelo Barrientos</td>
+      <td>Marcelo Barretos Gonzales</td>
     </tr>
     <tr>
       <td>Edad</td>
@@ -882,7 +884,7 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202219481_upc_edu_pe/IQB9oQbZ
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td></td>
+      <td>5:16</td>
     </tr>
         <tr>
       <td><strong>Resumen:</strong></td>
@@ -921,7 +923,7 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202219481_upc_edu_pe/IQB9oQbZ
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td></td>
+      <td>15:08</td>
     </tr>
         <tr>
       <td><strong>Resumen:</strong></td>
@@ -965,7 +967,7 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202219481_upc_edu_pe/IQB9oQbZ
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td></td>
+      <td>22:17</td>
     </tr>
         <tr>
       <td><strong>Resumen:</strong></td>
@@ -1004,7 +1006,7 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202219481_upc_edu_pe/IQB9oQbZ
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td></td>
+      <td>27:28</td>
     </tr>
         <tr>
       <td><strong>Resumen:</strong></td>
@@ -1043,7 +1045,7 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202219481_upc_edu_pe/IQB9oQbZ
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td></td>
+      <td>31:56</td>
     </tr>
         <tr>
       <td><strong>Resumen:</strong></td>
@@ -2497,7 +2499,7 @@ Finalmente, se seleccionó la Opción 1, ya que permite mantener los seis bounde
 
 Este diagrama representa la visión de más alto nivel del ecosistema de la startup BioDemeter, mostrando las interacciones que mantienen los diferentes actores con la plataforma PlantSync, el hardware IoT y los servicios externos.
 
-![InnoSpace-diagram-landscape](./images/logos/Diagrama%20Landscape.png)
+![InnoSpace-diagram-landscape](Images/cap4/C4/diagrama_landscape.png)
 
 <p align="center">
   Elaboración propia
@@ -2527,7 +2529,7 @@ Este diagrama detalla la arquitectura interna de la plataforma PlantSync, exponi
 
 Este diagrama ilustra la infraestructura y el entorno de ejecución de la solución PlantSync, mapeando cómo se distribuyen físicamente los contenedores de software en la nube de Microsoft Azure, los dispositivos cliente de los usuarios y los microcontroladores IoT instalados en sus hogares.
 
-![InnoSpace-diagram-deployment](./images/logos/Diagrama%20Deploy.png)
+![InnoSpace-diagram-deployment](Images/cap4/C4/diagrama_deploy.png)
 
 <p align="center">
   Elaboración propia
