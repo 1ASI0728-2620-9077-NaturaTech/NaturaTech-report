@@ -94,10 +94,10 @@ Integrantes
 | 0.10 | 16/09/2026 | - | Desarrollo de Lean UX Hypothesis y Technical Stories |
 | 0.11 | 16/09/2026 | - | Redacción y mejora de épicas y User Stories |
 | 0.12 | 17/09/2026 | Rodrigo Alaya Cabrera | Desarrollo de antecedentes, problemática y entrevistas a empresas mineras |
-| 0.13 | 26/04/2026 |- | Integración final del informe, ajustes de historias de usuario y validación de entregables |
-| 0.14 | 02/05/2026 | - | Desarrollo de Style Guidelines, Information Architecture y sistemas de navegación y búsqueda |
-| 0.15 | 03/05/2026 | Rodrigo Alaya Cabrera | Diseño de wireframes, mockups y user flows para Landing Page, Web App, Mobile App e IoT |
-| 0.16 | 04/05/2026 | - | Desarrollo de prototipos de aplicaciones e integración del diseño UI/UX de la solución |
+| 0.13 | 19/09/2026 |- | Integración final del informe, ajustes de historias de usuario y validación de entregables |
+| 0.14 | 20/09/2026 | - | Desarrollo de Style Guidelines, Information Architecture y sistemas de navegación y búsqueda |
+| 0.15 | 24/09/2026 | Rodrigo Alaya Cabrera | Diseño de wireframes, mockups y user flows para Landing Page, Web App, Mobile App e IoT |
+| 0.16 | 2/10/2026 | - | Desarrollo de prototipos de aplicaciones e integración del diseño UI/UX de la solución |
 <div style="break-after: page;"></div>
 
 ## Project Report Collaboration Insights
@@ -2525,9 +2525,9 @@ Finalmente, se seleccionó la Opción 1, ya que permite mantener los seis bounde
 
 ### 4.3.1. Software Architecture System Landscape Diagram
 
-Este diagrama representa la visión de más alto nivel del ecosistema de la startup BioDemeter, mostrando las interacciones que mantienen los diferentes actores con la plataforma PlantSync, el hardware IoT y los servicios externos.
+Este diagrama representa la visión de más alto nivel del ecosistema de la startup NaturaTech, mostrando las interacciones que mantienen los diferentes actores con la plataforma PlantSync, el hardware IoT y los servicios externos.
 
-![InnoSpace-diagram-landscape](Images/cap4/C4/diagrama_landscape.png)
+![diagram-landscape](Images/cap4/C4/diagram_landscape.png)
 
 <p align="center">
   Elaboración propia
@@ -2537,7 +2537,7 @@ Este diagrama representa la visión de más alto nivel del ecosistema de la star
 
 Este diagrama representa el enfoque central de la solución PlantSync, mostrando las interacciones directas que mantiene la plataforma principal con sus distintos tipos de usuarios, el hardware IoT y las dependencias tecnológicas externas.
 
-<img src="Images/cap4/C4/SystemContext.png" alt="System Context Diagram" width="800"/>
+<img src="Images/cap4/C4/diagram_context.png" alt="System Context Diagram" width="800"/>
 
 <p align="center">
   Elaboración propia
@@ -2547,7 +2547,7 @@ Este diagrama representa el enfoque central de la solución PlantSync, mostrando
 
 Este diagrama detalla la arquitectura interna de la plataforma PlantSync, exponiendo los diferentes contenedores de software, las tecnologías empleadas en cada uno y los flujos de comunicación y datos entre estas piezas.
 
-<img src="Images/cap4/C4/Containers.png" alt="Container Level Diagram" width="800"/>
+<img src="Images/cap4/C4/diagram_conteiners.png" alt="Container Level Diagram" width="800"/>
 
 <p align="center">
   Elaboración propia
@@ -2557,7 +2557,7 @@ Este diagrama detalla la arquitectura interna de la plataforma PlantSync, exponi
 
 Este diagrama ilustra la infraestructura y el entorno de ejecución de la solución PlantSync, mapeando cómo se distribuyen físicamente los contenedores de software en la nube de Microsoft Azure, los dispositivos cliente de los usuarios y los microcontroladores IoT instalados en sus hogares.
 
-![InnoSpace-diagram-deployment](Images/cap4/C4/diagrama_deploy.png)
+![diagram-deployment](Images/cap4/C4/diagram_deploy.png)
 
 <p align="center">
   Elaboración propia
@@ -4302,7 +4302,7 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 ## 6.1. Style Guidelines
 
-Las guías de estilo de la solución definen los criterios visuales, comunicacionales e interactivos que orientan el diseño de la experiencia digital de **BioDemeter** y de su producto **PlantSync**. Su finalidad es asegurar consistencia entre la identidad de marca, la interfaz de usuario y las funcionalidades ofrecidas en la landing page, la aplicación web, la aplicación móvil y los componentes vinculados al ecosistema IoT.
+Las guías de estilo de la solución definen los criterios visuales, comunicacionales e interactivos que orientan el diseño de la experiencia digital de **NaturaTech** y de su producto **PlantSync**. Su finalidad es asegurar consistencia entre la identidad de marca, la interfaz de usuario y las funcionalidades ofrecidas en la landing page, la aplicación web, la aplicación móvil y los componentes vinculados al ecosistema IoT.
 
 <h3>6.1.1. General Style Guidelines</h3>
 
@@ -4310,7 +4310,7 @@ Las guías de estilo de la solución definen los criterios visuales, comunicacio
 
 **Brand Overview**
 
-**BioDemeter** es una startup orientada al desarrollo de soluciones tecnológicas para el cuidado de plantas en el hogar, combinando monitoreo, automatización y asistencia digital con un enfoque de sostenibilidad y bienestar ambiental. Su primer producto es **PlantSync**, una solución digital disponible en entorno web y móvil que permite registrar plantas, monitorear su estado, gestionar tareas de cuidado, consultar información útil y acceder a recomendaciones personalizadas basadas en datos y contexto de uso.
+**NaturaTech** es una startup orientada al desarrollo de soluciones tecnológicas para el cuidado de plantas en el hogar, combinando monitoreo, automatización y asistencia digital con un enfoque de sostenibilidad y bienestar ambiental. Su primer producto es **PlantSync**, una solución digital disponible en entorno web y móvil que permite registrar plantas, monitorear su estado, gestionar tareas de cuidado, consultar información útil y acceder a recomendaciones personalizadas basadas en datos y contexto de uso.
 
 **Brand Name**
 
@@ -4396,7 +4396,7 @@ El pie de página contendrá enlaces institucionales, medios de contacto, redes 
 
 ## 6.2. Information Architecture
 
-La arquitectura de información de la solución establece la manera en que el contenido y las funcionalidades se estructuran, organizan, etiquetan y presentan dentro del ecosistema digital de BioDemeter y PlantSync. Su propósito es garantizar una experiencia fluida, comprensible y consistente en la landing page, la aplicación web, la aplicación móvil y los módulos asociados al monitoreo inteligente.
+La arquitectura de información de la solución establece la manera en que el contenido y las funcionalidades se estructuran, organizan, etiquetan y presentan dentro del ecosistema digital de NaturaTech y PlantSync. Su propósito es garantizar una experiencia fluida, comprensible y consistente en la landing page, la aplicación web, la aplicación móvil y los módulos asociados al monitoreo inteligente.
 
 <h3>6.2.1. Organization Systems</h3>
 
@@ -4467,13 +4467,13 @@ Las etiquetas se mantendrán uniformes entre web, móvil y componentes vinculado
 
 <h3>6.2.3. SEO Tags and Meta Tags</h3>
 
-Las metaetiquetas permiten describir estructuralmente el contenido de la solución y mejorar su visibilidad en motores de búsqueda. Aunque no son visibles para el usuario final, cumplen un papel importante en la indexación de la landing page y en el posicionamiento digital de la marca BioDemeter y del producto PlantSync.
+Las metaetiquetas permiten describir estructuralmente el contenido de la solución y mejorar su visibilidad en motores de búsqueda. Aunque no son visibles para el usuario final, cumplen un papel importante en la indexación de la landing page y en el posicionamiento digital de la marca NaturaTech y del producto PlantSync.
 
 <h4>Landing Page</h4>
 
 **Título**
 ```html
-<title>BioDemeter | Tecnología inteligente para el cuidado de plantas</title>
+<title>NaturaTech | Tecnología inteligente para el cuidado de plantas</title>
 ```
 
 **Codificación de caracteres**
@@ -4485,7 +4485,7 @@ Las metaetiquetas permiten describir estructuralmente el contenido de la soluci�
 ```html
 <meta
   name="description"
-  content="BioDemeter es una startup que desarrolla soluciones digitales para el monitoreo, registro y cuidado inteligente de plantas mediante su app PlantSync en web y móvil."
+  content="NaturaTech es una startup que desarrolla soluciones digitales para el monitoreo, registro y cuidado inteligente de plantas mediante su app PlantSync en web y móvil."
 />
 ```
 
@@ -4493,14 +4493,14 @@ Las metaetiquetas permiten describir estructuralmente el contenido de la soluci�
 ```html
 <meta
   name="keywords"
-  content="BioDemeter, PlantSync, cuidado de plantas, monitoreo de plantas, app para plantas, jardinería digital, recomendaciones para plantas, web y móvil"
+  content="NaturaTech, PlantSync, cuidado de plantas, monitoreo de plantas, app para plantas, jardinería digital, recomendaciones para plantas, web y móvil"
 />
 ```
 
 **Author y Derechos de Autor**
 ```html
-<meta name="author" content="Equipo BioDemeter" />
-<meta name="copyright" content="Copyright BioDemeter team" />
+<meta name="author" content="Equipo NaturaTech" />
+<meta name="copyright" content="Copyright NaturaTech team" />
 ```
 
 <h4>Web and Mobile Application</h4>
@@ -4527,14 +4527,14 @@ Las metaetiquetas permiten describir estructuralmente el contenido de la soluci�
 ```html
 <meta
   name="keywords"
-  content="PlantSync, BioDemeter, historial de riego, guías para plantas, monitoreo manual, recomendaciones por clima, app móvil de plantas, plataforma web de plantas"
+  content="PlantSync, NaturaTech, historial de riego, guías para plantas, monitoreo manual, recomendaciones por clima, app móvil de plantas, plataforma web de plantas"
 />
 ```
 
 **Author y Derechos de Autor**
 ```html
-<meta name="author" content="Equipo BioDemeter" />
-<meta name="copyright" content="Copyright BioDemeter team" />
+<meta name="author" content="Equipo NaturaTech" />
+<meta name="copyright" content="Copyright NaturaTech team" />
 ```
 
 ### 6.2.4. Searching Systems
