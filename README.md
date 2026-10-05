@@ -2582,169 +2582,406 @@ Este diagrama ilustra la infraestructura y el entorno de ejecución de la soluci
 # Capítulo V: Tactical-Level Domain-Driven Design
 
 ### 5.1. Bounded Context: \<IAM\>
+El bounded context **Identity and Access Management (IAM)** concentra las responsabilidades relacionadas con autenticación, autorización y vinculación segura de identidades externas del usuario.
+
+En la arquitectura objetivo de PlantSync, IAM forma parte del Backend API desarrollado en Java y Spring Boot. La separación entre comandos y consultas sigue un enfoque CQRS a nivel lógico; ambos tipos de operaciones comparten el mismo modelo de persistencia relacional y no representan microservicios desplegados independientemente.
+
+Además del registro e inicio de sesión tradicional mediante correo electrónico y contraseña, IAM permite vincular de manera opcional una dirección Ethereum controlada por el usuario. Esta vinculación se realiza mediante un desafío criptográfico de un solo uso firmado desde MetaMask. PlantSync nunca recibe ni almacena la clave privada de la billetera.
+
+La billetera no sustituye la autenticación tradicional y no es necesaria para utilizar las funciones principales de cuidado de plantas.
 
 #### 5.1.1. Domain Layer
 
-En esta capa se define el núcleo de la seguridad y gestión de identidades, encapsulando las reglas de negocio para la autenticación y autorización de usuarios.
+La capa de dominio encapsula las reglas relacionadas con usuarios, roles y asociaciones verificadas entre una cuenta PlantSync y una dirección Ethereum.
 
 **Aggregate: `User`**
 
-El agregado User es la raíz que gestiona la identidad de los usuarios en el sistema, asegurando que las credenciales y los roles asignados sean consistentes y válidos.
+El agregado `User` representa la identidad principal de un usuario registrado en PlantSync. Es responsable de mantener consistentes sus credenciales y roles de autorización.
 
-| Atributos      | Tipo de dato     | Visibilidad | Descripción                                     |
-|----------------|-----------------|------------|------------------------------------------------|
-| id     | Long            | Private    | Identificador único del usuario.            |
-| email      | String           | Private    | Correo electrónico único para la autenticación.    |
-| password       | String          | Private    | Contraseña del usuario almacenada de forma segura (hasheada).                      |
-| roles    | Set<Role>         | Private    | Conjunto de roles asignados para el control de acceso.          |
+| Atributo | Tipo | Visibilidad | Descripción |
+|---|---|---|---|
+| id | Long | Private | Identificador interno del usuario. |
+| email | String | Private | Correo electrónico único utilizado para autenticación. |
+| passwordHash | String | Private | Hash de la contraseña del usuario. |
+| roles | Set<Role> | Private | Roles asignados al usuario. |
 
+**Métodos**
 
-| Métodos                         | Tipo de retorno | Visibilidad | Descripción                                      |
-|---------------------------------|----------------|------------|------------------------------------------------|
-| getId()                 | Long           | Public     | Devuelve el ID del usuario.                   |
-| getEmail()                 | String          | Public     | Devuelve el correo electrónico.    |
-| getPassword()                      | String         | Public     | Devuelve la contraseña hasheada.              |
-| addRole(Role)                | User       | Public     | Agrega un nuevo rol al usuario.        |
-| addRoles(List<Role>)                     | User  | Public     | Añade una lista de roles validando que no esté vacía.       |
-| updateInformation(String)                       | User           | Public     | Actualiza el correo electrónico del usuario. |
+| Método | Retorno | Visibilidad | Descripción |
+|---|---|---|---|
+| getId() | Long | Public | Obtiene el identificador del usuario. |
+| getEmail() | String | Public | Obtiene el correo electrónico. |
+| addRole(Role) | User | Public | Asigna un rol al usuario evitando inconsistencias. |
+| addRoles(List<Role>) | User | Public | Asigna un conjunto válido de roles. |
+| updateEmail(String) | User | Public | Actualiza el correo electrónico aplicando las validaciones correspondientes. |
+
+El hash de contraseña es utilizado internamente durante el proceso de autenticación y no debe exponerse como parte de los recursos enviados a los clientes.
+
+---
+
+**Entity: `Role`**
+
+Representa un rol persistido que puede ser asignado a uno o más usuarios.
+
+| Atributo | Tipo | Descripción |
+|---|---|---|
+| id | Long | Identificador persistente del rol. |
+| name | Roles | Nombre lógico del rol. |
+
+---
+
+**Value Object / Enum: `Roles`**
+
+Define los roles reconocidos por PlantSync.
+
+Inicialmente se consideran:
+
+- `ROLE_USER`
+- `ROLE_ADMIN`
+
+---
+
+**Aggregate: `WalletAssociation`**
+
+Representa una asociación verificada entre una cuenta PlantSync y una dirección Ethereum.
+
+La existencia de este agregado no significa que PlantSync controle la billetera. Únicamente registra que el usuario demostró control sobre una dirección mediante una firma válida.
+
+| Atributo | Tipo | Visibilidad | Descripción |
+|---|---|---|---|
+| id | Long | Private | Identificador interno. |
+| userId | Long | Private | Usuario PlantSync propietario de la asociación. |
+| walletAddress | EthereumAddress | Private | Dirección Ethereum verificada. |
+| status | WalletAssociationStatus | Private | Estado de la asociación. |
+| verifiedAt | LocalDateTime | Private | Fecha de verificación exitosa. |
+
+**Métodos**
+
+| Método | Retorno | Descripción |
+|---|---|---|
+| getWalletAddress() | EthereumAddress | Devuelve la dirección vinculada. |
+| getStatus() | WalletAssociationStatus | Devuelve el estado actual. |
+| unlink() | void | Marca la asociación como desvinculada. |
+| isActive() | boolean | Indica si la asociación se encuentra vigente. |
+
+Para el MVP se considera como máximo una wallet activa por usuario.
+
+---
+
+**Aggregate: `WalletChallenge`**
+
+Representa un desafío temporal y de un solo uso generado por PlantSync para demostrar el control de una dirección Ethereum.
+
+| Atributo | Tipo | Visibilidad | Descripción |
+|---|---|---|---|
+| id | UUID | Private | Identificador del desafío. |
+| userId | Long | Private | Usuario que solicita la vinculación. |
+| walletAddress | EthereumAddress | Private | Dirección que se desea verificar. |
+| nonce | String | Private | Valor aleatorio de un solo uso. |
+| domain | String | Private | Dominio de PlantSync asociado al desafío. |
+| expiresAt | LocalDateTime | Private | Fecha y hora de expiración. |
+| usedAt | LocalDateTime | Private | Momento en que el desafío fue consumido. |
+| createdAt | LocalDateTime | Private | Fecha de generación. |
+
+**Métodos**
+
+| Método | Retorno | Descripción |
+|---|---|---|
+| isExpired(LocalDateTime) | boolean | Determina si el desafío ha expirado. |
+| isUsed() | boolean | Determina si ya fue consumido. |
+| markAsUsed() | void | Marca el desafío como utilizado. |
+| canBeVerified(LocalDateTime) | boolean | Comprueba que siga vigente y no haya sido utilizado. |
+
+---
 
 **Value Objects**
 
-| Value Object   | Descripción                                                                 |
-|----------------|-----------------------------------------------------------------------------|
-| Roles  | Enumeración que define los tipos de roles permitidos: `ROLE_USER`, `ROLE_ADMIN`, etc.      |
-| Role | Entidad de dominio que representa un rol persistido con su respectivo nombre.|
+| Value Object | Descripción |
+|---|---|
+| EthereumAddress | Encapsula y valida el formato de una dirección Ethereum/EVM. |
+| WalletAssociationStatus | Define estados como `ACTIVE` y `UNLINKED`. |
 
-**Clase: `UserQueryService`**
-
-| Título       | UserQueryService |
-|--------------|----------------------|
-| Descripción  | Interfaz de servicio de consultas para operaciones de lectura de identidades y usuarios. |
-
-**Métodos**
-
-| Método                             | Descripción                                               |
-|-----------------------------------|-----------------------------------------------------------|
-| handle(GetUserByIdQuery)        | Obtiene la información detallada de un usuario por su identificador único.   |
-| handle(GetUserByEmailQuery) | Busca un usuario en el sistema utilizando su dirección de correo electrónico.     |
-| handle(GetAllUsersQuery) | Recupera la lista completa de usuarios registrados en el sistema. |
+---
 
 **Clase: `UserCommandService`**
 
-| Título       | UserCommandService |
-|--------------|------------------------|
-| Descripción  | Interfaz de servicio de comandos para la gestión de registros y autenticación. |
+Interfaz responsable de las operaciones que modifican la identidad tradicional del usuario.
 
-**Métodos**
+| Método | Descripción |
+|---|---|
+| handle(SignUpCommand) | Registra una nueva cuenta y asigna sus roles iniciales. |
+| handle(SignInCommand) | Verifica las credenciales y genera una sesión mediante JWT. |
+| handle(UpdateUserCommand) | Actualiza información permitida del usuario. |
 
-| Método                           | Descripción                                                        |
-|---------------------------------|--------------------------------------------------------------------|
-| handle(SignUpCommand)     | Registra un nuevo usuario, gestionando el hasheo de contraseña y asignación de roles iniciales.            |
-| handle(SignInCommand)     | Procesa el inicio de sesión y genera el token de acceso correspondiente. |
-| handle(UpdateUserCommand)    | Actualiza los datos de identidad de un usuario existente.                          |
+---
+
+**Clase: `UserQueryService`**
+
+Interfaz responsable de las consultas relacionadas con usuarios.
+
+| Método | Descripción |
+|---|---|
+| handle(GetUserByIdQuery) | Obtiene un usuario por identificador. |
+| handle(GetUserByEmailQuery) | Obtiene un usuario por correo electrónico. |
+| handle(GetAllUsersQuery) | Recupera los usuarios accesibles según autorización. |
+
+---
+
+**Clase: `WalletCommandService`**
+
+Interfaz responsable del proceso de vinculación y desvinculación de wallets.
+
+| Método | Descripción |
+|---|---|
+| handle(CreateWalletChallengeCommand) | Genera un desafío temporal y de un solo uso para el usuario autenticado. |
+| handle(VerifyWalletSignatureCommand) | Verifica firma, dirección, usuario, nonce y vigencia antes de crear la asociación. |
+| handle(UnlinkWalletCommand) | Desvincula la wallet activa del usuario. |
+
+---
+
+**Clase: `WalletQueryService`**
+
+Interfaz responsable de consultar la asociación de wallet.
+
+| Método | Descripción |
+|---|---|
+| handle(GetWalletAssociationByUserIdQuery) | Recupera la wallet actualmente asociada al usuario, si existe. |
+
+---
 
 #### 5.1.2. Interface Layer
 
-La capa de interfaz del contexto IAM expone controladores REST para la seguridad y gestión de perfiles. Utiliza assemblers especializados para transformar las solicitudes HTTP en comandos y queries, asegurando que el dominio no se vea afectado por cambios en la API externa.
+La capa de interfaz expone los endpoints REST del bounded context IAM. Los controladores reciben las solicitudes de las aplicaciones web y móvil y delegan las operaciones a los servicios de aplicación correspondientes.
+
+La interacción directa con MetaMask ocurre únicamente en la aplicación web. El backend nunca solicita ni recibe la clave privada del usuario.
 
 **Controlador: `AuthenticationController`**
 
-Maneja los procesos críticos de entrada al sistema, permitiendo el registro de nuevos usuarios y la obtención de tokens de acceso Bearer.
+Gestiona el registro y autenticación tradicional.
 
-**Metodos**
+| Método | Ruta | Descripción |
+|---|---|---|
+| signUp | POST `/api/v1/authentication/sign-up` | Registra un nuevo usuario. |
+| signIn | POST `/api/v1/authentication/sign-in` | Autentica mediante email y contraseña y devuelve el token JWT correspondiente. |
 
-| Método           | Ruta                              | Descripción                                               |
-|-----------------|----------------------------------|-----------------------------------------------------------|
-| signUp   | POST /api/v1/authentication/sign-up        | Registra un usuario y devuelve sus datos básicos. |
-| signIn| POST /api/v1/authentication/sign-in | Autentica al usuario y devuelve el token JWT generado. |
+---
 
 **Controlador: `UserController`**
 
-Gestiona la administración y consulta de los usuarios dentro de la plataforma.
+Gestiona operaciones autorizadas sobre usuarios.
 
-**Metodos**
+| Método | Ruta | Descripción |
+|---|---|---|
+| getUserById | GET `/api/v1/users/{id}` | Recupera un usuario autorizado por identificador. |
+| getAllUsers | GET `/api/v1/users` | Recupera usuarios según las reglas de autorización. |
+| updateUser | PUT `/api/v1/users/{id}` | Actualiza información permitida del usuario. |
 
-| Método           | Ruta                              | Descripción                                               |
-|-----------------|----------------------------------|-----------------------------------------------------------|
-| getUserById   | GET /api/v1/users/{id}        | Recupera un usuario por su ID. |
-| getAllUsers | GET /api/v1/users | Lista todos los usuarios del sistema. |
-| updateUser    | PUT /api/v1/users/{id}            | Actualiza la información de un usuario. |
+---
 
-**Dependencias**
+**Controlador: `WalletController`**
 
-| Dependencia                         | Descripción                                                                 |
-|------------------------------------|-----------------------------------------------------------------------------|
-| UserCommandService                 | Servicio para ejecutar comandos de registro y autenticación.               |
-| UserQueryService               | Servicio para recuperación de datos de usuarios. |
-| SignUpCommandFromResourceAssembler | Mapea el recurso de registro a un comando SignUp.           |
-| SignInCommandFromResourceAssembler | Mapea las credenciales a un comando SignIn.      |
-| UserResourceFromEntityAssembler | Convierte la entidad User en un recurso para la respuesta API.         |
+Gestiona la vinculación segura de MetaMask con una cuenta PlantSync.
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| createChallenge | POST `/api/v1/wallet/challenges` | Genera un desafío de un solo uso para el usuario autenticado y la dirección indicada. |
+| verifySignature | POST `/api/v1/wallet/verify` | Verifica la firma del desafío y crea la asociación con la wallet. |
+| getWalletAssociation | GET `/api/v1/wallet` | Recupera la wallet actualmente vinculada. |
+| unlinkWallet | DELETE `/api/v1/wallet` | Desvincula la wallet activa. |
+
+---
+
+**Recursos y Assemblers principales**
+
+| Elemento | Responsabilidad |
+|---|---|
+| SignUpResource | Datos necesarios para registrar una cuenta. |
+| SignInResource | Email y contraseña utilizados para autenticación. |
+| UserResource | Representación pública del usuario, sin exponer passwordHash. |
+| CreateWalletChallengeResource | Dirección Ethereum que se desea vincular. |
+| WalletChallengeResource | Challenge, nonce, dominio y vencimiento necesarios para firmar. |
+| VerifyWalletSignatureResource | Dirección, nonce y firma producida por MetaMask. |
+| WalletAssociationResource | Dirección vinculada, estado y fecha de verificación. |
+| SignUpCommandFromResourceAssembler | Convierte la solicitud de registro en un comando. |
+| SignInCommandFromResourceAssembler | Convierte las credenciales en un comando de autenticación. |
+| VerifyWalletSignatureCommandFromResourceAssembler | Convierte la solicitud de verificación en el comando correspondiente. |
+| UserResourceFromEntityAssembler | Genera la representación segura de un usuario. |
+| WalletAssociationResourceAssembler | Genera la representación pública de una asociación de wallet. |
+
+---
 
 #### 5.1.3. Application Layer
 
-Los servicios internos implementan la lógica de orquestación de la seguridad. Se encargan de validar la existencia de usuarios, interactuar con servicios de hashing y gestionar la generación de tokens, coordinando el flujo de datos entre el dominio y la infraestructura.
+La capa de aplicación coordina los casos de uso del bounded context IAM sin implementar detalles específicos de persistencia o criptografía.
 
 **Clase: `UserCommandServiceImpl`**
 
-| Título       | UserCommandServiceImpl |
-|--------------|--------------------------|
-| Descripción  | Implementación del servicio de comandos para gestionar la creación y actualización de usuarios. |
+Implementa registro, autenticación y actualización de usuarios.
 
 **Dependencias**
 
-| Dependencia            | Descripción                                   |
-|-------------------------|-----------------------------------------------|
-| UserRepository       | Repositorio para la persistencia de usuarios.  |
-| RoleRepository     | Repositorio para buscar y asignar roles.  |
-| HashingService     | Servicio para el cifrado seguro de contraseñas.  |
-| TokenService    | Servicio para la generación de tokens JWT.  |
+| Dependencia | Descripción |
+|---|---|
+| UserRepository | Persistencia de usuarios. |
+| RoleRepository | Persistencia y consulta de roles. |
+| HashingService | Generación y comparación segura de hashes de contraseña. |
+| TokenService | Generación y validación de tokens JWT. |
+
+---
 
 **Clase: `UserQueryServiceImpl`**
 
-| Título       | ProjectCommandServiceImpl |
-|--------------|----------------------------|
-| Descripción  | Implementación del servicio de consultas para operaciones de lectura de usuarios. |
+Implementa las consultas autorizadas de usuarios.
 
 **Dependencias**
 
-| Dependencia            | Descripción                                   |
-|-------------------------|-----------------------------------------------|
-| UserRepository       | Repositorio para el acceso a la base de datos de usuarios. |
+| Dependencia | Descripción |
+|---|---|
+| UserRepository | Acceso a la información persistida de usuarios. |
+
+---
+
+**Clase: `WalletCommandServiceImpl`**
+
+Orquesta el proceso de vinculación segura de una wallet.
+
+Para generar el challenge comprueba que el usuario esté autenticado, genera un nonce criptográficamente seguro, establece el dominio y el tiempo de expiración y persiste el desafío.
+
+Durante la verificación comprueba:
+
+1. que el challenge exista;
+2. que corresponda al usuario autenticado;
+3. que la dirección corresponda a la solicitada;
+4. que el nonce no haya sido usado;
+5. que el challenge no haya expirado;
+6. que la firma corresponda a la dirección indicada.
+
+Solo después de superar estas verificaciones se crea o actualiza la `WalletAssociation`.
+
+**Dependencias**
+
+| Dependencia | Descripción |
+|---|---|
+| UserRepository | Comprueba la identidad PlantSync. |
+| WalletChallengeRepository | Persiste y recupera desafíos. |
+| WalletAssociationRepository | Persiste asociaciones verificadas. |
+| NonceGenerator | Genera valores aleatorios de un solo uso. |
+| SignatureVerificationService | Recupera/verifica criptográficamente la dirección que produjo una firma. |
+
+---
+
+**Clase: `WalletQueryServiceImpl`**
+
+Gestiona las consultas de asociaciones verificadas.
+
+| Dependencia | Descripción |
+|---|---|
+| WalletAssociationRepository | Recupera la wallet asociada a un usuario. |
+
+---
 
 #### 5.1.4. Infrastructure Layer
 
-Esta capa implementa los mecanismos de persistencia mediante JPA y la integración con Spring Security para la protección de recursos.
+Esta capa contiene los mecanismos técnicos utilizados por IAM: Spring Data JPA, Spring Security, BCrypt, JWT y verificación de firmas Ethereum/EVM.
 
 **Clase: `UserRepository`**
 
-| Título       | UserRepository |
-|-------------|------------------|
-| Descripción | Interfaz de persistencia para operaciones CRUD y búsqueda de usuarios por email o ID. |
+Repositorio para persistencia de usuarios.
 
-**Metodos**
+| Método | Descripción |
+|---|---|
+| findById(Long) | Recupera un usuario por ID. |
+| findByEmail(String) | Recupera un usuario por email. |
+| existsByEmail(String) | Comprueba que el correo sea único. |
+| save(User) | Persiste o actualiza un usuario. |
 
-| Método             | Descripción                                           |
-|-------------------|-------------------------------------------------------|
-| findByUsername(String) | Recupera un usuario basándose en su email/username. |
-| existsByUsername(String)   | Verifica si un correo electrónico ya está registrado en el sistema.                        |
-| save(User)    | Persiste o actualiza la información del usuario en la base de datos.                        |
+---
+
+**Clase: `RoleRepository`**
+
+Gestiona la persistencia de roles.
+
+| Método | Descripción |
+|---|---|
+| findByName(Roles) | Recupera un rol por nombre. |
+| save(Role) | Persiste un rol cuando corresponde. |
+
+---
+
+**Clase: `WalletAssociationRepository`**
+
+Gestiona las asociaciones verificadas entre usuarios y wallets.
+
+| Método | Descripción |
+|---|---|
+| findByUserId(Long) | Recupera la wallet vinculada a un usuario. |
+| findByWalletAddress(EthereumAddress) | Comprueba si una dirección ya está asociada. |
+| save(WalletAssociation) | Persiste o actualiza una asociación. |
+
+---
+
+**Clase: `WalletChallengeRepository`**
+
+Gestiona los desafíos temporales de vinculación.
+
+| Método | Descripción |
+|---|---|
+| findById(UUID) | Recupera un challenge. |
+| findActiveByUserId(Long) | Recupera el desafío vigente del usuario. |
+| save(WalletChallenge) | Persiste o actualiza un desafío. |
+
+---
 
 **Clase: `BCryptHashingService`**
 
-| Título       | BCryptHashingService |
-|-------------|------------------|
-| Descripción | Implementación del servicio de hashing utilizando el algoritmo BCrypt para proteger las contraseñas. |
+Implementa `HashingService` utilizando BCrypt para generar y verificar hashes de contraseña.
 
-#### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
+---
 
-Este diagrama representa cómo el Bounded Context de IAM gestiona la seguridad. 
+**Clase: `JwtTokenService`**
 
-El `AuthenticationController` es el punto de entrada principal para el flujo de autenticación, delegando al `UserCommandService`, el cual utiliza servicios de infraestructura como `TokenService` y `HashingService`. 
+Implementa `TokenService` y genera los tokens JWT utilizados por los clientes autenticados.
 
-La persistencia se realiza en una base de datos relacional MySQL a través de `UserRepository`.
+---
+
+**Clase: `SecureNonceGenerator`**
+
+Genera valores criptográficamente aleatorios utilizados por `WalletChallenge`.
+
+---
+
+**Clase: `EvmSignatureVerificationService`**
+
+Implementa `SignatureVerificationService`.
+
+Recibe el mensaje firmado, la firma y la dirección declarada y comprueba que la firma haya sido producida por la clave privada correspondiente a dicha dirección.
+
+La implementación concreta de la librería Java utilizada para esta verificación queda encapsulada en infraestructura y puede sustituirse sin modificar el dominio.
+
+PlantSync no almacena, solicita ni procesa claves privadas.
+
+#### 5.1.5. Bounded Context Software Architecture Component Level Diagram
+
+El diagrama de componentes del bounded context IAM representa la estructura interna del Backend API responsable de autenticación, autorización y vinculación de identidades Ethereum.
+
+Las aplicaciones Web y Mobile consumen las capacidades de autenticación mediante HTTPS/REST/JSON.
+
+La aplicación Web, desarrollada en Vue 3 y TypeScript, también interactúa localmente con MetaMask para solicitar al usuario la firma de un desafío. MetaMask no se comunica directamente con el backend; la firma obtenida en el navegador es enviada posteriormente al `WalletController`.
+
+`AuthenticationController` y `UserController` delegan las operaciones de identidad tradicional en `UserCommandService` y `UserQueryService`.
+
+`WalletController` delega la vinculación de billetera en `WalletCommandService` y `WalletQueryService`.
+
+`UserCommandService` utiliza `HashingService` y `TokenService` para gestionar credenciales tradicionales.
+
+`WalletCommandService` utiliza `SignatureVerificationService`, `NonceGenerator`, `WalletChallengeRepository` y `WalletAssociationRepository` para garantizar que una dirección Ethereum solo pueda vincularse después de una prueba criptográfica válida.
+
+La persistencia del bounded context IAM se realiza mediante Spring Data JPA sobre MySQL.
+
+IAM no interactúa con Ethereum Sepolia ni con el contrato Eco-Badge. Esa responsabilidad pertenece al bounded context de Achievements.
 
 <p align="center">
-  <img src="Images/cap4/BoundedContext/IAM/IAM.png">
+  <img src="Images/cap4/BoundedContext/IAM/Component_View_IAM_Wallet.png">
 </p>
 
 <p align="center">
@@ -2756,11 +2993,40 @@ La persistencia se realiza en una base de datos relacional MySQL a través de `U
 En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de IAM.
 
 ##### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
+El diagrama de clases del dominio IAM presenta cuatro áreas principales: `services`, `commands`, `queries` y `model`.
+
+El paquete `model` contiene el agregado `User`, la entidad `Role`, el value object `Roles`, el agregado `WalletAssociation`, el agregado `WalletChallenge`, el value object `EthereumAddress` y el estado `WalletAssociationStatus`.
+
+El paquete `commands` contiene los objetos que representan intenciones de modificación:
+
+- `SignUpCommand`
+- `SignInCommand`
+- `UpdateUserCommand`
+- `CreateWalletChallengeCommand`
+- `VerifyWalletSignatureCommand`
+- `UnlinkWalletCommand`
+
+El paquete `queries` contiene:
+
+- `GetUserByIdQuery`
+- `GetUserByEmailQuery`
+- `GetAllUsersQuery`
+- `GetWalletAssociationByUserIdQuery`
+
+El paquete `services` contiene:
+
+- `UserCommandService`
+- `UserQueryService`
+- `WalletCommandService`
+- `WalletQueryService`
+
+La verificación criptográfica concreta no forma parte del modelo de dominio; se representa mediante una abstracción consumida desde la capa de aplicación e implementada en infraestructura.
+
 
 <br>
 
 <p align="center">
-  <img src="Images/cap4/BoundedContext/IAM/IAM_UML.png" alt = "updated class diagram" width="90%">
+  <img src="Images/cap4/BoundedContext/IAM/Class-Diagram_View_IAM.png" alt = "updated class diagram" width="90%">
 </p>
 
 <p align="center">
@@ -2768,9 +3034,65 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 </p>
 
 ##### 5.1.6.2. Bounded Context Database Design Diagram
+El esquema persistente del bounded context IAM está compuesto por las tablas `users`, `roles`, `user_roles`, `wallet_associations` y `wallet_challenges`.
 
+**Tabla `users`**
+
+| Campo | Tipo conceptual | Restricción |
+|---|---|---|
+| user_id | BIGINT | PK |
+| email | VARCHAR(255) | UNIQUE, NOT NULL |
+| password_hash | VARCHAR(255) | NOT NULL |
+| created_at | DATETIME | NOT NULL |
+| updated_at | DATETIME | NOT NULL |
+
+**Tabla `roles`**
+
+| Campo | Tipo conceptual | Restricción |
+|---|---|---|
+| role_id | BIGINT | PK |
+| name | VARCHAR(50) | UNIQUE, NOT NULL |
+
+**Tabla `user_roles`**
+
+| Campo | Tipo conceptual | Restricción |
+|---|---|---|
+| user_id | BIGINT | PK/FK → users |
+| role_id | BIGINT | PK/FK → roles |
+
+Esta tabla implementa la relación muchos-a-muchos entre usuarios y roles.
+
+**Tabla `wallet_associations`**
+
+| Campo | Tipo conceptual | Restricción |
+|---|---|---|
+| id | BIGINT | PK |
+| user_id | BIGINT | FK → users, UNIQUE |
+| wallet_address | VARCHAR(42) | UNIQUE, NOT NULL |
+| status | VARCHAR(30) | NOT NULL |
+| verified_at | DATETIME | NOT NULL |
+| created_at | DATETIME | NOT NULL |
+
+La restricción `UNIQUE` sobre `user_id` representa la decisión del MVP de mantener como máximo una wallet activa asociada a una cuenta PlantSync.
+
+**Tabla `wallet_challenges`**
+
+| Campo | Tipo conceptual | Restricción |
+|---|---|---|
+| id | UUID/VARCHAR | PK |
+| user_id | BIGINT | FK → users |
+| wallet_address | VARCHAR(42) | NOT NULL |
+| nonce | VARCHAR | UNIQUE, NOT NULL |
+| domain | VARCHAR(255) | NOT NULL |
+| expires_at | DATETIME | NOT NULL |
+| used_at | DATETIME | NULL |
+| created_at | DATETIME | NOT NULL |
+
+Un usuario puede generar múltiples desafíos a lo largo del tiempo, pero cada nonce puede utilizarse como máximo una vez.
+
+El bounded context IAM no es propietario de la tabla `profiles`. La información personal y de suscripción pertenece al bounded context Profiles. Aunque ambos bounded contexts puedan utilizar físicamente la misma instancia MySQL, cada uno mantiene la propiedad lógica de sus respectivas estructuras persistentes.
 <p align="center">
-  <img src="Images/cap4/BoundedContext/Profiles/profilesdbdiagram.png" alt = "database diagram" width="80%">
+  <img src="Images/cap4/BoundedContext/IAM/Database_View_IAM_Wallet.png" alt = "database diagram" width="80%">
 </p>
 
 <p align="center">
@@ -4253,6 +4575,8 @@ Representa una acción que el agente propone ejecutar en un dispositivo asociado
 | Título       | ChatbotQueryService |
 |--------------|----------------------|
 | Descripción  | Interfaz de servicio de consultas para recuperar el historial de interacciones de una planta específica. |
+| handle(ProcessPlantActionCommand) | Obtiene contexto autorizado de planta y dispositivo, solicita al LLM una intención estructurada y permite únicamente acciones incluidas en el catálogo de comandos. |
+| handle(ConfirmPlantActionCommand) | Registra la confirmación del usuario cuando la política requiere aprobación y solicita el envío de la acción validada. |
 
 **Métodos**
 
@@ -4361,6 +4685,23 @@ Esta capa maneja la integración técnica con el modelo de lenguaje y la persist
 |-------------------------|-----------------------------------------------|
 | ConsultationEntity      | Representación JPA de la consulta en la base de datos. |
 | AiClient      | Cliente externo para la comunicación con los servidores de la IA |
+**Clase: `AiServiceAdapter`**
+
+| Título | AiServiceAdapter |
+|---|---|
+| Descripción | Adaptador que integra un LLM externo (por ejemplo, Claude o GPT) y convierte sus respuestas de uso de herramientas/function calling en una intención tipada del dominio. La aplicación valida la intención y nunca ejecuta directamente una respuesta libre del modelo. |
+
+**Clase: `PlantActionGatewayAdapter`**
+
+| Título | PlantActionGatewayAdapter |
+|---|---|
+| Descripción | Adaptador ACL que comunica una acción ya autorizada al contexto IoT Management, que conserva la responsabilidad de emitir el comando MQTT y gestionar sus acuses de recibo. |
+
+**Clase: `PlantActionRepositoryImpl`**
+
+| Título | PlantActionRepositoryImpl |
+|---|---|
+| Descripción | Implementación de persistencia del historial de propuestas, confirmaciones y resultados de acciones para auditoría e idempotencia. |
 
 **Clase: `AiServiceAdapter`**
 
@@ -4542,6 +4883,8 @@ Las claves de firma necesarias para desplegar o invocar el contrato se gestionan
 5. El monitor espera la confirmación de testnet, registra el hash y actualiza el estado a `CONFIRMED`; ante un error conserva el estado fallido para revisión o reintento controlado.
 
 Este flujo separa la evaluación de negocio de la lógica del contrato, hace auditable el progreso y evita que la disponibilidad temporal de blockchain interrumpa la recepción de telemetría o la experiencia principal de PlantSync.
+
+<div style="page-break-before: always;"></div>
 
 # Capítulo VI: Solution UI/UX Design
 
@@ -5692,3 +6035,6 @@ A lo largo del desarrollo del documento, se evidenció que el proyecto plantea u
 Asimismo, la estructura propuesta del sistema refleja una comprensión sólida del dominio del problema. La separación de responsabilidades en distintos contextos de negocio y la definición de componentes específicos permiten organizar la solución de manera lógica, modular y adaptable. Esta arquitectura no solo facilita la comprensión del sistema, sino que también muestra una visión de diseño orientada a la escalabilidad, la mantenibilidad y la evolución futura del producto. En ese sentido, el trabajo evidencia una base metodológica sólida para continuar con el desarrollo del sistema.
 
 Por otro lado, la incorporación de tecnologías emergentes, particularmente la inteligencia artificial y el análisis de datos, representa una ventaja diferenciadora dentro de la propuesta. La capacidad de interpretar información contextual, generar recomendaciones personalizadas y apoyar la toma de decisiones en tiempo real refuerza la relevancia del proyecto dentro del ámbito de la innovación tecnológica aplicada al cuidado de plantas. Este enfoque demuestra que la solución tiene un potencial más amplio que un simple monitoreo, al posicionarse como una herramienta inteligente, orientada a la automatización y al apoyo de la sostenibilidad.
+
+
+
