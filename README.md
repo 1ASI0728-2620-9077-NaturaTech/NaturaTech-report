@@ -2507,7 +2507,7 @@ En esta sección se desarrollan los Bounded Context Canvases correspondientes a 
 
 ### 4.2.5. Context Mapping
 
-En esta sección elaboramos un conjunto de context maps para representar las relaciones entre los bounded contexts del sistema. A partir de la información recolectada, analizamos distintas alternativas de diseño, evaluando cómo cambiaría la estructura si se reubican, agrupan, dividen o aíslan determinadas capabilities. Para ello, consideramos patrones de Domain-Driven Design como Customer/Supplier, Conformist, Anti-corruption Layer y Shared Kernel, con el fin de identificar la mejor aproximación para la arquitectura del dominio. A continuación, presentamos las opciones evaluadas para Tavolo y la propuesta seleccionada.
+En esta sección se desarrolló un conjunto de context maps con el propósito de representar y analizar las relaciones existentes entre los bounded contexts que conforman el sistema. Con base en la información recopilada, se estudiaron diferentes alternativas de diseño, considerando los posibles cambios en la estructura del sistema al reorganizar, agrupar, dividir o mantener aisladas determinadas capabilities. Para este análisis se tomaron en cuenta distintos patrones de Domain-Driven Design, entre ellos Customer/Supplier, Conformist, Anti-corruption Layer y Shared Kernel. La evaluación de estas alternativas permitió determinar el enfoque más adecuado para organizar la arquitectura del dominio. A continuación, se detallan las opciones consideradas para Tavolo y se presenta la propuesta finalmente seleccionada.
 
 <h4> Opción 1: </h4>
 
