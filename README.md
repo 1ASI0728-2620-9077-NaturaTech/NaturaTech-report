@@ -2180,7 +2180,7 @@ Los escenarios de calidad más relevantes son los siguientes:
 
 #### 4.1.2.3. Constraints
 
-El diseño está condicionado por el uso de una arquitectura orientada a servicios y bounded contexts, la integración con dispositivos Arduino y sensores, la comunicación con servicios externos de inteligencia artificial, la necesidad de persistir información de usuarios y plantas, y el uso de tecnologías compatibles con el proyecto. También se considera la separación de responsabilidades entre los contextos de IAM, Profiles, PlantProfiles, IoT Management, CareScheduling y PlantGuidance.
+El diseño de la solución se encuentra determinado por la implementación de una arquitectura basada en servicios y bounded contexts, así como por la integración de dispositivos Arduino y diferentes tipos de sensores. Además, contempla la conexión con servicios externos de inteligencia artificial y el almacenamiento de la información relacionada con los usuarios y las plantas. Para garantizar una adecuada organización del sistema, se mantiene una distribución clara de responsabilidades entre los distintos contextos: IAM, Profiles, PlantProfiles, IoT Management, CareScheduling y PlantGuidance.
 
 ### 4.1.3. Architectural Drivers Backlog
 
