@@ -109,11 +109,11 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
   Este insight muestra la distribución de los commits realizados por cada integrante del equipo durante el sprint. La evidencia permite visualizar el nivel de participación de los colaboradores y demuestra el uso de control de versiones, así como el trabajo colaborativo y continuo en el desarrollo del proyecto.
 
 <p align="center">
-  <img src="Images/insigths/insight4.png" alt="insights1" width="500">
+  <img src="Images/insights/insight1.png" alt="insights1" width="500">
 </p>
 
 <p align="center">
-  <img src="Images/insigths/insight5.png" alt="insights1" width="600">
+  <img src="Images/insights/insight2.png" alt="insights1" width="600">
 </p>
 
 <div style="break-after: page;"></div>
@@ -386,9 +386,6 @@ Promovemos la ecología como prioridad, la innovación tecnológica como motor d
 | - |  -  | - | ![Foto segundo](../report/assets/foto-segundo.png)|
 | Rodrigo Alaya Cabrera |  U202219481  | Soy una persona responsable, comprometida con mis objetivos y con gran disposición para aprender continuamente. Me adapto con facilidad al trabajo en equipo, aportando ideas y soluciones. Valoro mucho la eficiencia, la ética profesional y la mejora constante. Me esfuerzo por entregar siempre resultados de calidad, gestionando mis tareas con orden y enfoque. |  ![Foto Alaya](Images/members/fotoAlaya.JPG)  |
 | Carlos Andrés Coca Lavado  | U202313172  | Mi Nombre es Carlos Andrés Coca, tengo 20 años, actualmente me encuentro cursando el octavo ciclo de la carrera de Ingeniería de Software. Cuento con conocimientos en C++, Python y HTML. y desde muy joven me ha interesado el desarrollo Web. Teniendo en cuenta el gran impacto que presentan a día de hoy las novedosas soluciones presentadas. | ![Foto cuarto](Images/members/foto-cr7.jpg)  |
-| - | -  | - | ![Foto quinto](../report/assets/foto-quinto.png)  |
-|-|-|-| ![Foto sexto](../report/assets/foto-sexto.jpeg)  |
-| - | - | - | ![Foto septimo](../report/assets/Foto-septimo.png)  |
 <div style="break-after: page;"></div>
 
 ## 1.2. Solution Profile
@@ -2183,7 +2180,7 @@ Los escenarios de calidad más relevantes son los siguientes:
 
 #### 4.1.2.3. Constraints
 
-El diseño está condicionado por el uso de una arquitectura orientada a servicios y bounded contexts, la integración con dispositivos Arduino y sensores, la comunicación con servicios externos de inteligencia artificial, la necesidad de persistir información de usuarios y plantas, y el uso de tecnologías compatibles con el proyecto. También se considera la separación de responsabilidades entre los contextos de IAM, Profiles, PlantProfiles, IoT Management, CareScheduling y PlantGuidance.
+El diseño de la solución se encuentra determinado por la implementación de una arquitectura basada en servicios y bounded contexts, así como por la integración de dispositivos Arduino y diferentes tipos de sensores. Además, contempla la conexión con servicios externos de inteligencia artificial y el almacenamiento de la información relacionada con los usuarios y las plantas. Para garantizar una adecuada organización del sistema, se mantiene una distribución clara de responsabilidades entre los distintos contextos: IAM, Profiles, PlantProfiles, IoT Management, CareScheduling y PlantGuidance.
 
 ### 4.1.3. Architectural Drivers Backlog
 
@@ -2510,7 +2507,7 @@ En esta sección se desarrollan los Bounded Context Canvases correspondientes a 
 
 ### 4.2.5. Context Mapping
 
-En esta sección elaboramos un conjunto de context maps para representar las relaciones entre los bounded contexts del sistema. A partir de la información recolectada, analizamos distintas alternativas de diseño, evaluando cómo cambiaría la estructura si se reubican, agrupan, dividen o aíslan determinadas capabilities. Para ello, consideramos patrones de Domain-Driven Design como Customer/Supplier, Conformist, Anti-corruption Layer y Shared Kernel, con el fin de identificar la mejor aproximación para la arquitectura del dominio. A continuación, presentamos las opciones evaluadas para Tavolo y la propuesta seleccionada.
+En esta sección se desarrolló un conjunto de context maps con el propósito de representar y analizar las relaciones existentes entre los bounded contexts que conforman el sistema. Con base en la información recopilada, se estudiaron diferentes alternativas de diseño, considerando los posibles cambios en la estructura del sistema al reorganizar, agrupar, dividir o mantener aisladas determinadas capabilities. Para este análisis se tomaron en cuenta distintos patrones de Domain-Driven Design, entre ellos Customer/Supplier, Conformist, Anti-corruption Layer y Shared Kernel. La evaluación de estas alternativas permitió determinar el enfoque más adecuado para organizar la arquitectura del dominio. A continuación, se detallan las opciones consideradas para Tavolo y se presenta la propuesta finalmente seleccionada.
 
 <h4> Opción 1: </h4>
 
@@ -5843,11 +5840,8 @@ A nivel físico y sistémico, el dispositivo ejecuta flujos de interacción auto
 <div style="break-after: page;"></div>
 
 # Conclusiones
-A lo largo del desarrollo del documento, se evidenció que el proyecto plantea una solución con un propósito claro y con potencial de impacto real en el cuidado de plantas y la sostenibilidad ambiental. La propuesta no se limita a una herramienta de seguimiento básico, sino que integra diferentes dimensiones del problema, como la gestión de información de las plantas, la interpretación de condiciones ambientales y la generación de apoyo inteligente para la toma de decisiones. Este enfoque permite visualizar un sistema con valor académico y práctico, orientado a mejorar la experiencia del usuario y optimizar el cuidado de las especies.
+A partir del desarrollo del documento, se puede concluir que el proyecto propone una solución con un objetivo definido y con posibilidades concretas de generar un impacto positivo en el cuidado de las plantas y la sostenibilidad ambiental. La propuesta va más allá de realizar un simple seguimiento de las especies, ya que contempla aspectos como el registro y manejo de información, el análisis de las condiciones del entorno y el uso de herramientas inteligentes para facilitar la toma de decisiones. De esta manera, el sistema adquiere tanto un valor académico como práctico, debido a que busca facilitar la experiencia del usuario y contribuir a un mejor cuidado de las plantas.
 
-Asimismo, la estructura propuesta del sistema refleja una comprensión sólida del dominio del problema. La separación de responsabilidades en distintos contextos de negocio y la definición de componentes específicos permiten organizar la solución de manera lógica, modular y adaptable. Esta arquitectura no solo facilita la comprensión del sistema, sino que también muestra una visión de diseño orientada a la escalabilidad, la mantenibilidad y la evolución futura del producto. En ese sentido, el trabajo evidencia una base metodológica sólida para continuar con el desarrollo del sistema.
+De igual manera, la organización planteada para el sistema demuestra un adecuado entendimiento de las necesidades que aborda el proyecto. La distribución de las responsabilidades en diferentes áreas y la definición de componentes específicos permiten construir una solución ordenada, modular y con capacidad de adaptación. Esta forma de estructurar el sistema facilita su comprensión y, al mismo tiempo, establece una base que puede favorecer su mantenimiento, crecimiento y evolución en etapas posteriores. Por ello, el proyecto cuenta con una base metodológica que puede servir como punto de partida para continuar con su implementación.
 
-Por otro lado, la incorporación de tecnologías emergentes, particularmente la inteligencia artificial y el análisis de datos, representa una ventaja diferenciadora dentro de la propuesta. La capacidad de interpretar información contextual, generar recomendaciones personalizadas y apoyar la toma de decisiones en tiempo real refuerza la relevancia del proyecto dentro del ámbito de la innovación tecnológica aplicada al cuidado de plantas. Este enfoque demuestra que la solución tiene un potencial más amplio que un simple monitoreo, al posicionarse como una herramienta inteligente, orientada a la automatización y al apoyo de la sostenibilidad.
-
-
-
+Finalmente, el uso de tecnologías como la inteligencia artificial y el análisis de datos constituye uno de los aspectos más relevantes de la propuesta. Estas herramientas permiten aprovechar la información disponible para identificar determinadas condiciones, ofrecer recomendaciones que respondan a las necesidades de cada planta y brindar un mayor apoyo al usuario al momento de tomar decisiones. En consecuencia, el proyecto no se limita a funcionar como un mecanismo de monitoreo, sino que plantea una solución con características inteligentes que puede contribuir a automatizar determinadas tareas y, a la vez, fomentar prácticas más adecuadas y sostenibles en el cuidado de las plantas.
