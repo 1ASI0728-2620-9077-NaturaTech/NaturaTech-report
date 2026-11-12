@@ -98,9 +98,12 @@ Integrantes
 | 0.14 | 20/09/2026 | - | Desarrollo de Style Guidelines, Information Architecture y sistemas de navegación y búsqueda |
 | 0.15 | 24/09/2026 | Rodrigo Alaya Cabrera | Diseño de wireframes, mockups y user flows para Landing Page, Web App, Mobile App e IoT |
 | 0.16 | 2/10/2026 | - | Desarrollo de prototipos de aplicaciones e integración del diseño UI/UX de la solución |
+| 0.17 — TB2 | 12/11/2026 | Equipo NaturaTech: Rodrigo Alaya Cabrera; Carlos Andrés Coca Lavado; Jocelyn Damaly Almerco Rojas; Ivan Jeanpierre La Madrid Lozano; Diego Sebastian Zuñiga Murillo. Atribución individual de revisión por confirmar | Actualización documental para semana 12: UX, flujos y prototipos; capítulo VII, SCM, Sprint 1, protocolo y fichas guía de validación, pauta de videos, Student Outcome, conclusiones, bibliografía y anexos. Distingue evidencia real de pendientes de entrega |
 <div style="break-after: page;"></div>
 
 ## Project Report Collaboration Insights
+
+**TB2 — semanas 8 a 12.** El corte de revisión del 12/11/2026 conserva el trabajo previo y agrega trazabilidad con la implementación actual. El historial del informe contiene ramas `main`, `develop` y `feature/*`, además del merge `a60165a` del 12/11. Esto acredita integración mediante Git, pero no una adopción completa de GitFlow ni Conventional Commits en todos los repositorios: también existen mensajes de carga manual y merges. La política para nuevos cambios se describe en 7.1.2 y los commits reales en 7.2.1.3. Las imágenes siguientes corresponden al hito previo; queda pendiente agregar un corte de analíticos de semanas 8–12 para no presentar estadísticas anteriores como evidencia nueva.
 
 Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTech-report.git
 
@@ -120,9 +123,10 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
 
 # Tabla de Contenidos
 
-- [Capítulo I: Introducción](#capítulo-i-introducción)
+- [Student Outcome](#student-outcome)
+- [Capítulo 1: Introducción](#capítulo-1-introducción)
   - [1.1. Startup Profile](#11-startup-profile)
-    - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+    - [1.1.1. Descripción de la startup](#111-descripción-de-la-startup)
     - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
   - [1.2. Solution Profile](#12-solution-profile)
     - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
@@ -132,7 +136,6 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
   - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
-
 - [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
   - [2.1. Competidores](#21-competidores)
     - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
@@ -141,18 +144,18 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
     - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
     - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
     - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
-  - [2.3. Needfinding](#23-needfinding)
+  - [2.3. Competidores](#23-competidores)
     - [2.3.1. User Personas](#231-user-personas)
+      - [User Persona: Interesados en comenzar a cuidar plantas](#user-persona-interesados-en-comenzar-a-cuidar-plantas)
+      - [User Persona: Personas con experiencia en el cuidado de plantas](#user-persona-personas-con-experiencia-en-el-cuidado-de-plantas)
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
     - [2.3.3. Empathy Mapping](#233-empathy-mapping)
     - [2.3.4. As-is Scenario Mapping](#234-as-is-scenario-mapping)
-  - [2.4. Ubiquitous Language](#24-ubiquitous-language)
+  - [2.5. Ubiquitous Language](#25-ubiquitous-language)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-  - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
-  - [3.2. User Stories](#32-user-stories)
-  - [3.3. Impact Mapping](#33-impact-mapping)
-  - [3.4. Product Backlog](#34-product-backlog)
-
+  - [3.1. User Stories](#31-user-stories)
+  - [3.2. Impact Mapping](#32-impact-mapping)
+  - [3.3. Product Backlog](#33-product-backlog)
 - [Capítulo IV: Strategic-Level Software Design](#capítulo-iv-strategic-level-software-design)
   - [4.1. Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
     - [4.1.1. Design Purpose](#411-design-purpose)
@@ -174,9 +177,8 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
     - [4.3.2. Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
     - [4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
     - [4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
-
 - [Capítulo V: Tactical-Level Domain-Driven Design](#capítulo-v-tactical-level-domain-driven-design)
-  - [5.1. Bounded Context: <IAM>](#51-bounded-context-iam)
+  - [5.1. Bounded Context: IAM](#51-bounded-context-iam)
     - [5.1.1. Domain Layer](#511-domain-layer)
     - [5.1.2. Interface Layer](#512-interface-layer)
     - [5.1.3. Application Layer](#513-application-layer)
@@ -230,7 +232,7 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
     - [5.6.6. Bounded Context Software Architecture Code Level Diagrams](#566-bounded-context-software-architecture-code-level-diagrams)
       - [5.6.6.1. Bounded Context Domain Layer Class Diagrams](#5661-bounded-context-domain-layer-class-diagrams)
       - [5.6.6.2. Bounded Context Database Design Diagram](#5662-bounded-context-database-design-diagram)
-  - [5.7. Bounded Context: <PlantGuidance>](#57-bounded-context-plantguidance)
+  - [5.7. Bounded Context: PlantGuidance](#57-bounded-context-plantguidance)
     - [5.7.1. Domain Layer](#571-domain-layer)
     - [5.7.2. Interface Layer](#572-interface-layer)
     - [5.7.3. Application Layer](#573-application-layer)
@@ -239,7 +241,6 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
     - [5.7.6. Bounded Context Software Architecture Code Level Diagrams](#576-bounded-context-software-architecture-code-level-diagrams)
       - [5.7.6.1. Bounded Context Domain Layer Class Diagrams](#5761-bounded-context-domain-layer-class-diagrams)
       - [5.7.6.2. Bounded Context Database Design Diagram](#5762-bounded-context-database-design-diagram)
-
   - [5.8. Bounded Context: EcoRewards y Web3](#58-bounded-context-ecorewards-y-web3)
     - [5.8.1. Domain Layer](#581-domain-layer)
     - [5.8.2. Interface Layer](#582-interface-layer)
@@ -262,40 +263,84 @@ Link del repositorio: https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTec
     - [6.2.5. Navigation Systems](#625-navigation-systems)
   - [6.3. Landing Page UI Design](#63-landing-page-ui-design)
     - [6.3.1. Landing Page Wireframe](#631-landing-page-wireframe)
-    - [6.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
+    - [6.3.2. Landing Page Mock-up](#632-landing-page-mock-up)
   - [6.4. Applications UX/UI Design](#64-applications-uxui-design)
-    - [6.4.1. Web Applications Wireframes](#641-web-applications-wireframes)
-    - [6.4.2. Mobile Applications Wireframes](#642-mobile-applications-wireframes)
-    - [6.4.3. Web Applications Wireflow Diagrams](#web-applications-wireflow-diagrams)
-    - [6.4.4. Mobile Applications Wireflow Diagrams](#mobile-applications-wireflow-diagrams)
-    - [6.4.5. Applications Mock-ups](#542-applications-mock-ups)
-    - [6.4.6. Applications User Flow Diagrams](#643-applications-user-flow-diagrams)
+    - [6.4.1. Applications Wireframes](#641-applications-wireframes)
+      - [6.4.1.1. Web Applications Wireframes](#6411-web-applications-wireframes)
+      - [6.4.1.2. Mobile Applications Wireframes](#6412-mobile-applications-wireframes)
+    - [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
+      - [6.4.2.1. Web Applications Wireflow Diagrams](#6421-web-applications-wireflow-diagrams)
+      - [6.4.2.2. Mobile Applications Wireflow Diagrams](#6422-mobile-applications-wireflow-diagrams)
+    - [6.4.3. Applications Mock-ups](#643-applications-mock-ups)
+    - [6.4.4. Applications User Flow Diagrams](#644-applications-user-flow-diagrams)
   - [6.5. Applications Prototyping](#65-applications-prototyping)
   - [6.6. IoT Device Design](#66-iot-device-design)
     - [6.6.1. Criterios de Diseño Físico e Introducción](#661-criterios-de-diseño-físico-e-introducción)
     - [6.6.2. Relación con la Arquitectura de Información y Guía de Estilos](#662-relación-con-la-arquitectura-de-información-y-guía-de-estilos)
     - [6.6.3. Diseño de Circuito (Hardware Architecture)](#663-diseño-de-circuito-hardware-architecture)
     - [6.6.4. Flujos de Interacción del Prototipo](#664-flujos-de-interacción-del-prototipo)
-
+- [Capítulo VII: Product Implementation, Validation & Deployment](#capítulo-vii-product-implementation-validation--deployment)
+  - [7.1. Software Configuration Management](#71-software-configuration-management)
+    - [7.1.1. Software Development Environment Configuration](#711-software-development-environment-configuration)
+    - [7.1.2. Source Code Management](#712-source-code-management)
+    - [7.1.3. Source Code Style Guide & Conventions](#713-source-code-style-guide--conventions)
+    - [7.1.4. Software Deployment Configuration](#714-software-deployment-configuration)
+  - [7.2. Solution Implementation](#72-solution-implementation)
+    - [7.2.1. Sprint 1](#721-sprint-1)
+      - [7.2.1.1. Sprint Planning 1](#7211-sprint-planning-1)
+      - [7.2.1.2. Sprint Backlog 1](#7212-sprint-backlog-1)
+      - [7.2.1.3. Development Evidence for Sprint Review](#7213-development-evidence-for-sprint-review)
+      - [7.2.1.4. Testing Suite Evidence for Sprint Review](#7214-testing-suite-evidence-for-sprint-review)
+      - [7.2.1.5. Execution Evidence for Sprint Review](#7215-execution-evidence-for-sprint-review)
+      - [7.2.1.6. Services Documentation Evidence for Sprint Review](#7216-services-documentation-evidence-for-sprint-review)
+      - [7.2.1.7. Software Deployment Evidence for Sprint Review](#7217-software-deployment-evidence-for-sprint-review)
+      - [7.2.1.8. Team Collaboration Insights during Sprint](#7218-team-collaboration-insights-during-sprint)
+  - [7.3. Validation Interviews](#73-validation-interviews)
+    - [7.3.1. Diseño de Entrevistas](#731-diseño-de-entrevistas)
+    - [7.3.2. Registro de Entrevistas](#732-registro-de-entrevistas)
+      - [7.3.2.1. Ficha guía V-N01 — primera planta](#7321-ficha-guía-v-n01--primera-planta)
+      - [7.3.2.2. Ficha guía V-N02 — organización del primer cuidado](#7322-ficha-guía-v-n02--organización-del-primer-cuidado)
+      - [7.3.2.3. Ficha guía V-N03 — orientación y fotografía](#7323-ficha-guía-v-n03--orientación-y-fotografía)
+      - [7.3.2.4. Ficha guía V-E01 — colección e historial](#7324-ficha-guía-v-e01--colección-e-historial)
+      - [7.3.2.5. Ficha guía V-E02 — dispositivo y control](#7325-ficha-guía-v-e02--dispositivo-y-control)
+      - [7.3.2.6. Ficha guía V-E03 — seguimiento y recompensa](#7326-ficha-guía-v-e03--seguimiento-y-recompensa)
+    - [7.3.3. Evaluaciones según heurísticas](#733-evaluaciones-según-heurísticas)
+  - [7.4. Video About-the-Product](#74-video-about-the-product)
 - [Conclusiones](#conclusiones)
+- [Conclusiones y recomendaciones TB2](#conclusiones-y-recomendaciones-tb2)
 - [Video About-the-Team](#video-about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
+- [Anexo A: Evidencia de Videos de Exposiciones — TB2](#anexo-a-evidencia-de-videos-de-exposiciones--tb2)
+- [Anexo B: Trazabilidad y criterio de cierre TB2](#anexo-b-trazabilidad-y-criterio-de-cierre-tb2)
+- [Anexo C: Procedencia de evidencia técnica](#anexo-c-procedencia-de-evidencia-técnica)
+
 <div style="break-after: page;"></div>
-
-
-
-
-
 
 ## Student Outcome
 
 El curso contribuye al cumplimiento del Student Outcome ABET:
 
-**ABET – EAC - Student Outcome 5**
+**ABET – EAC-Student Outcome 3**
 
-Criterio: : Capacidad de comunicarse efectivamente con un rango de audiencias.
-En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 5.
+**Criterio:** *Capacidad de comunicarse efectivamente con un rango de audiencias*. En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC-Student Outcome 3.
+
+**Complemento TB2.** Se mantienen las declaraciones de hitos anteriores en el cuadro histórico. El siguiente cuadro agrega el estado verificable para cada integrante; las actividades orales no se dan por realizadas antes de disponer de la grabación.
+
+| Criterio específico | Acciones realizadas / evidencia TB2 | Conclusiones |
+|---|---|---|
+| Comunicación oral — Rodrigo Alaya Cabrera | Exposición TB2 por registrar; guion de arquitectura, integración y resultados preparado en este documento. Añadir enlace y timing de su intervención real | El logro oral TB2 queda pendiente de evidencia; el guion no equivale a una exposición |
+| Comunicación oral — Carlos Andrés Coca Lavado | Exposición TB2 por registrar; completar aporte explicado, audiencia y timing | Evaluar claridad y adaptación del lenguaje en la grabación |
+| Comunicación oral — Jocelyn Damaly Almerco Rojas | Exposición TB2 por registrar; completar aporte explicado, audiencia y timing | Evaluar claridad y sustento de decisiones en la grabación |
+| Comunicación oral — Ivan Jeanpierre La Madrid Lozano | Exposición TB2 por registrar; completar aporte explicado, audiencia y timing | Evaluar comunicación objetiva y respuesta a preguntas |
+| Comunicación oral — Diego Sebastian Zuñiga Murillo | Exposición TB2 por registrar; completar aporte explicado, audiencia y timing | Evaluar comunicación de resultados y limitaciones |
+| Comunicación escrita — Rodrigo Alaya Cabrera | Historial de commits de integración y README de frontend/backend; merge `a60165a` del informe | Existe trazabilidad escrita entre artefactos técnicos y explicación; confirmar revisión final del informe TB2 |
+| Comunicación escrita — Carlos Andrés Coca Lavado | Aportes previos conservados; falta vincular un artefacto o revisión individual TB2 | No atribuir autoría nueva sin evidencia |
+| Comunicación escrita — Jocelyn Damaly Almerco Rojas | Aportes previos conservados; falta vincular un artefacto o revisión individual TB2 | Completar evidencia individual antes de cerrar el resultado |
+| Comunicación escrita — Ivan Jeanpierre La Madrid Lozano | Falta registrar artefacto, commit o revisión individual TB2 | Completar trazabilidad de su comunicación escrita |
+| Comunicación escrita — Diego Sebastian Zuñiga Murillo | Falta registrar artefacto, commit o revisión individual TB2 | Completar trazabilidad de su comunicación escrita |
+
+**Conclusión grupal TB2:** el informe articula necesidades, diseño, implementación y limitaciones para lectores técnicos y no técnicos. Esta mejora documental no acredita por sí sola participación individual ni logro oral de todos los miembros; ambos se cerrarán con las evidencias del Anexo A y las revisiones atribuidas.
 
 
 <div align="center">
@@ -540,7 +585,7 @@ Creemos que la implementación de un sistema de recompensas basado en Web3 y Sma
 
 <div style="page-break-before: always;"></div>
 
-<h2>1.3. Segmentos objetivo</h2>
+## 1.3. Segmentos objetivo
 
 Según Revista Economía (2020), los peruanos realizaron más de cincuenta y un mil búsquedas en línea relacionadas con áreas verdes entre los meses de enero y octubre. De estas consultas, un sesenta y seis por ciento correspondía al mantenimiento y mejora de jardines en el hogar. Además, el sesenta y cuatro por ciento de las personas que realizaron estas búsquedas tenían entre treinta y cuatro y cincuenta años. Esta tendencia nos indica de manera clara que existen segmentos con poder adquisitivo dispuestos a adoptar soluciones tecnológicas para facilitar el cuidado de sus espacios naturales domésticos.
 
@@ -4702,7 +4747,7 @@ La demostración TP1 puede usar un conjunto de datos de prueba que represente la
 
 Las guías de estilo de la solución definen los criterios visuales, comunicacionales e interactivos que orientan el diseño de la experiencia digital de **NaturaTech** y de su producto **PlantSync**. Su finalidad es asegurar consistencia entre la identidad de marca, la interfaz de usuario y las funcionalidades ofrecidas en la landing page, la aplicación web, la aplicación móvil y los componentes vinculados al ecosistema IoT.
 
-<h3>6.1.1. General Style Guidelines</h3>
+### 6.1.1. General Style Guidelines
 
 <h4>Branding</h4>
 
@@ -4741,7 +4786,7 @@ El lenguaje utilizado en la solución será claro, cercano y fácil de comprende
 Este estilo comunicacional busca acompañar al usuario durante toda su experiencia, reforzando hábitos positivos de cuidado y promoviendo una interacción intuitiva con mensajes consistentes, comprensibles y alineados con el contexto vegetal de la plataforma.
 
 
-<h3>6.1.2. Web, Mobile and IoT Style Guidelines</h3>
+### 6.1.2. Web, Mobile and IoT Style Guidelines
 
 La solución ha sido diseñada bajo un enfoque visual minimalista, ordenado y adaptable, con el objetivo de facilitar la interacción del usuario en diferentes contextos de uso. Este enfoque abarca la landing page, la aplicación web, la aplicación móvil y los componentes visuales asociados a la integración con dispositivos IoT, manteniendo coherencia estética y funcional en todo el ecosistema digital.
 
@@ -4796,7 +4841,7 @@ El pie de página contendrá enlaces institucionales, medios de contacto, redes 
 
 La arquitectura de información de la solución establece la manera en que el contenido y las funcionalidades se estructuran, organizan, etiquetan y presentan dentro del ecosistema digital de NaturaTech y PlantSync. Su propósito es garantizar una experiencia fluida, comprensible y consistente en la landing page, la aplicación web, la aplicación móvil y los módulos asociados al monitoreo inteligente.
 
-<h3>6.2.1. Organization Systems</h3>
+### 6.2.1. Organization Systems
 
 La organización del contenido responde a un modelo combinado que integra estructuras jerárquicas, secuenciales y matriciales, permitiendo ordenar adecuadamente la información según la naturaleza de cada vista y según las tareas que el usuario necesita realizar dentro del sistema.
 
@@ -4827,7 +4872,7 @@ La solución emplea distintos esquemas de categorización según el tipo de info
 - **Cronológico**, para historiales de cuidado, tareas registradas, eventos recientes y datos de monitoreo.
 - **Por estado**, para clasificar condiciones normales, alertas, advertencias o situaciones pendientes de atención.
 
-<h3>6.2.2. Labeling Systems</h3>
+### 6.2.2. Labeling Systems
 
 El sistema de etiquetado ha sido definido para ser claro, directo y consistente en todos los puntos de interacción. El objetivo es que el usuario comprenda con rapidez el significado de cada sección, botón, estado o módulo, sin necesidad de interpretaciones complejas ni conocimientos técnicos previos.
 
@@ -4863,7 +4908,7 @@ El sistema de etiquetado ha sido definido para ser claro, directo y consistente 
 
 Las etiquetas se mantendrán uniformes entre web, móvil y componentes vinculados al monitoreo inteligente, lo que permite conservar continuidad semántica y facilitar el aprendizaje del sistema.
 
-<h3>6.2.3. SEO Tags and Meta Tags</h3>
+### 6.2.3. SEO Tags and Meta Tags
 
 Las metaetiquetas permiten describir estructuralmente el contenido de la solución y mejorar su visibilidad en motores de búsqueda. Aunque no son visibles para el usuario final, cumplen un papel importante en la indexación de la landing page y en el posicionamiento digital de la marca NaturaTech y del producto PlantSync.
 
@@ -4958,7 +5003,7 @@ Asimismo, se incorporarán filtros que permitan refinar los resultados según di
 
 Este sistema de búsqueda y filtrado resulta especialmente útil para usuarios con múltiples plantas registradas o con un uso más frecuente del monitoreo y del historial de cuidados, ya que permite identificar patrones, revisar eventos y acceder con rapidez a información relevante.
 
-<h3>6.2.5. Navigation Systems</h3>
+### 6.2.5. Navigation Systems
 
 La navegación de la solución ha sido diseñada con un enfoque intuitivo, flexible y adaptable a diferentes dispositivos. Su objetivo es ofrecer una experiencia ordenada, evitando la saturación visual y facilitando el acceso a contenidos, acciones y módulos relevantes dentro del ecosistema digital.
 
@@ -4994,7 +5039,7 @@ En esta sección se presenta una versión básica de nuestra landing page para n
 
 <a href="https://ibb.co/gb6myw0r"><img src="https://i.ibb.co/xK3XhGn2/wire3.png" alt="wire3" border="0"></a>
 
-### 5.3.2. Landing Page Mock-up
+### 6.3.2. Landing Page Mock-up
 
 A partir de nuestro wireframe, que representa una versión básica de la landing page, se desarrolló la versión final. Esta mantiene los mismos apartados definidos previamente, incorporando además los colores seleccionados y un lenguaje pensado para ser claro y amigable para el usuario.
 
@@ -5010,7 +5055,9 @@ A partir de nuestro wireframe, que representa una versión básica de la landing
 
 ## 6.4. Applications UX/UI Design
 
-#### 6.4.1. Web Applications Wireframes<br><br>
+### 6.4.1. Applications Wireframes
+
+#### 6.4.1.1. Web Applications Wireframes
 
 Los wireframes desarrollados para la aplicación web de BioPafi reflejan una planificación enfocada en el usuario, incorporando principios de diseño como la claridad visual, la jerarquía de la información, la consistencia y la inclusividad. Cada pantalla presenta una estructura ordenada y limpia, con encabezados visibles, elementos organizados según su nivel de importancia y una navegación lateral constante que facilita la orientación.
 
@@ -5088,7 +5135,7 @@ Interfaz destinada al control de actuadores como bomba para riego y las luces, d
 
 <a href="https://ibb.co/zV1FjB6J"><img src="https://i.ibb.co/WvQ0qMVt/actuators-drawio.png" alt="actuators-drawio" border="0"></a>
 
-#### 6.4.2. Mobile Applications Wireframes
+#### 6.4.1.2. Mobile Applications Wireframes
 
 - Login:  
 Pantalla de inicio de sesión que permite al usuario ingresar con correo (usuario) y contraseña; incluye logo, campos para credenciales, botón "Ingresar" y enlace para registrarse.
@@ -5144,7 +5191,9 @@ Formulario para actualizar datos del usuario (nombre, plan de suscripción) y un
 
 
 
-<h4>Web Applications Wireflow Diagrams</h4>
+### 6.4.2. Applications Wireflow Diagrams
+
+#### 6.4.2.1. Web Applications Wireflow Diagrams
 
 <br><br>
 
@@ -5240,7 +5289,7 @@ Formulario para actualizar datos del usuario (nombre, plan de suscripción) y un
 
 <br><br>
 
-<h4>Movil Applications Wireflow Diagrams</h4>
+#### 6.4.2.2. Mobile Applications Wireflow Diagrams
 
 <br><br>
 [Enlace del Miro](https://miro.com/app/board/uXjVHVl1p8U=/?share_link_id=982143810898)
@@ -5332,7 +5381,15 @@ Formulario para actualizar datos del usuario (nombre, plan de suscripción) y un
 
 
 
-### 5.4.2. Applications Mock-ups
+### 6.4.3. Applications Mock-ups
+
+**Criterio de numeración TB2:** se conservan los wireflows en 6.4.2; mock-ups pasa a 6.4.3 y user flows a 6.4.4 para evitar dos secciones 6.4.2. Se mantiene su correspondencia con los apartados exigidos por la rúbrica.
+
+Los mock-ups existentes desarrollan el sistema visual de 6.1: jerarquía tipográfica, tonos botánicos, agrupación de información y acciones reconocibles. La implementación web utiliza **Vue 3 y PrimeVue 4**; el prototipo móvil es un artefacto de diseño y no acredita una app nativa publicada. Los nombres de frameworks alternativos de un enunciado no se incorporan como tecnologías usadas.
+
+La navegación reúne plantas, cuidados, información y perfil; las capacidades emergentes amplían esa organización con salud, asistente y recompensas. La acción principal debe ser visible también sin datos, los formularios conservan entradas ante fallos y las acciones sensibles requieren confirmación. Los estados loading, empty, error y success forman parte del diseño de interacción.
+
+**Criterios de aceptación inclusivos:** comprobar contraste WCAG AA —4,5:1 para texto normal y 3:1 para texto grande—, foco visible, recorrido por teclado, etiquetas de formularios y mensajes que no dependan únicamente del color. Las imágenes de diseño no certifican cumplimiento del DOM implementado. Para internacionalización se requiere cobertura `en_US` / `es_419`, formatos locales de fechas y números y ausencia de mensajes residuales en otro idioma; esa verificación sigue pendiente y no se declara implementada por mostrar dos etiquetas de idioma. Referencia: [WCAG 2.2](https://www.w3.org/TR/WCAG22/).
 
 Los siguientes prototipos visuales se han desarrollado a partir de los wireframes documentados anteriormente, reflejando con precisión las interfaces y funcionalidades que los usuarios experimentarán al interactuar con la plataforma. Ambas versiones (web y móvil) se encuentran consolidadas en un único proyecto de Figma para facilitar la coherencia visual y la gestión unificada del diseño.
 
@@ -5490,7 +5547,16 @@ Pantalla de gestión de la cuenta de usuario donde se pueden modificar datos per
 
 <br><br>
 
-### 6.4.3. Applications User Flow Diagrams
+### 6.4.4. Applications User Flow Diagrams
+
+| User Persona / aplicación | User Goal | Happy Path | Unhappy Paths y recuperación |
+|---|---|---|---|
+| José Avendaño — web | Comenzar el cuidado de su primera planta sin conocimiento previo | Landing → registro → primera planta → tarea → confirmación | Correo inválido: error en campo; lista vacía: CTA; fallo de guardado: conservar datos y revisar lista antes de repetir |
+| José Avendaño — móvil, prototipo | Registrar y consultar una planta durante su rutina | Inicio → agregar planta → detalle → calendario | Sin datos: acceso a creación; permiso de cámara rechazado: alternativa de archivo cuando se implemente; campos incompletos: validación |
+| Mariana Mendoza — web | Organizar su colección y decidir cuidados con información | Login → planta → historial → tarea → estado actualizado | Sesión vencida: reautenticar; dato antiguo: advertir antigüedad; falla de IA: informar y permitir reintento, sin inventar resultados |
+| Mariana Mendoza — móvil, prototipo | Consultar condiciones y controlar cuidados de forma segura | Plantas → detalle → nodo → lectura → propuesta → confirmación | Nodo sin comunicación: no asumir telemetría; orden pendiente: esperar recibo; firma rechazada: permitir cancelar sin perder el resto del recorrido |
+
+Los diagramas existentes que siguen detallan los recorridos de plantas, tareas, perfil y dispositivos. La tabla extiende su lectura con rutas de error para el contrato actual. Las vistas móviles y sus rutas se consideran prototipos hasta contar con implementación y ejecución móvil verificables.
 
 <h4>Web Platform</h4>
 
@@ -5703,6 +5769,13 @@ Pantalla de gestión de la cuenta de usuario donde se pueden modificar datos per
 
 ## 6.5. Applications Prototyping
 
+**Ampliación TB2.** Los enlaces Figma existentes permiten recorrer jerarquía, navegación y transiciones. La retroalimentación prevista incluye validación junto al campo, indicador de envío, confirmación de guardado y retorno consistente desde modales. El foco debe volver al control que abrió el diálogo y los mensajes deben poder percibirse sin depender de animación o color. Estas condiciones se validarán en la interfaz ejecutable; Figma no demuestra semántica accesible ni consumo de API.
+
+<p align="center"><img src="Images/mockups/DashBoard_Plantas.png" alt="Pantalla de diseño web asociada al recorrido de plantas del prototipo" width="650"></p>
+<p align="center"><img src="Images/mockups/mobile_mis_plantas.png" alt="Pantalla de diseño móvil asociada al recorrido de plantas del prototipo" width="300"></p>
+
+**Video de demostración web — Microsoft Stream:** **[PEGAR ENLACE REAL]**; mostrar registro, creación de planta, tarea y recuperación ante error. **Video de demostración móvil — Microsoft Stream:** **[PEGAR ENLACE REAL]**; mostrar listado, detalle, vinculación y perfil. Los enlaces interactivos se conservan a continuación. El video de entrevistas iniciales no se reutiliza como demostración de prototipo.
+
 Esta sección presenta el prototipo de la aplicación web orientada al cuidado de plantas mediante el uso de tecnología IoT, permitiendo al usuario monitorear y gestionar sus dispositivos desde un entorno más amplio y detallado. Las decisiones de interacción se basan en una arquitectura de información estructurada con un menú lateral persistente que facilita el acceso a módulos como plantas, guías, tareas, chatbot y configuración, así como al control IoT básico (el control total se tiene en la aplicación móvil). La navegación sigue un enfoque jerárquico y consistente con los User Flow Diagrams, permitiendo al usuario desplazarse entre vistas como el registro de plantas, visualización de detalles, historial de datos y control de dispositivos IoT. Asimismo, se integran interacciones como formularios, modales de confirmación y paneles de información que optimizan la gestión de acciones. Los flujos principales contemplan la consulta de información, la automatización de cuidados, la exploración de guías y la asistencia mediante el chatbot, garantizando una experiencia fluida, organizada y alineada con las necesidades del usuario en un entorno de escritorio. Todo esto está conectado con la landing page, a través del botón "Call to Action" que se tiene en el landing.
 
 link del prototipo de la aplicación web: [prototipo web](https://www.figma.com/proto/5cSEKvg4XXUzsXTpOPJySb/PlantSync?node-id=185-4&p=f&t=YaSL2qy6CTbiqSX6-1&scaling=scale-down&content-scaling=fixed&page-id=44%3A4&starting-point-node-id=185%3A4&show-proto-sidebar=1)
@@ -5839,9 +5912,850 @@ A nivel físico y sistémico, el dispositivo ejecuta flujos de interacción auto
 
 <div style="break-after: page;"></div>
 
+# Capítulo VII: Product Implementation, Validation & Deployment
+
+Este capítulo documenta el avance TB2 con corte al **12 de noviembre de 2026**. Se contrastaron el informe, los repositorios locales de Web App y Web Service y el registro técnico de pruebas del 11 de noviembre. Se distingue entre implementación en código, ejecución local y comprobación contra servicios desplegados. Los videos están en preparación y las entrevistas de validación aún no se han realizado; sus guías no constituyen resultados de investigación.
+
+## 7.1. Software Configuration Management
+
+### 7.1.1. Software Development Environment Configuration
+
+| Categoría | Producto | Versión / propósito en PlantSync | Acceso oficial |
+|---|---|---|---|
+| Project Management | GitHub | Repositorios, revisión de cambios e historial; no se encontró un tablero TB2 publicado en el informe | https://github.com |
+| Requirements Management | Markdown / GitHub | Épicas, User Stories, criterios de aceptación y Product Backlog del capítulo III | https://docs.github.com |
+| Product Design | Figma | Wireframes, mock-ups y prototipos web/móvil; servicio SaaS | https://www.figma.com |
+| Product Design | Miro / Lucidchart / Overflow | Event Storming, diagramas y recorridos enlazados en los capítulos anteriores | https://miro.com / https://www.lucidchart.com / https://overflow.io |
+| Software Development | Java / Spring Boot | Java 21, Spring Boot 3.5; API REST y monolito modular | https://adoptium.net / https://spring.io/projects/spring-boot |
+| Software Development | Vue / TypeScript / Vite | Vue 3, TypeScript 5 y Vite 5; cliente web | https://vuejs.org / https://www.typescriptlang.org / https://vite.dev |
+| Software Development | PrimeVue / Pinia / Vue Router | PrimeVue 4, componentes; estado de sesión y navegación | https://primevue.org / https://pinia.vuejs.org / https://router.vuejs.org |
+| Software Development | Node.js / Maven Wrapper | Node.js 22 en despliegue web; ejecución reproducible con wrapper Maven del backend | https://nodejs.org / https://maven.apache.org/wrapper/ |
+| Software Development | MySQL / Flyway / H2 | MySQL para persistencia, Flyway para migraciones y H2 para entorno local; no equivalen entre sí para validar migraciones | https://www.mysql.com / https://www.red-gate.com/products/flyway / https://h2database.com |
+| Software Development | Python | Simulador IoT HTTP; Python 3.12 en CI | https://www.python.org |
+| Software Development | Gemini API / web3j / Solidity | Análisis de imágenes y agente; acceso Ethereum y contrato GreenBadge | https://ai.google.dev / https://www.web3j.io / https://soliditylang.org |
+| Software Testing | Vitest / Vue Test Utils | Pruebas de componentes y flujos web | https://vitest.dev / https://test-utils.vuejs.org |
+| Software Testing | JUnit / Spring Boot Test / JaCoCo | Pruebas de servicios, integración y cobertura de instrucciones | https://junit.org / https://spring.io/projects/spring-boot / https://www.jacoco.org |
+| Software Deployment | GitHub Actions / Docker | Verificación de cambios y empaquetado del servicio | https://github.com/features/actions / https://www.docker.com |
+| Software Deployment | Render / Aiven / Netlify | API, base de datos MySQL y aplicación web respectivamente | https://render.com / https://aiven.io / https://www.netlify.com |
+| Software Documentation | Markdown / Mermaid / OpenAPI | Informe, arquitectura y contrato REST | https://www.markdownguide.org / https://mermaid.js.org / https://www.openapis.org |
+
+Las versiones exactas de dependencias se toman de `pom.xml`, `package.json` y los archivos de bloqueo de cada repositorio. La presencia de una herramienta en el diseño no acredita una suscripción contratada ni su uso por todos los integrantes.
+
+### 7.1.2. Source Code Management
+
+| Producto digital | Repositorio / evidencia | Alcance del corte |
+|---|---|---|
+| Informe | [NaturaTech-report](https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTech-report) | Rama local `develop`; contiene capítulos, imágenes y prototipos |
+| Frontend Web | [NaturaTech-web-app](https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTech-web-app) | Rama local `main`; Vue / TypeScript |
+| Backend RESTful API | [NaturaTech-web-service](https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTech-web-service) | Rama local `main`; Spring Boot y contrato Solidity |
+| IoT Edge | [BioDemeter_Plantsync_Edge](https://github.com/BioDemeter-IoT/BioDemeter_Plantsync_Edge) | Repositorio antecedente aportado por el equipo; requiere comprobar compatibilidad con la API vigente |
+| IoT Wokwi | [BioDemeter_Plantsync_Wokwi](https://github.com/BioDemeter-IoT/BioDemeter_Plantsync_Wokwi) | Prototipo antecedente; no acredita un dispositivo conectado a Render |
+| Landing Page | Diseño en 6.3 y US01–US04 / US18–US24 | Falta registrar repositorio y URL propios si se entregará como producto independiente |
+| Mobile App | Prototipo Figma de 6.5 | No se identificó repositorio móvil ni binario verificable en los archivos examinados |
+
+**Política de ramas.** Se propone consolidar GitFlow: `main` para versiones publicables, `develop` para integración, `feature/<story>-<description>` para trabajo aislado, `release/<version>` para estabilización y `hotfix/<description>` para correcciones urgentes. El historial del informe sí muestra `main`, `develop`, ramas `feature/*` y merges; no permite afirmar que todos los repositorios ya aplican el flujo completo. Antes de adoptar `release/*` se debe acordar protección de ramas y revisión de pull requests.
+
+**Versionamiento.** Se adopta como criterio de publicación Semantic Versioning 2.0.0: `MAJOR.MINOR.PATCH`; `v1.0.0` será una etiqueta de entrega cuando se cumplan sus criterios, no una etiqueta existente acreditada en este corte. Cambios incompatibles del contrato requieren incremento mayor; capacidades compatibles, menor; correcciones compatibles, parche.
+
+**Mensajes.** Para nuevos commits se establece `<type>(<scope>): <description>` con `feat`, `fix`, `docs`, `test`, `chore`, `refactor` y `build`. Los mensajes históricos se transcriben literalmente, incluso cuando no cumplen la convención. No se reescribe evidencia para aparentar uniformidad. Referencias: [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/), [SemVer](https://semver.org/spec/v2.0.0.html) y [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
+
+### 7.1.3. Source Code Style Guide & Conventions
+
+| Lenguaje / artefacto | Convención de trabajo | Comprobación |
+|---|---|---|
+| Java | Paquetes en minúsculas; clases `PascalCase`; métodos y campos `camelCase`; nombres de dominio en inglés; controladores delegan en servicios | Compilar con Java 21 y ejecutar Maven `verify`; revisar autorización de recursos en backend |
+| TypeScript / Vue | Componentes `PascalCase.vue`; tipos explícitos en contratos; funciones `camelCase`; separar servicios API, estado y presentación | Type checking, Vitest y build Vite; evitar `any` para respuestas del contrato |
+| Python | Módulos y funciones `snake_case`; clases `PascalCase`; configuración por entorno; tiempos de espera en comunicaciones | `unittest` del simulador y revisión de errores de red |
+| Solidity | Contrato `PascalCase`, funciones `camelCase`; permisos de emisión explícitos y dependencias fijadas | Compilación del contrato; todavía se requiere evidencia de pruebas EVM y despliegue Sepolia |
+| SQL / Flyway | Migraciones versionadas; no modificar una migración ya aplicada; cambios de esquema revisables | Pruebas MySQL y validación de esquema; H2 no reemplaza esta comprobación |
+| REST / JSON | Recursos en inglés, verbos HTTP semánticos, errores seguros y DTOs explícitos | OpenAPI, pruebas de autorización y consumo desde frontend |
+| Gherkin | `Feature`, `Scenario`, `Given`, `When`, `Then` en inglés; un comportamiento observable por escenario | Las especificaciones de 7.2.1.4 son propuestas; falta integrarlas con un runner BDD |
+
+Las convenciones son criterios para revisión; no se declara conformidad automática con una guía externa que no esté configurada como verificador. Las claves, JWT, contraseñas, frases semilla y claves privadas quedan fuera del repositorio y de las capturas del informe.
+
+### 7.1.4. Software Deployment Configuration
+
+El despliegue vigente separa **Netlify → Render → Aiven MySQL**. Spring Boot conserva los contextos IAM, Profiles, PlantProfiles, IoT Management, CareScheduling y PlantGuidance; las capacidades de inteligencia y recompensas se implementan en módulos adicionales dentro del mismo servicio. Esta distribución es un monolito modular, no una evidencia de microservicios desplegados por contexto.
+
+1. Revisar el commit de entrega en GitHub y ejecutar tipos, pruebas y build del frontend; ejecutar `./mvnw verify` en backend y las pruebas MySQL con el perfil correspondiente.
+2. Crear o seleccionar MySQL en Aiven. Configurar credenciales y TLS desde el panel privado; verificar conectividad, certificado y migraciones Flyway antes de permitir tráfico de usuarios.
+3. Conectar Render al repositorio del Web Service, usar el Dockerfile y la configuración de `render.yaml`. Configurar base de datos, JWT, origen CORS y proveedores como secretos del servicio. No incluir valores secretos en este informe.
+4. Desplegar un commit conocido, revisar logs de arranque y migraciones y comprobar salud. `autoDeployTrigger: off` en la configuración revisada impide asumir un despliegue automático de cada push: la publicación debe iniciarse o configurarse expresamente.
+5. Conectar Netlify al repositorio web, usar la configuración de `netlify.toml` y fijar `VITE_API_BASE_URL=https://plantsync-backend.onrender.com/api/v1`. Esta URL es pública; las claves Gemini y de emisión Web3 nunca pertenecen a variables `VITE_*`.
+6. Confirmar navegación SPA, CORS y registro/login desde Netlify. Ejecutar el recorrido con cuenta nueva y registrar commit, fecha y resultado.
+7. Habilitar cada integración después de comprobarla: Gemini con consulta y fotografía botánica; simulador con telemetría y recibo; Sepolia con firma de usuario, contrato y cuenta emisora autorizada.
+
+<p align="center"><img src="Images/cap4/C4/diagram_deploy.png" alt="Diagrama de despliegue del diseño arquitectónico original" width="850"></p>
+
+La imagen conserva la arquitectura de diseño del capítulo IV. Sus proveedores y nodos deben contrastarse con la configuración vigente; no es una captura de la consola Render ni acredita despliegue físico. La siguiente vista explicita el entorno implementado y las conexiones aún sujetas a validación:
+
+```mermaid
+flowchart LR
+  User[Usuario] --> Web[Web App / Netlify]
+  Web --> API[Spring Boot / Render]
+  API --> DB[(MySQL / Aiven)]
+  API -. proveedor por validar .-> AI[Gemini API]
+  Sim[Simulador IoT Python] -. HTTP autenticado .-> API
+  User -. firma .-> Wallet[Rabby Wallet / Sepolia]
+  Wallet -. verificacion .-> API
+  API -. emision por validar .-> Chain[GreenBadge / Sepolia]
+```
+
+## 7.2. Solution Implementation
+
+### 7.2.1. Sprint 1
+
+Se organiza la evidencia disponible bajo Sprint 1 conforme a la rúbrica TB2. La reconstrucción documental no sustituye un acta de planificación ni demuestra que todo el código se produjo dentro de un intervalo previamente acordado.
+
+#### 7.2.1.1. Sprint Planning 1
+
+| Campo | Contenido |
+|---|---|
+| Sprint # | Sprint 1 |
+| Date | Corte documental: 12/11/2026. Fecha de reunión: por registrar con el acta |
+| Time | Por registrar; no existe horario verificable de la reunión |
+| Location | Por registrar: enlace o ubicación de la sesión de planificación |
+| Prepared By | Equipo NaturaTech; responsable de acta pendiente de confirmación |
+| Attendees | Equipo previsto: Rodrigo Alaya Cabrera, Carlos Andrés Coca Lavado, Jocelyn Damaly Almerco Rojas, Ivan Jeanpierre La Madrid Lozano y Diego Sebastian Zuñiga Murillo. Asistencia efectiva pendiente de acta |
+| Sprint 0 Review Summary | El informe previo contiene problema, segmentos, historias, contextos DDD, C4 y prototipos. Esto describe artefactos disponibles, no una ceremonia registrada |
+| Sprint 0 Retrospective Summary | Hallazgos para planificación: alinear diseño con implementación, cerrar estados vacíos y separar pruebas locales de integraciones externas. Acuerdos de retrospectiva pendientes de registro |
+| Sprint 1 Goal | Criterio propuesto de cierre: completar 5/5 pasos con cuenta nueva —registro, login, planta, tarea y nodo— y conservar evidencia HTTP; validar por separado los tres flujos emergentes antes de declararlos operativos |
+| Sprint 1 Velocity | No calculable sin compromiso inicial y aceptación de historias completas |
+| Sum of Story Points | Subconjunto de trazabilidad de 7.2.1.2: 32 puntos del Product Backlog; no constituye velocidad ni compromiso histórico |
+
+#### 7.2.1.2. Sprint Backlog 1
+
+Se reutilizan los identificadores y estimaciones del Product Backlog. Los identificadores `TB2-Txx` organizan esta revisión y no se presentan como tickets históricos. No hay horas ni asignaciones individuales verificadas para estas tareas; el autor de un commit no reemplaza un registro de asignación. `Done` solo procede al satisfacer todos los criterios de la historia.
+
+<p align="center"><img src="Images/cap3/Product_Backlog.png" alt="Product Backlog previo, referencia de priorización" width="850"></p>
+
+**Tablero Sprint 1:** pendiente de agregar URL y captura del tablero real. La imagen anterior acredita el Product Backlog previo, no un tablero Sprint 1 actualizado.
+
+| User Story Id | User Story Title | Work-Item / Task Id | Work-Item / Task Title | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|---|
+| US01 | Visualización de beneficios botánicos en el Landing Page | TB2-T01 | Review landing benefits | Contrastar contenido de 6.3 con publicación real | No registrada | Por confirmar en acta | Diseño disponible; ejecución pendiente |
+| US04 | Redirección a plataformas desde el Landing Page | TB2-T02 | Verify entry links | Comprobar CTA web y enlaces móviles existentes | No registrada | Por confirmar en acta | Pendiente de prueba de landing |
+| US20 | Selección de idioma | TB2-T03 | Validate locale coverage | Probar `en_US` y `es_419` sin textos residuales | No registrada | Por confirmar en acta | Pendiente de validación |
+| US14 | Registrarse en la app | TB2-T04 | Verify registration | Cuenta QA aislada; creación persistida con 201 | No registrada | Por confirmar; commit de integración de Rodrigo Alaya Cabrera | Ejecución HTTP acreditada; aceptación integral pendiente |
+| US13 | Inicio sesión de usuario | TB2-T05 | Verify authentication | Login y sesión `/me` con 200 | No registrada | Por confirmar; commit de integración de Rodrigo Alaya Cabrera | Ejecución HTTP acreditada; aceptación integral pendiente |
+| US06 | Registro de nueva planta y asignación de especie | TB2-T06 | Complete plant onboarding | CTA, formulario y POST; falta verificar asignación automática de umbrales exigida por la historia | No registrada | Por confirmar; commit de Rodrigo Alaya Cabrera | Parcial |
+| US28 | Configuración de tareas | TB2-T07 | Complete care scheduling | Crear cuidado y completar preservando notas | No registrada | Por confirmar; commit de Rodrigo Alaya Cabrera | HTTP y pruebas locales acreditados |
+| US02 | Vinculación de dispositivo IoT con la cuenta | TB2-T08 | Link an owned node | Crear nodo asociado; falta flujo con cliente móvil y telemetría de extremo a extremo | No registrada | Por confirmar; commit de integración de Rodrigo Alaya Cabrera | Parcial |
+| US11 | Subir fotos de una planta | TB2-T09 | Validate image analysis | Carga asíncrona, historial y error seguro del proveedor | No registrada | Por confirmar; commit de Rodrigo Alaya Cabrera | Bloqueado para resultado real de IA |
+
+Los puntos del subconjunto son 2 + 1 + 3 + 5 + 3 + 5 + 5 + 5 + 3 = **32**. Esta suma proviene del capítulo III y no mide trabajo terminado. Las ampliaciones del agente y Web3 deben vincularse también a sus criterios del backlog antes de cerrar el sprint.
+
+#### 7.2.1.3. Development Evidence for Sprint Review
+
+Los hashes y mensajes siguientes se consultaron directamente con `git log`. Se conserva su escritura original; todos los commits de código listados pertenecen a la rama local `main`. El contenido del informe se consulta en `develop`.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| NaturaTech-web-app | main | `9bc0325` | `build: update API base URL to Render deployment` | Sin cuerpo | 2026-11-11 |
+| NaturaTech-web-app | main | `0f5f2eb` | `fix: add new bottons in the flow of creation a new plant` | Sin cuerpo | 2026-11-11 |
+| NaturaTech-web-app | main | `9be1433` | `doc: Agreggate a new princiapl readme` | Sin cuerpo | 2026-11-12 |
+| NaturaTech-web-service | main | `09944af` | `fix: add new rules from deployment in render` | Sin cuerpo | 2026-11-11 |
+| NaturaTech-web-service | main | `5a96dfc` | `fix: fix the agent of gemini` | Sin cuerpo | 2026-11-11 |
+| NaturaTech-web-service | main | `4078ffb` | `doc: Change a principal readme` | Sin cuerpo | 2026-11-12 |
+| NaturaTech-report | develop | `a60165a` | `Merge pull request #26 from 1ASI0728-2620-9077-NaturaTech/main` | `compare` | 2026-11-12 |
+
+Estos commits acreditan cambios versionados; no prueban por sí solos que Render o Netlify hayan publicado exactamente ese SHA ni que una integración externa responda correctamente.
+
+#### 7.2.1.4. Testing Suite Evidence for Sprint Review
+
+El registro técnico del 11/11/2026 informa **99 pruebas frontend aprobadas**, type checking y build correctos. En backend, `mvn verify` finalizó con **88 pruebas ejecutadas y 4 pruebas MySQL omitidas**, y **85,47 % de cobertura de instrucciones** frente a un umbral de 80 %. No se vuelven a presentar esos resultados como una nueva ejecución del 12/11 ni como cobertura de todos los requisitos.
+
+| Nivel | Evidencia en código | Alcance / limitación |
+|---|---|---|
+| Unit Tests | `GeminiClientTest`, `ChatControllerTest`, `CreatePlantDatesTest`, `UserCommandServiceImplTest` | Errores de proveedor, contratos y lógica; no demuestran respuesta real de Google |
+| Integration Tests | `IntegrationSecurityTest`, `IamIntegrationTest`, `ProfilesIntegrationTest`, `SchemaContractTest` | Integración y autorización según el entorno de pruebas |
+| MySQL | `MySqlMigrationTest` | Requiere ejecución específica con MySQL/Docker; cuatro pruebas omitidas en el registro citado |
+| Rewards | `TelemetryEligibilityTest`, `SepoliaClientTest`, `RewardWorkerTest` | Reglas y adaptadores; no acreditan una transacción real en Sepolia |
+| Frontend | Suite Vitest / Vue Test Utils | Modales, errores, onboarding y flujo de firma con proveedor sustituido en pruebas; no sustituye un E2E con Rabby |
+| Acceptance Tests | Especificaciones Gherkin siguientes | Propuestas documentales; no se encontraron `.feature` ni Step Definitions ejecutables en el backend revisado |
+
+**Especificación propuesta `registration.feature` — US14 / US13.** Su incorporación como prueba ejecutable requiere un runner BDD y Step Definitions; no se atribuye una clase inexistente.
+
+```gherkin
+Feature: User registration and authentication
+  As a new plant owner
+  I want to create an account and sign in
+  So that I can manage my own plants
+
+  Scenario: Register with an unused email
+    Given an email that does not belong to an existing account
+    And registration data that satisfies the API validation rules
+    When I submit the registration request
+    Then the API response status should be 201
+    And I should be able to sign in with the registered credentials
+    And the current user endpoint should return my own profile
+
+  Scenario: Reject invalid credentials
+    Given an existing user account
+    When I sign in with an incorrect password
+    Then access should be denied
+    And no authenticated session should be created
+    And no password or internal exception should appear in the response
+```
+
+**Especificación propuesta `plant-onboarding.feature` — US06.** Relacionada con `CreatePlantDatesTest` y la revisión de autorización; no sustituye la prueba de los umbrales automáticos de US06.
+
+```gherkin
+Feature: First plant onboarding
+  As an authenticated plant owner
+  I want to create my first plant
+  So that I can organize its care
+
+  Scenario: Create the first plant from an empty collection
+    Given I am authenticated and have no plants
+    When I open the first plant creation form
+    And I submit valid plant information and a visible watering date
+    Then the API response status should be 201
+    And the plant should belong to my profile
+    And the plant list should display the created plant
+
+  Scenario: Preserve input when the request fails
+    Given I have filled in the plant creation form
+    When the creation request fails
+    Then the form should keep my input
+    And it should explain the error without exposing internal details
+    And it should allow me to review the collection before retrying
+```
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| NaturaTech-web-service | main | `5a96dfc` | `fix: fix the agent of gemini` | Sin cuerpo; incluye cambios bajo `src/test` | 2026-11-11 |
+| NaturaTech-web-service | main | `09944af` | `fix: add new rules from deployment in render` | Sin cuerpo; incluye cambios bajo `src/test` | 2026-11-11 |
+
+La tabla conserva mensajes `fix:` porque son los reales. No existe un commit `test:` dedicado que deba inventarse para completar la evidencia.
+
+#### 7.2.1.5. Execution Evidence for Sprint Review
+
+| Recorrido | Resultado registrado el 11/11/2026 | Qué falta demostrar |
+|---|---|---|
+| Registro → login → sesión | HTTP 201 / 200 / 200 | Video continuo en navegador con commit desplegado |
+| Crear planta → crear tarea → completar | HTTP 201 / 201 / 200 | Recorrido visual completo y relectura después de nueva sesión |
+| Crear y listar nodo | HTTP 201 / 200 | Lectura reciente, recepción de comando y corte por tiempo |
+| Asistente | Conversación 201; consulta 502 `GEMINI_UNAVAILABLE` | Respuesta real tras corregir configuración del proveedor |
+| Análisis de imagen | 202 seguido de `FAILED / ANALYSIS_PROVIDER_FAILED` | Fotografía botánica válida y resultado interpretado; el archivo usado fue el logo |
+| Billetera | Consulta y desafío 200 | Firma Rabby real, rechazo/cambio de cuenta y emisión autorizada |
+| Landing, idioma, términos | Diseño e historias disponibles | Publicación identificada, ambos idiomas y enlaces legales efectivos |
+
+<p align="center"><img src="Images/mockups/DashBoard_Plantas.png" alt="Diseño de referencia de Mis plantas; no es captura de la prueba HTTP" width="700"></p>
+<p align="center"><img src="Images/mockups/Tareas.png" alt="Diseño de referencia de tareas de cuidado" width="700"></p>
+
+**Sprint Review — Microsoft Stream:** **[PEGAR AQUÍ EL ENLACE REAL]**. **Fecha, duración y SHA mostrado:** **[COMPLETAR AL PUBLICAR]**. Grabar una cuenta nueva, los estados vacíos, formularios, persistencia, manejo de fallos y estado real de las integraciones. Las imágenes anteriores son artefactos de diseño existentes, no capturas de ejecución de Render.
+
+#### 7.2.1.6. Services Documentation Evidence for Sprint Review
+
+Base pública del contrato: `https://plantsync-backend.onrender.com/api/v1`. Los fragmentos JSON siguientes ilustran campos del contrato y omiten datos personales; no son transcripciones de usuarios reales. Cuando el cuerpo completo no está acreditado se indica expresamente, en lugar de inventar un esquema.
+
+| Endpoint | Verbo HTTP | Descripción / Acción | Parámetros / Request Body | Response de ejemplo (JSON) + HTTP |
+|---|---|---|---|---|
+| `/plants` | POST | Crear planta propia | `name`, `species`, `acquisitionDate`, `nextWateringDate`, `humidity`, `profileId` | 201; recurso planta, fragmento `{"id":1}` |
+| `/tasks` | POST | Programar cuidado | `action`, `scheduledDate`, `plantId`, `profileId`, `humidity`, `notes` | 201; recurso tarea, fragmento `{"id":1}` |
+| `/tasks/{id}/complete` | PATCH | Completar cuidado | ID propio; cuerpo vacío permitido | 200; recurso actualizado; consultar esquema completo en OpenAPI |
+| `/iot/nodes` | POST | Registrar nodo vinculado | `nodeCode`, `plantId`, `profileId` | 201; nodo creado, fragmento `{"nodeCode":"SIM-001"}` |
+| `/iot/nodes/{nodeCode}/link-plant` | PATCH | Vincular nodo existente | `{"plantId":1}` | Recurso actualizado; confirmar código y esquema en OpenAPI de la versión publicada |
+| `/agent/conversations` | POST | Crear conversación | Sesión autenticada; sin datos personales arbitrarios | 201 `{"id":"<conversation-id>"}` |
+| `/agent/conversations/{id}/messages` | POST | Consultar al agente | `{"content":"How should I care for this plant?","plantId":1}` | Respuesta según contrato; en la prueba registrada: 502, código `GEMINI_UNAVAILABLE` |
+| `/plant-analyses` | POST | Enviar fotografía | `multipart/form-data`: parte `image`, `plantId` opcional y cabecera `Idempotency-Key` | 202; `{"id":"<analysis-id>","status":"<initial-status>"}`; consultar después su ID |
+| `/plant-analyses/{id}` | GET | Consultar estado | ID propio | 200; estado del análisis, fragmento `{"status":"FAILED"}` en fallo |
+| `/wallet/challenges` | POST | Solicitar desafío de firma | `{"address":"<public-address>","chainId":11155111}` | 200; desafío y mensaje a firmar; no enviar claves privadas |
+| `/wallet/verify` | POST | Verificar firma | `{"challengeId":"<id>","signature":"<signature>"}` | Resultado de vinculación; pendiente de prueba con billetera real |
+| `/capabilities` | GET | Consultar capacidades | Sin cuerpo | 200; fragmento `{"assistant":true,"rewards":false}`; habilitación no implica disponibilidad del proveedor |
+
+**OpenAPI / Swagger UI:** revisar configuración `springdoc` del commit publicado y registrar su URL accesible **[PEGAR URL VERIFICADA]**. No se encontró captura local de Swagger que pueda presentarse como evidencia. **Captura y commit de documentación:** **[AGREGAR DESPUÉS DE VERIFICAR]**. Los commits de 7.2.1.3 identifican la implementación consultada, no una publicación específica de Swagger.
+
+#### 7.2.1.7. Software Deployment Evidence for Sprint Review
+
+| Producto | URL / proveedor | Evidencia disponible | Pendiente para entrega |
+|---|---|---|---|
+| Web App | https://plantsync-app.netlify.app | URL proporcionada por el equipo y usada en el contrato de integración | Captura Netlify con build, commit y fecha; E2E de navegador |
+| API | https://plantsync-backend.onrender.com | Pruebas HTTP registradas el 11/11/2026 | Captura Render con deployment y SHA de la versión revisada |
+| Base de datos | Aiven MySQL; conexión privada | Configuración del proyecto y confirmación del equipo | Captura sin credenciales, TLS, migraciones aplicadas y recuperación probada |
+| IoT | Simulador externo que consume la API | Código y configuración de simulación | Proceso ejecutándose, lectura reciente y recibos de comandos |
+| Web3 | Ethereum Sepolia, chain ID 11155111 | Contrato y adaptador en código; desafío de firma | Dirección del contrato y transacción confirmada verificable |
+
+GitHub Actions verifica código; Netlify construye el cliente desde su repositorio. No se afirma CD automático de Render, ya que la configuración revisada desactiva su disparador. Falta anexar capturas de paneles cloud: las imágenes C4 existentes no las reemplazan. Las variables privadas se documentan por nombre y propósito en los repositorios, nunca por valor.
+
+#### 7.2.1.8. Team Collaboration Insights during Sprint
+
+La revisión identifica a `ALAYA1803` como autor de los commits recientes de frontend y backend, y a Rodrigo Alaya como autor del merge del informe del 12/11. En el historial previo aparecen otros identificadores, incluido `DekayTheOne`; falta confirmar su correspondencia con integrantes antes de atribuirles tareas. El trabajo de diseño, pruebas, comunicación y revisión no puede medirse únicamente por cantidad de commits.
+
+| Integrante | Evidencia individual TB2 disponible | Complemento requerido |
+|---|---|---|
+| Rodrigo Alaya Cabrera | Commits recientes de integración, correcciones y documentación; merge del informe | PRs revisados y segmento de exposición con timing |
+| Carlos Andrés Coca Lavado | Participación previa descrita en Student Outcome; no se identificó atribución individual TB2 verificable | Cuenta GitHub, cambios y exposición TB2 |
+| Jocelyn Damaly Almerco Rojas | Participación previa descrita en Student Outcome; no se identificó atribución individual TB2 verificable | Cuenta GitHub, cambios y exposición TB2 |
+| Ivan Jeanpierre La Madrid Lozano | Integrante registrado en portada; falta evidencia individual TB2 | Cuenta GitHub, artefactos y exposición TB2 |
+| Diego Sebastian Zuñiga Murillo | Integrante registrado en portada; falta evidencia individual TB2 | Cuenta GitHub, artefactos y exposición TB2 |
+
+<p align="center"><img src="Images/insights/insight1.png" alt="GitHub Insights histórico del informe, no actualización TB2" width="650"></p>
+
+La captura corresponde a la evidencia histórica ya incluida. Para TB2 se debe agregar un corte de Contributors/Pulse que muestre el intervalo de semanas 8–12 y los repositorios pertinentes, sin reasignar autorías ni inventar revisiones.
+
+## 7.3. Validation Interviews
+
+**Estado:** el equipo confirmó que las entrevistas TB2 aún no cuentan con registros reales. Esta sección contiene el protocolo y seis fichas guía —tres por segmento— para conducirlas. Los textos de resultados están identificados como **ejemplos orientativos**, no como testimonios recogidos. Deben reemplazarse con observaciones, citas consentidas y tiempos de las grabaciones antes de entregar resultados de validación.
+
+### 7.3.1. Diseño de Entrevistas
+
+**Preguntas para entrevistas del frontend web**
+
+Preguntas para personas con experiencia en el cuidado de plantas en el hogar:
+
+1.	¿Qué funcionalidades del dashboard (tanto en la versión web como en la móvil) consideras más valiosas para el monitoreo de tus plantas?
+2.	¿Te resultó intuitivo el proceso para conectar/vincular el dispositivo IoT de humedad y temperatura a una de tus plantas?
+3.	Al revisar los datos actuales de humedad y temperatura que reporta la app, ¿consideras que disponer de estos valores exactos te ayuda a tomar mejores decisiones en el cuidado de tus plantas?
+4.	¿Te resultó fácil registrar tus plantas en "Mis Plantas" y gestionar sus cuidados específicos desde tu teléfono móvil?
+5.	¿Consideras que ver el estado actual de temperatura y humedad en vivo te aporta mayor precisión al planificar tus rutinas en comparación con los métodos tradicionales de observación a ojo?
+6.	¿La estructura actual del módulo de tareas te permite organizar de manera eficiente tus flujos de trabajo y el mantenimiento de múltiples plantas a la vez?"
+7.	Al interactuar con Rootbot, ¿consideras útil contar con este chatbot de IA integrado como una herramienta de consulta general frente a dudas específicas o problemas complejos con tus plantas?
+8.	¿Qué opinas de la experiencia de diseño y fluidez al pasar de la plataforma web a la aplicación móvil? ¿Se complementan bien?
+9.	¿Qué herramientas adicionales o automatizaciones basadas en los sensores IoT crees que aportarían mayor valor para usuarios avanzados?
+10.	¿Recomendarías esta plataforma híbrida (App + IoT) a otros cuidadores con experiencia? ¿Qué los motivaría a usarla?
+
+
+Preguntas para personas con poca experiencia o iniciantes en el cuidado de plantas en el hogar:
+
+1.	Al usar la app en la versión web y móvil por primera vez, ¿Qué tan clara te resultó su función principal?
+2.	¿Qué te pareció el proceso para registrar una planta en “Mis Plantas” desde tu celular? ¿Fue fácil de seguir?
+3.	¿Cómo describirías la experiencia visual de conectar el dispositivo IoT dentro de la aplicación? ¿Te pareció un proceso guiado y sencillo?
+4.	Al revisar los datos actuales de humedad y temperatura que reporta la app, ¿consideras que disponer de estos valores exactos te ayuda a tomar mejores decisiones en el cuidado de tus plantas?
+5.	¿La sección de tareas te ayuda a organizarte mejor sabiendo que puedes consultar los niveles de humedad del sensor antes de decidir si es momento de regar?
+6.	¿Qué te pareció Rootbot como un chatbot diseñado para responder preguntas sobre tus plantas? ¿Te dio confianza su forma de interactuar?
+7.	¿Consideras que el diseño del dashboard (tanto en web como en móvil) te permite encontrar de forma rápida y clara los datos actuales de tus sensores de humedad y temperatura?
+8.	¿Crees que el diseño del dashboard (en móvil y web) te permitió encontrar el estado de tus plantas rápidamente?
+9.	¿ ¿Qué herramientas adicionales o automatizaciones basadas en los sensores IoT crees que te  aportarían mayor valor
+10.	 ¿Qué cambiarías o mejorarías en la forma de mostrar los datos del sensor o en la navegación general de la app para que sea aún más fácil de usar por alguien que recién empieza?
+
+**Preguntas para entrevistas de la aplicación móvil con el iot**
+
+Preguntas para personas con experiencia en el cuidado de plantas en el hogar:
+
+1. ¿Cuántas plantas tienes actualmente y de qué especies?
+2. ¿Cómo monitoreas actualmente sus condiciones ambientales?
+3. ¿Has usado sensores o sistemas de automatización antes? ¿Cuáles?
+4. ¿Te parece adecuado poder definir umbrales específicos de temperatura, humedad y luz mínima por cada planta, en lugar de usar valores genéricos?
+5. ¿La opción de registrar manualmente cuidados como poda o fertilización y tener un historial cronológico te sería útil para análisis a largo plazo?
+6. ¿Consideras valioso poder ver el nivel de humedad configurado (alto, medio o bajo) con la frecuencia de riego calculada automáticamente, o preferirías definir los días exactos tú mismo?
+7. ¿Qué opinas de poder visualizar en tiempo real temperatura, humedad, calidad del aire y luminosidad desde el celular?
+8. ¿El control de actuadores con modo automático (según umbrales por planta) y manual te da la flexibilidad que buscas? ¿Agregarías algún modo adicional?
+9. ¿Te parece útil que el dispositivo tenga una pantalla LCD física para leer métricas sin abrir la app, y botones para cambiar modos localmente?
+10. ¿Qué funcionalidad añadirías para llevar el monitoreo a un nivel más profesional?
+11. ¿Recomendarías PlantSync a otros aficionados avanzados? ¿Por qué?
+
+Preguntas para personas con poca experiencia o iniciantes en el cuidado de plantas en el hogar:
+
+1. ¿Hace cuánto empezaste a interesarte por las plantas?
+2. ¿Has perdido alguna planta por falta de cuidados? ¿Qué crees que falló?
+3. ¿Usas recordatorios o aplicaciones actualmente para cuidar tus plantas?
+4. ¿Te parece útil que al registrar una planta solo tengas que elegir entre "riego alto, medio o bajo" y el sistema te diga cada cuántos días regarla?
+5. ¿Crees que tener una lista de tareas con fechas te ayudaría a no olvidar los cuidados?
+6. Si tuvieras una duda sobre tu planta, ¿preferirías preguntarle a un chatbot o buscar en internet?
+7. ¿Te gustaría ver en tu celular, sin moverte de donde estás, la temperatura y humedad que tiene tu planta en tiempo real?
+8. ¿Prefieres que el riego y la luz UV se activen solos según lo que necesite tu planta, o te gusta tener el control manual?
+9. ¿Una alerta sonora en el dispositivo cuando algo anda mal te daría más tranquilidad?
+10. ¿Qué fue lo que más te gustó de la aplicación?
+11. ¿Hay algo que te pareció complicado o confuso?
+12. ¿La recomendarías a alguien que está empezando como tú?
+
+
+### 7.3.2. Registro de Entrevistas
+
+<h2>Frontend web</h2>
+
+<h3>Expertos cuidadores de plantas</h3>
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Pedro vargas</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>24 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:03 - 17:25</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=zT4Y3f" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=zT4Y3f</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+       Pedro Vargas destacó que la funcionalidad más valiosa de la plataforma es el sistema de tareas y recordatorios, ya que facilita el seguimiento del cuidado de las plantas y evita olvidar actividades importantes como el riego. Consideró que la integración con dispositivos IoT sería muy útil, especialmente para automatizar procesos cuando el usuario no se encuentra en casa. Asimismo, señaló que los datos de humedad y temperatura pueden aportar valor.Respecto al registro de plantas, lo encontró sencillo e intuitivo. También indicó que la visualización de datos en tiempo real permite tomar decisiones más precisas que los métodos tradicionales de observación.Sobre el chatbot Root, mencionó que no sería una herramienta de uso constante para él, pero sí útil para resolver dudas puntuales y obtener información rápida. Además, consideró que la experiencia entre la aplicación web y móvil es consistente y complementaria, aunque cree que utilizaría con mayor frecuencia la versión móvil por su practicidad. Como mejora, sugirió incorporar sensores capaces de medir la acidez del suelo, ya que considera que este factor es determinante para la salud de muchas plantas. Finalmente, afirmó que recomendaría la plataforma a otros cuidadores, especialmente por la facilidad que brinda para organizar tareas, automatizar procesos y mantener un mejor control del cuidado de las plantas.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+  <img src="images/entrevistadevalidacion/entrevista1.png" alt="Screenshot Entrevista 2" width="1000">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Dione Ostos</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>57 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Puente Piedra</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>17:29 - 26:05</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxMDQ5LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=v07aZs" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxMDQ5LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=v07aZs</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+       La sesión con Dione Ostos, cuidadora con amplia experiencia en botánica hogareña, permitió evaluar el impacto de nuestra plataforma híbrida desde una perspectiva mucho más técnica y especializada. La usuaria validó la integración del ecosistema (web, móvil e IoT), destacando su valor para optimizar el mantenimiento avanzado y, sobre todo, para guiar de manera precisa a cuidadores menos experimentados que suelen aprender mediante el ensayo y error. Desde su enfoque experto, Dione resaltó que el monitoreo constante ayuda a cubrir esos vacíos de conocimiento botánico que la mayoría de los aficionados enfrenta en el día a día. En definitiva, su perspectiva confirma que la solución no solo es robusta para satisfacer a usuarios exigentes, sino que posee un alto valor educativo, sirviendo como el puente ideal para quienes buscan profesionalizar el cuidado de sus plantas.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+  <a href="https://ibb.co/7ty670Tt"><img src="https://i.ibb.co/s93MLXD9/imagen-2026-06-21-184514849.png" alt="Screenshot Entrevista 2 experto" width="1000"></a>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<h3>Cuidadores de plantas principiantes</h3>
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Marcelo Barrientos</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>21 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Lima</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>26:05 - 44:32</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxNTY0LjE2NywidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=1TeXMe" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxNTY0LjE2NywidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=1TeXMe</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+       En la presente entrevista, se analiza la experiencia de Marcelo, un cuidador de plantas principiante, tras interactuar con nuestra solución orientada al monitoreo botánico. Durante la evaluación, se destacó que, para garantizar una adopción exitosa, la interfaz debe ser altamente intuitiva, facilitando la gestión de perfiles, la personalización de alertas y la lectura clara de datos en el panel de control, apoyándose en integraciones con inteligencia artificial. A pesar de que Marcelo detectó ciertos problemas técnicos puntuales —como inconsistencias en la entrega de notificaciones y fallos menores en el registro de la temperatura—, mantuvo una valoración general muy positiva, concluyendo que la aplicación cuenta con la usabilidad, la arquitectura y la madurez necesarias para adaptarse eficientemente a las rutinas reales de usuarios sin conocimientos técnicos avanzados.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+  <img src="images/entrevistadevalidacion/Entrevista Principiantes 1.png" alt="Screenshot Entrevista 2" width="1000">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Melany Esther</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>22 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Lima</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>44:32 - 57:36</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoyNjcyLjk3MywidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=ILeTlm" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoyNjcyLjk3MywidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=ILeTlm</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      La entrevistada destacó que la función principal de la aplicación resulta muy clara tanto en su versión web como móvil, resaltando la facilidad para manejar el control de temperatura y humedad de las plantas. Respecto al registro de plantas en "Mis Plantas", lo consideró un proceso sencillo de completar y fácil de localizar dentro de la interfaz. También indicó que la conexión del dispositivo IoT es relativamente simple, ya que el acceso mediante un único botón por planta elimina cualquier complejidad. En cuanto a los datos de humedad y temperatura reportados por la app, afirmó que disponer de estos valores exactos le facilita el control y la toma de mejores decisiones en el cuidado de sus plantas. Sobre la sección de tareas, señaló que no solo le permite organizar el riego consultando los niveles del sensor, sino también gestionar otras actividades relacionadas sin preocuparse por posibles olvidos. Respecto al chatbot, lo valoró de manera muy positiva, destacando que el conoce la información específica de cada planta registrada, lo cual le ayuda a comprender aspectos que desconocía. En relación con el dashboard, confirmó que tanto en web como en móvil permite encontrar de forma rápida y clara los datos de los sensores y el estado de las plantas. Como mejoras, sugirió incorporar un sensor más completo capaz de detectar la calidad de la tierra, así como una pantalla pequeña junto a la planta para realizar un control manual sin depender de la activación automática de los dispositivos. Finalmente, recomendó que los valores ideales para cada tipo de planta se configuren automáticamente al momento del registro, lo cual ahorraría tiempo especialmente a usuarios que recién comienzan.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+<a href="https://ibb.co/WWNQpz38"><img src="https://i.ibb.co/8DnJ4xBv/cap1.png" alt="cap1" border="0"></a>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 3</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Yakeli Apaza</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>23 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Lima</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>57:36 - 1:07:52</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozNDU2LjI1NiwidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=xVoi95" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozNDU2LjI1NiwidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=xVoi95</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      La sesión con Yanina, estudiante de ingeniería civil, permitió evaluar la viabilidad de nuestra plataforma de monitoreo botánico en un entorno cotidiano. La usuaria valoró la fluidez de la experiencia tanto en web como en móvil, haciendo hincapié en el control preventivo que ofrecen las métricas de los sensores y el soporte personalizado del asistente virtual. Como puntos de mejora para optimizar la interacción inicial, sugirió simplificar la carga multimedia mediante archivos locales en lugar de enlaces URL, además de incorporar alertas enfocadas en las etapas de fertilización. En definitiva, el feedback valida el enfoque funcional del sistema, demostrando que la interfaz es lo bastante clara y accesible como para integrarse con éxito en las rutinas de personas que no están familiarizadas con la tecnología IoT.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+<a href="https://ibb.co/rRHpQCsx"><img src="https://i.ibb.co/1tTX0D6r/imagen-2026-06-21-183602562.png" alt="Screenshot Entrevista 3 principante" width="1000"></a>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<h2>Aplicación móvil con IoT</h2>
+
+<h3>Expertos cuidadores de plantas</h3>
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Dione Ostos</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>57 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Puente Piedra</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00 - 9:16</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211f211_upc_edu_pe/IQDdj2rIV4tjRKQha9Hzly_iAUsO-2S96_A5JO2x6OPwOiA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=2CgjkW" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211f211_upc_edu_pe/IQDdj2rIV4tjRKQha9Hzly_iAUsO-2S96_A5JO2x6OPwOiA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=2CgjkW</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      La entrevistada menciona tener varios tipos de plantas y resalta que le parece interesante la aplicación. Comenta que ella observa manualmente sus plantas y que no ha usado algún sistemas de automatización antes. Menciona que le parece interesante el poder escoger los parámetros por uno mismo. Le gusta la idea de crear tareas para recordatorios. Le gustaría que dependiendo de la especie se pueda escoger entre el tiempo de riego. Le parecen suficiente las opciones de los actuadores iot. Le gusta la idea de usar botones y ver los LCD para no tener que entrar a la aplicación para controlar el sistema iot. De momento le parece suficiente los sensores implementados en el sistema. Le gustaría seguir probando la aplicación para determinar si recomendaría la aplicación o no.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+<img src="images/entrevistadevalidacion/EntrevistaAppIoTExperto1.png" alt="Entrevista de la aplicación móvil con el primer experto en plantas" width="600">
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Luz María Jorge</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>54 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Comas</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00 - 10:16</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211f211_upc_edu_pe/IQDKP810I2DSRZOu4QmiPgW8AQp7UCebBjU701pv1nBcoLo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CxYfG2" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211f211_upc_edu_pe/IQDKP810I2DSRZOu4QmiPgW8AQp7UCebBjU701pv1nBcoLo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CxYfG2</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      La entrevistada menciona haber crecido en un entorno con muchas plantas, por lo que cree tener experiencia en plantas. Comenta que tiene en su colección plantas ornamentales. Menciona revisar manualmente el estado de sus plantas. Dijo no tener experiencia en usar algún sistema de automatización. Le gusta las opciones de automatización que ofrece la aplicación. Le gusta la idea de la implementación de tareas además que le ayudaría a no olvidar los detalles de algunas plantas, exclamó. Apoya la idea de que las opciones de riego sean automáticas y menciona que le gustaría un recordatorio en las fechas de riego. Le parece suficiente las opciones que tienen los actuadores en la aplicación. Le gusta la visualización de estados mediante el LCD para menor complejidad en lectura, y resalta que también le gustaría visualizar los datos a distancia mediante el celular. La entrevistada estaría contenta si se agregase una funcionalidad para saber qué tipo de abono usar con cada planta que tengas. Finalmente, ella sí recomendaría la aplicación con el objetivo moral de ayudar sanar el ecosistema mediante el crecimiento de la vegetación.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+<img src="images/entrevistadevalidacion/EntrevistaAppIoTExperto2.png" alt="Entrevista de la aplicación móvil con el segundo experto en plantas" width="600">
+    </td>
+  </tr>
+</table>
+
+<h3>Cuidadores de plantas principiantes</h3>
+<br>
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>José Gutierrez</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Surco</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00 - 8:33</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221436_upc_edu_pe/IQDv31HCeeCETolJ6NzJTo9LAT2HNVcf3h76lBobvEZaVpw?e=3dvirE&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221436_upc_edu_pe/IQDv31HCeeCETolJ6NzJTo9LAT2HNVcf3h76lBobvEZaVpw?e=3dvirE&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      El entrevistado menciona haber tenido plantas que por mal cuidado han perecido. Él no usó herramientas de automatización, pero le gustaría probarlas. Le gusta la idea de planificación de tareas para no olvidar cuidar su planta. Menciona que la funcionalidad del chatbot le parece suficiente. La telemetría a distancia desde el app móvil le parece una funcionalidad interesante. Le gustaría el riego automático, incluso así, revisaría manualmente sus plantas. No le parece conveniente una alerta de sonido, porque lo considera fastidioso. Exclama que su funcionalidad favorita de la aplicación móvil es el chatbot. Sí recomendaría la aplicación porque cree que ayudaría a otros cuidadores a hacer su vida más fácil.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+<img src="images/entrevistadevalidacion/EntrevistaAppIoTPrincipiante1.jpeg" alt="Entrevista de la aplicación móvil con el primer principiante en plantas" width="600">
+    </td>
+  </tr>
+</table>
+
+<br>
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Maria Fernanda Peña</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Surco</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00 - 8:33</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221436_upc_edu_pe/IQCXzZrvhGlfSpUznNZ_ZhV4AU1mutNULVt9hA2fBqRlaKU?e=ZBqRIP&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221436_upc_edu_pe/IQCXzZrvhGlfSpUznNZ_ZhV4AU1mutNULVt9hA2fBqRlaKU?e=ZBqRIP&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      La entrevistada tiene experiencia de 2 años cuidado plantas, aunque menciona haber tenido pérdidas por administrar el cuidado manualmente, tras eso, recalcó que le parecería útil una función de recordatorio. Ella menciona que prefiere buscar información de sus plantas usando un chatbot antes que buscar en páginas en internet. A ella le gustaría observar los datos en tiempo real de lo que sucede con sus plantas a distancia. Sobre los actuadores, tiene preferencia sobre la automatización antes que configuraciones manuales; específicamente sobre la alerta con el buzzer, le gusta la característica pero le gustaría que se usara una voz y no solo un zumbido. Exclama gustarle, de manera general, todas las características de la aplicación. Menciona que la aplicación es sencilla de entender. Finalmente, sí recomendaría la aplicación a personas que tengan problemas con el cuidado de sus plantas.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+<img src="images/entrevistadevalidacion/EntrevistaAppIoTPrincipiante2.jpeg" alt="Entrevista de la aplicación móvil con el primer principiante en plantas" width="600">
+    </td>
+  </tr>
+</table>
+
+### 7.3.3. Evaluaciones según heurísticas
+
+**UX Heuristics & Principles Evaluation — Usability – Inclusive Design – Information Architecture**
+
+**CARRERA:** Ingeniería de Software. **CURSO:** Arquitecturas de Software Emergentes. **SECCIÓN:** 9077. **PROFESOR:** Jara Palacios, Marino Humberto. **AUDITOR:** revisión documental de NaturaTech; integrantes evaluadores por registrar al ejecutar la sesión. **CLIENTE(S):** participantes TB2 por registrar.
+
+**SITE o APP A EVALUAR:** PlantSync Web App, sus diseños y la evidencia técnica registrada. **TAREAS A EVALUAR incluidas:** acceso, primera planta, creación de cuidados, vinculación de nodo, recuperación del asistente/análisis y comprensión de requisitos de recompensas. **No incluidas:** evaluación de una app móvil ejecutable, precisión clínica/botánica de IA, hardware físico, treinta días de seguimiento y éxito de una transacción Web3 real.
+
+Esta es una evaluación preliminar basada en revisión técnica y de diseño, no una lista de hallazgos obtenidos de entrevistas inexistentes. La severidad expresa impacto; no se reduce a 1 o 2 para producir una valoración positiva.
+
+**ESCALA DE SEVERIDAD**
+
+| Nivel | Descripción |
+|---|---|
+| 1 | Problema superficial o poco frecuente; corrección si hay disponibilidad |
+| 2 | Problema menor, superable; prioridad baja para el siguiente release |
+| 3 | Problema mayor, frecuente o difícil de resolver; prioridad alta |
+| 4 | Problema muy grave que impide continuar; corregir antes del lanzamiento del flujo afectado |
+
+**TABLA RESUMEN**
+
+| # | Problema | Escala de severidad | Heurística / Principio violado |
+|---|---|---|---|
+| H01 | Cuenta nueva sin acceso claro a creación, reportado antes de la corrección de onboarding | 4 | Usability: control y libertad; Information Architecture: usabilidad |
+| H02 | El asistente y el análisis no completan su resultado por fallo del proveedor en la prueba registrada | 4 | Usability: recuperación ante errores y visibilidad del estado |
+| H03 | Omitir próximo riego provocaba error 500 al crear planta | 3 | Usability: prevención y explicación de errores |
+| H04 | Vincular nodo puede interpretarse como tener telemetría activa si no se diferencia su estado | 3 | Information Architecture: claridad; Usability: correspondencia con el mundo real — riesgo por validar |
+| H05 | No se cuenta con medición de contraste, teclado y foco de los recorridos completos | Por determinar | Inclusive Design: experiencia comparable — verificación pendiente, no incumplimiento confirmado |
+
+**DESCRIPCIÓN DE PROBLEMAS**
+
+**H01 — Severidad 4.** El usuario había reportado listas vacías sin botones/formularios para crear datos, lo que bloqueaba el inicio. El código actualizado añade CTAs y modales. Referencia de diseño: `Images/mockups/DashBoard_Plantas.png`, presentada en 7.2.1.5; no representa una captura del fallo. **Recomendación y cierre:** grabar con cuenta nueva los accesos “Agregar mi primera planta”, “Vincular nuevo dispositivo” y “Crear tarea”, y demostrar persistencia. Estado: corregido en código, pendiente de validación visual desplegada.
+
+**H02 — Severidad 4.** Se registró `GEMINI_UNAVAILABLE` y un análisis terminado en fallo. La existencia de un formulario de carga no resuelve la interrupción. Referencia conceptual: `Images/mockups/chatbot1.png`. **Recomendación y cierre:** corregir credenciales/configuración, comunicar un error seguro, conservar contexto y ofrecer reintento explícito; comprobar consulta y fotografía real. No hay screenshot del error disponible en `Images/`; debe capturarse durante el Sprint Review.
+
+**H03 — Severidad 3.** La API publicada devolvía 500 al omitir próximo riego; el formulario ahora lo hace visible y el backend tiene una corrección. Referencia de diseño: `Images/mockups/addplant.png`. **Recomendación y cierre:** desplegar la corrección y probar fecha válida, ausencia y formato inválido; devolver validación comprensible y conservar datos.
+
+**H04 — Severidad propuesta 3, pendiente de observación.** Registrar `SIM-001` no inicia el proceso que envía lecturas. Referencia de diseño: `Images/mockups/mobile/iot_connection.png`. **Recomendación:** separar vinculación, última comunicación y antigüedad de lectura; no anunciar una orden como ejecutada antes del recibo. Confirmar esta interpretación con participantes expertos.
+
+**H05 — Sin severidad asignada.** Los diseños no permiten certificar accesibilidad del DOM final. **Recomendación:** medir contraste, navegar solo con teclado, comprobar foco en modales y lectura de errores; registrar criterio WCAG, componente, evidencia y severidad únicamente si se detecta una barrera.
+
+<p align="center"><img src="Images/mockups/addplant.png" alt="Referencia de diseño del formulario de planta para evaluar H03" width="650"></p>
+<p align="center"><img src="Images/mockups/mobile/iot_connection.png" alt="Referencia móvil de vinculación IoT para discutir claridad de estados" width="300"></p>
+
+## 7.4. Video About-the-Product
+
+El video presentará el problema de organizar cuidados, la propuesta de PlantSync y un recorrido comprensible para ambos segmentos. El tono será cercano y concreto, con subtítulos y texto legible. El modelo de negocio se explicará conforme a los planes del informe, sin presentar cobros ni resultados ambientales no verificados. Los testimonios se incorporarán únicamente después de las entrevistas y con consentimiento.
+
+**Microsoft Stream:** **"https://upcedupe-my.sharepoint.com/:v:/r/personal/u202219481_upc_edu_pe/Documents/VIDEO%20ABOUT%20THE%20PRODUCT%20-%20NATURATECH.mp4?d=w273c141c09274f70a5dda85fb7e3caf9&csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=kZ4H0j"**. 
+
+| Tiempo propuesto | Contenido | Evidencia a mostrar |
+|---|---|---|
+| 00:00:00–00:00:20 | Problema y segmentos | Rutina de cuidados y propuesta de valor |
+| 00:00:20–00:00:55 | Primer uso | Registro, planta y tarea con interfaz real |
+| 00:00:55–00:01:25 | Capacidades emergentes | IA, dispositivo y recompensas; diferenciar lo operativo de la visión de producto |
+| 00:01:25–00:01:45 | Valor percibido | Testimonio autorizado si ya existe; de lo contrario, explicación del beneficio esperado |
+| 00:01:45–00:02:00 | Modelo de negocio y CTA | Planes del proyecto y acceso a la aplicación |
+
+Duración objetivo: **02:00**, dentro del rango solicitado; los tiempos son pauta de edición, no timings de un archivo existente. Como referencia visual se conserva el dashboard de 7.2.1.5; no se etiqueta como fotograma del video.
+
 # Conclusiones
 A partir del desarrollo del documento, se puede concluir que el proyecto propone una solución con un objetivo definido y con posibilidades concretas de generar un impacto positivo en el cuidado de las plantas y la sostenibilidad ambiental. La propuesta va más allá de realizar un simple seguimiento de las especies, ya que contempla aspectos como el registro y manejo de información, el análisis de las condiciones del entorno y el uso de herramientas inteligentes para facilitar la toma de decisiones. De esta manera, el sistema adquiere tanto un valor académico como práctico, debido a que busca facilitar la experiencia del usuario y contribuir a un mejor cuidado de las plantas.
 
 De igual manera, la organización planteada para el sistema demuestra un adecuado entendimiento de las necesidades que aborda el proyecto. La distribución de las responsabilidades en diferentes áreas y la definición de componentes específicos permiten construir una solución ordenada, modular y con capacidad de adaptación. Esta forma de estructurar el sistema facilita su comprensión y, al mismo tiempo, establece una base que puede favorecer su mantenimiento, crecimiento y evolución en etapas posteriores. Por ello, el proyecto cuenta con una base metodológica que puede servir como punto de partida para continuar con su implementación.
 
 Finalmente, el uso de tecnologías como la inteligencia artificial y el análisis de datos constituye uno de los aspectos más relevantes de la propuesta. Estas herramientas permiten aprovechar la información disponible para identificar determinadas condiciones, ofrecer recomendaciones que respondan a las necesidades de cada planta y brindar un mayor apoyo al usuario al momento de tomar decisiones. En consecuencia, el proyecto no se limita a funcionar como un mecanismo de monitoreo, sino que plantea una solución con características inteligentes que puede contribuir a automatizar determinadas tareas y, a la vez, fomentar prácticas más adecuadas y sostenibles en el cuidado de las plantas.
+
+## Conclusiones y recomendaciones TB2
+
+El avance convierte parte de la propuesta de los capítulos I–VI en una aplicación web conectada con una API y persistencia cloud. Las pruebas HTTP acreditan registro, acceso y creación de recursos básicos. Esto demuestra viabilidad técnica inicial para organizar cuidados, pero no demuestra todavía que los usuarios olviden menos tareas, que sus plantas mejoren ni que exista demanda de pago.
+
+| Planteamiento Lean UX | Resultado contrastable al corte | Conclusión / siguiente experimento |
+|---|---|---|
+| El principiante necesita orientación comprensible para comenzar | Onboarding y formularios implementados; registro y creación comprobados por HTTP | Evaluar con José como arquetipo y participantes del segmento; medir éxito sin ayuda |
+| La persona experimentada necesita organizar cuidados y consultar información | Tareas, plantas e historial contemplados en diseño y código | Evaluar con el arquetipo Mariana y tareas de colección; medir localización, tiempo y errores |
+| La inteligencia y telemetría pueden apoyar decisiones | Adaptadores implementados; falla de Gemini registrada y ciclo IoT completo pendiente | No aceptar aún la hipótesis: validar proveedor, lectura reciente y comprensión del resultado |
+| Las recompensas pueden motivar continuidad | Flujo de requisitos y desafío de firma disponibles | Validar firma, contrato y seguimiento; no atribuir adherencia de 30 días a una demostración corta |
+
+Para Sprint 2 se prioriza: resolver y volver a probar Gemini; ejecutar el simulador con autenticación, telemetría y recibos; completar Rabby/Sepolia; correr migraciones sobre MySQL; realizar E2E de navegador y revisión accesible; publicar evidencia del commit desplegado. En producto, realizar las seis entrevistas, analizar también comentarios negativos y decidir mejoras según impacto. La cobertura técnica de 85,47 % es un indicador de pruebas de instrucciones, no un porcentaje de producto terminado.
+
+Las conclusiones generales anteriores expresan el potencial de la solución. Las conclusiones TB2 limitan las afirmaciones de logro a la evidencia presentada y dejan abiertas las hipótesis de valor que necesitan observación de usuarios.
+
+## Video About-the-Team
+
+**Microsoft Stream:** **"https://upcedupe-my.sharepoint.com/:v:/r/personal/u202219481_upc_edu_pe/Documents/VIDEO%20ABOUT%20THE%20TEAM%20-%20NATURATECH.mp4?d=w52af4ade7a1b4f47bd02ccf2fee76768&csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=uu0wpk"**.
+
+
+
+| Tiempo propuesto | Participación | Contenido |
+|---|---|---|
+| 00:00:00–00:01:00 | Equipo | Problema, segmentos y propuesta PlantSync |
+| 00:01:00–00:02:30 | Equipo | Evolución del diseño a la implementación; arquitectura y contratos |
+| 00:02:30–00:04:00 | Equipo | Qué funcionó, fallos encontrados y límites de la evidencia |
+| 00:04:00–00:05:00 | Equipo | Acuerdos de mejora para Sprint 2 y organización del trabajo |
+| 00:05:00–00:06:00 | Rodrigo Alaya Cabrera | Aporte personal y evidencia seleccionada |
+| 00:06:00–00:07:00 | Carlos Andrés Coca Lavado | Aporte personal y evidencia seleccionada |
+| 00:07:00–00:08:00 | Jocelyn Damaly Almerco Rojas | Aporte personal y evidencia seleccionada |
+| 00:08:00–00:09:00 | Ivan Jeanpierre La Madrid Lozano | Aporte personal y evidencia seleccionada |
+| 00:09:00–00:10:00 | Diego Sebastian Zuñiga Murillo | Aporte personal y evidencia seleccionada |
+
+# Bibliografía
+
+Cervantes, H., & Kazman, R. (2016). *Designing software architectures: A practical approach*. Addison-Wesley Professional. https://www.informit.com/store/designing-software-architectures-a-practical-approach-9780134390857
+
+Conventional Commits. (s. f.). *Conventional Commits 1.0.0*. https://www.conventionalcommits.org/en/v1.0.0/
+
+Driessen, V. (2010, 5 de enero). *A successful Git branching model*. https://nvie.com/posts/a-successful-git-branching-model/
+
+Evans, E. (2003). *Domain-driven design: Tackling complexity in the heart of software*. Addison-Wesley Professional. https://www.domainlanguage.com/ddd/
+
+Google. (s. f.). *Gemini API documentation*. https://ai.google.dev/gemini-api/docs
+
+Gothelf, J., & Seiden, J. (2021). *Lean UX: Designing great products with agile teams* (3.ª ed.). O’Reilly Media. https://www.oreilly.com/library/view/lean-ux-3rd/9781098116293/
+
+Nielsen, J. (1994, 24 de abril). *10 usability heuristics for user interface design*. Nielsen Norman Group. https://www.nngroup.com/articles/ten-usability-heuristics/
+
+Preston-Werner, T. (s. f.). *Semantic versioning 2.0.0*. https://semver.org/spec/v2.0.0.html
+
+Universidad Peruana de Ciencias Aplicadas. (2026). *Trabajo final: 1ASI0728 Arquitecturas de Software Emergentes, 2026-20* [Enunciado del curso, versión 1.0]. Documento proporcionado por el equipo; archivo `Trabajo Final_1ASI0728_202620.md`.
+
+World Wide Web Consortium. (2024, 12 de diciembre). *Web Content Accessibility Guidelines (WCAG) 2.2*. https://www.w3.org/TR/2024/REC-WCAG22-20241212/
+
+NaturaTech. (2026). *NaturaTech-report* [Repositorio de informe]. https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTech-report
+
+NaturaTech. (2026). *NaturaTech-web-app* [Código fuente]. https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTech-web-app
+
+NaturaTech. (2026). *NaturaTech-web-service* [Código fuente]. https://github.com/1ASI0728-2620-9077-NaturaTech/NaturaTech-web-service
+
+Las fuentes del dominio botánico requieren incorporarse junto con las recomendaciones concretas que respalden. En este corte no se afirma exactitud diagnóstica ni se presentan resultados ambientales como hechos medidos.
+
+# Anexos
+
