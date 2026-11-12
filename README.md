@@ -5873,7 +5873,7 @@ Herramientas utilizadas para la planificación, asignación de tareas y seguimie
 | Herramienta | Descripción | Enlace |
 | --- | --- | --- |
 | Trello | Plataforma para la gestión ágil del proyecto, control de Sprints y seguimiento del Product Backlog mediante tableros Kanban/Scrum. | [https://trello.com/es](https://trello.com/es) |
-| Discord / WhatsApp | Aplicaciones de mensajería para la comunicación rápida y coordinación diaria entre los 7 miembros del equipo. | No aplica |
+| Discord / WhatsApp | Aplicaciones de mensajería para la comunicación rápida y coordinación diaria entre los 5 miembros del equipo. | https://discord.gg/ |
 
 **Requirements Management**
 Herramientas enfocadas en la recolección, estructuración y trazabilidad de los requerimientos y el modelado del dominio.
@@ -5936,11 +5936,6 @@ Repositorio principal [https://github.com/orgs/1ASI0728-2620-9077-NaturaTech/rep
 
 **GitFlow:**
 Se utilizará el modelo GitFlow propuesto por Vincent Driessen para organizar el trabajo de desarrollo de forma estructurada.
-
-+ Ejemplo de GitFlow:
-<p align="center">
-  <img src="Images/cap7/others/gitflow.png" alt = "ejemplo de gitflow" width="80%">
-</p>
 
 Estructura de branches:
 
